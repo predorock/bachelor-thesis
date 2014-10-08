@@ -34,7 +34,7 @@
 \contentsline {chapter}{\numberline {2}HTML, CSS, Javascript - L'evoluzione dei linguaggi web}{13}{chapter.43}
 \contentsline {section}{\numberline {2.1}L'HTML - Da descrittore di documenti a descrittore di interfacce}{13}{section.44}
 \contentsline {section}{\numberline {2.2}CSS - Dallo stile dei documenti alle trasformazioni vettoriali}{13}{section.45}
-\contentsline {section}{\numberline {2.3}Javascript - Dalle animazioni ai potenti Framework}{13}{section.46}
+\contentsline {section}{\numberline {2.3}Javascript - Dalle animazioni ai potenti Framework}{14}{section.46}
 \contentsline {section}{\numberline {2.4}Main Section 2}{14}{section.47}
 \vspace {2em}
 \contentsline {chapter}{\numberline {A}Appendix Title Here}{15}{appendix.48}
