@@ -35,8 +35,12 @@
 \contentsline {section}{\numberline {2.1}L'HTML - Da descrittore di documenti a descrittore di interfacce}{13}{section.44}
 \contentsline {section}{\numberline {2.2}CSS - Dallo stile dei documenti alle trasformazioni vettoriali}{13}{section.45}
 \contentsline {section}{\numberline {2.3}Javascript - Dalle animazioni ai potenti Framework}{14}{section.46}
-\contentsline {section}{\numberline {2.4}Main Section 2}{14}{section.47}
+\contentsline {subsection}{\numberline {2.3.1}Descrizione}{14}{subsection.47}
+\contentsline {subsection}{\numberline {2.3.2}Storia}{14}{subsection.48}
+\contentsline {subsection}{\numberline {2.3.3}I Cambiamenti}{15}{subsection.49}
+\contentsline {subsection}{\numberline {2.3.4}I Framework attuali}{15}{subsection.50}
+\contentsline {section}{\numberline {2.4}Main Section 2}{15}{section.51}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{15}{appendix.48}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{16}{appendix.52}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{16}{dummy.49}
+\contentsline {chapter}{Bibliography}{17}{dummy.53}
