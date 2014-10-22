@@ -157,6 +157,7 @@
    \let\\\space
 }
 \newcommand*{\supervisor}[1]{\def\supname{#1}}
+\newcommand*{\cosupervisor}[1]{\def\cosupname{#1}}
 \newcommand*{\thesistitle}[1]{\def\ttitle{#1}}
 \newcommand*{\examiner}[1]{\def\examname{#1}}
 \newcommand*{\degree}[1]{\def\degreename{#1}}
@@ -181,15 +182,17 @@
 %	defined as \examname above so you cite it as \examname
 %----------------------------------------------------------------------------------------
 
-\thesistitle{Thesis Title} % Your thesis title - this is used in the title and abstract
+\thesistitle{Dal Web al Mobile - L'evoluzione delle Tecnologie web per lo sviluppo di applicazioni multipiattaforma} % Your thesis title - this is used in the title and abstract
 %-------------------------------------------------  
-\supervisor{Dr. James \textsc{Smith}} % You supervisor's name - this is used in the title page
+\supervisor{Dott. Paolo \textsc{Ceravolo}} % You supervisor's name - this is used in the title page
+%-------------------------------------------------(Added)   
+\cosupervisor{Dott. Christian \textsc{Nastasi}} % You co-supervisor's name - this is used in the title page
 %-------------------------------------------------   
 \examiner{} % Your examiner's name - this is not currently used anywhere in the template, cite it with \examname if you want it
 %-------------------------------------------------   
 \degree{Doctor of Philosophy} % Your degree name - this is currently used in the title page and abstract
 %-------------------------------------------------   
-\authors{John \textsc{Smith}} % Your name - this is used in the title page and abstract
+\authors{Marco \textsc{Predari}} % Your name - this is used in the title page and abstract
 %-------------------------------------------------   
 \addresses{} % Your address - this is not currently used anywhere in the template, cite it with \addressnames if you want it
 %-------------------------------------------------   
@@ -197,20 +200,20 @@
 %-------------------------------------------------   
 \keywords{} % Keywords for your thesis - this is not currently used anywhere in the template, cite it with \keywordnames if you want it
 %-------------------------------------------------   
-\university{\texorpdfstring{\href{http://www.university.com} % Your university's URL
-                {University Name}} % Your university's name - this is currently used in the title page
+\university{\texorpdfstring{\href{http://www.di.unimi.it} % Your university's URL
+                {Università delgi Studi di Milano}} % Your university's name - this is currently used in the title page
                 {University Name}}
 %-------------------------------------------------   
-\UNIVERSITY{\texorpdfstring{\href{University Web Site URL Here (include http://)} % Your university's URL
-                {UNIVERSITY NAME (IN BLOCK CAPITALS)}} % Your university's name in capitals - this is currently used in the abstract page
+\UNIVERSITY{\texorpdfstring{\href{University Web Site URL Here (include http://www.unimi.it)} % Your university's URL
+                {UNIVERSITA' DEGLI STUDI DI MILANO}} % Your university's name in capitals - this is currently used in the abstract page
                 {UNIVERSITY NAME (IN BLOCK CAPITALS)}}
 %-------------------------------------------------                
-\department{\texorpdfstring{\href{Department or School Web Site URL Here (include http://)} % Your department's URL
-                {Department or School Name}} % Your department's name - used in the title page and abstract
+\department{\texorpdfstring{\href{Department or School Web Site URL Here (include http://www.di.unimi.it)} % Your department's URL
+                {Dipartimento di Informatica e Comunicazione}} % Your department's name - used in the title page and abstract
                 {Department or School Name}}
 %-------------------------------------------------                
 \DEPARTMENT{\texorpdfstring{\href{Department or School Web Site URL Here (include http://)} % Your department's URL
-                {DEPARTMENT OR SCHOOL NAME (IN BLOCK CAPITALS)}} % Your department's name in capitals - this is not currently used anywhere in the template, cite it with \DEPTNAME if you want it
+                {DIPARTIMENTO DI INFORMATIOCA E COMUNICAZIONE}} % Your department's name in capitals - this is not currently used anywhere in the template, cite it with \DEPTNAME if you want it
                 {DEPARTMENT OR SCHOOL NAME (IN BLOCK CAPITALS)}}
 %-------------------------------------------------                
 \group{\texorpdfstring{\href{Research Group Web Site URL Here (include http://)} % Your research group's URL
@@ -222,11 +225,11 @@
                 {RESEARCH GROUP NAME (IN BLOCK CAPITALS)}}
 %-------------------------------------------------                
 \faculty{\texorpdfstring{\href{Faculty Web Site URL Here (include http://)} % Your faculty's URL
-                {Faculty Name}} % Your faculty's name - this is currently used in the abstract page
+                {Facoltà di Scienze e Tecnologie}} % Your faculty's name - this is currently used in the abstract page
                 {Faculty Name}}
 %-------------------------------------------------                
 \FACULTY{\texorpdfstring{\href{Faculty Web Site URL Here (include http://)} % Your faculty's URL
-                {FACULTY NAME (IN BLOCK CAPITALS)}} % Your faculty's name in capitals - this is not currently used anywhere in the template, cite it with \FACNAME if you want it
+                {FACOLTA' DI SCIENZE E TECNOLOGIE}} % Your faculty's name in capitals - this is not currently used anywhere in the template, cite it with \FACNAME if you want it
                 {FACULTY NAME (IN BLOCK CAPITALS)}}
 %----------------------------------------------------------------------------------------    
 
