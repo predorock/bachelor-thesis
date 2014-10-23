@@ -10,36 +10,40 @@
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}HTML, CSS, Javascript - L'evoluzione dei linguaggi web}{1}{chapter.15}
 \contentsline {section}{\numberline {1.1}L'HTML - Da descrittore di documenti a descrittore di interfacce}{1}{section.16}
-\contentsline {section}{\numberline {1.2}CSS - Dallo stile dei documenti alle trasformazioni vettoriali}{1}{section.17}
-\contentsline {section}{\numberline {1.3}Javascript - Dalle animazioni ai potenti Framework}{2}{section.18}
-\contentsline {subsection}{\numberline {1.3.1}Descrizione}{2}{subsection.19}
-\contentsline {subsection}{\numberline {1.3.2}Storia}{2}{subsection.20}
-\contentsline {subsection}{\numberline {1.3.3}I Cambiamenti}{3}{subsection.21}
-\contentsline {subsection}{\numberline {1.3.4}I Framework attuali}{3}{subsection.22}
-\contentsline {section}{\numberline {1.4}Main Section 2}{3}{section.23}
-\contentsline {chapter}{\numberline {2}Chapter Title Here}{4}{chapter.24}
-\contentsline {section}{\numberline {2.1}Welcome and Thank You}{4}{section.25}
-\contentsline {section}{\numberline {2.2}Learning \LaTeX {}}{4}{section.26}
-\contentsline {subsection}{\numberline {2.2.1}A (not so short) Introduction to \LaTeX {}}{5}{subsection.27}
-\contentsline {subsection}{\numberline {2.2.2}A Short Math Guide for \LaTeX {}}{5}{subsection.28}
-\contentsline {subsection}{\numberline {2.2.3}Common \LaTeX {} Math Symbols}{5}{subsection.29}
-\contentsline {subsection}{\numberline {2.2.4}\LaTeX {} on a Mac}{6}{subsection.30}
-\contentsline {section}{\numberline {2.3}Getting Started with this Template}{6}{section.31}
-\contentsline {subsection}{\numberline {2.3.1}About this Template}{6}{subsection.32}
-\contentsline {section}{\numberline {2.4}What this Template Includes}{7}{section.33}
-\contentsline {subsection}{\numberline {2.4.1}Folders}{7}{subsection.34}
-\contentsline {subsection}{\numberline {2.4.2}Files}{8}{subsection.35}
-\contentsline {section}{\numberline {2.5}Filling in the `\texttt {Thesis.cls}' File}{9}{section.36}
-\contentsline {section}{\numberline {2.6}The `\texttt {Thesis.tex}' File Explained}{10}{section.37}
-\contentsline {section}{\numberline {2.7}Thesis Features and Conventions}{11}{section.38}
-\contentsline {subsection}{\numberline {2.7.1}Printing Format}{11}{subsection.39}
-\contentsline {subsection}{\numberline {2.7.2}Using US Letter Paper}{11}{subsection.40}
-\contentsline {subsection}{\numberline {2.7.3}References}{12}{subsection.41}
-\contentsline {subsection}{\numberline {2.7.4}Figures}{13}{subsection.43}
-\contentsline {subsection}{\numberline {2.7.5}Typesetting mathematics}{14}{subsection.45}
-\contentsline {section}{\numberline {2.8}Sectioning and Subsectioning}{15}{section.47}
-\contentsline {section}{\numberline {2.9}In Closing}{15}{section.48}
+\contentsline {subsection}{\numberline {1.1.1}Le prime Interfaccie}{1}{subsection.17}
+\contentsline {subsection}{\numberline {1.1.2}HTML e contenuti multimediali}{1}{subsection.18}
+\contentsline {subsection}{\numberline {1.1.3}Verso l'HTML5 e oltre}{2}{subsection.19}
+\contentsline {subsection}{\numberline {1.1.4}I moduli HTML e il Material Design di Google}{2}{subsection.20}
+\contentsline {section}{\numberline {1.2}CSS - Dallo stile dei documenti alle trasformazioni vettoriali}{2}{section.21}
+\contentsline {section}{\numberline {1.3}Javascript - Dalle animazioni ai potenti Framework}{2}{section.22}
+\contentsline {subsection}{\numberline {1.3.1}Descrizione}{2}{subsection.23}
+\contentsline {subsection}{\numberline {1.3.2}Storia}{2}{subsection.24}
+\contentsline {subsection}{\numberline {1.3.3}I Cambiamenti}{3}{subsection.25}
+\contentsline {subsection}{\numberline {1.3.4}I Framework attuali}{3}{subsection.26}
+\contentsline {section}{\numberline {1.4}Main Section 2}{3}{section.27}
+\contentsline {chapter}{\numberline {2}Chapter Title Here}{4}{chapter.28}
+\contentsline {section}{\numberline {2.1}Welcome and Thank You}{4}{section.29}
+\contentsline {section}{\numberline {2.2}Learning \LaTeX {}}{4}{section.30}
+\contentsline {subsection}{\numberline {2.2.1}A (not so short) Introduction to \LaTeX {}}{5}{subsection.31}
+\contentsline {subsection}{\numberline {2.2.2}A Short Math Guide for \LaTeX {}}{5}{subsection.32}
+\contentsline {subsection}{\numberline {2.2.3}Common \LaTeX {} Math Symbols}{5}{subsection.33}
+\contentsline {subsection}{\numberline {2.2.4}\LaTeX {} on a Mac}{6}{subsection.34}
+\contentsline {section}{\numberline {2.3}Getting Started with this Template}{6}{section.35}
+\contentsline {subsection}{\numberline {2.3.1}About this Template}{6}{subsection.36}
+\contentsline {section}{\numberline {2.4}What this Template Includes}{7}{section.37}
+\contentsline {subsection}{\numberline {2.4.1}Folders}{7}{subsection.38}
+\contentsline {subsection}{\numberline {2.4.2}Files}{8}{subsection.39}
+\contentsline {section}{\numberline {2.5}Filling in the `\texttt {Thesis.cls}' File}{9}{section.40}
+\contentsline {section}{\numberline {2.6}The `\texttt {Thesis.tex}' File Explained}{10}{section.41}
+\contentsline {section}{\numberline {2.7}Thesis Features and Conventions}{11}{section.42}
+\contentsline {subsection}{\numberline {2.7.1}Printing Format}{11}{subsection.43}
+\contentsline {subsection}{\numberline {2.7.2}Using US Letter Paper}{11}{subsection.44}
+\contentsline {subsection}{\numberline {2.7.3}References}{12}{subsection.45}
+\contentsline {subsection}{\numberline {2.7.4}Figures}{13}{subsection.47}
+\contentsline {subsection}{\numberline {2.7.5}Typesetting mathematics}{14}{subsection.49}
+\contentsline {section}{\numberline {2.8}Sectioning and Subsectioning}{15}{section.51}
+\contentsline {section}{\numberline {2.9}In Closing}{15}{section.52}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{16}{appendix.49}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{16}{appendix.53}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{17}{dummy.50}
+\contentsline {chapter}{Bibliography}{17}{dummy.54}
