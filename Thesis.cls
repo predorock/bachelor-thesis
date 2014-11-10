@@ -190,7 +190,7 @@
 %-------------------------------------------------   
 \examiner{} % Your examiner's name - this is not currently used anywhere in the template, cite it with \examname if you want it
 %-------------------------------------------------   
-\degree{Doctor of Philosophy} % Your degree name - this is currently used in the title page and abstract
+\degree{Dottore in Informatica Musicale} % Your degree name - this is currently used in the title page and abstract
 %-------------------------------------------------   
 \authors{Marco \textsc{Predari}} % Your name - this is used in the title page and abstract
 %-------------------------------------------------   
@@ -201,7 +201,7 @@
 \keywords{} % Keywords for your thesis - this is not currently used anywhere in the template, cite it with \keywordnames if you want it
 %-------------------------------------------------   
 \university{\texorpdfstring{\href{http://www.di.unimi.it} % Your university's URL
-                {Università delgi Studi di Milano}} % Your university's name - this is currently used in the title page
+                {Università degli Studi di Milano}} % Your university's name - this is currently used in the title page
                 {University Name}}
 %-------------------------------------------------   
 \UNIVERSITY{\texorpdfstring{\href{University Web Site URL Here (include http://www.unimi.it)} % Your university's URL
@@ -213,7 +213,7 @@
                 {Department or School Name}}
 %-------------------------------------------------                
 \DEPARTMENT{\texorpdfstring{\href{Department or School Web Site URL Here (include http://)} % Your department's URL
-                {DIPARTIMENTO DI INFORMATIOCA E COMUNICAZIONE}} % Your department's name in capitals - this is not currently used anywhere in the template, cite it with \DEPTNAME if you want it
+                {DIPARTIMENTO DI INFORMATICA E COMUNICAZIONE}} % Your department's name in capitals - this is not currently used anywhere in the template, cite it with \DEPTNAME if you want it
                 {DEPARTMENT OR SCHOOL NAME (IN BLOCK CAPITALS)}}
 %-------------------------------------------------                
 \group{\texorpdfstring{\href{Research Group Web Site URL Here (include http://)} % Your research group's URL
