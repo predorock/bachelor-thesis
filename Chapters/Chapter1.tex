@@ -25,8 +25,14 @@ Inoltre dobbiamo tenere conto che ci sono diversi mercati di applicazioni su cui
 Un altro problema legato alla concorrenza su mercati differenti, è il costo di produzione delle diverse applicazioni in linguaggi diversi; implica avere a disposizione più sviluppatori con diverse competenze e quindi ad aumentare le spese di produzione.
 \subsubsection{Traffico internet da Audiweb}
 -- Dati rilevanti sul traffico Mobile
-\subsection{Problemi legati alle richieste}
-Come ben sappiamo a seconda dei sistema operativo del dispositivo mobile, il linguaggio di programmazione cambia. Inoltre anche i modelli di sviluppo sono differenti, quindi se vogliamo portare una applicazione su x mercati dobbiamo usare x linguaggi di programmazione e x modelli di sviluppo differenti.
+\subsection{Modelli di sviluppo}
+Come abbiamo visto dai dati precedenti il traffico internet proveniente dai dispositivi mobili e nettamente in crescita. Lo scopo di questa tesi si occuperà di ricercare soluzioni per lo sviluppo di applicazioni multi-piattaforma per dispositivi mobili.
+
+Per fare ciò abbiamo bisogno di vedere quali modelli di sviluppo si adattano alle nostre esigenze e competenze.
+
+\subsubsection{Sviluppo Nativo}
+Nello sviluppo nativo di una applicazione dobbiamo tenere conto come detto in precedenza che esistono più mercati(Store di applicazioni) dove una eventuale azienda potrebbe decidere di concentrare la sua applicazione. Ecco le principali piattaforme di sviluppo al momento:
+
 \begin{itemize}
 \item Android, Java
 \item iOS, Objective C / Swift
@@ -35,12 +41,44 @@ Come ben sappiamo a seconda dei sistema operativo del dispositivo mobile, il lin
 \item FirefoxOS, HTML5, CSS, Javascript
 \item Tizen, HTML5, CSS, Javascript
 \end{itemize}
- 
--- Più mercati su cui competere = Più linguaggi da imparare --
--- Riuso del codice non possibile -- 
--- Modelli di sviluppo differenti --
- * chi più ne ha più ne metta *
+
+\subsubsection{Le web app}
+Una realtà che si sta via via prendendo sempre più piede nello sviluppo delle applicazioni e quella delle Web App. Si possono definire Rich Internet Application (RIA) ed hanno tutte le caratteristiche di un programma che normalmente è in esecuzione sul nostro desktop con la differenza che anziché essere installate nel sistema operativo vengono eseguite nel browser web. 
+
+I vantaggi di questo approccio sono: abbiamo la nostra Applicazione in esecuzione in una Sandbox separata dal resto del sistema operativo ovvero il browser web(che può essere generico, non ne serve uno specifico), non dobbiamo preoccuparci degli aggiornamenti (basta aggiornare la pagina nel browser), non dobbiamo imparare a sviluppare in linguaggi e paradigmi diversi, ci bastano HTML5, CSS e Javascript.
+
+Dall'altro lato della medaglia siamo limitati sotto certi aspetti: l'accesso alle funzionalità del sistema operativo è molto limitato, inoltre la memorizzazione di dati risulta molto difficile da implementare(se cancelliamo la cache del browser perdiamo tutti i dati della nostra applicazione). Ma il più grande deficit è che la Web App per funzionare deve essere sempre connessa ad Internet. 
 \subsection{La ricerca della soluzione}  
--- Linguaggi portabili --
--- Cross Platform --
+Abbiamo visto alcuni dei vantaggi e degli svantaggi dei vari tipi di approccio allo sviluppo, è abbiamo questa situazione:
+\begin{center}
+	\begin{tabular}{| l || c | c | }
+		\hline
+							&	Native App	&	Web App       \\
+		\hline
+		\hline
+			Cross Platform?	&	No			&	Si            \\
+		\hline
+			Accesso alle api 
+			del sistema 
+			operativo?		&	Si			&	Più no che si \\
+		\hline
+			Store di dati	&	Si			&	Più no che si \\
+		\hline
+			Connessione 
+			obbligatoria ?	&	No			&	Si 			  \\
+		\hline
+			Velocità di 
+			esecuzione	    &	Ottima	 	& 	Buona \\
+		\hline
+			Tecnologia di 
+			sviluppo		&	Objective C, 
+			  					Java, C++,..	&	HTML, CSS, Javascript \\
+		\hline
+			Update 
+			installabili?	&	Si			&	Non servono!! \\	
+		\hline		
+	\end{tabular}
+\end{center}
+Continuando le ricerche ho scoperto che la scelta migliore non è nei due approcci, ma sta nel mezzo.
+Le \emph{Native Web Application} sono la soluzione discussa in questa tesi, e combinano i fattori positivi dei 2 approcci appena visti, con qualche cambiamento.
  

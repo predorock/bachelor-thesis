@@ -21,39 +21,43 @@
 \contentsline {subsubsection}{\numberline {1.3.1.1}Ciclo di vita di una app}{3}{subsubsection.25}
 \contentsline {subsubsection}{\numberline {1.3.1.2}Pi\IeC {\`u} mercati su cui competere}{3}{subsubsection.26}
 \contentsline {subsubsection}{\numberline {1.3.1.3}Traffico internet da Audiweb}{3}{subsubsection.27}
-\contentsline {subsection}{\numberline {1.3.2}Problemi legati alle richieste}{3}{subsection.28}
-\contentsline {subsection}{\numberline {1.3.3}La ricerca della soluzione}{4}{subsection.29}
-\contentsline {chapter}{\numberline {2}Ricerca degli strumenti adatti per lo sviluppo}{5}{chapter.30}
-\contentsline {section}{\numberline {2.1}Come rendere una applicazione Cross Platform}{5}{section.31}
-\contentsline {subsection}{\numberline {2.1.1}Cordova}{5}{subsection.32}
-\contentsline {subsection}{\numberline {2.1.2}Titanium}{5}{subsection.33}
-\contentsline {subsection}{\numberline {2.1.3}Monaca}{5}{subsection.34}
-\contentsline {section}{\numberline {2.2}Design dell'Applicazione}{5}{section.35}
-\contentsline {subsection}{\numberline {2.2.1}Struttura dell'App}{5}{subsection.36}
-\contentsline {subsection}{\numberline {2.2.2}Ambiente di Sviluppo}{5}{subsection.37}
-\contentsline {chapter}{\numberline {3}Chapter Title Here}{6}{chapter.38}
-\contentsline {section}{\numberline {3.1}Welcome and Thank You}{6}{section.39}
-\contentsline {section}{\numberline {3.2}Learning \LaTeX {}}{6}{section.40}
-\contentsline {subsection}{\numberline {3.2.1}A (not so short) Introduction to \LaTeX {}}{7}{subsection.41}
-\contentsline {subsection}{\numberline {3.2.2}A Short Math Guide for \LaTeX {}}{7}{subsection.42}
-\contentsline {subsection}{\numberline {3.2.3}Common \LaTeX {} Math Symbols}{7}{subsection.43}
-\contentsline {subsection}{\numberline {3.2.4}\LaTeX {} on a Mac}{8}{subsection.44}
-\contentsline {section}{\numberline {3.3}Getting Started with this Template}{8}{section.45}
-\contentsline {subsection}{\numberline {3.3.1}About this Template}{8}{subsection.46}
-\contentsline {section}{\numberline {3.4}What this Template Includes}{9}{section.47}
-\contentsline {subsection}{\numberline {3.4.1}Folders}{9}{subsection.48}
-\contentsline {subsection}{\numberline {3.4.2}Files}{10}{subsection.49}
-\contentsline {section}{\numberline {3.5}Filling in the `\texttt {Thesis.cls}' File}{11}{section.50}
-\contentsline {section}{\numberline {3.6}The `\texttt {Thesis.tex}' File Explained}{12}{section.51}
-\contentsline {section}{\numberline {3.7}Thesis Features and Conventions}{13}{section.52}
-\contentsline {subsection}{\numberline {3.7.1}Printing Format}{13}{subsection.53}
-\contentsline {subsection}{\numberline {3.7.2}Using US Letter Paper}{13}{subsection.54}
-\contentsline {subsection}{\numberline {3.7.3}References}{14}{subsection.55}
-\contentsline {subsection}{\numberline {3.7.4}Figures}{15}{subsection.57}
-\contentsline {subsection}{\numberline {3.7.5}Typesetting mathematics}{16}{subsection.59}
-\contentsline {section}{\numberline {3.8}Sectioning and Subsectioning}{17}{section.61}
-\contentsline {section}{\numberline {3.9}In Closing}{17}{section.62}
+\contentsline {subsection}{\numberline {1.3.2}Modelli di sviluppo}{3}{subsection.28}
+\contentsline {subsubsection}{\numberline {1.3.2.1}Sviluppo Nativo}{3}{subsubsection.29}
+\contentsline {subsubsection}{\numberline {1.3.2.2}Le web app}{4}{subsubsection.30}
+\contentsline {subsection}{\numberline {1.3.3}La ricerca della soluzione}{4}{subsection.31}
+\contentsline {chapter}{\numberline {2}Ricerca degli strumenti adatti per lo sviluppo}{6}{chapter.32}
+\contentsline {section}{\numberline {2.1}Come rendere una applicazione Cross Platform}{6}{section.33}
+\contentsline {subsection}{\numberline {2.1.1}Cordova}{6}{subsection.34}
+\contentsline {subsection}{\numberline {2.1.2}Titanium}{6}{subsection.35}
+\contentsline {subsection}{\numberline {2.1.3}Monaca}{6}{subsection.36}
+\contentsline {section}{\numberline {2.2}Design e Struttura dell'Applicazione}{6}{section.37}
+\contentsline {subsection}{\numberline {2.2.1}Struttura dell'App}{6}{subsection.38}
+\contentsline {section}{\numberline {2.3}La scelta degli strumenti}{7}{section.39}
+\contentsline {subsection}{\numberline {2.3.1}Motivazioni}{7}{subsection.40}
+\contentsline {subsection}{\numberline {2.3.2}Ambiente di sviluppo}{7}{subsection.41}
+\contentsline {chapter}{\numberline {3}Chapter Title Here}{8}{chapter.42}
+\contentsline {section}{\numberline {3.1}Welcome and Thank You}{8}{section.43}
+\contentsline {section}{\numberline {3.2}Learning \LaTeX {}}{8}{section.44}
+\contentsline {subsection}{\numberline {3.2.1}A (not so short) Introduction to \LaTeX {}}{9}{subsection.45}
+\contentsline {subsection}{\numberline {3.2.2}A Short Math Guide for \LaTeX {}}{9}{subsection.46}
+\contentsline {subsection}{\numberline {3.2.3}Common \LaTeX {} Math Symbols}{9}{subsection.47}
+\contentsline {subsection}{\numberline {3.2.4}\LaTeX {} on a Mac}{10}{subsection.48}
+\contentsline {section}{\numberline {3.3}Getting Started with this Template}{10}{section.49}
+\contentsline {subsection}{\numberline {3.3.1}About this Template}{10}{subsection.50}
+\contentsline {section}{\numberline {3.4}What this Template Includes}{11}{section.51}
+\contentsline {subsection}{\numberline {3.4.1}Folders}{11}{subsection.52}
+\contentsline {subsection}{\numberline {3.4.2}Files}{12}{subsection.53}
+\contentsline {section}{\numberline {3.5}Filling in the `\texttt {Thesis.cls}' File}{13}{section.54}
+\contentsline {section}{\numberline {3.6}The `\texttt {Thesis.tex}' File Explained}{14}{section.55}
+\contentsline {section}{\numberline {3.7}Thesis Features and Conventions}{15}{section.56}
+\contentsline {subsection}{\numberline {3.7.1}Printing Format}{15}{subsection.57}
+\contentsline {subsection}{\numberline {3.7.2}Using US Letter Paper}{15}{subsection.58}
+\contentsline {subsection}{\numberline {3.7.3}References}{16}{subsection.59}
+\contentsline {subsection}{\numberline {3.7.4}Figures}{17}{subsection.61}
+\contentsline {subsection}{\numberline {3.7.5}Typesetting mathematics}{18}{subsection.63}
+\contentsline {section}{\numberline {3.8}Sectioning and Subsectioning}{19}{section.65}
+\contentsline {section}{\numberline {3.9}In Closing}{19}{section.66}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{18}{appendix.63}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{20}{appendix.67}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{19}{dummy.64}
+\contentsline {chapter}{Bibliography}{21}{dummy.68}
