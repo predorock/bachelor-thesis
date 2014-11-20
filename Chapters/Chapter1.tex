@@ -27,13 +27,17 @@ Esistono diversi framework sul mercato con caratteristiche diverse tra di loro, 
 Ogni framework adotta strategie diverse per passare dal codice sorgente a quello di destinazione, successivamente verranno discusse alcune di esse.
 
 \subsubsection{Wrapper}
-I framework denominati appunto \texttt{Wrapper} sfruttano il pattern strutturale \texttt{Adapter} e operano quindi una astrazione sul linguaggio di destinazione. In questo caso il framework ha il compito di intermediario tra il linguaggio usato nella applicazione e quello nativo del dispositivo.
+I framework denominati appunto \texttt{Wrapper} sfruttano il design pattern strutturale \texttt{Adapter} e operano quindi una astrazione sul linguaggio di destinazione. In questo caso il framework ha il compito di intermediario tra il linguaggio usato nella applicazione e quello nativo del dispositivo.
 Cordova ad esempio simula un browser web sul linguaggio di astrazione(che in questo caso saranno linguaggi in ambito web) e fornisce delle API per comunicare con la parte nativa del linguaggio del dispositivo.
 La game-engine \texttt{Unity} utilizza lo stesso meccanismo si astrazione, ed anziché simulare un browser utilizza un linguaggio proprietario per poter eseguire la applicazione su più piattaforme.
 Un altro esempio è invece Apache Flex che utilizza come linguaggio di astrazione Adobe Flash e in alcuni casi Javascript.
 \subsubsection{Trasformazione del Codice}
 Alcuni framework potremmo definirli invece \emph{"trasformatori"} ovvero partendo da un loro linguaggio / metalinguaggio(spesso somigliante ad altri linguaggi conosciuti come ad esempio Java) producono un il codice specifico per ogni sistema operativo scelto.
 In particolare il linguaggio utilizzato dal framework è una associazione tra il suo linguaggio è quello di destinazione. Una volta creata e riconosciuta l'associazione, il codice viene trasformato.
+\subsubsection{User Interface}
+Altri tipi di framework invece sono atti alla definizione dell'interfaccia utente della nostra applicazione, ovvero si traducono in un insieme di librerie che utilizzano metalinguaggi e non per \emph{"vestire"} la nostra applicazione a seconda dello scopo.
+Un esempio di un framework di questo tipo è \texttt{Ionic}, il quale fornisce un set di stili e funzioni per la nostra applicazione utilizzando tecnologie web, come ad esempio menù laterali, bottoni, form, icone. La maggior parte di questi tipi di framework fornisce anche linee guida per creare elementi completamente nuovi, nel caso avessimo bisogno di parti più complesse.
+Invece \texttt{Apache Flex}, oltre a fungere da wrapper, fornisce un set di elementi già pronti e parametrizzati (il linguaggio è simile a XML) per poter personalizzare la nostra applicazione. Non è molto versatile ma è particolarmente adatto alle applicazioni nel campo produttivo/finanziario.
 \subsubsection{Vantaggi e Svantaggi}
 Il vantaggio principale nell’utilizzo di un framework consiste nella possibilità di effettuare un deploy rapido e multipiattaforma di un’applicazione: il codice, infatti, si scrive velocemente con un meta linguaggio ed attraverso librerie esistenti precompilate, ed esso viene automaticamente adattato per i diversi sistemi operativi in fase di compilazione.
 

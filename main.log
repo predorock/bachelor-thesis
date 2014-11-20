@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.10.26)  19 NOV 2014 19:04
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.10.26)  20 NOV 2014 23:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -785,6 +785,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  Abstract Page
 ------------------------------------------------------------------------------
 
+Package natbib Warning: Citation `Audiweb Database' on page ii undefined on inp
+ut line 143.
+
+
+Package natbib Warning: Citation `Agosto 2014' on page ii undefined on input li
+ne 143.
+
+
 Overfull \hbox (2.35858pt too wide) in paragraph at lines 149--150
 \OT1/cmr/m/n/10.95 mazione per un de-ter-mi-nato dis-pos-i-tivo e sis-tema op-e
 r-a-tivo. Ci^^Ro pu^^Ro fornire le prestazioni
@@ -808,14 +816,14 @@ i-liz-zano un browser per fornire un as-petto tradizionale
 ------------------------------------------------------------------------------
  Table of Contents
 ------------------------------------------------------------------------------
-(./main.toc [5
-
-
-])
+(./main.toc)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [6]
+ [5
+
+
+]
 ------------------------------------------------------------------------------
  List of Figures
 ------------------------------------------------------------------------------
@@ -823,7 +831,7 @@ i-liz-zano un browser per fornire un as-petto tradizionale
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- [7
+ [6
 
 
 ]
@@ -834,14 +842,14 @@ i-liz-zano un browser per fornire un as-petto tradizionale
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [8
+ [7
 
 
 ]
 ------------------------------------------------------------------------------
  Dedicatory
 ------------------------------------------------------------------------------
-[9
+[8
 
 ] (./Chapters/Chapter1.tex
 Chapter 1.
@@ -859,7 +867,14 @@ soft-ware, un \OT1/cmr/bx/it/10.95 frame-work \OT1/cmr/m/it/10.95 ^^Re un'archi
 tettura
  []
 
-[2] [3]) (./Chapters/Chapter2.tex [4]
+[2]
+Overfull \hbox (0.3895pt too wide) in paragraph at lines 30--34
+\OT1/cmr/m/n/10.95 I frame-work de-nom-i-nati ap-punto \OT1/cmtt/m/n/10.95 Wrap
+per \OT1/cmr/m/n/10.95 sfrut-tano il de-sign pat-tern strut-turale \OT1/cmtt/m/
+n/10.95 Adapter
+ []
+
+[3]) (./Chapters/Chapter2.tex [4]
 Chapter 2.
 ------------------------------------------------------------------------------
  2 Architettura di una Applicazione Ibrida
@@ -891,42 +906,24 @@ Appendix A.
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
-(./main.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
- [9
+(./main.bbl (./main.bbl (./main.bbl (./main.bbl (./main.bbl (./main.bbl
+(./main.bbl (./main.bbl (./main.bbl (./main.bbl (./main.bbl (./main.bbl
+(./main.bbl (./main.bbl
+! TeX capacity exceeded, sorry [text input levels=15].
+\@filef@und ->main.bbl 
+                       
+l.1 \bibliography{BiblioGrafia}
+                               
+If you really absolutely need more capacity,
+you can ask a wizard to enlarge me.
 
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 304.
- (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 304.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 304.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 90509A7A81A5E7D69F45EA31EB2ADFEA;5087.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
- ) 
+ 
 Here is how much of TeX's memory you used:
- 13591 strings out of 495034
- 195247 string characters out of 6181676
- 264766 words of memory out of 5000000
- 16525 multiletter control sequences out of 15000+600000
+ 13600 strings out of 495034
+ 195260 string characters out of 6181676
+ 263766 words of memory out of 5000000
+ 16516 multiletter control sequences out of 15000+600000
  14141 words of font info for 51 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 49i,12n,51p,862b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmtt10.pfb>
-Output written on main.pdf (19 pages, 171224 bytes).
-PDF statistics:
- 342 PDF objects out of 1000 (max. 8388607)
- 307 compressed objects within 4 object streams
- 65 named destinations out of 1000 (max. 500000)
- 281 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 49i,12n,51p,862b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
