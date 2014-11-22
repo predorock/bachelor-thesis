@@ -1,0 +1,10 @@
+
+
+@online{Reference1,
+	title   = {Come scegliere il framework giusto per sviluppare le applicazioni web e mobile},
+	author  = {Alessandro Prunesti},	
+	year    =	{2014},
+	url     = {http://iquii.com/2014/03/07/come-scegliere-il-framework-giusto-per-sviluppare-le-applicazioni-web-e-mobile/},
+	sortkey = {iquii},
+	label   = {\IQUII},
+}

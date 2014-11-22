@@ -1,0 +1,22 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Prunesti(2014)]{web:framework}
+Alessandro Prunesti.
+\newblock Come scegliere il framework giusto per sviluppare le applicazioni web
+  e mobile, 2014.
+\newblock URL
+  \url{http://iquii.com/2014/03/07/come-scegliere-il-framework-giusto-per-sviluppare-le-applicazioni-web-e-mobile/}.
+
+\bibitem[Wikipedia(2014)]{wiki:framework}
+Wikipedia.
+\newblock Framework --- wikipedia{,} l'enciclopedia libera, 2014.
+\newblock URL
+  \url{http://it.wikipedia.org/w/index.php?title=Framework&oldid=67469278}.
+\newblock [Online; in data 21-novembre-2014].
+
+\end{thebibliography}

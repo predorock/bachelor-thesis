@@ -1,4 +1,37 @@
-%\bibliography{BiblioGrafia}
-%\printbibliography[]
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-%\end{document}
+\bibitem[Audiweb(2014)]{stats:audiweb}
+Audiweb.
+\newblock Audiweb pubblica i dati della mobile e total digital audience del
+  mese di luglio 2014, 2014.
+\newblock URL
+  \url{http://www.audiweb.it/news/comunicato-stampa-pc-smartphone-e-tablet-audiweb-misura-la-total-digital-audience-3-2-2-3/}.
+\newblock [Online; da data 10-ottobre-2014].
+
+\bibitem[Wikipedia(2014{\natexlab{a}})]{wiki:framework}
+Wikipedia.
+\newblock Framework --- wikipedia{,} l'enciclopedia libera, 2014{\natexlab{a}}.
+\newblock URL
+  \url{http://it.wikipedia.org/w/index.php?title=Framework&oldid=67469278}.
+\newblock [Online; in data 21-novembre-2014].
+
+\bibitem[Wikipedia(2014{\natexlab{b}})]{wiki:xml}
+Wikipedia.
+\newblock Xml --- wikipedia{,} l'enciclopedia libera, 2014{\natexlab{b}}.
+\newblock URL
+  \url{http://it.wikipedia.org/w/index.php?title=XML&oldid=68753281}.
+\newblock [Online; in data 21-novembre-2014].
+
+\bibitem[Prunesti(2014)]{web:framework}
+Alessandro Prunesti.
+\newblock Come scegliere il framework giusto per sviluppare le applicazioni web
+  e mobile, 2014.
+\newblock URL
+  \url{http://iquii.com/2014/03/07/come-scegliere-il-framework-giusto-per-sviluppare-le-applicazioni-web-e-mobile/}.
+
+\end{thebibliography}
