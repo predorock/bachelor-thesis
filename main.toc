@@ -14,7 +14,7 @@
 \contentsline {subsubsection}{\numberline {1.2.2.1}Wrapper}{3}{subsubsection.18}
 \contentsline {subsubsection}{\numberline {1.2.2.2}Trasformazione del Codice}{3}{subsubsection.19}
 \contentsline {subsubsection}{\numberline {1.2.2.3}User Interface}{3}{subsubsection.20}
-\contentsline {subsubsection}{\numberline {1.2.2.4}Vantaggi e Svantaggi}{4}{subsubsection.22}
+\contentsline {section}{\numberline {1.3}Vantaggi e Svantaggi}{4}{section.22}
 \contentsline {chapter}{\numberline {2}Architettura di una Applicazione Ibrida}{5}{chapter.23}
 \contentsline {section}{\numberline {2.1}Frontend e Backend}{5}{section.24}
 \contentsline {section}{\numberline {2.2}Pattern Client-Server}{5}{section.25}

@@ -1,0 +1,28 @@
+% Chapter Template
+
+\chapter{HTML, CSS, Javascript - L'evoluzione dei linguaggi web} % Main chapter title
+
+%\label{ChapterX} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+%\emph{HTML, CSS, Javascript - L'evoluzione dei linguaggi web} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
+
+Linguaggi come l'HTML(Hypertext Markup Language), CSS(Cascading Style Sheet) e Javascript sono i principali strumenti con quali costruiamo pagine web, ebbene la continua evoluzione di questi linguaggi ha portato il classico sito web, a somigliare molto ad una applicazione vera e propria. 
+Questo però non sarebbe stato possibile se  questi tre linguaggi on si fossero evoluti parallelamente.
+\section{I linguaggi web qualche anno fa} 
+
+\subsection{HTML - Storia}
+Nato in origine per la rappresentazione dei primi testi scientifici reperibili sul web, il linguaggio HTML si è integrato subito in una realtà dove anziché rappresentare testi scientifici, interfacciava l'utente verso il WWW(World Wide Web) che stava rapidamente nascendo.
+Ovviamente nella sua versione embrionale non aveva un granché da offrire a parte i collegamenti ipertestuali(che erano un enorme passo avanti all'epoca), vennero quindi sviluppate successivamente nuove versioni, le quali hanno integrato contenuti multimediali, fogli di stile , script e molto altro.
+Attualmente siamo alla versione HTML5 grazie alla quale possiamo includere molti contenuti di vario tipo all'interno delle nostre pagine. Vedremo nei capitoli successivi che l'HTML non si è fermato solo a descrivere interfacce e/o siti web. 
+\subsection{CSS - Storia}
+Nel 1996 con la versione 4.0 dell'HTML fanno il loro ingresso nel mondo delle tecnologie web i fogli di stile a cascata o CSS(Cascading StyleSheet). Ovvero si tratta di file esterni collegati al documento HTML che descrivevano tutte le sue proprietà di stile, come ad esempio il font, il colore, lo sfondo, etc.
+La separazione delle componenti stilistiche in documenti separati ha migliorato notevolmente l'accessibilità, la flessibilità e il controllo dei documenti in quanto hanno reso il codice HTML meno verboso ed esclusivamente atto alla struttura del documento.
+\subsection{Javascript - Storia}
+Nel 1995 Netscape decise di dotare il proprio browser di un linguaggio di scripting che permettesse ai web designer di interagire con i diversi oggetti della pagina. Brendan Eich(ora in Mozilla) venne incaricato del progetto e creò la prima versione chiamata Mocha. Il fondatore di Netscape Marc Andreessen cambiò il nome nel 1995 in Live script, data appunto la dinamicità ottenuta nelle pagine web tramite il linguaggio. Alla fine dell'anno venne presentato il linguaggio con il nome di Javascript in quanto Netscape lo aveva creato principalmente per l'interazione con le applet Java.
+Successivamente data la risposta di Microsoft con un linguaggio praticamente uguale ma chiamato JScript la le aziende SUN, Netscape e Microsoft decisero di chiedere a ECMA la standardizzare del linguaggio Javascript che venne ri-batezzato con il nome di ECMAScript.
+
+\section{Le Tecnologie web oggi}
+\subsection{Contenuti Multimediali}
+\subsection{Semantica}
+\subsection{Rich Internet Application}
+Con il termine RIA(Rich Internet Application) stiamo indicando una applicazione con caratteristiche riconducibili ad un programma per desktop sviluppato però con tecnologie web, per funzionare hanno bisogno di una connessione ad internet in quanto si connettono solo ad un specifico sito. L'interfaccia però non avviene tramite un browser generico ma con un Site Specific Browser(SSB) ovvero con un browser dedicato alla connessione di uno specifico sito internet.
+In questo modo l'applicazione è isolata in una sandbox dedicata e non può danneggiare e/o influire sul sistema operativo.

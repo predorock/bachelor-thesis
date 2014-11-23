@@ -1,13 +1,14 @@
 \chapter{Architettura di una Applicazione Ibrida}
 In questo capitolo vedremo alcuni concetti utili per lo sviluppo di applicazioni ibride e come sono strutturate.
 \section{Frontend e Backend}
-Queste due parole sono spesso usate in informatica in molti ambiti, nel contesto specifico dell'applicazione \texttt{frontend}(in italiano parte davanti) denota quella parte dell'applicazione responsabile di gestire l'interfaccia utente e i dati provenienti da essa, mentre \texttt{backend}(in italiano parte davanti) indica la sezione dell'applicazione dedita alla gestione dei dati provenienti dalla parte frontend. L'interazione che hanno le due parti è un chiaro esempio di interfaccia.\\
+Queste due parole sono spesso usate in informatica in molti ambiti, nel contesto specifico dell'applicazione \texttt{frontend}(in italiano parte davanti) denota quella parte dell'applicazione responsabile di gestire l'interfaccia utente e i dati provenienti da essa, mentre \texttt{backend}(in italiano parte dietro) indica la sezione dell'applicazione dedita alla gestione dei dati provenienti dalla parte frontend. L'interazione che hanno le due parti è un chiaro esempio di interfaccia.\\
 Spesso nella parte backend si integra una connessione ad un database per una eventuale memorizzazione di dati, questo approccio ha dei vantaggi fin da subito a lato della sicurezza in quanto l'accesso ai dati non e permesso alla parte frontend la quale può usufruire solo delle funzionalità che la parte backend offre.
 \section{Pattern Client-Server}
 Il pattern \texttt{client-server} nel contesto delle reti si riduce alla descrizione di un processo comunicativo in rete in cui un host\footnote{termine che indica un nodo generico nella rete} richiede una risorsa, appunto client, mentre l'entità che fornisce la risorsa a più client è detta server. \\
 Questa struttura comunicativa per lo scambio di risorse negli anni è stata adattata a molti contesti informatici, ormai non descrive più in particolare la comunicazione nelle reti ma più in generale lo scambio di risorse tra più infrastrutture.\\
 Nel capitolo precedente abbiamo descritto frontend e backend, quello è un esempio emblematico di una comunicazione client-server non specificatamente nell'ambito delle reti.
 \section{Struttura e Framework}
+Abbiamo capito che per la progettazione di una applicazione ibrida
 Nella progettazione di una applicazione ibrida bisogna fare delle scelte che sostanzialmente consistono nella scelta dei framework, uno che definisca l'interfaccia utente e la logica dell'applicazione e un altro che si occupi di fornire l'interazione con il sistema operativo.\\
 Dall'interfaccia comunicative che si viene a creare possiamo definirli rispettivamente frontend framework e backend framework.
 
