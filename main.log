@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.10.26)  22 NOV 2014 17:34
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.10.26)  24 NOV 2014 23:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -691,27 +691,34 @@ ex
 \c@csvinputline=\count134
 \c@csvrow=\count135
 \c@csvcol=\count136
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 36.
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 41.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -739,17 +746,8 @@ Package caption Info: End \AtBeginDocument code.
 )
 \c@lstlisting=\count143
 \AtBeginShipoutBox=\box36
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package color Info: Driver file: pdftex.def on input line 130.
-)
-Package hyperref Info: Link coloring ON on input line 38.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package hyperref Info: Link coloring ON on input line 43.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -757,20 +755,20 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count144
 )
-LaTeX Info: Redefining \ref on input line 38.
-LaTeX Info: Redefining \pageref on input line 38.
-LaTeX Info: Redefining \nameref on input line 38.
+LaTeX Info: Redefining \ref on input line 43.
+LaTeX Info: Redefining \pageref on input line 43.
+LaTeX Info: Redefining \nameref on input line 43.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 79.
+LaTeX Font Info:    Try loading font information for U+msa on input line 84.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 79.
+LaTeX Font Info:    Try loading font information for U+msb on input line 84.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -785,7 +783,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  Abstract Page
 ------------------------------------------------------------------------------
 
-Overfull \hbox (2.35858pt too wide) in paragraph at lines 148--149
+Overfull \hbox (2.35858pt too wide) in paragraph at lines 153--154
 \OT1/cmr/m/n/10.95 mazione per un de-ter-mi-nato dis-pos-i-tivo e sis-tema op-e
 r-a-tivo. Ci^^Ro pu^^Ro fornire le prestazioni
  []
@@ -793,7 +791,7 @@ r-a-tivo. Ci^^Ro pu^^Ro fornire le prestazioni
 [2
 
 ]
-Overfull \hbox (14.81639pt too wide) in paragraph at lines 150--151
+Overfull \hbox (14.81639pt too wide) in paragraph at lines 155--156
  []\OT1/cmr/bx/n/10.95 App Web \OT1/cmr/m/n/10.95 Molti nuovi dis-pos-i-tivi ut
 i-liz-zano un browser per fornire un as-petto tradizionale
  []
@@ -853,14 +851,14 @@ Chapter 1.
 
 
 ]
-Overfull \hbox (8.76826pt too wide) in paragraph at lines 19--21
+Overfull \hbox (8.76826pt too wide) in paragraph at lines 20--22
 []\OT1/cmr/m/it/10.95 In in-for-mat-ica, e spec-i-fi-cata-mente nello sviluppo 
 soft-ware, un \OT1/cmr/bx/it/10.95 frame-work \OT1/cmr/m/it/10.95 ^^Re un'archi
 tettura
  []
 
 [2]
-Overfull \hbox (0.3895pt too wide) in paragraph at lines 29--33
+Overfull \hbox (0.3895pt too wide) in paragraph at lines 30--34
 \OT1/cmr/m/n/10.95 I frame-work de-nom-i-nati ap-punto \OT1/cmtt/m/n/10.95 Wrap
 per \OT1/cmr/m/n/10.95 sfrut-tano il de-sign pat-tern strut-turale \OT1/cmtt/m/
 n/10.95 Adapter
@@ -885,24 +883,29 @@ Chapter 3.
  3 La soluzione proposta
 ------------------------------------------------------------------------------
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 3.
+Underfull \hbox (badness 10000) in paragraph at lines 5--7
 
-) (./Chapters/Chapter4.tex [7
+ []
 
-]
+
+Package natbib Warning: Citation `wiki:dom' on page 7 undefined on input line 9
+.
+
+[7
+
+]) (./Chapters/Chapter4.tex [8] [9]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 Conclusioni
 ------------------------------------------------------------------------------
-) (./Appendices/AppendixA.tex [8
+) (./Appendices/AppendixA.tex [10
 
 ]
 Appendix A.
 ------------------------------------------------------------------------------
  A Appendix Title Here
 ------------------------------------------------------------------------------
-) [9
+) [11
 
 ]
 ------------------------------------------------------------------------------
@@ -946,43 +949,47 @@ re-[]le-[]applicazioni-[]web-[]e-[]mobile/$[][]\OT1/cmr/m/n/10.95 .
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 303.
- [10
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 308.
+[12
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 303.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 308.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 303.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 303.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 308.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 308.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 61A68BA62903DC819C4F65A4391AA0D4;5601.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 303.
+(rerunfilecheck)             Checksum: E82FCE4ECDAFDFB47912F8947A8131C7;5667.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 308.
  ) 
 Here is how much of TeX's memory you used:
- 13620 strings out of 495034
- 195599 string characters out of 6181676
+ 13626 strings out of 495034
+ 195654 string characters out of 6181676
  264758 words of memory out of 5000000
- 16540 multiletter control sequences out of 15000+600000
- 16331 words of font info for 60 fonts, out of 8000000 for 9000
+ 16542 multiletter control sequences out of 15000+600000
+ 16639 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,12n,51p,864b,408s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (20 pages, 206335 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (22 pages, 220898 bytes).
 PDF statistics:
- 391 PDF objects out of 1000 (max. 8388607)
- 352 compressed objects within 4 object streams
- 73 named destinations out of 1000 (max. 500000)
+ 405 PDF objects out of 1000 (max. 8388607)
+ 363 compressed objects within 4 object streams
+ 76 named destinations out of 1000 (max. 500000)
  305 words of extra memory for PDF output out of 10000 (max. 10000000)
 

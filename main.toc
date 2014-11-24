@@ -21,23 +21,23 @@
 \contentsline {section}{\numberline {2.3}Struttura e Framework}{6}{section.27}
 \contentsline {section}{\numberline {2.4}Ciclo di vita di una app}{6}{section.28}
 \contentsline {chapter}{\numberline {3}La soluzione proposta}{7}{chapter.29}
-\contentsline {subsection}{\numberline {3.0.1}HTML5}{7}{subsection.30}
-\contentsline {section}{\numberline {3.1}Ionic}{7}{section.31}
-\contentsline {subsection}{\numberline {3.1.1}AngularJS}{7}{subsection.32}
-\contentsline {section}{\numberline {3.2}Cordova}{7}{section.33}
-\contentsline {subsection}{\numberline {3.2.1}ngCordova}{7}{subsection.34}
-\contentsline {section}{\numberline {3.3}API Rest}{7}{section.35}
-\contentsline {chapter}{\numberline {4}Conclusioni}{8}{chapter.36}
+\contentsline {section}{\numberline {3.1}Le Tecnologie Web}{7}{section.30}
+\contentsline {subsection}{\numberline {3.1.1}Ionic}{7}{subsection.31}
+\contentsline {subsection}{\numberline {3.1.2}AngularJS}{8}{subsection.33}
+\contentsline {section}{\numberline {3.2}Cordova}{9}{section.34}
+\contentsline {subsection}{\numberline {3.2.1}ngCordova}{9}{subsection.35}
+\contentsline {section}{\numberline {3.3}API Rest}{9}{section.36}
+\contentsline {chapter}{\numberline {4}Conclusioni}{10}{chapter.37}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{9}{appendix.37}
-\contentsline {section}{\numberline {A.1}HTML5}{9}{section.38}
-\contentsline {section}{\numberline {A.2}AngularJS}{9}{section.39}
-\contentsline {section}{\numberline {A.3}Architettura Client / Server}{9}{section.40}
-\contentsline {section}{\numberline {A.4}Patterns}{9}{section.41}
-\contentsline {subsection}{\numberline {A.4.1}MVVM}{9}{subsection.42}
-\contentsline {subsection}{\numberline {A.4.2}MVC}{9}{subsection.43}
-\contentsline {section}{\numberline {A.5}HTML5}{9}{section.44}
-\contentsline {section}{\numberline {A.6}Dependency Injection}{9}{section.45}
-\contentsline {section}{\numberline {A.7}Inversion Of Control}{9}{section.46}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{11}{appendix.38}
+\contentsline {section}{\numberline {A.1}HTML5}{11}{section.39}
+\contentsline {section}{\numberline {A.2}AngularJS}{11}{section.40}
+\contentsline {section}{\numberline {A.3}Architettura Client / Server}{11}{section.41}
+\contentsline {section}{\numberline {A.4}Patterns}{11}{section.42}
+\contentsline {subsection}{\numberline {A.4.1}MVVM}{11}{subsection.43}
+\contentsline {subsection}{\numberline {A.4.2}MVC}{11}{subsection.44}
+\contentsline {section}{\numberline {A.5}HTML5}{11}{section.45}
+\contentsline {section}{\numberline {A.6}Dependency Injection}{11}{section.46}
+\contentsline {section}{\numberline {A.7}Inversion Of Control}{11}{section.47}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{10}{dummy.47}
+\contentsline {chapter}{Bibliography}{12}{dummy.48}

@@ -1,16 +1,28 @@
+\lhead{\emph{Capitolo 3}}
 \chapter{La soluzione proposta}
 In questo capitolo discuteremo la soluzione intrapresa per lo sviluppo veloce di applicazioni mobile multi-piattaforma con le tecnologie scelte e le scelte progettuali intraprese. 
 \section{Le Tecnologie Web}
-Le tecnologie web sono sempre più utilizzate per lo sviluppo di applicazioni mobile multi-piattaforma, molti framework come \texttt{Ionic}, \texttt{Foundation}, \textt{Lungo} utilizzano già HTML5, CSS, Javascript per le loro librerie, ottimizzate per dispositivi mobili.\\
+Le tecnologie web sono sempre più utilizzate per lo sviluppo di applicazioni mobile multi-piattaforma, molti framework come \texttt{Ionic}, \texttt{Foundation}, \texttt{Lungo} utilizzano già HTML5, CSS, Javascript per le loro librerie, ottimizzate per dispositivi mobili.\\
 In particolare questi framewrok mettono a disposizione una serie di componenti già pronti come ad esempio bottoni, menù laterali, form, liste, tabelle, icone, etc\dots e consentono di abbinarli tra di loro come meglio si ritene, con la possibilità di personalizzarli ulteriormente.\\
 \subsection{Ionic}
-Tra i vari framework che utilizzano tecnologie web ho scelto Ionic
-\subsubsection{Caratteristiche}
-Ionic offre componenti e librerie pensati per uno sviluppo ibrido dell'applicazione, inoltre è stato sviluppato riducendo al minimo la manipolazione del DOM\footnote{Il Document Object Model (spesso abbreviato come DOM), letteralmente modello a oggetti del documento, è una forma di rappresentazione dei documenti strutturati come modello orientato agli oggetti.\citeauthor{wiki:dom}Manipolando gli oggetti delle pagine web, ad esempio con delle animazioni, introduciamo della computazione aggiuntiva al nostro browser che può rallentarne le prestazioni} garantendo performance molto competitive.\\
 
-I componenti di Ionic sono tutti  
+Ionic offre componenti e librerie pensati per uno sviluppo ibrido dell'applicazione, inoltre è stato sviluppato riducendo al minimo la manipolazione del DOM\footnote{Il Document Object Model (spesso abbreviato come DOM), letteralmente modello a oggetti del documento, è una forma di rappresentazione dei documenti strutturati come modello orientato agli oggetti.\cite{wiki:dom} gli oggetti delle pagine web, ad esempio con delle animazioni, introduciamo della computazione aggiuntiva al nostro browser che può rallentarne le prestazioni} garantendo performance molto competitive.\\
+I componenti di Ionic vengono ovviamente strutturati tramite HTML5, aggiungendo classi css specifiche del framework. Inoltre 
+Ionic fornisce uno strumento molto interessante da linea di comando che permette di scaricare diversi modelli di applicazione già pronti in modo da non dover tutte le volte configurare da capo la nostra applicazione con il framework. Inoltre ci predispone i file in una maniera logica ben precisa cosicché se volessimo in un futuro aggiungere codice e/o altre librerie possiamo farlo con molta facilità.
+I componenti non sono altro che elementi del linguaggio HTML, vengono forniti con una serie di classi CSS caratteristiche del framework, pensate in modo da essere componibili tra di loro. Ionic fornisce inoltre dei tag propri del framework che possono includere elementi più complessi come ad esempio menù laterali.
 
+Il cuore di Ionic e tutte le sue funzionlità sono state sviluppate in AngularJS (framewrok che vedremo nel capitolo successivo) il che rende questo framework ancora più versatile e potente.
 \subsection{AngularJS}
+AngularJS è un framework Javascript ideato da \emph{Google} per rendere dinamiche le pagine web. E' stato pensato con un modello di sviluppo \emph{Model View Controlled} quindi l'applicazione che si andrà a sviluppare avrà un serie di \emph{view} dinamiche, a loro volta gestite da entità chiamate \emph{controller}.\\
+Una delle caratteristiche che lo rende un framework molto potente da usare è sicuramente il \texttt{Data Bindign}. Il Data Binding è un modo per aggiornare dati in una vista ogni volta che questo cambia senza bisogno di aggiornare la pagina o di modificare il DOM. La cosa è reciproca, se i dati di modificano nella \emph{view} (come potrebbe accadere nel caso di un form) questi sono automaticamente aggiornati dinamicamente all'interno della nostra applicazione.\\
+Abbiamo parlato prima di \emph{controller}, sostanzialmente sono delle entità che controllano il comportamento degli elementi della vista. All'interno dei \emph{controller} possiamo definirci tutti i metodi e le funzioni che desideriamo inserire all'interno della vista.\\
+AngularJS consente inoltre di creare i propri tag HTML personalizzati, con la possibilità di aggiungere nuovi attributi opzionali e non. Il punto di forza delle direttive e la loro riusabilità, in quanto , se scritte bene, diventano tag e/o attributi riutilizzabili come del comune codice HTML.\\
+Un altro punto di forza è sicuramente la \texttt{Dependency Injection} (verrà spiegata in dettaglio nei capitoli successivi). Questa caratteristica in AngularJS consiste nel descrivere come è connessa la mia applicazione, non abbiamo bisogno di un metodo \emph{main()}, come ad esempio si usa in \emph{Java}, ma possiamo decidere a priori di quali moduli è composta la nostra applicazione.
+\begin{center}
+\emph{This means that any component which does not fit your needs can easily be replaced.} 
+\end{center}
+Come abbiamo appena detto, una applicazione in AngularJS può essere facilmente divisa in moduli. Questa caratteristica garantisce una riduzione della complessità del codice che si andrebbe a scrivere, inoltre come il suo inventore Minsko Hevery ripete nella maggior parte delle sue conferenze, AngularJS è stato pensato per essere facilmente testabile.
+
 \section{Cordova}
 \subsection{ngCordova}
 \section{API Rest}
