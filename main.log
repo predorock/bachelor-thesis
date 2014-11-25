@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.10.26)  25 NOV 2014 01:24
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.10.26)  25 NOV 2014 17:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -907,19 +907,39 @@ Cor-dova \OT1/cmr/m/n/10.95 e \OT1/cmr/m/it/10.95 An-gu-larJS \OT1/cmr/m/n/10.9
 
  []
 
-) (./Chapters/Chapter4.tex [10] [11]
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--63
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 64--67
+
+ []
+
+) (./Chapters/Chapter4.tex [12]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 Conclusioni
 ------------------------------------------------------------------------------
-) (./Appendices/AppendixA.tex [12
+) (./Appendices/AppendixA.tex [13
 
 ]
 Appendix A.
 ------------------------------------------------------------------------------
  A Appendix Title Here
 ------------------------------------------------------------------------------
-) [13
+) [14
 
 ]
 ------------------------------------------------------------------------------
@@ -967,7 +987,7 @@ re-[]le-[]applicazioni-[]web-[]e-[]mobile/$[][]\OT1/cmr/m/n/10.95 .
 Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 308.
-[14
+[15
 
 
 ]
@@ -975,81 +995,35 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 308.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 308.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 308.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: B15D90425DA516BBFBC428D84A1136A6;6282
-(rerunfilecheck)             After:  8992475CCAF7476F0B4686650D760A23;7262.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: B0D81C77DE9A3C4546EEAE2E9BEDB6B0;7977.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 308.
  ) 
 Here is how much of TeX's memory you used:
- 13657 strings out of 495034
- 196017 string characters out of 6181676
+ 13661 strings out of 495034
+ 196137 string characters out of 6181676
  264758 words of memory out of 5000000
- 16547 multiletter control sequences out of 15000+600000
+ 16558 multiletter control sequences out of 15000+600000
  16639 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,12n,51p,864b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{dummy.53} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.50} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.49} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.47} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.46} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.44} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix.43} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.42} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.40} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.38} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.35} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.34} has been referenced but does not exist,
- replaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl
-12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (24 pages, 230164 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (25 pages, 233623 bytes).
 PDF statistics:
- 459 PDF objects out of 1000 (max. 8388607)
- 414 compressed objects within 5 object streams
- 102 named destinations out of 1000 (max. 500000)
- 337 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 499 PDF objects out of 1000 (max. 8388607)
+ 453 compressed objects within 5 object streams
+ 95 named destinations out of 1000 (max. 500000)
+ 425 words of extra memory for PDF output out of 10000 (max. 10000000)
 

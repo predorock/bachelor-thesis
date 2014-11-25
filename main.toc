@@ -31,24 +31,28 @@
 \contentsline {subsection}{\numberline {3.2.3}Cordova Core}{10}{subsection.39}
 \contentsline {subsection}{\numberline {3.2.4}ngCordova}{10}{subsection.40}
 \contentsline {section}{\numberline {3.3}Il trio Magico}{10}{section.41}
-\contentsline {subsection}{\numberline {3.3.1}Un esempio di Sviluppo rapido}{11}{subsection.42}
-\contentsline {subsection}{\numberline {3.3.2}Ide}{11}{subsection.43}
-\contentsline {subsection}{\numberline {3.3.3}SDK}{11}{subsection.44}
-\contentsline {section}{\numberline {3.4}API Rest}{11}{section.45}
-\contentsline {subsection}{\numberline {3.4.1}Simple Rest Api}{11}{subsection.46}
-\contentsline {subsection}{\numberline {3.4.2}XHR}{11}{subsection.47}
-\contentsline {subsection}{\numberline {3.4.3}Firebase}{11}{subsection.48}
-\contentsline {chapter}{\numberline {4}Conclusioni}{12}{chapter.49}
+\contentsline {subsection}{\numberline {3.3.1}Un esempio di Sviluppo rapido}{10}{subsection.42}
+\contentsline {subsection}{\numberline {3.3.2}IDE}{11}{subsection.43}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Creazione}{11}{subsubsection.44}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Inclusione di Librerie esterne}{11}{subsubsection.45}
+\contentsline {subsubsection}{\numberline {3.3.2.3}Deploy}{11}{subsubsection.46}
+\contentsline {subsubsection}{\numberline {3.3.2.4}Live Debug}{11}{subsubsection.47}
+\contentsline {subsection}{\numberline {3.3.3}SDK}{11}{subsection.48}
+\contentsline {section}{\numberline {3.4}API Rest}{11}{section.49}
+\contentsline {subsection}{\numberline {3.4.1}Simple Rest Api}{11}{subsection.50}
+\contentsline {subsection}{\numberline {3.4.2}XHR}{12}{subsection.51}
+\contentsline {subsection}{\numberline {3.4.3}Firebase}{12}{subsection.52}
+\contentsline {chapter}{\numberline {4}Conclusioni}{13}{chapter.53}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{13}{appendix.50}
-\contentsline {section}{\numberline {A.1}HTML5}{13}{section.51}
-\contentsline {section}{\numberline {A.2}AngularJS}{13}{section.52}
-\contentsline {section}{\numberline {A.3}Architettura Client / Server}{13}{section.53}
-\contentsline {section}{\numberline {A.4}Patterns}{13}{section.54}
-\contentsline {subsection}{\numberline {A.4.1}MVVM}{13}{subsection.55}
-\contentsline {subsection}{\numberline {A.4.2}MVC}{13}{subsection.56}
-\contentsline {section}{\numberline {A.5}HTML5}{13}{section.57}
-\contentsline {section}{\numberline {A.6}Dependency Injection}{13}{section.58}
-\contentsline {section}{\numberline {A.7}Inversion Of Control}{13}{section.59}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{14}{appendix.54}
+\contentsline {section}{\numberline {A.1}HTML5}{14}{section.55}
+\contentsline {section}{\numberline {A.2}AngularJS}{14}{section.56}
+\contentsline {section}{\numberline {A.3}Architettura Client / Server}{14}{section.57}
+\contentsline {section}{\numberline {A.4}Patterns}{14}{section.58}
+\contentsline {subsection}{\numberline {A.4.1}MVVM}{14}{subsection.59}
+\contentsline {subsection}{\numberline {A.4.2}MVC}{14}{subsection.60}
+\contentsline {section}{\numberline {A.5}HTML5}{14}{section.61}
+\contentsline {section}{\numberline {A.6}Dependency Injection}{14}{section.62}
+\contentsline {section}{\numberline {A.7}Inversion Of Control}{14}{section.63}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{14}{dummy.60}
+\contentsline {chapter}{Bibliography}{15}{dummy.64}
