@@ -26,9 +26,7 @@ Ionic offre componenti e librerie pensati per uno sviluppo ibrido dell'applicazi
 I componenti di Ionic vengono ovviamente strutturati tramite HTML5, aggiungendo classi css specifiche del framework. Inoltre 
 Ionic fornisce uno strumento molto interessante da linea di comando che permette di scaricare diversi modelli di applicazione già pronti in modo da non dover tutte le volte configurare da capo la nostra applicazione con il framework. Inoltre ci predispone i file in una maniera logica ben precisa cosicché se volessimo in un futuro aggiungere codice e/o altre librerie possiamo farlo con molta facilità.
 I componenti non sono altro che elementi del linguaggio HTML, vengono forniti con una serie di classi CSS caratteristiche del framework, pensate in modo da essere componibili tra di loro. Ionic fornisce inoltre dei tag propri del framework che possono includere elementi più complessi come ad esempio menù laterali.
-
-Il cuore di Ionic e tutte le sue funzionlità sono state sviluppate in AngularJS il che rende questo framework ancora più versatile e potente.
-
+Il cuore di Ionic e tutte le sue funzionlità sono state sviluppate in AngularJS il che rende questo framework ancora più versatile e potente. Inoltre tutti il foglio di stile che include Ionic fa uso di SASS e ci da la possibilità di personalizzare colori e forme dei componenti semplicemente ricompilando i file \emph{.scss}.
 \section{Cordova/Phonegap}
 Per chi magari è nuovo nel settore delle applicazioni multi-piattaforma, o per chi ci è entrato da poco avrà fatto sicuramente confusione tra queste due nomenclature \texttt{Cordova} e \texttt{Phonegap}, ecco quindi una delucidazione sul fatto.
 \subsection{Storia}
@@ -43,10 +41,9 @@ Infine per quanto riguarda lo sviluppo dei plugin verso il futuro, la comunità 
 \subsection{ngCordova}
 Il perché in questa tesi si parli di \emph{Cordova} e \emph{AngularJS} è dato dall'esistenza di \texttt{ngCordova}. Questa libreria nasce da una idea di Paolo Bernasconi e Max Lynch che hanno avuto l'idea(geniale) di unire la l'efficenza e la potenza di \emph{AngularJS} con la versatilità di \emph{Cordova}. Ne è nato un framework per lo sviluppo di applicazioni ibride direttamente collegato alle funzionalità del dispositivo gestibile tramite il codice efficiente di \emph{AngularJS}.\\
 Per chi vuole sviluppare applicazioni ibride multi piattaforma, questa libreria rende decisamente più rapido ed efficiente il processo di sviluppo.
-\section{Il trio Magico}
+\section{Un esempio di Sviluppo rapido}
+\subsection{Il trio Magico}
 La mia scelta delle tecnologie da utilizzare per lo sviluppo ibrido di applicazioni multi piattaforma si è incentrata soprattutto sull'efficienza e la compatibilità. Decidendo di utilizzare \texttt{AngularJS} + \texttt{Cordova} + \texttt{ngCordova} ottengo un ambiente di sviluppo rapido ed efficiente, in quanto tutti e tre i framework sono stati sviluppati per una stretta collaborazione, e allo stato dell'arte attuale delle tecnologie penso che sia una delle scelte migliori e rapide di sviluppo.
-\subsection{Un esempio di Sviluppo rapido}
-Nella pratica questo è il procedimento che ho adottato per lo sviluppo di una applicazione ibrida.
 \subsection{IDE}
 Ho scelto di usare una \emph{Integrated Develop Enviroment}(IDE) per lo sviluppo della mia applicazione in modo tale da tenere sotto controllo tutti i file del mio progetto e per poterli organizzare in una struttura di tipo modulare. 
 Tra i diversi IDE disponibili ho scelto di usare \emph{NetBeans} in quanto può predisporre di un ambiente adatto allo sviluppo di applicazioni multi-piattaforma. In particolare è possibile partire da un modello di progetto basato su \emph{Cordova} oppure semplicemente in \emph{HTML5} ed inoltre è molto semplice configurare le SDK dedicate per il deploy sui vari sistemi operativi.

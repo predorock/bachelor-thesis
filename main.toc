@@ -30,8 +30,8 @@
 \contentsline {subsection}{\numberline {3.2.2}Differenze}{10}{subsection.37}
 \contentsline {subsection}{\numberline {3.2.3}Cordova Core}{10}{subsection.39}
 \contentsline {subsection}{\numberline {3.2.4}ngCordova}{10}{subsection.40}
-\contentsline {section}{\numberline {3.3}Il trio Magico}{11}{section.41}
-\contentsline {subsection}{\numberline {3.3.1}Un esempio di Sviluppo rapido}{11}{subsection.42}
+\contentsline {section}{\numberline {3.3}Un esempio di Sviluppo rapido}{11}{section.41}
+\contentsline {subsection}{\numberline {3.3.1}Il trio Magico}{11}{subsection.42}
 \contentsline {subsection}{\numberline {3.3.2}IDE}{11}{subsection.43}
 \contentsline {subsubsection}{\numberline {3.3.2.1}Creazione}{11}{subsubsection.44}
 \contentsline {subsubsection}{\numberline {3.3.2.2}Inclusione di Librerie esterne}{11}{subsubsection.45}
