@@ -4,14 +4,7 @@ In questo capitolo discuteremo la soluzione intrapresa per lo sviluppo veloce di
 \section{Le Tecnologie Web}
 Le tecnologie web sono sempre più utilizzate per lo sviluppo di applicazioni mobile multi-piattaforma, molti framework come \texttt{Ionic}, \texttt{Foundation}, \texttt{Lungo} utilizzano già HTML5, CSS, Javascript per le loro librerie, ottimizzate per dispositivi mobili.\\
 In particolare questi framewrok mettono a disposizione una serie di componenti già pronti come ad esempio bottoni, menù laterali, form, liste, tabelle, icone, etc\dots e consentono di abbinarli tra di loro come meglio si ritene, con la possibilità di personalizzarli ulteriormente.\\
-\subsection{Ionic}
-
-Ionic offre componenti e librerie pensati per uno sviluppo ibrido dell'applicazione, inoltre è stato sviluppato riducendo al minimo la manipolazione del DOM\footnote{Il Document Object Model (spesso abbreviato come DOM), letteralmente modello a oggetti del documento, è una forma di rappresentazione dei documenti strutturati come modello orientato agli oggetti.\cite{wiki:dom} gli oggetti delle pagine web, ad esempio con delle animazioni, introduciamo della computazione aggiuntiva al nostro browser che può rallentarne le prestazioni} garantendo performance molto competitive.\\
-I componenti di Ionic vengono ovviamente strutturati tramite HTML5, aggiungendo classi css specifiche del framework. Inoltre 
-Ionic fornisce uno strumento molto interessante da linea di comando che permette di scaricare diversi modelli di applicazione già pronti in modo da non dover tutte le volte configurare da capo la nostra applicazione con il framework. Inoltre ci predispone i file in una maniera logica ben precisa cosicché se volessimo in un futuro aggiungere codice e/o altre librerie possiamo farlo con molta facilità.
-I componenti non sono altro che elementi del linguaggio HTML, vengono forniti con una serie di classi CSS caratteristiche del framework, pensate in modo da essere componibili tra di loro. Ionic fornisce inoltre dei tag propri del framework che possono includere elementi più complessi come ad esempio menù laterali.
-
-Il cuore di Ionic e tutte le sue funzionlità sono state sviluppate in AngularJS (framewrok che vedremo nel capitolo successivo) il che rende questo framework ancora più versatile e potente.
+\subsection{SASS}
 \subsection{AngularJS}
 AngularJS è un framework Javascript ideato da \emph{Google} per rendere dinamiche le pagine web. E' stato pensato con un modello di sviluppo \emph{Model View Controlled} quindi l'applicazione che si andrà a sviluppare avrà un serie di \emph{view} dinamiche, a loro volta gestite da entità chiamate \emph{controller}.\\
 Una delle caratteristiche che lo rende un framework molto potente da usare è sicuramente il \texttt{Data Bindign}. Il Data Binding è un modo per aggiornare dati in una vista ogni volta che questo cambia senza bisogno di aggiornare la pagina o di modificare il DOM. La cosa è reciproca, se i dati di modificano nella \emph{view} (come potrebbe accadere nel caso di un form) questi sono automaticamente aggiornati dinamicamente all'interno della nostra applicazione.\\
@@ -23,6 +16,34 @@ Un altro punto di forza è sicuramente la \texttt{Dependency Injection} (verrà 
 \end{center}
 Come abbiamo appena detto, una applicazione in AngularJS può essere facilmente divisa in moduli. Questa caratteristica garantisce una riduzione della complessità del codice che si andrebbe a scrivere, inoltre come il suo inventore Minsko Hevery ripete nella maggior parte delle sue conferenze, AngularJS è stato pensato per essere facilmente testabile.
 
-\section{Cordova}
+\subsection{Ionic}
+Ionic offre componenti e librerie pensati per uno sviluppo ibrido dell'applicazione, inoltre è stato sviluppato riducendo al minimo la manipolazione del DOM\footnote{Il Document Object Model (spesso abbreviato come DOM), letteralmente modello a oggetti del documento, è una forma di rappresentazione dei documenti strutturati come modello orientato agli oggetti.\cite{wiki:dom} gli oggetti delle pagine web, ad esempio con delle animazioni, introduciamo della computazione aggiuntiva al nostro browser che può rallentarne le prestazioni} garantendo performance molto competitive.\\
+I componenti di Ionic vengono ovviamente strutturati tramite HTML5, aggiungendo classi css specifiche del framework. Inoltre 
+Ionic fornisce uno strumento molto interessante da linea di comando che permette di scaricare diversi modelli di applicazione già pronti in modo da non dover tutte le volte configurare da capo la nostra applicazione con il framework. Inoltre ci predispone i file in una maniera logica ben precisa cosicché se volessimo in un futuro aggiungere codice e/o altre librerie possiamo farlo con molta facilità.
+I componenti non sono altro che elementi del linguaggio HTML, vengono forniti con una serie di classi CSS caratteristiche del framework, pensate in modo da essere componibili tra di loro. Ionic fornisce inoltre dei tag propri del framework che possono includere elementi più complessi come ad esempio menù laterali.
+
+Il cuore di Ionic e tutte le sue funzionlità sono state sviluppate in AngularJS il che rende questo framework ancora più versatile e potente.
+
+\section{Cordova/Phonegap}
+Per chi magari è nuovo nel settore delle applicazioni multi-piattaforma, o per chi ci è entrato da poco avrà fatto sicuramente confusione tra queste due nomenclature \texttt{Cordova} e \texttt{Phonegap}, ecco quindi una delucidazione sul fatto.
+\subsection{Storia}
+Phonegap è stato creato nel 2009 da una startup chiamata \emph{Nitobi} come progetto open-source. Si proponeva di fornire un metodo per l'accesso alle funzionalità native del dispositivo tramite il meccanismo di wrapping che è stato discusso nel capitolo precedente a proposito dei framework. L'obiettivo di questa piattaforma era appunto quello di poter creare delle applicazioni che potessero essere usate nei dispositivi mobili, tramite l'utilizzo di tecnologie web come HTML5, CSS e Javascript, ma con ancora la possibilità di accedere alle funzionalità native del dispositivo.\\
+Nel 2011 \emph{Adobe} ha acquisito la startup Nitobi assieme ai diritti di Phonegap, e il codice open-source della piattaforma è stato donato all'\emph{Apache Software Foundation} con il nome di \texttt{Cordova}
+\subsection{Differenze}
+La vera differenza tra \texttt{Cordova} e \texttt{Phonegap}, viene descritta da \emph{Adobe} analogamente come la differenza tra \texttt{Blink}\footnote{Blink è la web browser engine di Google Chrome\cite{wiki:blink}} e \emph{Google Chrome}. Ovvero \emph{Cordova} e il cuore della piattaforma mentre \emph{Phonegap} aggiunge a \emph{Cordova} delle funzionalità proprietarie di \emph{Adobe}.\\
+Personalmente ho scelto di utilizzare \emph{Cordova} per essere libero da qualsiasi vincolo proprietario.
+\subsection{Cordova Core}
+Cordova quindi offre una serie di potenti API in linguaggio Javascript per poter accedere alle funzionalità native del dispositivo. In difesa dello sviluppo nativo alcuni programmatori accusano \emph{Cordova} di non possedere tutte le possibilità di accesso a basso livello che invece si avrebbero. \emph{Corodova} è una realtà open-source e in quanto tale si è evoluta nel tempo offrendo sempre più funzionalità che hanno chiuso i divario che si credeva esservi tra questi due tipi di approcci.\\
+Infine per quanto riguarda lo sviluppo dei plugin verso il futuro, la comunità open-source di \emph{Cordova} sta spronando gli sviluppatori a creare nuove funzionalità sempre più generiche, in modo tale che con l'evolversi delle tecnologie, e soprattutto dei browser web, siano sempre compatibili.
 \subsection{ngCordova}
+Il perché in questa tesi si parli di \emph{Cordova} e \emph{AngularJS} è dato dall'esistenza di \texttt{ngCordova}. Questa libreria nasce da una idea di Paolo Bernasconi e Max Lynch che hanno avuto l'idea(geniale) di unire la l'efficenza e la potenza di \emph{AngularJS} con la versatilità di \emph{Cordova}. Ne è nato un framework per lo sviluppo di applicazioni ibride direttamente collegato alle funzionalità del dispositivo gestibile tramite il codice efficiente di \emph{AngularJS}.\\
+Per chi vuole sviluppare applicazioni ibride multi piattaforma, questa libreria rende decisamente più rapido ed efficiente il processo di sviluppo.
+\section{Il trio Magico}
+La mia scelta delle tecnologie da utilizzare per lo sviluppo ibrido di applicazioni multi piattaforma si è incentrata soprattutto sull'efficienza e la compatibilità. Decidendo di utilizzare \texttt{AngularJS} + \texttt{Cordova} + \texttt{ngCordova} ottengo un ambiente di sviluppo rapido ed efficiente, in quanto tutti e tre i framework sono stati sviluppati per una stretta collaborazione, e allo stato dell'arte attuale delle tecnologie penso che sia una delle scelte migliori e rapide di sviluppo.
+\subsection{Un esempio di Sviluppo rapido}
+\subsection{Ide}
+\subsection{SDK}
 \section{API Rest}
+\subsection{Simple Rest Api}
+\subsection{XHR}
+\subsection{Firebase}
