@@ -1,13 +1,20 @@
 \lhead{\emph{Capitolo 3}}
 \chapter{La soluzione proposta}
-In questo capitolo discuteremo la soluzione intrapresa per lo sviluppo veloce di applicazioni mobile multi-piattaforma con le tecnologie scelte e le scelte progettuali intraprese. 
+In questo capitolo presento qual'è la soluzione che propongo al problema dello sviluppo rapido per applicazioni multi piattaforma per dispositivi mobili.\\
+In primis illustrerò le tecnologie che ho ritenuto più adatte e compatibili tra di loro per un uno sviluppo rapido, mettendo in evidenza quali sono le loro peculiarità per questo tipo di approccio. In particolare mi focalizzerò sulla scelta dei principali framework, sopratutto su quello che ci consentirà la distribuzione multi-piattaforma, in quanto ritengo che la decisione di quali utilizzare sia una scelta pressoché fondamentale per lo sviluppo si applicazioni ibride multi piattaforma, inoltre molti di essi includono altre tecnologie e/o concetti informatici che andrò a presentare ulteriormente con un approccio bottom-up(diversamente da come fatto fino adesso).\\
+
+Successivamente illustrerò un esempio di creazione di una applicazione ibrida mostrando tutti gli accorgimenti che ho potuto 
+derivare da una sperimentazione fatta in precedenza. In questa fase un occhio particolare andrà sui procedimenti che la compongono come ad esempio l'inclusione di librerie, template, debug e deploy dell'applicazione.\\
+
+Infine spiegherò come una la parte frontend dell'applicazione può comunicare con la rispettiva parte backend e tutte le tecnologie e strumenti di cui ci possiamo avvalere. Questo discorso si può applicare a qualsiasi tipo di applicazione non necessariamente ibrida. In particolare metterò in evidenza il fatto che la logica di una parte backend è completamente diversa da una frontend, ad esempio si concentra sulla re-usabilità dell'interfaccia, gestione dei dati, comunicazione con un database ed è completamente indipendente dal resto dell'applicazione. Non entreremo nello specifico dello sviluppo della parte backend parlerò solo di come ci si può interfacciare con essa.
 \section{Le Tecnologie Web}
-Le tecnologie web sono sempre più utilizzate per lo sviluppo di applicazioni mobile multi-piattaforma, molti framework come \texttt{Ionic}, \texttt{Foundation}, \texttt{Lungo} utilizzano già HTML5, CSS, Javascript per le loro librerie, ottimizzate per dispositivi mobili.\\
-In particolare questi framewrok mettono a disposizione una serie di componenti già pronti come ad esempio bottoni, menù laterali, form, liste, tabelle, icone, etc\dots e consentono di abbinarli tra di loro come meglio si ritene, con la possibilità di personalizzarli ulteriormente.\\
+Negli utili anni si sono diffusi sempre di più framework che fanno utilizzo di tecnologie web come ad esempio \texttt{Foundation}, \texttt{Lungo}, \texttt{OnsenUI} e \texttt{Ionic}. Fondamentalmente forniscono una libreria di classi e id \emph{CSS} che identificano lo stile proprietario del framework e una serie di funzionalità in \emph{Javascript} che possono variare dalla gestione delle animazioni al controllo dell'input di un form.
+Ovviamente tutte le funzionalità sono applicate ai tag \emph{HTML5} standard e in alcuni casi vengono ne vengono definiti altri, ma proprietari.\\
+Ovviamente la inclinazione d'uso di questi framework li obbliga ad essere molto dinamici nello stile, in modo tale che ogni sviluppatore possa personalizzare la propria applicazione come meglio crede e includere le tecnologie che ritiene più opportune. Per meglio capire come funzionano questi tipi di framework verrà preso come esempio il framework \texttt{Ionic} e mostrato su quali tecnologie si basa.
 \subsection{SASS}
-Nei framework che usano tecnologie web,e anche nelle pagine web, i fogli di stile hanno lo scopo di definire design, forme e colori dei componenti HTML. Nel caso dei framework però, i fogli di stile possono diventare molto complessi diventando lunghi e verbosi e difficili da modificare e/o ri-utilizzare.\\
+Nei framework che usano tecnologie web,e anche nelle pagine web, i fogli di stile hanno lo scopo di definire design, forme e colori dei componenti HTML. Nel caso dei framework però, i fogli di stile possono diventare molto complessi diventando lunghi, verbosi e difficili da modificare e/o ri-utilizzare.\\
 Esistono degli strumenti che permettono di strutturare al meglio i fogli di stile preservandone tutte le qualità se non aggiungendo ulteriori potenzialità.\\
-Uno di questi è \emph{SASS(Syntatically Awesome Stylesheet)}; si tratta di una estensione del linguaggio \emph{CSS} che va aggiungere strumenti come: direttive di pre-processore, variabili, annidamento di classi e id, possibilità di dividere in più file parziali e a sua volta includerne altri all'interno, ereditarietà delle classi, mixins ovvero classi parametrizzate e infine operatori matematici.\\
+Uno di questi è \emph{SASS(Syntatically Awesome StyleSheet)}; si tratta di una estensione del linguaggio \emph{CSS} che va aggiungere strumenti come: direttive di pre-processore, variabili, annidamento di classi e id, possibilità di dividere in più file parziali e a sua volta includerne altri all'interno, ereditarietà delle classi, mixins ovvero classi parametrizzate e infine operatori matematici.\\
 Per usare \emph{SASS} dobbiamo creare prima dei documenti con l'estensione \emph{.scss} che una volta compilati daranno origine al foglio di stile \emph{CSS}(o a più fogli di stile).
 Esistono altri strumenti anche migliori di questo per l'estensione dei fogli di stile, ma successivamente vedremo che il framework che ho utilizzato per la struttura delle mie applicazioni fa uso di questa tecnologia. 
 \subsection{AngularJS}
@@ -65,7 +72,7 @@ Con NetBeans possiamo utilizzare in fase di configurazione e anche successivamen
 -- Codice Bower.json --
 -- Codice .bowerrc --
 \subsubsection{Deploy}
-L'operazione di \emph{Deploy} in italiano "schierare", nel nostro caso prende il significato di produrre una versione della nostra applicazione, che può essere finale oppure no. Nello sviluppo di applicazioni ibride multi piattaforma abbiamo a disposizione 3 opzioni per fare questa operazione.
+L'operazione di \emph{Deploy} in italiano "schierare", nel nostro caso prende il significato di produrre una versione della nostra applicazione, cFacebookhe può essere finale oppure no. Nello sviluppo di applicazioni ibride multi piattaforma abbiamo a disposizione 3 opzioni per fare questa operazione.
 \begin{description}
 \item[Delploy sul Browser] Ovvero andiamo a vedere quella parte di applicazione che non necessita di essere sul dispositivo per poter funzionare. Sostanzialmente visualizziamo solo il livello delle tecnologie web, e lo possiamo correggere e/o visionare come se fosse un normale sito web. In questa modalità però non disponiamo ad esempio dell'interazione con le funzionalità native del dispositivo, si tratta di un modo rapido per avere una vista su quella che sarà l'interfaccia dell'applicazione.
 \item[Simulazione] Ogni IDE consente un meccanismo di simulazione di un dispositivo sulla propria macchina. In questa modalità possiamo vedere realmente come sarà la nostra applicazione su un dispositivo, ma in realtà l'hardware di riferimento sarà quello della nostra macchina(il simulatore si occupa di mettere in comunicazione tutte le componenti). E' una modalità che si avvicina molto alla rappresentazione reale della nostra applicazione ma il processo di simulazione per un computer di fascia media comporta una attesa anche di minuti per visionare il risultato, e dato che dovremo ripetere questa operazione diverse volte perché può darsi che si debba correggere il codice(cosa molto frequente), diventa molto dispendioso attendere tutte le volte così tanto tempo.
@@ -78,19 +85,5 @@ Il ruolo dei task-runner non è ben preciso in quanto sono molto versatili e "as
 \subsubsection{Live Debug}
 Una volta che l'applicazione è in esecuzione in una delle modalità descritte precedentemente ci si preoccupa di controllare che il codice che si ha scritto funzioni correttamente. Per eseguire un buon \emph{Debug} di questo tipo di applicazione è sufficiente disporre di uno strumento molto semplice \emph{Google Chrome}, infatti tramite questo web browser a diffenza di altri possiamo osservare il comportamento della nostra applicazione sui vari dispositivi(anche in fase di simulazione) come se stessimo facendo una normale ispezione di una pagine web. Ovviamente se l'applicazione è in \emph{Deploy sul Browser} il problema non si pone, qualsiasi browser può andare(anche se personalmente consiglio Google Chrome o Mozilla Firefox).
 \subsection{SDK}
-Un \texttt{Software Developement Kit} in generale è un insieme di strumenti per lo sviluppo e la documentazione del software\citeauthor{wiki:sdk}. Questi strumenti vengono rilasciati dalla casa produttrice di una certa piattaforma come librerie di riferimento per lo sviluppo di software specifico di essa. La loro distribuzione avviene in uno specifico linguaggio a seconda della piattaforma ed è sempre affiancata da una documentazione molto accurata.\\
-Per lo sviluppo di applicazioni ibride avremo bisogno di ciascuna \emph{SDK} per ogni sistema operativo sul quale vorremo la nostra applicazione; ad esempio se volessimo la nostra applicazione per \emph{iOS} e \emph{Android} dovremmo scaricare entrambe le \emph{SDK}(scritte rispettivamente in C++/Swift e Java) indicando dove si trovano all'interno del notro computer. \emph{Nebeans} dispone di una interfaccia molto semplice da usare per impostare i percorsi delle \emph{SDK} ma non di tutte le piattaforme; se volgiamo impostare un'altra piattaforma non indicata nell'IDE dobbiamo seguire le istruzioni fornite da \emph{Cordova}.
-\section{API Rest}
--- Tenclogia RESTFUL --\\
-\subsection{Simple Rest Api}
--- Non ci occupiamo di costruire le API --\\
--- Uso delle API in angularJS --\\
--- JSON --\\
-\subsection{XHR}
--- Cosè Cross Domanin --\\
--- POSTMAN --\\
--- Debug nel Browser --\\
-\subsection{Firebase}
--- What, Why --\\
--- of course it's angular!! --\\
--- Ricollegarsi al discorso backend --
+Un \texttt{Software Developement Kit} in generale è un insieme di strumenti per lo sviluppo e la documentazione del software\cite{wiki:sdk}. Questi strumenti vengono rilasciati dalla casa produttrice di una certa piattaforma come librerie di riferimento per lo sviluppo di software specifico di essa. La loro distribuzione avviene in uno specifico linguaggio a seconda della piattaforma ed è sempre affiancata da una documentazione molto accurata.\\
+Per lo sviluppo di applicazioni ibride avremo bisogno di ciascuna \emph{SDK} per ogni sistema operativo sul quale vorremo la nostra applicazione; ad esempio se volessimo la nostra applicazione per \emph{iOS} e \emph{Android} dovremmo scaricare entrambe le \emph{SDK}(scritte rispettivamente in C++/Swift e Java) indicando dove si trovano all'interno del notro computer. \emph{NetBeans} dispone di una interfaccia molto semplice da usare per impostare i percorsi delle \emph{SDK} ma non di tutte le piattaforme; se volgiamo impostare un'altra piattaforma non indicata nell'IDE dobbiamo seguire le istruzioni fornite da \emph{Cordova}.

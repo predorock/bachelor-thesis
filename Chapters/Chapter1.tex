@@ -1,6 +1,6 @@
 \lhead{\emph{Capitolo 1}}
 \chapter{Stato dell'arte} 
-In questo capitolo si presentano le tecnologie attualmente presenti sul mercato per lo sviluppo di applicazioni mobili, con particolare attenzione per le strategie di sviluppo multi piattaforma.
+In questo capitolo si presentano le tecnologie attualmente presenti sul mercato per lo sviluppo di applicazioni mobili, con particolare attenzione per le strategie di sviluppo multi piattaforma. In particolare mi soffermerò sulla spiegazione dei framework e a che scopo servono all'interno dell'approccio di sviluppo ibrido.
 \section{Sviluppo Nativo}
 Nello sviluppo nativo ogni applicazione viene sviluppata singolarmente per ogni piattaforma; rispettivamente per ogni sistema operativo bisogna conoscere i linguaggi che vengono utilizzati.
 
@@ -15,10 +15,10 @@ Quando si intraprende la strada dello sviluppo di una applicazione multi-piattaf
 A scapito della velocità di produzione e della facilità di aggiornamento non possiamo permetterci alcune caratteristiche fondamentali per le applicazioni mobile, come ad esempio accedere alle funzionalità del nostro dispositivo come fotocamera o rubrica, oppure memorizzare dati sul nostro dispositivo(o meglio possiamo farlo ma sfruttando solamente la cache del browser web) ma la criticità maggiore sta nel fatto che la connessione internet deve essere sempre presente. 
 
 \subsection{I Framework}
-L'approccio ibrido che si propone combina la velocità di sviluppo delle Web App con un accesso \emph{quasi nativo} al nostro dispositivo. Un problema che ci so pone in questo tipo di approccio sta nella scelta del \emph{framework} che si adatta  meglio allo scopo della nostra applicazione.
+L'approccio ibrido che si propone combina la velocità di sviluppo delle Web App con un accesso \emph{quasi nativo} al nostro dispositivo. Un problema che ci si pone in questo tipo di approccio sta nella scelta del \emph{framework} che si adatta  meglio allo scopo della nostra applicazione.
 
 \textit{In informatica, e specificatamente nello sviluppo software, un \textbf{framework} è un'architettura (o più impropriamente struttura) logica di supporto (spesso un'implementazione logica di un particolare design pattern) su cui un software può essere progettato e realizzato, spesso facilitandone lo sviluppo da parte del programmatore. Alla base di un framework c'è sempre una serie di librerie di codice utilizzabili in fase di linking con uno o più linguaggi di programmazione, spesso corredate da una serie di strumenti di supporto allo sviluppo del software, come ad esempio un IDE, un debugger o altri strumenti ideati per aumentare la velocità di sviluppo del prodotto finito. L'utilizzo di un framework impone dunque al programmatore una precisa metodologia di sviluppo del software.}\\
-\hspace*{\fill}\citeauthor{wiki:framework}
+\hspace*{\fill}\cite{wiki:framework}
 
 Esistono diversi framework sul mercato con caratteristiche diverse tra di loro, ecco quelli più popolari:
 
@@ -37,7 +37,7 @@ In particolare il linguaggio utilizzato dal framework è una associazione tra il
 \subsubsection{User Interface}
 Altri tipi di framework invece sono atti alla definizione dell'interfaccia utente della nostra applicazione, ovvero si traducono in un insieme di librerie che utilizzano metalinguaggi e non per \emph{"vestire"} la nostra applicazione a seconda dello scopo.
 Un esempio di un framework di questo tipo è \texttt{Ionic}, il quale fornisce un set di stili e funzioni per la nostra applicazione utilizzando tecnologie web, come ad esempio menù laterali, bottoni, form, icone. La maggior parte di questi tipi di framework fornisce anche linee guida per creare elementi completamente nuovi, nel caso avessimo bisogno di parti più complesse.
-Invece \texttt{Apache Flex}, oltre a fungere da wrapper, fornisce un set di elementi già pronti e parametrizzati (il linguaggio è simile a XML\footnote{(sigla di eXtensible Markup Language) è un linguaggio di markup, ovvero un linguaggio marcatore basato su un meccanismo sintattico che consente di definire e controllare il significato degli elementi contenuti in un documento o in un testo.\citeauthor{wiki:xml}}) per poter personalizzare la nostra applicazione. Non è molto versatile ma è particolarmente adatto alle applicazioni nel campo produttivo/finanziario.
+Invece \texttt{Apache Flex}, oltre a fungere da wrapper, fornisce un set di elementi già pronti e parametrizzati (il linguaggio è simile a XML\footnote{(sigla di eXtensible Markup Language) è un linguaggio di markup, ovvero un linguaggio marcatore basato su un meccanismo sintattico che consente di definire e controllare il significato degli elementi contenuti in un documento o in un testo.\cite{wiki:xml}}) per poter personalizzare la nostra applicazione. Non è molto versatile ma è particolarmente adatto alle applicazioni nel campo produttivo/finanziario.
 \section{Vantaggi e Svantaggi}
 Il vantaggio principale nell’utilizzo di un framework consiste nella possibilità di effettuare un deploy rapido e multipiattaforma di un’applicazione: il codice, infatti, si scrive velocemente con un meta linguaggio ed attraverso librerie esistenti precompilate, ed esso viene automaticamente adattato per i diversi sistemi operativi in fase di compilazione.
 
@@ -45,5 +45,5 @@ Un limite dei framework consiste nell’eccesso di rigidità in fase progettuale
 Inoltre, alcuni framework sono più adatti ad impieghi specifici rispetto ad altri. Kony, ad esempio, è un tipo di framework particolarmente apprezzato nello sviluppo di applicazioni per il settore bancario e financial, poichè integra al suo interno numerose funzioni utili,tra cui per la gestione dei sistemi di pagamento attraverso gli smartphone.
 
 Un tipo di framework scelto nel contesto giusto, che tenga concretamente conto degli obiettivi di marketing dell’azienda e le strategie di investimento in sviluppo di prodotti, consente di ottimizzare i tempi di sviluppo, presentare velocemente sul mercato la propria applicazione ed ottimizzare il processo di delivery abbattendo costi e sfruttando le potenzialità specifiche del framework selezionato.\\
-\hspace*{\fill}\citep{web:framework}
+\hspace*{\fill}\cite{web:framework}
 
