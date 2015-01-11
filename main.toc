@@ -8,58 +8,59 @@
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Stato dell'arte}{1}{chapter.12}
 \contentsline {section}{\numberline {1.1}Sviluppo Nativo}{1}{section.13}
-\contentsline {section}{\numberline {1.2}Multi-Piattaforma}{2}{section.14}
-\contentsline {subsection}{\numberline {1.2.1}Web Applications}{2}{subsection.15}
-\contentsline {subsection}{\numberline {1.2.2}I Framework}{2}{subsection.17}
-\contentsline {subsubsection}{\numberline {1.2.2.1}Wrapper}{3}{subsubsection.18}
-\contentsline {subsubsection}{\numberline {1.2.2.2}Trasformazione del Codice}{3}{subsubsection.19}
-\contentsline {subsubsection}{\numberline {1.2.2.3}User Interface}{3}{subsubsection.20}
-\contentsline {section}{\numberline {1.3}Vantaggi e Svantaggi}{4}{section.22}
-\contentsline {chapter}{\numberline {2}Architettura di una Applicazione Ibrida}{5}{chapter.23}
-\contentsline {section}{\numberline {2.1}Lo schema concettuale}{6}{section.24}
-\contentsline {subsection}{\numberline {2.1.1}Frontend e Backend}{6}{subsection.25}
-\contentsline {subsection}{\numberline {2.1.2}Pattern Client-Server}{7}{subsection.26}
-\contentsline {section}{\numberline {2.2}Struttura e Framework}{7}{section.27}
-\contentsline {subsection}{\numberline {2.2.1}La struttura di una applicazione ibrida}{8}{subsection.28}
-\contentsline {subsection}{\numberline {2.2.2}UI Framework}{8}{subsection.29}
-\contentsline {subsection}{\numberline {2.2.3}Wrapper Framework}{9}{subsection.31}
-\contentsline {section}{\numberline {2.3}La comunicazione tra le parti}{9}{section.32}
-\contentsline {subsection}{\numberline {2.3.1}Simple Rest Api}{9}{subsection.33}
-\contentsline {subsection}{\numberline {2.3.2}XHR}{10}{subsection.34}
-\contentsline {subsection}{\numberline {2.3.3}Firebase}{10}{subsection.35}
-\contentsline {chapter}{\numberline {3}La soluzione proposta}{11}{chapter.36}
-\contentsline {section}{\numberline {3.1}Le Tecnologie Web}{12}{section.37}
-\contentsline {subsection}{\numberline {3.1.1}SASS}{12}{subsection.38}
-\contentsline {subsection}{\numberline {3.1.2}AngularJS}{12}{subsection.39}
-\contentsline {subsection}{\numberline {3.1.3}Ionic}{13}{subsection.40}
-\contentsline {section}{\numberline {3.2}Cordova/Phonegap}{14}{section.42}
-\contentsline {subsection}{\numberline {3.2.1}Storia}{14}{subsection.43}
-\contentsline {subsection}{\numberline {3.2.2}Differenze}{14}{subsection.44}
-\contentsline {subsection}{\numberline {3.2.3}Cordova Core}{15}{subsection.46}
-\contentsline {subsection}{\numberline {3.2.4}ngCordova}{15}{subsection.47}
-\contentsline {section}{\numberline {3.3}Un esempio di Sviluppo rapido}{15}{section.48}
-\contentsline {subsection}{\numberline {3.3.1}Il trio Magico}{15}{subsection.49}
-\contentsline {subsection}{\numberline {3.3.2}IDE}{16}{subsection.50}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Creazione}{16}{subsubsection.51}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Inclusione di Librerie esterne}{16}{subsubsection.52}
-\contentsline {paragraph}{Bower}{16}{section*.55}
-\contentsline {subsubsection}{\numberline {3.3.2.3}Deploy}{17}{subsubsection.56}
-\contentsline {paragraph}{Grunt/Gulp}{18}{section*.57}
-\contentsline {subsubsection}{\numberline {3.3.2.4}Live Debug}{18}{subsubsection.58}
-\contentsline {subsection}{\numberline {3.3.3}SDK}{19}{subsection.59}
-\contentsline {chapter}{\numberline {4}Conclusioni}{20}{chapter.60}
-\contentsline {section}{\numberline {4.1}Ciclo di vita di una app}{20}{section.61}
-\contentsline {section}{\numberline {4.2}Verso il futuro}{20}{section.62}
+\contentsline {section}{\numberline {1.2}Mobile Web Applications}{2}{section.15}
+\contentsline {section}{\numberline {1.3}Confronto tra i due approcci}{4}{section.16}
+\contentsline {section}{\numberline {1.4}Applicazioni Ibride}{6}{section.17}
+\contentsline {section}{\numberline {1.5}Lo sviluppo di Applicazioni e i framework}{7}{section.21}
+\contentsline {section}{\numberline {1.6}Conclusioni}{10}{section.23}
+\contentsline {subsection}{\numberline {1.6.1}Qual'\IeC {\`e} l'approccio migliore}{11}{subsection.24}
+\contentsline {subsection}{\numberline {1.6.2}L'importanza della scelta del framework}{11}{subsection.25}
+\contentsline {subsection}{\numberline {1.6.3}E' possibile uno sviluppo multi piattaforma senza l'utilizzo di framework?}{13}{subsection.26}
+\contentsline {chapter}{\numberline {2}Metodi e Modelli per lo sviluppo di applicazioni Mobile}{14}{chapter.27}
+\contentsline {section}{\numberline {2.1}Design Patterns}{15}{section.28}
+\contentsline {subsection}{\numberline {2.1.1}Frontend e Backend}{15}{subsection.29}
+\contentsline {subsection}{\numberline {2.1.2}Pattern Client-Server}{16}{subsection.30}
+\contentsline {subsection}{\numberline {2.1.3}Mustache}{17}{subsection.31}
+\contentsline {subsection}{\numberline {2.1.4}MVC Pattern}{17}{subsection.32}
+\contentsline {subsection}{\numberline {2.1.5}MVVC Pattern}{17}{subsection.33}
+\contentsline {section}{\numberline {2.2}API}{18}{section.34}
+\contentsline {subsection}{\numberline {2.2.1}API Rest}{18}{subsection.35}
+\contentsline {subsection}{\numberline {2.2.2}Chiamate XHR}{20}{subsection.41}
+\contentsline {chapter}{\numberline {3}Case Study: L'approccio ibrido con tecnologie web}{21}{chapter.42}
+\contentsline {section}{\numberline {3.1}Le Tecnologie Web utilizzate}{22}{section.43}
+\contentsline {subsection}{\numberline {3.1.1}CSS Preprocessor}{22}{subsection.44}
+\contentsline {subsection}{\numberline {3.1.2}AngularJS}{23}{subsection.46}
+\contentsline {paragraph}{Definizione}{23}{section*.48}
+\contentsline {paragraph}{Caratteristiche e Componenti}{23}{section*.49}
+\contentsline {subsection}{\numberline {3.1.3}Ionic}{25}{subsection.53}
+\contentsline {section}{\numberline {3.2}Il Wrapper Framework}{26}{section.56}
+\contentsline {subsection}{\numberline {3.2.1}Cordova/Phonegap}{26}{subsection.57}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Storia}{27}{subsubsection.59}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Differenze}{27}{subsubsection.60}
+\contentsline {subsubsection}{\numberline {3.2.1.3}Cordova Core}{27}{subsubsection.62}
+\contentsline {subsection}{\numberline {3.2.2}ngCordova}{27}{subsection.63}
+\contentsline {section}{\numberline {3.3}Strumenti di sviluppo}{28}{section.65}
+\contentsline {subsection}{\numberline {3.3.1}Il trio Magico}{28}{subsection.66}
+\contentsline {subsection}{\numberline {3.3.2}Package Manager}{28}{subsection.67}
+\contentsline {subsection}{\numberline {3.3.3}Task Runner}{29}{subsection.68}
+\contentsline {subsection}{\numberline {3.3.4}IDE}{29}{subsection.69}
+\contentsline {subsubsection}{\numberline {3.3.4.1}Creazione}{30}{subsubsection.70}
+\contentsline {subsubsection}{\numberline {3.3.4.2}Inclusione di Librerie esterne}{30}{subsubsection.71}
+\contentsline {subsubsection}{\numberline {3.3.4.3}Deploy}{30}{subsubsection.74}
+\contentsline {subsubsection}{\numberline {3.3.4.4}Live Debug}{31}{subsubsection.75}
+\contentsline {section}{\numberline {3.4}SDK}{32}{section.76}
+\contentsline {chapter}{\numberline {4}Conclusioni}{33}{chapter.77}
+\contentsline {section}{\numberline {4.1}Ciclo di vita di una app}{33}{section.78}
+\contentsline {section}{\numberline {4.2}Verso il futuro}{33}{section.79}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{21}{appendix.63}
-\contentsline {section}{\numberline {A.1}HTML5}{21}{section.64}
-\contentsline {section}{\numberline {A.2}AngularJS}{21}{section.65}
-\contentsline {section}{\numberline {A.3}Architettura Client / Server}{21}{section.66}
-\contentsline {section}{\numberline {A.4}Patterns}{21}{section.67}
-\contentsline {subsection}{\numberline {A.4.1}MVVM}{21}{subsection.68}
-\contentsline {subsection}{\numberline {A.4.2}MVC}{21}{subsection.69}
-\contentsline {section}{\numberline {A.5}HTML5}{21}{section.70}
-\contentsline {section}{\numberline {A.6}Dependency Injection}{21}{section.71}
-\contentsline {section}{\numberline {A.7}Inversion Of Control}{21}{section.72}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{34}{appendix.80}
+\contentsline {section}{\numberline {A.1}HTML5}{34}{section.81}
+\contentsline {section}{\numberline {A.2}AngularJS}{34}{section.82}
+\contentsline {section}{\numberline {A.3}Architettura Client / Server}{34}{section.83}
+\contentsline {section}{\numberline {A.4}Patterns}{34}{section.84}
+\contentsline {subsection}{\numberline {A.4.1}MVVM}{34}{subsection.85}
+\contentsline {subsection}{\numberline {A.4.2}MVC}{34}{subsection.86}
+\contentsline {section}{\numberline {A.5}HTML5}{34}{section.87}
+\contentsline {section}{\numberline {A.6}Dependency Injection}{34}{section.88}
+\contentsline {section}{\numberline {A.7}Inversion Of Control}{34}{section.89}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{22}{dummy.73}
