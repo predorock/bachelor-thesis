@@ -97,7 +97,7 @@ Mentre i controller non devono essere usati per:
 \end{itemize}
 
 \item[Dependency Injection] per una trattazione generale dell'argomento rimandiamo all'appendice \ref{app:DepInj}. AngularJS ha già al suo interno un meccanismo che gestisce la Dependency Injection. Il principale scopo per cui AngularJS è stato dotato di questa caratteristica è per avere la possibilità di suddividere in moduli separati l'applicazione dove ognuno di essi può essere iniettato all'interno degli altri e vice versa. Un esempio moto semplice di Dependency Injection in AngularJS è all'atto della creazione dell'applicazione. Nell'esempio \ref{lst:appCreation} il metodo \textit{angular.module()} prende due argomenti: il primo è il nome del modulo che si vuole creare, mentre il secondo è un array con tutti i moduli di cui è composto la nostra applicazione. Viene creato quindi un riferimento ai moduli inclusi e non un istanza diretta.  
-\begin{lstlisting}[caption = {\\Creazione di una applicazione in AngularJS con le relative dipendenze}, 
+\begin{lstlisting}[caption = {Creazione di una applicazione in AngularJS con le relative dipendenze}, 
 				   label = {lst:appCreation}]
 	var testApp = angular.module("testApp",['ngRoute','customModule']);
 \end{lstlisting}

@@ -30,6 +30,7 @@
 \graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
 \usepackage[square, comma, sort&compress]{natbib}
 \usepackage{csvsimple}
+\usepackage{listing}
 \usepackage{listings}
 \usepackage{color}
 \usepackage{hyperref}
@@ -183,15 +184,22 @@ Grazie a tutti \ldots
 
 \pagestyle{fancy} % The page style headers have been "empty" all this time, now use the "fancy" headers as defined before to bring them back
 
-\lhead{\emph{Contents}} % Set the left side page header to "Contents"
+\lhead{\emph{Contenuti}} % Set the left side page header to "Contents"
 \tableofcontents % Write out the Table of Contents
 
-\lhead{\emph{List of Figures}} % Set the left side page header to "List of Figures"
+\renewcommand*{\listfigurename}{Lista delle Figure}
+\lhead{\emph{Lista delle Figure}} % Set the left side page header to "List of Figures"
 \listoffigures % Write out the List of Figures
 
-\lhead{\emph{List of Tables}} % Set the left side page header to "List of Tables"
+\renewcommand*{\listtablename}{Lista degli Tabelle}
+\lhead{\emph{Lista delle Tabelle}} % Set the left side page header to "List of Tables"
 \listoftables % Write out the List of Tables
 
+\renewcommand*{\lstlistlistingname}{Lista degli Esempi}
+\lhead{\emph{Lista degli Esempi}}
+\addtotoc{Lista Degli Esempi}
+\lstlistoflistings
+\clearpage
 %----------------------------------------------------------------------------------------
 %	ABBREVIATIONS
 %----------------------------------------------------------------------------------------
@@ -248,13 +256,13 @@ Grazie a tutti \ldots
 %	DEDICATION
 %----------------------------------------------------------------------------------------
 
-\setstretch{1.3} % Return the line spacing back to 1.3
+%\setstretch{1.3} % Return the line spacing back to 1.3
 
-\pagestyle{empty} % Page style needs to be empty for this page
+%\pagestyle{empty} % Page style needs to be empty for this page
 
-\dedicatory{For/Dedicated to/To my\ldots} % Dedication text
+%\dedicatory{For/Dedicated to/To my\ldots} % Dedication text
 
-\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+%\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - CHAPTERS
