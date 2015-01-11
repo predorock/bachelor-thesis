@@ -84,13 +84,14 @@ Lo stile architetturale REST descrive 6 vincoli (cinque più uno facoltativo) ch
 L'esperienza ha mostrato che sistemi RESTful hanno delle desiderabili proprietà emergenti, come ad esempio la scalabilità e la modificabilità.
 Un esempio di organizzazione delle risorse nel protocollo REST:
 
-\begin{lstlisting}[language=php]
+\begin{lstlisting}[language=php, caption = {Esempio di API REST generica}, label = {lst:genericRESTAPI}]
 	/{tipo di risorsa}/{id della risorsa}/{azione}
 \end{lstlisting}
 
 applicando l'esempio nel contesto dei blog:
 
-\begin{lstlisting}[language=php]
+\begin{lstlisting}[language=php, caption = {Esempio di API REST nel caso di un ipotetico blog} , 
+				   lablel = {lst:blogRESTAPI}]
 	/posts/1/edit oppure /posts/1/view
 \end{lstlisting}
 

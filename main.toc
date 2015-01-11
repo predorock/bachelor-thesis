@@ -1,10 +1,10 @@
 \contentsline {chapter}{Abstract}{ii}{dummy.1}
 \vspace {1em}
-\contentsline {chapter}{Acknowledgements}{iv}{dummy.5}
+\contentsline {chapter}{Ringraziamenti}{iv}{dummy.5}
 \vspace {1em}
 \contentsline {chapter}{Contents}{v}{dummy.6}
-\contentsline {chapter}{Lista delle figure}{vii}{dummy.8}
-\contentsline {chapter}{Lista delle Tabelle}{viii}{dummy.10}
+\contentsline {chapter}{List of Figures}{vii}{dummy.8}
+\contentsline {chapter}{List of Tables}{viii}{dummy.10}
 \contentsline {chapter}{Lista Degli Esempi}{ix}{dummy.12}
 \contentsline {chapter}{Contents}{ix}{dummy.13}
 \contentsline {chapter}{\numberline {1}Stato dell'arte}{1}{chapter.15}

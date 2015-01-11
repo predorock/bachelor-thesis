@@ -254,7 +254,7 @@
       \vfill
       {\huge \bf \@title \par}
       \vfill
-      {\LARGE by \par}
+      {\LARGE di \par}
       \smallskip
       {\LARGE \authornames \par}
       \vfill
@@ -309,7 +309,7 @@
     \bigskip
     {\normalsize\bf \@title \par} % Thesis title
     \medskip
-    {\normalsize by \authornames \par} % Author name
+    \vfil\null
     \bigskip
   \end{center}
 }
@@ -343,8 +343,8 @@
 }\end{spacing}
 }
 \renewcommand\listoffigures{
-\btypeout{Lista delle Figure}
-\addtotoc{Lista delle figure}
+\btypeout{List of Figures}
+\addtotoc{List of Figures}
 \begin{spacing}{1}{
     \setlength{\parskip}{1pt}
     \if@twocolumn
@@ -361,8 +361,8 @@
 }\end{spacing}
 }
 \renewcommand\listoftables{
-\btypeout{Lista delle Tabelle}
-\addtotoc{Lista delle Tabelle}
+\btypeout{List of Tables}
+\addtotoc{List of Tables}
 \begin{spacing}{1}{
     \setlength{\parskip}{1pt}
     \if@twocolumn
@@ -378,12 +378,44 @@
     \cleardoublepage
 }\end{spacing}
 }
-
+\newcommand\listsymbolname{Abbreviations}
+\usepackage{longtable}
+\newcommand\listofsymbols[2]{
+\btypeout{\listsymbolname}
+\addtotoc{\listsymbolname}
+    \chapter*{\listsymbolname
+      \@mkboth{
+          \MakeUppercase\listsymbolname}{\MakeUppercase\listsymbolname}}
+\begin{longtable}[c]{#1}#2\end{longtable}\par
+    \cleardoublepage
+}
+\newcommand\listconstants{Physical Constants}
+\usepackage{longtable}
+\newcommand\listofconstants[2]{
+\btypeout{\listconstants}
+\addtotoc{\listconstants}
+    \chapter*{\listconstants
+      \@mkboth{
+          \MakeUppercase\listconstants}{\MakeUppercase\listconstants}}
+\begin{longtable}[c]{#1}#2\end{longtable}\par
+    \cleardoublepage
+}
+\newcommand\listnomenclature{Symbols}
+\usepackage{longtable}
+\newcommand\listofnomenclature[2]{
+\btypeout{\listnomenclature}
+\addtotoc{\listnomenclature}
+    \chapter*{\listnomenclature
+      \@mkboth{
+          \MakeUppercase\listnomenclature}{\MakeUppercase\listnomenclature}}
+\begin{longtable}[c]{#1}#2\end{longtable}\par
+    \cleardoublepage
+}
 \newcommand\acknowledgements[1]{
-\btypeout{Acknowledgements}
-\addtotoc{Acknowledgements}
+\btypeout{Ringraziamenti}
+\addtotoc{Ringraziamenti}
 \thispagestyle{plain}
-\begin{center}{\huge{\textit{Acknowledgements}} \par}\end{center}
+\begin{center}{\huge{\textit{Ringraziamenti}} \par}\end{center}
 {\normalsize #1}
 \vfil\vfil\null
 
