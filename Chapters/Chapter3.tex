@@ -53,7 +53,7 @@ Queste sono solo alcune delle opzioni messe a disposizione dei CSS preprocessors
 \end{wrapfigure}
 
 \paragraph{Definizione}
-AngularJS è un framework Javascript ideato da \emph{Minsko Hevery}(Google) che estende il linguaggio HTML in un formato più espressivo e leggibile. Consente di aggiungere nuovi tag HTML speciali in modo da sincronizzare la parte scritta in Javascript senza manualmente aggiornare la view, in modo tale da rendere indipendente la logica della applicazione. Angular semplifica la scrittura di codice Javascript rendendo il codice dell'applicazione più efficiente e leggibile.
+AngularJS è un framework Javascript che segue il pattern MVC(\ref{sec:MVC}) ideato da \emph{Minsko Hevery}(Google) che estende il linguaggio HTML in un formato più espressivo e leggibile. Consente di aggiungere nuovi tag HTML speciali in modo da sincronizzare la parte scritta in Javascript senza manualmente aggiornare la view, in modo tale da rendere indipendente la logica della applicazione. Angular semplifica la scrittura di codice Javascript rendendo il codice dell'applicazione più efficiente e leggibile.
 \paragraph{Caratteristiche e Componenti}
 AngularJS interpreta il design pattern MVC grazie al quale si arricchisce con una serie di caratteristiche molto interessanti:
 \begin{description}
@@ -78,7 +78,7 @@ Poiché la vista è solo una proiezione del modello, il controller è completame
 I vari scope di una applicazione in AngularJS sono i nodi centrali a cui ruota attorno tutta la logica dell'applicazione, grazie a loro e possibile la comunicazione tra vista e modello con l'utilizzo del data binding. Per una trattazione più approfondita si rimanda alla documentazione di AngularJS(angularjs.org).
 
 \item[Controller] i controller in AngularJS hanno il compito di gestire la logica di una determinata sezione dell'applicazione. Quando un controller viene dichiarato su una parte del DOM tramite la direttiva \emph{ng-controller} come nell'esempio \ref{lst:newController} AngularJS crea un nuovo oggetto Javascript associandogli un nuovo scope che potrà essere inserito all'interno del controller tramite la dependency injection. 
-\clearpage
+
 \begin{lstlisting}[caption={Associazione tra un elemento del DOM e un controller}, label={lst:newController}]
 	<div id="header" ng-controller = "HeaderController"></div>
 \end{lstlisting}
@@ -96,16 +96,48 @@ Mentre i controller non devono essere usati per:
 \item Gestire il ciclo di vita degli altri componenti(creazione di nuove istanze)
 \end{itemize}
 
-\item[Dependency Injection] per una trattazione generale dell'argomento rimandiamo all'appendice \ref{app:DepInj}. In AngularJS è definito un Injector Subsystem che ha l'incarico di creare i componenti, risolvere le loro dipendenze e fornire i componenti richiesti. 
+\item[Dependency Injection] per una trattazione generale dell'argomento rimandiamo all'appendice \ref{app:DepInj}. AngularJS ha già al suo interno un meccanismo che gestisce la Dependency Injection. Il principale scopo per cui AngularJS è stato dotato di questa caratteristica è per avere la possibilità di suddividere in moduli separati l'applicazione dove ognuno di essi può essere iniettato all'interno degli altri e vice versa. Un esempio moto semplice di Dependency Injection in AngularJS è all'atto della creazione dell'applicazione. Nell'esempio \ref{lst:appCreation} il metodo \textit{angular.module()} prende due argomenti: il primo è il nome del modulo che si vuole creare, mentre il secondo è un array con tutti i moduli di cui è composto la nostra applicazione. Viene creato quindi un riferimento ai moduli inclusi e non un istanza diretta.  
+\begin{lstlisting}[caption = {\\Creazione di una applicazione in AngularJS con le relative dipendenze}, 
+				   label = {lst:appCreation}]
+	var testApp = angular.module("testApp",['ngRoute','customModule']);
+\end{lstlisting}
+
+Oltre ai moduli AngularJS da la possibilità di usare la propietà della Dependency Injection sui tipi base forniti dal linguaggio, ovvero:
+\begin{itemize}
+\item Value
+\item Factory
+\item Service
+\item Provider
+\item Constant
+\end{itemize}
+Un esempio di Dependency Injection di questi tipi avviene molto frequentemente nelle applicazioni all'interno dei controller (\ref{lst:controllerExample})
+
+\begin{lstlisting}[caption = {Un esempio di creazione di un modulo e la sua inclusione all'interno di un altro}, 
+				   label = {lst:controllerExample}]
+
+angular.module("CustomModule",[])
+.service("CustomService",function(){
+	this.customMethod = function(value){
+		return value + " from customMethod in CustomService";	
+	}
+});
+
+angular.module("testApp",[
+	'CustomModule'
+]).controller("HomeController", function(CustomService){
+	CustomService.customMethod("Marco");
+});
+
+
+\end{lstlisting}
+
+\item[Factory]
+\item[Service]
+\item[Providers]
+\item[Directives]
+\item[View]
 
 \end{description} 
-	-- MVC --	
-	-- Dependency Injection --\\
-	-- Moduli --\\
-	-- View --\\
-	-- Factory --\\
-	-- Directives --\\
-	-- Filters --\\
 
 \subsection{Ionic}
 
