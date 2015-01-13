@@ -70,6 +70,8 @@ La maggior parte dei sistemi di templating sincronizzano i dati in una sola dire
   \label{fig:Data Binding}
 \end{figure}
 
+In particolare come si vede nell'esempio \ref{lst:directives-example} il binding dalla vista al modello è effettuato tramite la direttiva \emph{ng-model = "nome-del-modello"}, mentre dal modello alla vista si utilizza la sintassi \emph{ \{\{nome-del-modello\}\} }.
+
 Il systema dei templates di AngularJS funziona in modo differente. In primo luogo il modello (che è l'HTML non compilato insieme a  markup o direttive supplementari) viene compilato sul browser. Il passo di compilazione produce una live view(vista). Eventuali modifiche alla vista si riflettono immediatamente nel modello, e le eventuali modifiche nel modello vengono propagate alla vista. Il modello è il SSOT per lo stato dell'applicazione, semplificando notevolmente il modello di programmazione per lo sviluppatore. Si può pensare di vista semplicemente come una proiezione istantanea del modello.
 
 Poiché la vista è solo una proiezione del modello, il controller è completamente separato dal punto di vista e completamente allo scuro di essa. Questo rende i test dell'applicazione molto semplici, in quanto è facile testare il controller indipendentemente dalla vista e dalla relativa dipendenza dal DOM / browser web.
@@ -131,10 +133,57 @@ angular.module("testApp",[
 
 \end{lstlisting}
 
-\item[Factory]
-\item[Service]
-\item[Providers]
-\item[Directives]
+\item[Service] si è visto come il meccanismo di Dependency Injection possa rendere disponibile all'interno dell'applicazione tutti i componenti forniti da un specifico modulo. Fatta eccezione per i \emph{service} ogni volta che si richiama un componente tramite Dependency Injection dal riferimento viene creata una nuova istanza della classe. I service invece sfruttano quello che è chiamato in Javascript il \emph{Singleton Object}, ovvero, l'istanza di un oggetto di tipo service avviene soltanto una volta, e il riferimento all'interno dell'applicazione è univoco verso lo stesso oggetto(figura \ref{fig:AngularJS-Singleton}). Inoltre soltanto quando il service dipende dall'applicazione viene creata l'istanza dell'oggetto(\emph{Lazy Initialization}).
+
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[scale=0.75]{Figures/angularjs-service-singleton-diagram.png}  
+    \rule{35em}{0.5pt}
+  \caption[AngularJS Singleton]{Schema di come è strutturato un service all'interno di AngularJS}
+  \label{fig:AngularJS-Singleton}
+\end{figure}
+
+I service possono essere creati dallo sviluppatore oppure AngularJS ne mette a disposizione già alcuni, come ad esempio \emph{\$http} che è uno dei più usati per lo scambio dei dati attraverso l'omonimo protocollo. Altro uso dei service può essere quello dello scambio dei dati attraverso i controller, genericamente in una applicazione che si interfaccia con dei servizi backend e buona norma associare ad ogni servizio corrispettivo un service di AngularJS.
+
+\item[Provider/Factory/Service] una trattazione separata di queste tre caratteristiche di AngularJS potrebbe risultare difficile da comprendere. Avendo spiegato cosa è un service la trattazione prosegue su altri due componenti strettamente correlati: i Factory e i Provider.
+Tra questi tre componenti esiste una specie di gerarchia : i \textit{service} sono degli oggetti singleton creati tramite una \textit{factory}. Le \textit{factory} sono funzioni che a sua volta sono create tramite un \textit{provider}. I \textit{provider} sono dei costruttori che hanno a disposizione un metodo \emph{\$get} il quale contiene la \emph{service factory} che ritorna l'istanza del service.
+
+In questo modo AngularJS si garantisce una forte modularizzazione dei componenti, e la ricerca dei corretti riferimenti da parte della Dependency Injection. Inoltre tramite il provider è possibile configurare, se previsto, i servizi dell'applicazione scrivendo un opportuno codice parametrico.
+
+\item[Directives] una delle caratteristiche più rilevanti di AnagularJS è sicuramente quella di poter creare dei tag HTML personalizzati, oltre a quelli già previsti dal framework. Questi tag speciali sono chiamati directives o direttive. AngularJS si serve delle direttive per poter strutturare l'applicazione sulla vista HTML, ovvero ci sono dei tag speciali previsti dal framework che definiscono il nome dell'applicazione(\textit{ng-app}), i controller da utilizzare(\textit{ng-controller}), i modelli di riferimento(\textit{ng-model}) e il contenitore dove processare le viste(\textit{ng-view}) come nell'esempio \ref{lst:directives-example}:
+\begin{lstlisting}[language=html,caption={Un esempio delle direttive standard di AngularJS},
+				   label={lst:directives-example}]
+ <html ng-app = "myApp">
+   <head></head>
+   <body>
+     <div ng-controller = "InfoController">
+       <input name = "inputFirstName" ng-model = "user.firstName">
+       <input name = "inputSecondName" ng-model = "user.secondName">
+       <div class = "showInfo">
+	     Hello my name is {{user.firstName}} {{user.secondName}}			
+       </div>
+     </div>
+   </body>
+ </html>
+\end{lstlisting}
+
+Inoltre possiamo definire direttive personalizzate alle quali possiamo associare un relativo comportamento(\ref{lst:custom-directive}). Una cosa che è concessa nelle direttive e non nelle altre strutture di AngularJS è la manipolazione del DOM, solo al loro interno è possibile scrivere codice che interagisca direttamente con gli elementi della vista.
+\begin{lstlisting}[language=html,caption={Un esempio di direttiva personalizzata},
+				   label={lst:custom-directive}]
+ angular.module("myApp")
+ .directive("myPersonalTag",function(){
+	return{
+		link: function(scope, element, attrs){
+			//directive main istructions		
+		}	
+	} 
+ });
+\end{lstlisting}
+
+Una nota di sintassi particolare per le direttive riguarda il loro nome, come osserviamo il nome delle direttive nell'esempio \ref{lst:directives-example} e separato dal trattino alto(\emph{dash}) mentre nella definizione tramite codice AngularJS è scritta in \emph{camelCase}. Questa è un convenzione che il framework adotta per evitare errori di sintassi all'interno del codice da parte del parser.
+Queste sono le caratteristiche principali delle direttive, in realtà dentro di esse si nasconde molto potenziale e la loro trattazione e molto vasta, si rimanda l'approfondimento qui : \cite{angularjs:directives}
+
+
 \item[View]
 
 \end{description} 

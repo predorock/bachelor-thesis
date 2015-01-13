@@ -33,31 +33,31 @@
 \contentsline {subsection}{\numberline {3.1.2}AngularJS}{23}{subsection.49}
 \contentsline {paragraph}{Definizione}{23}{section*.51}
 \contentsline {paragraph}{Caratteristiche e Componenti}{23}{section*.52}
-\contentsline {subsection}{\numberline {3.1.3}Ionic}{26}{subsection.74}
-\contentsline {section}{\numberline {3.2}Il Wrapper Framework}{27}{section.77}
-\contentsline {subsection}{\numberline {3.2.1}Cordova/Phonegap}{27}{subsection.78}
-\contentsline {subsubsection}{\numberline {3.2.1.1}Storia}{27}{subsubsection.80}
-\contentsline {subsubsection}{\numberline {3.2.1.2}Differenze}{28}{subsubsection.81}
-\contentsline {subsubsection}{\numberline {3.2.1.3}Cordova Core}{28}{subsubsection.83}
-\contentsline {subsection}{\numberline {3.2.2}ngCordova}{28}{subsection.84}
-\contentsline {section}{\numberline {3.3}Strumenti di sviluppo}{29}{section.86}
-\contentsline {subsection}{\numberline {3.3.1}Il trio Magico}{29}{subsection.87}
-\contentsline {subsection}{\numberline {3.3.2}Package Manager}{29}{subsection.88}
-\contentsline {subsection}{\numberline {3.3.3}Task Runner}{29}{subsection.89}
-\contentsline {subsection}{\numberline {3.3.4}IDE}{30}{subsection.90}
-\contentsline {subsubsection}{\numberline {3.3.4.1}Creazione}{30}{subsubsection.91}
-\contentsline {subsubsection}{\numberline {3.3.4.2}Inclusione di Librerie esterne}{31}{subsubsection.92}
-\contentsline {subsubsection}{\numberline {3.3.4.3}Deploy}{31}{subsubsection.95}
-\contentsline {subsubsection}{\numberline {3.3.4.4}Live Debug}{32}{subsubsection.96}
-\contentsline {section}{\numberline {3.4}SDK}{32}{section.97}
-\contentsline {chapter}{\numberline {4}Conclusioni}{34}{chapter.98}
-\contentsline {section}{\numberline {4.1}Ciclo di vita di una app}{34}{section.99}
-\contentsline {section}{\numberline {4.2}Verso il futuro}{34}{section.100}
+\contentsline {subsection}{\numberline {3.1.3}Ionic}{28}{subsection.88}
+\contentsline {section}{\numberline {3.2}Il Wrapper Framework}{28}{section.91}
+\contentsline {subsection}{\numberline {3.2.1}Cordova/Phonegap}{29}{subsection.92}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Storia}{29}{subsubsection.94}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Differenze}{29}{subsubsection.95}
+\contentsline {subsubsection}{\numberline {3.2.1.3}Cordova Core}{30}{subsubsection.97}
+\contentsline {subsection}{\numberline {3.2.2}ngCordova}{30}{subsection.98}
+\contentsline {section}{\numberline {3.3}Strumenti di sviluppo}{30}{section.100}
+\contentsline {subsection}{\numberline {3.3.1}Il trio Magico}{30}{subsection.101}
+\contentsline {subsection}{\numberline {3.3.2}Package Manager}{31}{subsection.102}
+\contentsline {subsection}{\numberline {3.3.3}Task Runner}{31}{subsection.103}
+\contentsline {subsection}{\numberline {3.3.4}IDE}{31}{subsection.104}
+\contentsline {subsubsection}{\numberline {3.3.4.1}Creazione}{32}{subsubsection.105}
+\contentsline {subsubsection}{\numberline {3.3.4.2}Inclusione di Librerie esterne}{32}{subsubsection.106}
+\contentsline {subsubsection}{\numberline {3.3.4.3}Deploy}{33}{subsubsection.109}
+\contentsline {subsubsection}{\numberline {3.3.4.4}Live Debug}{34}{subsubsection.110}
+\contentsline {section}{\numberline {3.4}SDK}{34}{section.111}
+\contentsline {chapter}{\numberline {4}Conclusioni}{35}{chapter.112}
+\contentsline {section}{\numberline {4.1}Ciclo di vita di una app}{35}{section.113}
+\contentsline {section}{\numberline {4.2}Verso il futuro}{35}{section.114}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendice Argomenti}{35}{appendix.101}
-\contentsline {section}{\numberline {A.1}HTML5}{35}{section.102}
-\contentsline {section}{\numberline {A.2}CSS}{35}{section.103}
-\contentsline {section}{\numberline {A.3}Javascript}{35}{section.104}
-\contentsline {section}{\numberline {A.4}Dependency Injection}{35}{section.105}
-\contentsline {section}{\numberline {A.5}Inversion Of Control}{35}{section.106}
+\contentsline {chapter}{\numberline {A}Appendice Argomenti}{36}{appendix.115}
+\contentsline {section}{\numberline {A.1}HTML5}{36}{section.116}
+\contentsline {section}{\numberline {A.2}CSS}{36}{section.117}
+\contentsline {section}{\numberline {A.3}Javascript}{36}{section.118}
+\contentsline {section}{\numberline {A.4}Dependency Injection}{36}{section.119}
+\contentsline {section}{\numberline {A.5}Inversion Of Control}{36}{section.120}
 \vspace {2em}
