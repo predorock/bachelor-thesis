@@ -1,28 +1,8 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Thesis LaTeX Template - THESIS CLASS FILE
-%
-% This template has been downloaded from:
-% http://www.latextemplates.com
-%
-% This class file defines the structure and design of the template. 
-%
-% There is one part of this file that needs to be filled out - the variables
-% dictating the document particulars such as the author name, university
-% name, etc. You will find these in the commented "DOCUMENT VARIABLES"
-% section below.
-%
-% The other two easily-editable sections are the margin sizes and abstract.
-% These have both been commented for easy editing. Advanced LaTeX
-% users will have no trouble editing the rest of the document to their liking.
-%
-% Original header:
+%%
 %% This is file `Thesis.cls', based on 'ECSthesis.cls', by Steve R. Gunn
 %% generated with the docstrip utility.
 %%
 %% Created by Steve R. Gunn, modified by Sunil Patel: www.sunilpatel.co.uk
-%% Further modified by www.latextemplates.com
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}[1996/12/01]
 \ProvidesClass{Thesis}
@@ -68,13 +48,7 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{2.0ex plus0.5ex minus0.2ex}
 \usepackage{vmargin}
-
-\RequirePackage[utf8]{inputenc} % Allows the use of international characters (e.g. Umlauts)
-
-%----------------------------------------------------------------------------------------
-%	MARGINS
-%----------------------------------------------------------------------------------------
-\setmarginsrb  { 1.5in}  % left margin
+\setmarginsrb           { 1.5in}  % left margin
                         { 0.6in}  % top margin
                         { 1.0in}  % right margin
                         { 0.8in}  % bottom margin
@@ -82,7 +56,6 @@
                         {0.25in}  % head sep
                         {   9pt}  % foot height
                         { 0.3in}  % foot sep
-%----------------------------------------------------------------------------------------
 \raggedbottom
 \setlength{\topskip}{1\topskip \@plus 5\p@}
 \doublehyphendemerits=10000       % No consecutive line hyphens.
@@ -117,12 +90,12 @@
 \newtheorem{remark}[theorem]{Remark}
 \usepackage[centerlast,small,sc]{caption}
 \setlength{\captionmargin}{20pt}
-\newcommand{\fref}[1]{Figure~\ref{#1}}
-\newcommand{\tref}[1]{Table~\ref{#1}}
-\newcommand{\eref}[1]{Equation~\ref{#1}}
-\newcommand{\cref}[1]{Chapter~\ref{#1}}
-\newcommand{\sref}[1]{Section~\ref{#1}}
-\newcommand{\aref}[1]{Appendix~\ref{#1}}
+\newcommand{\fref}[1]{Figura~\ref{#1}}
+\newcommand{\tref}[1]{Tabella~\ref{#1}}
+\newcommand{\eref}[1]{Equazione~\ref{#1}}
+\newcommand{\cref}[1]{Capitolo~\ref{#1}}
+\newcommand{\sref}[1]{Sezione~\ref{#1}}
+\newcommand{\aref}[1]{Appendice~\ref{#1}}
 \renewcommand{\topfraction}{0.85}
 \renewcommand{\bottomfraction}{.85}
 \renewcommand{\textfraction}{0.1}
@@ -135,6 +108,7 @@
 \setcounter{dbltopnumber}{9}
 \usepackage{graphicx}
 \usepackage{epstopdf}
+\usepackage[scriptsize]{subfigure}
 \usepackage{booktabs}
 \usepackage{rotating}
 \usepackage{listings}
@@ -162,7 +136,6 @@
 \newcommand*{\examiner}[1]{\def\examname{#1}}
 \newcommand*{\degree}[1]{\def\degreename{#1}}
 \newcommand*{\authors}[1]{\def\authornames{#1}}
-\newcommand*{\addresses}[1]{\def\addressnames{#1}}
 \newcommand*{\university}[1]{\def\univname{#1}}
 \newcommand*{\UNIVERSITY}[1]{\def\UNIVNAME{#1}}
 \newcommand*{\department}[1]{\def\deptname{#1}}
@@ -174,66 +147,45 @@
 \newcommand*{\subject}[1]{\def\subjectname{#1}}
 \newcommand*{\keywords}[1]{\def\keywordnames{#1}}
 
-%----------------------------------------------------------------------------------------
-%	DOCUMENT VARIABLES
-%	Fill in the lines below to update the thesis template
-%	If you wish to cite each of the variables defined below, look at the
-%	section above for the citation command e.g. \examiner{} below is
-%	defined as \examname above so you cite it as \examname
-%----------------------------------------------------------------------------------------
-
-\thesistitle{Dal Web al Mobile - L'evoluzione delle Tecnologie web per lo sviluppo di applicazioni multipiattaforma} % Your thesis title - this is used in the title and abstract
+\thesistitle{Dal Web al Mobile - L'evoluzione delle Tecnologie web per lo sviluppo di applicazioni multipiattaforma} 
+% Your thesis title - this is used in the title and abstract
 %-------------------------------------------------  
-\supervisor{Dott. Paolo \textsc{Ceravolo}} % You supervisor's name - this is used in the title page
+\supervisor{Dott. Paolo \textsc{Ceravolo}} 
+% You supervisor's name - this is used in the title page
 %-------------------------------------------------(Added)   
-\cosupervisor{Dott. Christian \textsc{Nastasi}} % You co-supervisor's name - this is used in the title page
+\cosupervisor{Dott. Christian \textsc{Nastasi}} 
+% You co-supervisor's name - this is used in the title page
 %-------------------------------------------------   
-\examiner{} % Your examiner's name - this is not currently used anywhere in the template, cite it with \examname if you want it
 %-------------------------------------------------   
 \degree{Dottore in Informatica Musicale} % Your degree name - this is currently used in the title page and abstract
 %-------------------------------------------------   
-\authors{Marco \textsc{Predari}} % Your name - this is used in the title page and abstract
-%-------------------------------------------------   
-\addresses{} % Your address - this is not currently used anywhere in the template, cite it with \addressnames if you want it
-%-------------------------------------------------   
-\subject{} % Your subject area - this is not currently used anywhere in the template, cite it with \subjectname if you want it
-%-------------------------------------------------   
-\keywords{} % Keywords for your thesis - this is not currently used anywhere in the template, cite it with \keywordnames if you want it
-%-------------------------------------------------   
-\university{\texorpdfstring{\href{http://www.di.unimi.it} % Your university's URL
-                {Università degli Studi di Milano}} % Your university's name - this is currently used in the title page
-                {University Name}}
-%-------------------------------------------------   
-\UNIVERSITY{\texorpdfstring{\href{University Web Site URL Here (include http://www.unimi.it)} % Your university's URL
-                {UNIVERSITA' DEGLI STUDI DI MILANO}} % Your university's name in capitals - this is currently used in the abstract page
-                {UNIVERSITY NAME (IN BLOCK CAPITALS)}}
-%-------------------------------------------------                
-\department{\texorpdfstring{\href{Department or School Web Site URL Here (include http://www.di.unimi.it)} % Your department's URL
-                {Dipartimento di Informatica e Comunicazione}} % Your department's name - used in the title page and abstract
-                {Department or School Name}}
-%-------------------------------------------------                
-\DEPARTMENT{\texorpdfstring{\href{Department or School Web Site URL Here (include http://)} % Your department's URL
-                {DIPARTIMENTO DI INFORMATICA E COMUNICAZIONE}} % Your department's name in capitals - this is not currently used anywhere in the template, cite it with \DEPTNAME if you want it
-                {DEPARTMENT OR SCHOOL NAME (IN BLOCK CAPITALS)}}
-%-------------------------------------------------                
-\group{\texorpdfstring{\href{Research Group Web Site URL Here (include http://)} % Your research group's URL
-                {Research Group Name}} % Your research group's name - this is currently used in the title page 
-                {Research Group Name}}
-%-------------------------------------------------                
-\GROUP{\texorpdfstring{\href{Research Group Web Site URL Here (include http://)} % Your research group's URL
-                {RESEARCH GROUP NAME (IN BLOCK CAPITALS)}} % Your research group's name in capitals - this is not currently used anywhere in the template, cite it with \GROUPNAME if you want it
-                {RESEARCH GROUP NAME (IN BLOCK CAPITALS)}}
-%-------------------------------------------------                
-\faculty{\texorpdfstring{\href{Faculty Web Site URL Here (include http://)} % Your faculty's URL
-                {Facoltà di Scienze e Tecnologie}} % Your faculty's name - this is currently used in the abstract page
-                {Faculty Name}}
-%-------------------------------------------------                
-\FACULTY{\texorpdfstring{\href{Faculty Web Site URL Here (include http://)} % Your faculty's URL
-                {FACOLTA' DI SCIENZE E TECNOLOGIE}} % Your faculty's name in capitals - this is not currently used anywhere in the template, cite it with \FACNAME if you want it
-                {FACULTY NAME (IN BLOCK CAPITALS)}}
-%----------------------------------------------------------------------------------------    
+\authors{Marco \textsc{Predari}} 
 
-% The default title page, this is not used in this www.latextemplates.com version            
+\university  {\texorpdfstring{\href{http://www.unimi.it}
+                {Universita' degli Studi di Milano}}
+                {Universita' degli Studi di Milano}}
+\UNIVERSITY  {\texorpdfstring{\href{http://www.unimi.it}
+                {UNIVERSITA' DEGLI STUDI DI MILANO}}
+                {UNIVERSITA' DEGLI STUDI DI MILANO}}
+\department  {\texorpdfstring{\href{http://www.di.unimi.it}
+                {Dipartimento di Informatica e Comunicazione}}
+                {Dipartimento di Informatica e Comunicazione}}
+\DEPARTMENT  {\texorpdfstring{\href{http://www.di.unimi.it}
+                {DIPARTIMENTO DI INFORMATICA E COMUNICAZIONE}}
+                {DIPARTIMENTO DI INFORMATICA E COMUNICAZIONE}}
+\group       {\texorpdfstring{\href{Research Group Web Site URL Here (include http://)}
+                {Research Group Name}}
+                {Research Group Name}}
+\GROUP       {\texorpdfstring{\href{Research Group Web Site URL Here (include http://)}
+                {RESEARCH GROUP NAME (IN BLOCK CAPITALS)}}
+                {RESEARCH GROUP NAME (IN BLOCK CAPITALS)}}
+\faculty     {\texorpdfstring{\href{http://www.scienzemfn.unimi.it}
+                {Facolta' di Scienze e Tecnologie}}
+                {Facolta' di Scienze e Tecnologie}}
+\FACULTY     {\texorpdfstring{\href{http://www.scienzemfn.unimi.it}
+                {FACOLTA' DI SCIENZE E TECNOLOGIE}}
+                {FACOLTA' DI SCIENZE E TECNOLOGIE}}
+
 \renewcommand\maketitle{
   \btypeout{Title Page}
   \hypersetup{pdftitle={\@title}}
@@ -254,17 +206,17 @@
       \vfill
       {\huge \bf \@title \par}
       \vfill
-      {\LARGE di \par}
+      {\LARGE by \par}
       \smallskip
       {\LARGE \authornames \par}
       \vfill
       {\large A thesis submitted in partial fulfillment for the \par}
-      {\large degree of \degreename \par}
+      {\large degree of Doctor of Philosophy \par}
       \bigskip
       \bigskip
       {\large in the \par}
       {\large \facname \par}
-      {\large \deptname \par} 
+      {\large \deptname \par}
       \bigskip
       \bigskip
       \bigskip
@@ -288,9 +240,6 @@
   \global\let\and\relax
   \cleardoublepage
 }
-%----------------------------------------------------------------------------------------
-%	ABSTRACT PAGE DESIGN
-%----------------------------------------------------------------------------------------
 \newenvironment{abstract}
 {
   \btypeout{Abstract Page}
@@ -298,22 +247,21 @@
   \null\vfil
   \begin{center}
     \setlength{\parskip}{0pt}
-    {\normalsize \UNIVNAME \par} % University name in capitals
+    {\normalsize  \par}
     \bigskip
     {\huge{\textit{Abstract}} \par}
     \bigskip
-    {\normalsize \facname \par} % Faculty name
-    {\normalsize \deptname \par} % Department name
+    {\normalsize  \par}
+    {\normalsize  \par}
     \bigskip
-    {\normalsize \degreename\par} % Degree name
+    {\normalsize \par}
     \bigskip
-    {\normalsize\bf \@title \par} % Thesis title
+    {\normalsize\bf \@title \par}
     \medskip
-    \vfil\null
+    {\normalsize  \par}
     \bigskip
   \end{center}
 }
-%----------------------------------------------------------------------------------------
 {
   \vfil\vfil\vfil\null
   \cleardoublepage
@@ -326,7 +274,6 @@
 \addcontentsline{toc}{chapter}{#1}}
 \renewcommand\tableofcontents{
 \btypeout{Table of Contents}
-\addtotoc{Contents}
 \begin{spacing}{1}{
     \setlength{\parskip}{1pt}
     \if@twocolumn
@@ -343,8 +290,8 @@
 }\end{spacing}
 }
 \renewcommand\listoffigures{
-\btypeout{List of Figures}
-\addtotoc{List of Figures}
+\btypeout{Elenco delle Figure}
+\addtotoc{Elenco delle Figure}
 \begin{spacing}{1}{
     \setlength{\parskip}{1pt}
     \if@twocolumn
@@ -361,8 +308,8 @@
 }\end{spacing}
 }
 \renewcommand\listoftables{
-\btypeout{List of Tables}
-\addtotoc{List of Tables}
+\btypeout{Elenco delle Tabelle}
+\addtotoc{Elenco delle Tabelle}
 \begin{spacing}{1}{
     \setlength{\parskip}{1pt}
     \if@twocolumn
@@ -439,3 +386,5 @@
   \btypeout{\bibname}
   \@mainmatterfalse}
 \endinput
+%%
+%% End of file `Thesis.cls'.

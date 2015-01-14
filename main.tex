@@ -30,7 +30,6 @@
 \graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
 \usepackage[square, comma, sort&compress]{natbib}
 \usepackage{csvsimple}
-\usepackage{listing}
 \usepackage{listings}
 \usepackage{color}
 \usepackage{hyperref}
@@ -59,9 +58,7 @@
 
 % PDF meta-datar
 \hypersetup{pdftitle={\ttitle}}
-\hypersetup{pdfsubject=\subjectname}
 \hypersetup{pdfauthor=\authornames}
-\hypersetup{pdfkeywords=\keywordnames}
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
@@ -70,7 +67,12 @@
 \begin{titlepage}
 \begin{center}
 
-\textsc{\LARGE \univname}\\[1.5cm] % University name
+\textsc{\LARGE \univname}\\ % University name
+\smallskip
+{\large \facname}\\
+\smallskip
+\deptname\\[1.5cm]
+
 \textsc{\Large Tesi Di Laurea Triennale}\\[0.5cm] % Thesis type
 
 \HRule \\[0.4cm] % Horizontal line
@@ -96,7 +98,6 @@
  
 %\large \textit{A thesis submitted in fulfilment of the requirements\\ for the degree of \degreename}\\[0.3cm] % University requirement text
 %\textit{in the}\\[0.4cm]
-\deptname\\[2cm] % Research group name and department name
  
 {\large \today}\\[4cm] % Date
 %\includegraphics{Logo} % University/department logo - uncomment to place it
@@ -184,23 +185,24 @@ Grazie a tutti \ldots
 
 \pagestyle{fancy} % The page style headers have been "empty" all this time, now use the "fancy" headers as defined before to bring them back
 
-\renewcommand*{\contentsname}{Contenuti}
-\lhead{\emph{Contenuti}} % Set the left side page header to "Contents"
+\renewcommand\contentsname{Indice dei Contenuti}
+\lhead{\emph{Indice dei Contenuti}} % Set the left side page header to "Contents"
 \tableofcontents % Write out the Table of Contents
 
-\renewcommand*{\listfigurename}{Lista delle Figure}
-\lhead{\emph{Lista delle Figure}} % Set the left side page header to "List of Figures"
+\renewcommand\listfigurename{Elenco delle Figure}
+\lhead{\emph{Elenco delle Figure}} % Set the left side page header to "List of Figures"
 \listoffigures % Write out the List of Figures
 
-\renewcommand*{\listtablename}{Lista degli Tabelle}
-\lhead{\emph{Lista delle Tabelle}} % Set the left side page header to "List of Tables"
+\renewcommand\listtablename{Elenco delle Tabelle}
+\lhead{\emph{Elenco delle Tabelle}} % Set the left side page header to "List of Tables"
 \listoftables % Write out the List of Tables
 
-\renewcommand*{\lstlistlistingname}{Lista degli Esempi}
-\lhead{\emph{Lista degli Esempi}}
-\addtotoc{Lista Degli Esempi}
+\renewcommand\lstlistlistingname{Elenco degli Esempi}
+\lhead{\emph{Elenco degli Esempi}}
+\addcontentsline{toc}{chapter}{\lstlistlistingname}
 \lstlistoflistings
-\clearpage
+
+\renewcommand{\bibname}{Bibliografia}
 %----------------------------------------------------------------------------------------
 %	ABBREVIATIONS
 %----------------------------------------------------------------------------------------
@@ -308,8 +310,7 @@ Grazie a tutti \ldots
 %----------------------------------------------------------------------------------------
 \label{Bibliografia}
 
-\lhead{\emph{Biblografia}} % Change the page header to say "Bibliography"
-
+\lhead{\emph{Bibliografia}} % Change the page header to say "Bibliography"
 \bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
 
 \bibliography{Bibliography} % The references (bibliography) information are stored in the file named "Bibliography.bib"
