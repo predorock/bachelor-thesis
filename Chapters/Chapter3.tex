@@ -171,7 +171,7 @@ Inoltre possiamo definire direttive personalizzate alle quali possiamo associare
 \begin{lstlisting}[language=html,caption={Un esempio di direttiva personalizzata},
 				   label={lst:custom-directive}]
  angular.module("myApp")
- .directive("myPersonalTag",function(){
+ .directive("myPersonalTag",funcIonic: Advanced HTML5 Hytion(){
 	return{
 		link: function(scope, element, attrs){
 			//directive main istructions		
@@ -199,20 +199,29 @@ Oltre alle caratteristiche principali con le direttive si hanno a disposizione m
   \vspace{5pt}
 \end{wrapfigure}
 
-Ionic offre componenti e librerie pensati per uno sviluppo ibrido dell'applicazione, inoltre è stato sviluppato riducendo al minimo la manipolazione del DOM\footnote{Il Document Object Model (spesso abbreviato come DOM), letteralmente modello a oggetti del documento, è una forma di rappresentazione dei documenti strutturati come modello orientato agli oggetti.\cite{wiki:dom} gli oggetti delle pagine web, ad esempio con delle animazioni, introduciamo della computazione aggiuntiva al nostro browser che può rallentarne le prestazioni} garantendo performance molto competitive.\\
-I componenti di Ionic vengono ovviamente strutturati tramite HTML5, aggiungendo classi css specifiche del framework. Inoltre 
-Ionic fornisce uno strumento molto interessante da linea di comando che permette di scaricare diversi modelli di applicazione già pronti in modo da non dover tutte le volte configurare da capo la nostra applicazione con il framework. Inoltre ci predispone i file in una maniera logica ben precisa cosicché se volessimo in un futuro aggiungere codice e/o altre librerie possiamo farlo con molta facilità.
-I componenti non sono altro che elementi del linguaggio HTML, vengono forniti con una serie di classi CSS caratteristiche del framework, pensate in modo da essere componibili tra di loro. Ionic fornisce inoltre dei tag propri del framework che possono includere elementi più complessi come ad esempio menù laterali.
-Il cuore di Ionic e tutte le sue funzionlità sono state sviluppate in AngularJS il che rende questo framework ancora più versatile e potente. Inoltre tutti il foglio di stile che include Ionic fa uso di SASS e ci da la possibilità di personalizzare colori e forme dei componenti semplicemente ricompilando i file \emph{.scss}.
-\section{Il Wrapper Framework}
+IONIC fa parte della famiglia degli UI Framework per creazione di interfacce utente per dispositivi mobili e applicazioni ibride e si serve delle tecnologie web AngularJS, Sass e HTML5.
+Il lavoro da svolgere per chi vuole utilizzare questo tipo di framework e quello di scegliere i vari componenti messi a disposizione e di comporli per creare l'applicazione finale. Generalmente si parte da un template messo a disposizione dal framework e si compone l'applicazione. La modularità dei componenti di IONIC è data dal sistema di direttive di AngularJS, tutti i componenti sono sviluppati in direttive separate e come si può notare tutti i rispettivi tag HTML iniziano con il prefisso \textit{ion} o \textit{ionic}. 
+La caratterizzazione di un framework di questo tipo dipende dal suo stile e design e sta allo sviluppatore(o  grafico) decidere quale in questo caso il più bello per l'applicazione. IONIC inoltre mette a disposizioni diverse caratteristiche che possono influenzare la sua scelta:
+\begin{description}
+\item[CSS Components]
+Sono dei componenti statici creati tramite HTML e CSS come bottoni, barre di navigazione, liste, tabelle che possono essere assemblati tra di loro come i componenti di una pagina web. I CSS di IONIC mettono a disposizione classi che possono cambiarne forma, dimensione e colore che a loro volta possono essere combinate.
+Per personalizzazioni più avanzate e possibile seguire una guida messa a disposizione dal framework che spiega come modificare i file di Sass e che caratteristiche si va a cambiare(come ad esempio i colori standard).
+\item[Javascript Components]
+Al fine di offrire una esperienza di una applicazione mobile all'utente, IONIC offre delle estensioni in ANgularJS che ricalcano quelle che sono le operazioni e le interfacce più comuni sui i dispositivi mobili. Ispirato ai sistemi iOS e Android questo framework mette a disposizione componenti come gestori di eventi, paginazione dei contenuti, popup di sistema, touch gestures, menu laterali, scorrimento di pagine il tutto nello stile di una applicazione mobile vera e prorpia.
+\item[Ionicons]
+IONIC prevede un set di icone standard che possono essere utilizzate all'interno dei componenti e personalizzate a proprio piacimento.
 
-- Perche ho scelto un wrapper \\
-	-> per poter utilizzare tecnologie web\\
-	-> formazione come sviluppatore web in azienda\\
-- Perchè ho scelto Phonegap \\
-	-> Open Source\\
-	-> API complete
-	-> Esistenza di ng-cordova(ma va spiegata a fine sezione)
+\end{description} 
+\section{Il Wrapper Framework}
+Come spiegato nella sezione \ref{sec:appAndFramework} per lo sviluppo di applicazioni ibirde si necessita di un framework che possa in qualche modo tradurre il linguaggio originale in quello della specifica piattaforma.
+Nel caso qui studiato si ha bisogno di un framework che possa ospitare tecnologie web e che abbia un interfaccia verso le funzionalità del dispositivo. Si ribadisce che non tutti i framework possono essere usati su tutte le piattaforme, bisogna scegliere con accortezza di quale servirsi.
+Data la mia formazione come sviluppatore web presso l'azienda BigThink SRL ho scelto di utilizzare il framework \emph{Cordova} per i seguenti motivi:
+\begin{itemize}
+\item E' un framework che si adatta a sviluppatori web che vogliono portare le proprie applicazioni su dispositivi mobili, in quanto fornisce le varie API per le funzionalità del dispositivo in linguaggio Javascript.
+\item E' open-source quindi costi di licenza nulli per l'azienda e per lo sviluppatore ed inoltre e seguito da una community popolata e attiva.
+\item Supporta 16 piattaforme diverse con oltre 20 plugin per interagire con il dispositivo, assieme ad altre librerie per la creazione di plugin personalizzati.
+\item Si integra al meglio con AngularJS grazie ad una libreria chiamata \emph{ng-cordova}(\ref{sec:ngCordova}).
+\end{itemize}
 
 \subsection{Cordova/Phonegap}
 
@@ -243,7 +252,7 @@ Cordova quindi offre una serie di potenti API in linguaggio Javascript per poter
 Infine per quanto riguarda lo sviluppo dei plugin verso il futuro, la comunità open-source di \emph{Cordova} sta spronando gli sviluppatori a creare nuove funzionalità sempre più generiche, in modo tale che con l'evolversi delle tecnologie, e soprattutto dei browser web, siano sempre compatibili.
 
 \subsection{ngCordova}
-
+\label{sec:ngCordova}
 \begin{wrapfigure}{r}{0.40\textwidth}
   \vspace{-65pt}
   \begin{center}

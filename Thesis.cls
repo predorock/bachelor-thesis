@@ -3,7 +3,7 @@
 %% generated with the docstrip utility.
 %%
 %% Created by Steve R. Gunn, modified by Sunil Patel: www.sunilpatel.co.uk
-
+\usepackage[utf8]{inputenc}
 \NeedsTeXFormat{LaTeX2e}[1996/12/01]
 \ProvidesClass{Thesis}
               [2007/22/02 v1.0
@@ -162,11 +162,11 @@
 \authors{Marco \textsc{Predari}} 
 
 \university  {\texorpdfstring{\href{http://www.unimi.it}
-                {Universita' degli Studi di Milano}}
-                {Universita' degli Studi di Milano}}
+                {Università degli Studi di Milano}}
+                {Università degli Studi di Milano}}
 \UNIVERSITY  {\texorpdfstring{\href{http://www.unimi.it}
-                {UNIVERSITA' DEGLI STUDI DI MILANO}}
-                {UNIVERSITA' DEGLI STUDI DI MILANO}}
+                {UNIVERSITÀ DEGLI STUDI DI MILANO}}
+                {UNIVERSITÀ DEGLI STUDI DI MILANO}}
 \department  {\texorpdfstring{\href{http://www.di.unimi.it}
                 {Dipartimento di Informatica e Comunicazione}}
                 {Dipartimento di Informatica e Comunicazione}}
@@ -180,11 +180,11 @@
                 {RESEARCH GROUP NAME (IN BLOCK CAPITALS)}}
                 {RESEARCH GROUP NAME (IN BLOCK CAPITALS)}}
 \faculty     {\texorpdfstring{\href{http://www.scienzemfn.unimi.it}
-                {Facolta' di Scienze e Tecnologie}}
-                {Facolta' di Scienze e Tecnologie}}
+                {Facoltà di Scienze e Tecnologie}}
+                {Facoltà di Scienze e Tecnologie}}
 \FACULTY     {\texorpdfstring{\href{http://www.scienzemfn.unimi.it}
-                {FACOLTA' DI SCIENZE E TECNOLOGIE}}
-                {FACOLTA' DI SCIENZE E TECNOLOGIE}}
+                {FACOLTÀ DI SCIENZE E TECNOLOGIE}}
+                {FACOLTÀ DI SCIENZE E TECNOLOGIE}}
 
 \renewcommand\maketitle{
   \btypeout{Title Page}
