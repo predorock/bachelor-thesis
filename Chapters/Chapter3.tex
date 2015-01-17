@@ -53,10 +53,14 @@ Queste sono solo alcune delle opzioni messe a disposizione dei CSS preprocessors
 \end{wrapfigure}
 
 \paragraph*{Definizione}
-AngularJS è un framework Javascript che segue il pattern MVC(\ref{sec:MVC}) ideato da \emph{Minsko Hevery}(Google) che estende il linguaggio HTML in un formato più espressivo e leggibile. Consente di aggiungere nuovi tag HTML speciali in modo da sincronizzare la parte scritta in Javascript senza manualmente aggiornare la view, in modo tale da rendere indipendente la logica della applicazione. Angular semplifica la scrittura di codice Javascript rendendo il codice dell'applicazione più efficiente e leggibile.
-\paragraph*{Caratteristiche e Componenti}
-AngularJS interpreta il design pattern MVC grazie al quale si arricchisce con una serie di caratteristiche molto interessanti:
+AngularJS è un framework Javascript che segue il pattern MVC(\ref{sec:MVC}) ideato da \emph{Minsko Hevery}(Google) che estende il linguaggio HTML in un formato più espressivo e leggibile. È caratterizzato da un approccio dichiarativo alla programmazione ed è stato pensato per separare la logica di business di una applicazione dalla sua presentazione dei dati, infatti sono presenti tag HTML espliciti come \emph{ng-view} e \emph{ng-model} che consentono di sincronizzare i dati del modello con la vista indipendentemente dalla loro logica. AngularJS è stato pensato esplicitamente per lo sviluppo di web application è presenta una forte modularità dei suoi componenti, in modo da renderli indipendenti e testabili, rispetta infatti i principi \emph{SOLID} della programmazione orientata agli oggetti.
+Ecco le caratteristiche principali di questo framework:
+
 \begin{description}
+
+\item[View] la presentazione dei dati in AngularJS viene fatta tramite un sistema di viste con l'utilizzo di pagine HTML. Ad ogni vista possono essere associati più modelli di dati da presentare ed inoltre tramite un meccanismo di \emph{routing} e possibile determinare una struttura, anche gerarchica di più viste. Un componente 
+
+
 
 \item[Data Binding] Il Data Binding in AngularJS è la sincronizzazione automatica dei dati tra modello e vista. In modo in cui AngularJS implementa il data bindign consente di trattare il modello come SSOT(\cite{wiki:SSOT}). La vista è la proiezione del modello in ogni momento, quando il modello cambia la vista riflette il cambiamento e viceversa. 
 La maggior parte dei sistemi di templating sincronizzano i dati in una sola direzione: si fondono componenti del template e modello insieme in una vista. Quando si verifica la fusione, le modifiche al modello o sezioni correlate della vista vengono NON si riflettono automaticamente nella vista. Peggio ancora, le eventuali modifiche che l'utente fa nella vista non si riflettono nel modello. Ciò significa che lo sviluppatore deve scrivere del codice apposito che sincronizza costantemente la vista con il modello e il modello con la vista.
@@ -75,9 +79,6 @@ In particolare come si vede nell'esempio \ref{lst:directives-example} il binding
 Il systema dei templates di AngularJS funziona in modo differente. In primo luogo il modello (che è l'HTML non compilato insieme a  markup o direttive supplementari) viene compilato sul browser. Il passo di compilazione produce una live view(vista). Eventuali modifiche alla vista si riflettono immediatamente nel modello, e le eventuali modifiche nel modello vengono propagate alla vista. Il modello è il SSOT per lo stato dell'applicazione, semplificando notevolmente il modello di programmazione per lo sviluppatore. Si può pensare di vista semplicemente come una proiezione istantanea del modello.
 
 Poiché la vista è solo una proiezione del modello, il controller è completamente separato dal punto di vista e completamente allo scuro di essa. Questo rende i test dell'applicazione molto semplici, in quanto è facile testare il controller indipendentemente dalla vista e dalla relativa dipendenza dal DOM / browser web.
-
-\item[Scope] Lo \emph{Scope} è un oggetto che si riferisce al modello dell'applicazione. E' il contesto dove vengono eseguite le espressioni. Esistono più scope all'interno dell'applicazione e sono organizzati in maniera gerarchica ad imitare la struttura del DOM dell'applicazione. Infine sullo scope si può osservare una espressione e propagare eventi.
-I vari scope di una applicazione in AngularJS sono i nodi centrali a cui ruota attorno tutta la logica dell'applicazione, grazie a loro e possibile la comunicazione tra vista e modello con l'utilizzo del data binding. Per una trattazione più approfondita si rimanda alla documentazione di AngularJS(angularjs.org).
 
 \item[Controller] i controller in AngularJS hanno il compito di gestire la logica di una determinata sezione dell'applicazione. Quando un controller viene dichiarato su una parte del DOM tramite la direttiva \emph{ng-controller} come nell'esempio \ref{lst:newController} AngularJS crea un nuovo oggetto Javascript associandogli un nuovo scope che potrà essere inserito all'interno del controller tramite la dependency injection. 
 
@@ -171,7 +172,7 @@ Inoltre possiamo definire direttive personalizzate alle quali possiamo associare
 \begin{lstlisting}[language=html,caption={Un esempio di direttiva personalizzata},
 				   label={lst:custom-directive}]
  angular.module("myApp")
- .directive("myPersonalTag",funcIonic: Advanced HTML5 Hytion(){
+ .directive("myPersonalTag",function(){
 	return{
 		link: function(scope, element, attrs){
 			//directive main istructions		
@@ -184,6 +185,7 @@ Una nota di sintassi particolare per le direttive riguarda il loro nome, come os
 Oltre alle caratteristiche principali con le direttive si hanno a disposizione molte più opzioni. Si rimanda l'approfondimento qui : \cite{angularjs:directives} per un trattazione più approfondita.
 
 \end{description} 
+
 
 
 \subsection{Ionic}
@@ -248,8 +250,7 @@ La vera differenza tra \texttt{Cordova} e \texttt{Phonegap}, viene descritta da 
 Personalmente ho scelto di utilizzare \emph{Cordova} per essere libero da qualsiasi vincolo proprietario.
 
 \subsubsection{Cordova Core}
-Cordova quindi offre una serie di potenti API in linguaggio Javascript per poter accedere alle funzionalità native del dispositivo. In difesa dello sviluppo nativo alcuni programmatori accusano \emph{Cordova} di non possedere tutte le possibilità di accesso a basso livello che invece si avrebbero. \emph{Corodova} è una realtà open-source e in quanto tale si è evoluta nel tempo offrendo sempre più funzionalità che hanno chiuso i divario che si credeva esservi tra questi due tipi di approcci.\\
-Infine per quanto riguarda lo sviluppo dei plugin verso il futuro, la comunità open-source di \emph{Cordova} sta spronando gli sviluppatori a creare nuove funzionalità sempre più generiche, in modo tale che con l'evolversi delle tecnologie, e soprattutto dei browser web, siano sempre compatibili.
+Cordova quindi offre una serie di potenti API in linguaggio Javascript per poter accedere alle funzionalità native del dispositivo. In difesa dello sviluppo nativo alcuni programmatori accusano \emph{Cordova} di non possedere tutte le possibilità di accesso a basso livello che invece si avrebbero. \emph{Corodova} è una realtà open-source e in quanto tale si è evoluta nel tempo offrendo sempre più funzionalità che hanno chiuso i divario che si credeva esservi tra questi due tipi di approcci.
 
 \subsection{ngCordova}
 \label{sec:ngCordova}

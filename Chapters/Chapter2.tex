@@ -1,7 +1,9 @@
 \chapter{Metodi e Modelli per lo sviluppo di applicazioni Mobile}
-La scelta di seguire un determinato schema progettuale di una applicazione è stata fatta in base alle conoscenze apprese durante la mia esperienza di tirocinio in azienda, durante la quale non mi sono occupato dell'intera progettazione dell'applicazione, mi occupavo solo dello sviluppo \emph{frontend} di questa, ma per uno sviluppatore è necessario conoscere l'intera dinamica che si svolge all'interno di essa anche se non andrà a intervenire su determinate parti.\\
+\lhead{\emph{Capitolo 2}}
+In questo capitolo si vogliono presentare alcuni concetti teorici e pratici per lo sviluppo di applicazioni Mobile. Molti dei concetti coincidono con lo sviluppo di applicazioni in generale e sono riportati dall'esperienza di tirocinio fatta presso l'azienda BigThink SRL.
 
-La politica che è stata intrapresa in azienda è stata quella della \emph{Separation of Concernes}(SoC), che in italiano si traduce in \emph{Separazione dei Compiti}. Si tratta di un principio di design dell'applicazione per dividere l'applicazione in sezioni distinte, e ad ogni sezione assegnare un particolare compito o risoluzione di un problema. Questa scelta progettuale introduce il concetto di \emph{modulo} di una applicazione, ovvero l'applicazione poi dipenderà dai moduli che andremo a creare e ad unire tra di loro. I moduli ragionevolmente saranno indipendenti uno dall'altro in modo tale da garantirne l'integrità e il loro re-utilizzo.\cite{wiki:soc}\\
+Una prima fase è quella di strutturare l'architettura dell'applicazione e decidere come vengono assegnati i compiti. Una delle politiche che è stata intrapresa in azienda è stata quella della \emph{Separation of Concernes}(SoC), che in italiano si traduce in \emph{Separazione dei Compiti}. Si tratta di un principio di design per dividere un problema in sezioni distinte, e ad ogni sezione assegnare un particolare compito o risoluzione del problema. Questa scelta progettuale introduce il concetto di \emph{modulo} di una applicazione, ovvero l'applicazione poi dipenderà dai moduli che andremo a creare e ad unire tra di loro. I moduli ragionevolmente saranno indipendenti uno dall'altro in modo tale da garantirne l'integrità e il loro re-utilizzo.\cite{wiki:soc}\\
+
 Il concetto appena visto astrae molto da una applicazione vera e propria, sta a chi la progetta decidere con che granularità  e se è veramente necessario applicarlo. Dato che parliamo di tecnologie web, un chiaro esempio si separazione dei compiti è quello della struttura di una pagina web, divisa in HTML per la struttura, CSS per lo stile, e Javascript per la logica e comportamento.\\
 
 In questo capitolo andremo a vedere in che modo i compiti si possono separare all'interno di una applicazione, e quali strutture e/o design pattern possono risultare utili per lo sviluppo.
@@ -15,16 +17,17 @@ Quando si progetta una applicazione risulta molto utile utilizzare schemi archit
 
 Il problema ricorrente che si ha nello sviluppo di applicazioni e quello della decisione di dove debbano stare determinati compiti / operazioni / sezioni all'interno dell'applicazione. Ad esempio la separazione della parte dell'interfaccia da quella dedicata alla manipolazione dei dati da quella dedicata alla memorizzazione. Dividere i vari compiti di una applicazione può risultare molto produttivo, in quanto si possono sviluppare in parallelo diverse parti dell'applicazione senza influire sulle altre e volendo con la possibilità di utilizzare tecnologie differenti.
 
-Durante il periodo di tirocinio presso l'azienda \emph{BigThink SRL} per la creazione di Web Applications sono stati utilizzati pattern come : Client-Server, SoC, Frontend e Backend gli altri design pattern che verranno introdotti sono necessari per comprendere meglio alcune tecnologie che verranno utilizzate.
+Durante il periodo di tirocinio presso l'azienda \emph{BigThink SRL} per la creazione di Web Applications sono stati utilizzati pattern come : Client-Server, SoC, Frontend e Backend, MVC gli altri design pattern che verranno introdotti sono necessari per comprendere meglio alcune tecnologie che verranno utilizzate.
  
 \subsection{Frontend e Backend}
-Queste due parole sono spesso usate in informatica in molti ambiti, nel contesto specifico dell'applicazione \texttt{frontend}(in italiano parte davanti) denota quella parte dell'applicazione responsabile di gestire l'interfaccia utente e i dati provenienti da essa, mentre \texttt{backend}(in italiano parte dietro) indica la sezione dell'applicazione dedita alla gestione dei dati provenienti dalla parte frontend. L'interazione che hanno le due parti è un chiaro esempio di interfaccia.\\
+Queste due parole sono spesso usate in informatica in molti ambiti, nel contesto specifico dell'applicazione \texttt{frontend}(in italiano parte davanti) denota quella parte dell'applicazione responsabile di gestire l'interfaccia utente e i dati provenienti da essa, mentre \texttt{backend}(in italiano parte dietro) indica la sezione dell'applicazione dedita alla gestione dei dati provenienti dalla parte frontend. L'interazione che hanno le due parti è un chiaro esempio di interfaccia.
 \textbf{Frontend:} questa è la parte caratteristica dell'applicazione, in quanto ne definisce il comportamento e l'aspetto, determinando la logica con cui si evolverà al rapporto con l'utente. A differenza della parte \emph{backend} questa non definisce nessuna manipolazione dei dati ma solo la loro rappresentazione(vista) determinando transizioni e/o animazioni.
 Nella parte \emph{frontend} è inclusa anche la fase di definizione estetica dell'interfaccia, ma spesso questa spetta a una figura professionale distinta atta "vestire" l'applicazione.
 \textbf{Backend:} questa parte è completamente diversa dalla prima, in quanto definisce la manipolazione dei dati all'interno dell'applicazione ma non da nessuna informazione caratteristica di essa. In particolare fornisce dei servizi ai quali la parte \emph{frontend} può accedere e recuperare/fornire dei dati, come ad esempio l'autenticazione di un utente a un servizio. Tutta la gestione dei dati che viene fatta da questa parte, viene oscurata alla parte \emph{frontend} per garantire un servizio di sicurezza molto elementare, in modo tale che se l'utente inserisce dei dati errati che vengono passati dalla parte \emph{frontend} a quella \emph{backend}, in modo errato, nessuna operazione verrà eseguita e l'integrità dei dati preservata.\\
 
-A livello professionale molti sviluppatori si identificano appunto come \emph{frontend} e/o \emph{backend} developer per appunto identificarsi specializzati nello sviluppo di una parte specifica dell'applicazione.
-Il vantaggio di usare un approccio di questo tipo sta nel fatto che la parte \emph{frontend} è l'unica specifica per una data applicazione. Se la parte \emph{backend} viene progettata bene, e possibile utilizzare i servizi che fornisce anche in futuro da altre applicazioni, pur seguendo il protocollo che richiede. Inoltre a livello professionale si può procedere parallelamente nello sviluppo delle parti in modo tale da ottimizzare i tempi, pur seguendo uno schema stabilito a priori.\\
+Si tratta di una separazione concettuale e non fisica delle parti, accade spesso che si facciano analogie con il pattern client-server(spiegato successivamente).
+
+A livello professionale molti sviluppatori si identificano appunto come \emph{frontend} e/o \emph{backend} developer ovvero specializzati nello sviluppo di una parte specifica dell'applicazione. Il vantaggio di usare un approccio di questo tipo sta nel fatto che la parte \emph{frontend} è l'unica specifica per una data applicazione. Se la parte \emph{backend} viene progettata bene, e possibile utilizzare i servizi che fornisce anche in futuro da altre applicazioni, pur seguendo il protocollo che richiede. Inoltre a livello professionale si può procedere parallelamente nello sviluppo delle parti in modo tale da ottimizzare i tempi, pur seguendo uno schema stabilito a priori.\\
 
 \subsection{Pattern Client-Server}
 \textbf{Definizione:} Il modello client-server è un modo per strutturare applicazioni distribuite che distingue due parti di un processo di comunicazione, la prima che fornisce una risorsa e/o un servizio chiamata server, la seconda che analogamente li può richiedere, chiamata client. La comunicazione in generale avviene attraverso la rete, ed è il client a iniziarla. Il compito del server è quello di predisporre le risorse che ha ai vari client che li chiedono, rimanendo appunto "in ascolto", il client invece non condivide le risorse con altri, può solo interagire con il server\cite{wiki:cliserv}.\\
@@ -68,32 +71,74 @@ L'utilizzo di API è stato fatto durante il mio tirocinio aziendale per lo scamb
 
 \subsection{API Rest}
 
-\textbf{Re}presentational \textbf{S}tate \textbf{T}ransfer (REST) è uno stile di architettura software per sistemi distribuiti. Un sistema conforme ai principi di design REST è detto RESTful. Il Web è l'esempio più importante e più famoso di sistema distribuito che realizza i principi REST. D'altra parte non è un caso. Infatti Roy Fielding, il padre di REST, introdusse per la prima volta l'espressione Representational State Transfer nella sua tesi di dottorato per indicare le caratteristiche delle parti meglio progettate del Web.
-Il termine REST è diventato più comune negli ultimi anni con l'esplosione del Web 2.0 e il proliferare di servizi web.
-In poche parole un'architettura RESTful è di tipo client / server. I client fanno richieste ai server che a loro volta processano le richieste e restituiscono una risposta. Richieste e risposte contengono delle rappresentazioni di risorse. Una \textbf{risorsa} è un concetto significativo per il dominio di riferimento (ad esempio l'articolo di un blog o il profilo utente di un social network) che può essere identificato attraverso un indirizzo. Una \textbf{rappresentazione} è una descrizione dello stato corrente o voluto di una risorsa.
+REST(\textbf{R}epresentational \textbf{S}tate \textbf{T}ransfer) è un termine coniato da Roy Fieldin(co-autore del protocollo HTTP 1.1) nella sua tesi di dottorato per descrivere lo stile dell'architettura dei sistemi di rete. REST non è un protocollo e nemmeno uno standard, ma uno \emph{stile} architetturale per applicazioni / servizi web, quando uno di essi rispetta i criteri di REST gli si da l'attributo \emph{RESTful}.
 
-\begin{figure}[htbp]
-  \centering
-    \includegraphics[scale=0.75]{Figures/tab-rest.jpg} 
-    \rule{35em}{0.5pt}
-  \caption[Vincoli REST]{Vincoli che una applicazione deve rispettare per essere considerata RESTful}
-  \label{fig:REST Rules}
-\end{figure}
+REST impone determinati vincoli alla sua architettura, pur lasciando libera la sua implementazione:
+\begin{description}
+\item[Uniform Interface] 
+REST impone una interfaccia uniforme tra client e server. Questo semplifica e decompone l'architettura, il che fa si che ogni parte possa evolvere indipendentemente. Per creare una interfaccia uniforme si sono 4 principi da seguire:
+\begin{description}
+\item[Resource Based] 
+ogni risorsa deve essere identificata univocamente all'interno del server. La sua identificazione deve essere concettualmente separata dalla rappresentazione che viene ritornata al client, la quale può dipendere dalla richiesta fatta.
+\item[Manipolazione delle Risorse] 
+il client tramite il riferimento della risorsa può effettuare 4 operazioni base creazione, modifica, aggiornamento, cancellazione.
+\item[Self-descriptive Messages] 
+Ogni messaggio tra client e server contiene tutte le informazioni sufficienti per la sua codifica e interpretazione. Le risposte dal server devono indicare anche i parametri di caching.
+\item[Hypermedia as the Engine of Application State (HATEOAS)] 
+Clients deliver state via body contents, query-string parameters, request headers and the requested URI (the resource name). Services deliver state to clients via body content, response codes, and response headers. This is technically referred-to as hypermedia (or hyperlinks within hypertext).
+Aside from the description above, HATEOS also means that, where necessary, links are contained in the returned body (or headers) to supply the URI for retrieval of the object itself or related objects. We'll talk about this in more detail later.
+The uniform interface that any REST services must provide is fundamental to its design.
+\end{description}
+\item[Stateless]
+As REST is an acronym for REpresentational State Transfer, statelessness is key. Essentially, what this means is that the necessary state to handle the request is contained within the request itself, whether as part of the URI, query-string parameters, body, or headers. The URI uniquely identifies the resource and the body contains the state (or state change) of that resource. Then after the server does it's processing, the appropriate state, or the piece(s) of state that matter, are communicated back to the client via headers, status and response body.
 
-Lo stile architetturale REST descrive 6 vincoli (cinque più uno facoltativo) che devono essere rispettati da un sistema affinché possa essere definito RESTful (tabella \ref{fig:REST Rules}). Poiche’ REST è uno stile e non una tecnologia e nemmeno una lista di raccomandazioni tecniche, i dettagli su come questi vincoli debbano essere implementati sono lasciati ai singoli sviluppatori. Ad esempio, l'Application Layer sul quale costruire il sistema non deve essere per forza HTTP, anche se HTTP è quasi sempre la scelta più naturale. Il formato delle rappresentazioni delle risorse spesso è XML o JSON, ma potrebbe essere anche PDF. Infine REST non è uno stile architetturale solo per le web application, ma è molto più generale. Se i vincoli REST sono rispettati, l’architettura software di un robot (server) controllato da uno o più computer (client) dove le risorse sono l’hardware del robot (sensori e motori) può essere a tutti gli effetti considerata RESTful.
-L'esperienza ha mostrato che sistemi RESTful hanno delle desiderabili proprietà emergenti, come ad esempio la scalabilità e la modificabilità.
-Un esempio di organizzazione delle risorse nel protocollo REST:
+Most of us who have been in the industry for a while are accustomed to programming within a container which provides us with the concept of “session” which maintains state across multiple HTTP requests. In REST, the client must include all information for the server to fulfill the request, resending state as necessary if that state must span multiple requests. Statelessness enables greater scalability since the server does not have to maintain, update or communicate that session state. Additionally, load balancers don't have to worry about session affinity for stateless systems.
 
-\begin{lstlisting}[language=php, caption = {Esempio di API REST generica}, label = {lst:genericRESTAPI}]
-	/{tipo di risorsa}/{id della risorsa}/{azione}
-\end{lstlisting}
+So what's the difference between state and a resource? State, or application state, is that which the server cares about to fulfill a request—data necessary for the current session or request. A resource, or resource state, is the data that defines the resource representation—the data stored in the database, for instance. Consider application state to be data that could vary by client, and per request. Resource state, on the other hand, is constant across every client who requests it.
 
-applicando l'esempio nel contesto dei blog:
+Ever had back-button issues with a web application where it went AWOL at a certain point because it expected you to do things in a certain order? That's because it violated the statelessness principle. There are cases that don't honor the statelessness principle, such as three-legged OAuth, API call rate limiting, etc. However, make every effort to ensure that application state doesn't span multiple requests of your service(s).
+\item[Cacheadable]
+As on the World Wide Web, clients can cache responses. Responses must therefore, implicitly or explicitly, define themselves as cacheable, or not, to prevent clients reusing stale or inappropriate data in response to further requests. Well-managed caching partially or completely eliminates some client–server interactions, further improving scalability and performance.
+\item[Client-Server]  
+The uniform interface separates clients from servers. This separation of concerns means that, for example, clients are not concerned with data storage, which remains internal to each server, so that the portability of client code is improved. Servers are not concerned with the user interface or user state, so that servers can be simpler and more scalable. Servers and clients may also be replaced and developed independently, as long as the interface is not altered.
+\item[Layered system]
+A client cannot ordinarily tell whether it is connected directly to the end server, or to an intermediary along the way. Intermediary servers may improve system scalability by enabling load-balancing and by providing shared caches. Layers may also enforce security policies.
+\item[Code on demand(OPTIONAL)]
+Servers are able to temporarily extend or customize the functionality of a client by transferring logic to it that it can execute. Examples of this may include compiled components such as Java applets and client-side scripts such as JavaScript.
 
-\begin{lstlisting}[language=php, caption = {Esempio di API REST nel caso di un ipotetico blog} , 
-				   label = {lst:blogRESTAPI}]
-	/posts/1/edit oppure /posts/1/view
-\end{lstlisting}
+Complying with these constraints, and thus conforming to the REST architectural style, will enable any kind of distributed hypermedia system to have desirable emergent properties, such as performance, scalability, simplicity, modifiability, visibility, portability and reliability.
 
-\subsection{Chiamate XHR}
+NOTE: The only optional constraint of REST architecture is code on demand. If a service violates any other constraint, it cannot strictly be referred to as RESTful.
+\end{description}
+
+\subsubsection{Implementazioni Esistenti}
+
+\subsubsection{CORS}
+
+%Scaletta REST
+%
+%- origini / storia: Com'è nato REST?
+%- cosa cerca di risolvere REST
+%- Come lo risolve: parte teorica
+%	- Le risorse
+%	- Operazioni sulle risorse: I verbi
+%	- Concetto di applicazione RESTFul
+%    - HTTP e REST
+%- Implementazioni esistenti
+%	- Differenza con il passato
+%    GET api/users/10
+%    POST pippo/pluto/10/topolino
+%    			= 
+%    POST index.php?route=pippo/pluto/10/topolino
+%    
+%    GET index.php?service=get_user&id=10
+%	- Servizi Backend (più o meno tutti i linguaggi esistenti)
+%    	- gateway: Single entry point -> pagina che fa da gateway alle richieste e fa una sorta di traduzione
+%    	- URL Rewriting  : mettere a disposizione delle risorse o dei servizi tramite URL
+%    - Frontend 
+%    	- Chiamate HTTP XHR (GET/POST/PUT/DELETE)
+%        - JSON parsing / XML Parsing / other
+% - CORS
+%  	- Definizione -> a cosa serve ?
+%    - Esempi di implementazioni (Aggiunta dell'header)
 
