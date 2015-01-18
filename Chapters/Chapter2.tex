@@ -30,6 +30,7 @@ Si tratta di una separazione concettuale e non fisica delle parti, accade spesso
 A livello professionale molti sviluppatori si identificano appunto come \emph{frontend} e/o \emph{backend} developer ovvero specializzati nello sviluppo di una parte specifica dell'applicazione. Il vantaggio di usare un approccio di questo tipo sta nel fatto che la parte \emph{frontend} è l'unica specifica per una data applicazione. Se la parte \emph{backend} viene progettata bene, e possibile utilizzare i servizi che fornisce anche in futuro da altre applicazioni, pur seguendo il protocollo che richiede. Inoltre a livello professionale si può procedere parallelamente nello sviluppo delle parti in modo tale da ottimizzare i tempi, pur seguendo uno schema stabilito a priori.\\
 
 \subsection{Pattern Client-Server}
+\label{subsec:Client-Server}
 \textbf{Definizione:} Il modello client-server è un modo per strutturare applicazioni distribuite che distingue due parti di un processo di comunicazione, la prima che fornisce una risorsa e/o un servizio chiamata server, la seconda che analogamente li può richiedere, chiamata client. La comunicazione in generale avviene attraverso la rete, ed è il client a iniziarla. Il compito del server è quello di predisporre le risorse che ha ai vari client che li chiedono, rimanendo appunto "in ascolto", il client invece non condivide le risorse con altri, può solo interagire con il server\cite{wiki:cliserv}.\\
 
 Come si può già intuire le parti che verranno prese in questo modello saranno rispettivamente quella del \emph{frontend} e quella del \emph{backend}. Specificatamente nell'ambito delle applicazioni i client saranno le varie istanze della parte \emph{frontend} dell'applicazione sui vari dispositivi, mentre il server, fornitore di servizi, conterrà la parte di \emph{backend}.
@@ -74,44 +75,95 @@ L'utilizzo di API è stato fatto durante il mio tirocinio aziendale per lo scamb
 REST(\textbf{R}epresentational \textbf{S}tate \textbf{T}ransfer) è un termine coniato da Roy Fieldin(co-autore del protocollo HTTP 1.1) nella sua tesi di dottorato per descrivere lo stile dell'architettura dei sistemi di rete. REST non è un protocollo e nemmeno uno standard, ma uno \emph{stile} architetturale per applicazioni / servizi web, quando uno di essi rispetta i criteri di REST gli si da l'attributo \emph{RESTful}.
 
 REST impone determinati vincoli alla sua architettura, pur lasciando libera la sua implementazione:
+
 \begin{description}
+
 \item[Uniform Interface] 
+
 REST impone una interfaccia uniforme tra client e server. Questo semplifica e decompone l'architettura, il che fa si che ogni parte possa evolvere indipendentemente. Per creare una interfaccia uniforme si sono 4 principi da seguire:
+
 \begin{description}
+
 \item[Resource Based] 
+
 ogni risorsa deve essere identificata univocamente all'interno del server. La sua identificazione deve essere concettualmente separata dalla rappresentazione che viene ritornata al client, la quale può dipendere dalla richiesta fatta.
+
 \item[Manipolazione delle Risorse] 
-il client tramite il riferimento della risorsa può effettuare 4 operazioni base creazione, modifica, aggiornamento, cancellazione.
+
+il client tramite il riferimento della risorsa può effettuare 4 operazioni base creazione, lettura, aggiornamento, cancellazione (\emph{CRUD}: \textbf{C}reate \textbf{R}ead \textbf{U}pdate \textbf{D}elete)
+
 \item[Self-descriptive Messages] 
+
 Ogni messaggio tra client e server contiene tutte le informazioni sufficienti per la sua codifica e interpretazione. Le risposte dal server devono indicare anche i parametri di caching.
 \item[Hypermedia as the Engine of Application State (HATEOAS)] 
 Clients deliver state via body contents, query-string parameters, request headers and the requested URI (the resource name). Services deliver state to clients via body content, response codes, and response headers. This is technically referred-to as hypermedia (or hyperlinks within hypertext).
 Aside from the description above, HATEOS also means that, where necessary, links are contained in the returned body (or headers) to supply the URI for retrieval of the object itself or related objects. We'll talk about this in more detail later.
 The uniform interface that any REST services must provide is fundamental to its design.
+
 \end{description}
+
 \item[Stateless]
-As REST is an acronym for REpresentational State Transfer, statelessness is key. Essentially, what this means is that the necessary state to handle the request is contained within the request itself, whether as part of the URI, query-string parameters, body, or headers. The URI uniquely identifies the resource and the body contains the state (or state change) of that resource. Then after the server does it's processing, the appropriate state, or the piece(s) of state that matter, are communicated back to the client via headers, status and response body.
 
-Most of us who have been in the industry for a while are accustomed to programming within a container which provides us with the concept of “session” which maintains state across multiple HTTP requests. In REST, the client must include all information for the server to fulfill the request, resending state as necessary if that state must span multiple requests. Statelessness enables greater scalability since the server does not have to maintain, update or communicate that session state. Additionally, load balancers don't have to worry about session affinity for stateless systems.
+La parte \emph{State} dell'acronimo di REST, sta a indicare un architettura di rete che non mantiene lo stato della risorsa. Ovvero lo stato della risorsa viene passato tramite il corpo del messaggio che viene scambiato tra client e server. Essendo ogni risorsa identificata con un URI(\textbf{U}niversal \textbf{R}esource \textbf{I}dentificator), quando viene fatta una richiesta alla risorsa può avvenire un cambiamento di stato di quest'ultima. In qualunque caso lo stato finale della risorsa viene comunicato al client nel corpo del messaggio di risposta.
 
-So what's the difference between state and a resource? State, or application state, is that which the server cares about to fulfill a request—data necessary for the current session or request. A resource, or resource state, is the data that defines the resource representation—the data stored in the database, for instance. Consider application state to be data that could vary by client, and per request. Resource state, on the other hand, is constant across every client who requests it.
+Nell'industria delle reti si può ricordare il concetto di \emph{sessione} HTTP, ovvero dove lo stato di una risorsa viene mantenuto attraverso richieste HTTP multiple. Nel caso di REST, il client si deve preoccupare di includere tutte le informazioni necessarie nella richiesta al server, e nel caso di richieste multiple è obbligato a inviare in tutte le richieste lo stato aggiornato della risorsa. Questo permette di far si che i server non debbano preoccupare di mantenere lo stato delle loro risorse, in modo tale da garantire una maggiore scalabilità del sistema.
 
-Ever had back-button issues with a web application where it went AWOL at a certain point because it expected you to do things in a certain order? That's because it violated the statelessness principle. There are cases that don't honor the statelessness principle, such as three-legged OAuth, API call rate limiting, etc. However, make every effort to ensure that application state doesn't span multiple requests of your service(s).
+Quindi la differenza tra stato e risorsa è che: lo stato o lo stato di una applicazione, e ciò a cui importa al server per soddisfare la richiesta corrente. Una risorsa o lo stato di una risorsa sono i dati che definiscono la rappresentazione della risorsa.
+Per essere più chiari si consideri lo stato dell'applicazione come i dati nella richiesta che possono variare da client a client. Mentre lo stato della risorsa rimane costante dipendentemente da ogni client che la richiede.
+
 \item[Cacheadable]
-As on the World Wide Web, clients can cache responses. Responses must therefore, implicitly or explicitly, define themselves as cacheable, or not, to prevent clients reusing stale or inappropriate data in response to further requests. Well-managed caching partially or completely eliminates some client–server interactions, further improving scalability and performance.
+
+Nel World WIde Web i client possono mantenere una cache delle richieste fatte ai server. In una architettura REST le richieste devono specificare, esplicitamente o implicitamente, la possibilità di essere mantenute in cache oppure no, per prevenire ai client di ri-usare stati o dati inappropiati per richieste future. Una buona gestione della cache può parzialmente o completamente eliminare alcune interazioni tra client e server, così da migliorare prestazioni e scalabilità.
+
+
 \item[Client-Server]  
-The uniform interface separates clients from servers. This separation of concerns means that, for example, clients are not concerned with data storage, which remains internal to each server, so that the portability of client code is improved. Servers are not concerned with the user interface or user state, so that servers can be simpler and more scalable. Servers and clients may also be replaced and developed independently, as long as the interface is not altered.
+
+La struttura dell'applicazione deve essere di tipo client-server, mostrata nella sezione \ref{subsec:Client-Server}. Avendo una interfaccia uniforme, in una architettura REST i client sono separati dai server. Questo fa si che ci sia una separazione dei compiti tra i due, ad esempio: i client non hanno la visione su come i dati vengono memorizzati, il quale compito spetta al server.In questo modo migliora la portabilità del codice del client, mentre i server non sono a conoscenza di come sia fatta l'interfaccia utente del client. Questo fa si che i la logica del server sia più semplice e scalabile. Se l'interfaccia tra client e server non viene alterata, le due entità possono venire sviluppate o sostituite in modo del tutto indipendente.  
+
 \item[Layered system]
-A client cannot ordinarily tell whether it is connected directly to the end server, or to an intermediary along the way. Intermediary servers may improve system scalability by enabling load-balancing and by providing shared caches. Layers may also enforce security policies.
+
+Avere un sistema a livelli può migliorare la scalabilità, la distribuzione del carico di lavoro e cache condivise, in quanto un client non potrà mai sapere se e connesso a un intermediario o direttamente al server. I server intermediari possono garantire tutti i miglioramenti prima nominati con la possibilità di adottare anche una politica di sicurezza.
+
 \item[Code on demand(OPTIONAL)]
-Servers are able to temporarily extend or customize the functionality of a client by transferring logic to it that it can execute. Examples of this may include compiled components such as Java applets and client-side scripts such as JavaScript.
 
-Complying with these constraints, and thus conforming to the REST architectural style, will enable any kind of distributed hypermedia system to have desirable emergent properties, such as performance, scalability, simplicity, modifiability, visibility, portability and reliability.
+Un parametro opzionale di una architettura REST è la possibilità dei server di estendere le capacità dei client trasferendo una determinata logica che può essere eseguita a destinazione.
 
-NOTE: The only optional constraint of REST architecture is code on demand. If a service violates any other constraint, it cannot strictly be referred to as RESTful.
 \end{description}
 
 \subsubsection{Implementazioni Esistenti}
+
+Un protocollo di comunicazione utilizzato nelle reti che si presta ad essere molto compatibile con una architettura di tipo REST e sicuramente HTTP. Spesso il protocollo e l'architettura vengono mischiati all'interno della spiegazione di che cosa è REST, si tiene a precisare che l'architettura REST può essere applicata anche in un sistema che non fa uso di HTTP in quanto si tratta di una architettura che specifica il modo in cui client e server devono comunicare ma lascia libera l'implementazione del sistema.
+
+Nel 99\% delle applicazioni RESTful viene usato il protocollo HTTP in quanto è già possibile associare i verbi dell'architettura REST con le richieste del protocollo: 
+\begin{itemize}
+\item CREATE => POST, crea una nuova risorsa
+\item READ => GET, ottiene una risorsa specifica
+\item UPDATE => PUT, modifica una risorsa specifica
+\item DELETE => DELETE, elimina una risorsa specifica
+\end{itemize}
+Inoltre tramite il \emph{payload} di HTTP è possibile scambiare tra client e server lo stato delle risorse e la relativa rappresentazione dati.
+
+Il protocollo HTTP identifica le risorse tramite un \textbf{URL}(\textbf{U}niversal \textbf{R}esource \textbf{L}ocator) e garantisce all'architettura REST un modo per accedere univocamente alle risorse.
+Prima che le applicazioni cominciassero ad essere sviluppate secondo una architettura REST, non c'erano vincoli su come una richiesta a una determinata risorsa doveva essere effettuata il che rendeva l'identificazione delle risorse poco chiara.
+\begin{lstlisting}[caption={Esempio di URL che non rispetta il vincolo di REST}, label={lst:wrongRESTURL}]
+	GET index.php?service=getUser&id=55
+\end{lstlisting}
+Nell'esempio \ref{lst:wrongRESTURL} notiamo che URL non denota una specifica risorsa nel sever ma specifica il metodo e i parametri che il server dovrà utilizzare per comporre il risultato e rispondere alla richiesta. Questo metodo non è errato ma non va bene per identificare delle risorse.
+
+-- Perché questo non va bene ? --\\
+
+In una architettura REST le risorse vengono identificate secondo precisi URL univoci all'interno dell'applicazione, come nell'esempio \ref{lst:correctRESTURL}.
+Inoltre è buona pratica creare identificatori di risorse gerarchici, in modo da rendere l'URL della risorsa chiaro e semplice da comprendere.
+
+\begin{lstlisting}[caption={Identificazione di una risorsa all'interno di una architettura REST}, label={lst:correctRESTURL}]
+	GET /api/user/55
+\end{lstlisting}
+
+Per quanto riguarda la rappresentazione dei dati nello scambio di risorse, i formati più utilizzati sono JSON(\textbf{J}ava\textbf{S}cript \textbf{O}bject \textbf{N}otation) e XML(e\textbf{X}tensible \textbf{M}arkup \textbf{L}anguage) i quali permettono una struttura dettagliata e gerarchica dei dati. Nelle applicazioni web viene utilizzato maggiormente JSON in quanto la sua manipolazione risulta più diretta nel linguaggio Javascript.
+
+L'architettura di REST assieme al protocollo HTTP sono molto utilizzati nell'ambito di sviluppo di applicativi lato backend per la fonitura di servizi. Ovvero l'accesso alle risorse dell'applicativo in questione si ha tramite API sviluppate secondo l'architettura REST.
+
+
 
 \subsubsection{CORS}
 
