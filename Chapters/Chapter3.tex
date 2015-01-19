@@ -272,22 +272,36 @@ Cordova quindi offre una serie di potenti API in linguaggio Javascript per poter
 \end{wrapfigure}
 
 Il perché in questa tesi si parli di \emph{Cordova} e \emph{AngularJS} è dato dall'esistenza di \texttt{ngCordova}. Questa libreria nasce da una idea di Paolo Bernasconi e Max Lynch che hanno avuto l'idea(geniale) di unire la l'efficenza e la potenza di \emph{AngularJS} con la versatilità di \emph{Cordova}. Ne è nato un framework per lo sviluppo di applicazioni ibride direttamente collegato alle funzionalità del dispositivo gestibile tramite il codice efficiente di \emph{AngularJS}.\\
-Per chi vuole sviluppare applicazioni ibride multi piattaforma, questa libreria rende decisamente più rapido ed efficiente il processo di sviluppo.
 
 \section{Strumenti di sviluppo}
 
-\subsection{Il trio Magico}
-La mia scelta delle tecnologie da utilizzare per lo sviluppo ibrido di applicazioni multi piattaforma si è incentrata soprattutto sull'efficienza e la compatibilità. Decidendo di utilizzare \texttt{AngularJS} + \texttt{Cordova} + \texttt{ngCordova} ottengo un ambiente di sviluppo rapido ed efficiente, in quanto tutti e tre i framework sono stati sviluppati per una stretta collaborazione, e allo stato dell'arte attuale delle tecnologie penso che sia una delle scelte migliori e rapide di sviluppo.
+Il consistente numero di tecnologie che si possono utilizzare per lo sviluppo ibrido viene spesso accompagnato da strumenti che consentono di creare un ambiente progettuale in cui si ha a disposizione tutto il necessario per poter iniziare a sviluppare. La scelta di determinati strumenti piuttosto che altri e riservata allo sviluppatore finale, personalmente mostrerò come ho deciso di organizzare un progetto di esempio.
 
 \subsection{Package Manager}
-Bower è un package manager, ci consente di organizzare al meglio le librerie all'interno del nostro progetto. Tramite il file \emph{bower.json} possiamo specificare tutti i dettagli del nostro progetto e dinamicamente aggiornare la lista delle librerie installate. Inoltre se stiamo lavorando con una struttura di cartelle specifica, come ne mio caso, possiamo specificare la posizione di dove verranno scaricate le librerie tramite il file \emph{.bowerrc}. In ambito web non esiste libreria che non possa essere scaricata con bower, sostanzialmente possiamo ottenere qualsiasi cosa presente su \emph{Github}.
+
+Avendo a disposizione tutto il mondo delle tecnologie web, può risultare utile e molto produttivo inserire librerie all'interno del nostro progetto. Per le applicazioni web in generale e anche in quelle ibride si può disporre di un package manager che facilmente includere nuove librerie all'interno del progetto.\\
+
+\textbf{Bower} è un package manager tipicamente usato per librerie Javascript. Generalmente è possibile reperire ogni libreria disponibile su Github. Tramite il file \emph{bower.json} possiamo specificare le dipendenze del progetto e dinamicamente aggiornare la lista delle librerie installate. Inoltre se stiamo lavorando con una struttura di cartelle specifica, come ne mio caso, possiamo specificare la posizione di dove verranno scaricate le librerie tramite il file \emph{.bowerrc}. 
 -- Codice Bower.json --
 -- Codice .bowerrc --
-
 \subsection{Task Runner}
 
-Grunt/Gulp \texttt{Grunt} e \texttt{Gulp} sono due esempi di \emph{task-tunner}. Ho voluto nominarli entrambi nella mia tesi in quanto il primo l'ho usato durante la mia esperienza di tirocinio, il secondo invece è usato dal framework  Ionic per la gestione di tutti i suoi file. Attualmente esistono due schiere di programmatori che sostengono che uno sia meglio dell'altro, personalmente preferisco grunt perché ha un logo più bello(hahaha).\\
-Il ruolo dei task-runner non è ben preciso in quanto sono molto versatili e "assemblabili", in quanto per eseguire determinate operazioni necessitano dei loro plugin specifici. Ad esempio se nel mio progetto avessi bisogno di verificare la sintassi di Javascript, concatenare i file di progetto e le librerie, minificarli e spostarli in una cartella differente (ho potuto osservare durante il mio tirocinio che queste operazioni sono molto comode nel tipo di approccio che si ha nello sviluppo di una applicazione ibrida con tecnologie web) devo prima scaricare nel mio progetto ognuno di essi. Questo procedimento può sembrare poco efficiente, in realtà se disponiamo del \emph{Node Package Manager} NPM tutta la lista dei plugin installati nel progetto e registrata su un file \emph{package.json}. Inoltre una funzionalità molto significativa che hanno i task-runner è quella del \texttt{Live Reload}, ovvero sono in grado di vedere se ci sono stati cambiamenti nel nostro progetto e automaticamente eseguire le operazioni stabilite.
+\begin{wrapfigure}{r}{0.40\textwidth}
+  \vspace{-65pt}
+  \begin{center}
+    \includegraphics[scale=0.4]{Figures/grunt-logo.png}
+	\includegraphics[scale=0.3]{Figures/gulp-logo.png}  
+  \end{center}
+  \vspace{-10pt}
+  \caption{Loghi di Grunt e Gulp}
+  \label{fig:task runner}
+  \vspace{0pt}
+\end{wrapfigure}
+
+La divisione logica in moduli di una applicazione porta i programmatori a separare in file diversi l'applicazione in fase di sviluppo. Per poter ottenere una versione in fase di produzione occorre assemblare tutte le parti del progetto e se necessario eseguire dei test.
+Il ruolo dei task-runner è quello di eseguire determinate operazioni per la messa in produzione dell'applicazione, come la concatenazione dei file, controllo della sintassi, test sui moduli e lo spostamento del progetto nella directory finale.
+
+\textbf{Grunt} e \textbf{Gulp} sono due esempi di \emph{task-runner} in linguaggio Javascript(NodeJs). Una caratteristica che li distingue e la loro modularità, in quanto in base alle esigenze dell'applicazione si possono scaricare i moduli dedicati in base ai processi richiesti per la messa in produzione. Successivamente si deve scrivere un file(\textit{grunt.js} o \textit{gulp.js}) dove si indicano tutte le istruzioni per la messa in produzione. Ho voluto nominarli entrambi nella mia tesi in quanto il primo l'ho usato durante la mia esperienza di tirocinio, il secondo invece è usato per lo sviluppo del framework Ionic.
 
 \subsection{IDE}
 Ho scelto di usare una \emph{Integrated Develop Enviroment}(IDE) per lo sviluppo della mia applicazione in modo tale da tenere sotto controllo tutti i file del mio progetto e per poterli organizzare in una struttura di tipo modulare. Abbiamo constatato che prima di un deploy dell'applicazione ci sono una serie di operazioni che dobbiamo eseguire affinché il nostro progetto sia completo. Per fare questo ci serviamo di strumenti chiamati \emph{Tesk-Runner}.

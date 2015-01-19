@@ -38,14 +38,13 @@
 \contentsline {subsubsection}{\numberline {3.2.1.3}Cordova Core}{34}{subsubsection.103}
 \contentsline {subsection}{\numberline {3.2.2}ngCordova}{34}{subsection.104}
 \contentsline {section}{\numberline {3.3}Strumenti di sviluppo}{34}{section.106}
-\contentsline {subsection}{\numberline {3.3.1}Il trio Magico}{34}{subsection.107}
-\contentsline {subsection}{\numberline {3.3.2}Package Manager}{35}{subsection.108}
-\contentsline {subsection}{\numberline {3.3.3}Task Runner}{35}{subsection.109}
-\contentsline {subsection}{\numberline {3.3.4}IDE}{36}{subsection.110}
-\contentsline {subsubsection}{\numberline {3.3.4.1}Creazione}{36}{subsubsection.111}
-\contentsline {subsubsection}{\numberline {3.3.4.2}Inclusione di Librerie esterne}{36}{subsubsection.112}
-\contentsline {subsubsection}{\numberline {3.3.4.3}Deploy}{37}{subsubsection.115}
-\contentsline {subsubsection}{\numberline {3.3.4.4}Live Debug}{38}{subsubsection.116}
+\contentsline {subsection}{\numberline {3.3.1}Package Manager}{35}{subsection.107}
+\contentsline {subsection}{\numberline {3.3.2}Task Runner}{35}{subsection.108}
+\contentsline {subsection}{\numberline {3.3.3}IDE}{36}{subsection.110}
+\contentsline {subsubsection}{\numberline {3.3.3.1}Creazione}{36}{subsubsection.111}
+\contentsline {subsubsection}{\numberline {3.3.3.2}Inclusione di Librerie esterne}{36}{subsubsection.112}
+\contentsline {subsubsection}{\numberline {3.3.3.3}Deploy}{37}{subsubsection.115}
+\contentsline {subsubsection}{\numberline {3.3.3.4}Live Debug}{38}{subsubsection.116}
 \contentsline {section}{\numberline {3.4}SDK}{38}{section.117}
 \contentsline {chapter}{\numberline {4}Conclusioni}{39}{chapter.118}
 \contentsline {section}{\numberline {4.1}Ciclo di vita di una app}{39}{section.119}
@@ -57,5 +56,6 @@
 \contentsline {section}{\numberline {A.3}Javascript}{40}{section.124}
 \contentsline {section}{\numberline {A.4}Dependency Injection}{40}{section.125}
 \contentsline {section}{\numberline {A.5}Inversion Of Control}{40}{section.126}
+\contentsline {section}{\numberline {A.6}Future / Promises}{40}{section.127}
 \vspace {2em}
-\contentsline {chapter}{Bibliografia}{41}{dummy.127}
+\contentsline {chapter}{Bibliografia}{41}{dummy.128}

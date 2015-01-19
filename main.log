@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.10.26)  19 JAN 2015 17:43
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.10.26)  19 JAN 2015 18:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -738,7 +738,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.170 ...and\NAT@force@numbers{}\NAT@force@numbers
+l.177 ...and\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -907,7 +907,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
  [2] [3] [4]
-[5] <Figures/exampleCordova.png, id=417, 474.27188pt x 269.50688pt>
+[5] <Figures/exampleCordova.png, id=419, 474.27188pt x 269.50688pt>
 File: Figures/exampleCordova.png Graphic file (type png)
 
 <use Figures/exampleCordova.png>
@@ -985,13 +985,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-<Figures/mvc.png, id=482, 220.825pt x 241.90375pt>
+<Figures/mvc.png, id=484, 220.825pt x 241.90375pt>
 File: Figures/mvc.png Graphic file (type png)
  <use Figures/mvc.png>
 Package pdftex.def Info: Figures/mvc.png used on input line 51.
 (pdftex.def)             Requested size: 165.61833pt x 181.42735pt.
 
-[17] <Figures/mvvm-1.jpeg, id=492, 363.3575pt x 139.52126pt>
+[17] <Figures/mvvm-1.jpeg, id=494, 363.3575pt x 139.52126pt>
 File: Figures/mvvm-1.jpeg Graphic file (type jpg)
 
 <use Figures/mvvm-1.jpeg>
@@ -1040,21 +1040,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--9
 
 [24
 
-] [25] <Figures/sass-logo.png, id=540, 513.92pt x 385.44pt>
+] [25] <Figures/sass-logo.png, id=542, 513.92pt x 385.44pt>
 File: Figures/sass-logo.png Graphic file (type png)
 
 <use Figures/sass-logo.png>
 Package pdftex.def Info: Figures/sass-logo.png used on input line 35.
 (pdftex.def)             Requested size: 128.47968pt x 96.35976pt.
 
-<Figures/less-logo.png, id=541, 199.74625pt x 81.30376pt>
+<Figures/less-logo.png, id=543, 199.74625pt x 81.30376pt>
 File: Figures/less-logo.png Graphic file (type png)
 
 <use Figures/less-logo.png>
 Package pdftex.def Info: Figures/less-logo.png used on input line 36.
 (pdftex.def)             Requested size: 149.80931pt x 60.97765pt.
 
-<Figures/angular-logo.png, id=543, 284.06125pt x 300.12125pt>
+<Figures/angular-logo.png, id=545, 284.06125pt x 300.12125pt>
 File: Figures/angular-logo.png Graphic file (type png)
 
 <use Figures/angular-logo.png>
@@ -1067,7 +1067,7 @@ me-work Javascript
  []
 
 [26 <./Figures/sass-logo.png> <./Figures/less-logo.png> <./Figures/angular-logo
-.png>] <Figures/one-way-data-binding.png, id=555, 401.5pt x 255.95625pt>
+.png>] <Figures/one-way-data-binding.png, id=557, 401.5pt x 255.95625pt>
 File: Figures/one-way-data-binding.png Graphic file (type png)
 
 <use Figures/one-way-data-binding.png>
@@ -1075,7 +1075,7 @@ Package pdftex.def Info: Figures/one-way-data-binding.png used on input line 76
 .
 (pdftex.def)             Requested size: 200.7495pt x 127.9778pt.
 
-<Figures/two-way-data-binding.png, id=556, 401.5pt x 291.0875pt>
+<Figures/two-way-data-binding.png, id=558, 401.5pt x 291.0875pt>
 File: Figures/two-way-data-binding.png Graphic file (type png)
 
 <use Figures/two-way-data-binding.png>
@@ -1092,7 +1092,7 @@ o all'appendice
  []
 
 [28]
-<Figures/angularjs-service-singleton-diagram.png, id=576, 334.24875pt x 303.132
+<Figures/angularjs-service-singleton-diagram.png, id=578, 334.24875pt x 303.132
 5pt>
 File: Figures/angularjs-service-singleton-diagram.png Graphic file (type png)
  <use Figures/angularjs-service-singleton-diagram.png>
@@ -1109,7 +1109,7 @@ File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 163.
 
-<Figures/ionic-logo.png, id=606, 370.61539pt x 411.38307pt>
+<Figures/ionic-logo.png, id=608, 370.61539pt x 411.38307pt>
 File: Figures/ionic-logo.png Graphic file (type png)
 
 <use Figures/ionic-logo.png>
@@ -1128,27 +1128,51 @@ re-ria chia-mata \OT1/cmr/m/it/10.95 ng-cordova\OT1/cmr/m/n/10.95 ([][]3.2.2[][
 ]). 
  []
 
-<Figures/cordova-logo.png, id=639, 321.2pt x 333.245pt>
+<Figures/cordova-logo.png, id=641, 321.2pt x 333.245pt>
 File: Figures/cordova-logo.png Graphic file (type png)
 
 <use Figures/cordova-logo.png>
 Package pdftex.def Info: Figures/cordova-logo.png used on input line 239.
 (pdftex.def)             Requested size: 112.42168pt x 116.63748pt.
  [33 <./Figures/cordova-logo.png>]
-<Figures/ngcordova-logo.png, id=648, 421.575pt x 421.575pt>
+<Figures/ngcordova-logo.png, id=650, 421.575pt x 421.575pt>
 File: Figures/ngcordova-logo.png Graphic file (type png)
 
 <use Figures/ngcordova-logo.png>
 Package pdftex.def Info: Figures/ngcordova-logo.png used on input line 266.
 (pdftex.def)             Requested size: 147.55345pt x 147.55345pt.
- [34 <./Figures/ngcordova-logo.png>] [35]
-Overfull \hbox (1.88203pt too wide) in paragraph at lines 312--314
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
+
+ []
+
+[34 <./Figures/ngcordova-logo.png>]
+<Figures/grunt-logo.png, id=658, 214.8025pt x 287.0725pt>
+File: Figures/grunt-logo.png Graphic file (type png)
+
+<use Figures/grunt-logo.png>
+Package pdftex.def Info: Figures/grunt-logo.png used on input line 292.
+(pdftex.def)             Requested size: 85.91946pt x 114.82695pt.
+
+<Figures/gulp-logo.png, id=659, 228.855pt x 511.9125pt>
+File: Figures/gulp-logo.png Graphic file (type png)
+
+<use Figures/gulp-logo.png>
+Package pdftex.def Info: Figures/gulp-logo.png used on input line 293.
+(pdftex.def)             Requested size: 68.65701pt x 153.57494pt.
+ [35 <./Figures/grunt-logo.png> <./Figures/gulp-logo.png>]
+Overfull \hbox (1.88203pt too wide) in paragraph at lines 326--328
 \OT1/cmr/m/n/10.95 Nei pro-getti per ap-pli-cazioni multi pi-attaforma che uti-
 liz-zano tec-nolo-gie web pu^^Ro risultare
  []
 
 [36] [37]
-Underfull \hbox (badness 10000) in paragraph at lines 333--334
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
 
  []
 
@@ -1181,14 +1205,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 318.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 318.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 318.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C907C9E432EBC76F59CF74719BBC56E5;9892.
+(rerunfilecheck)             Checksum: 0C3760E101B1DFFA36E03FE90B719CB5;9895.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 318.
  ) 
 Here is how much of TeX's memory you used:
- 14613 strings out of 495034
- 208193 string characters out of 6181676
- 302883 words of memory out of 5000000
- 17378 multiletter control sequences out of 15000+600000
+ 14630 strings out of 495034
+ 208508 string characters out of 6181676
+ 303132 words of memory out of 5000000
+ 17392 multiletter control sequences out of 15000+600000
  17109 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,12n,51p,1315b,1436s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1206,10 +1230,10 @@ msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on main.pdf (52 pages, 656189 bytes).
+Output written on main.pdf (52 pages, 737275 bytes).
 PDF statistics:
- 788 PDF objects out of 1000 (max. 8388607)
- 690 compressed objects within 7 object streams
- 194 named destinations out of 1000 (max. 500000)
- 517 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 794 PDF objects out of 1000 (max. 8388607)
+ 692 compressed objects within 7 object streams
+ 195 named destinations out of 1000 (max. 500000)
+ 527 words of extra memory for PDF output out of 10000 (max. 10000000)
 
