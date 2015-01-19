@@ -1,8 +1,8 @@
 \chapter{Metodi e Modelli per lo sviluppo di applicazioni Mobile}
 \lhead{\emph{Capitolo 2}}
-In questo capitolo si vogliono presentare alcuni concetti teorici e pratici per lo sviluppo di applicazioni Mobile. Molti dei concetti coincidono con lo sviluppo di applicazioni in generale e sono riportati dall'esperienza di tirocinio fatta presso l'azienda BigThink SRL.
+Durante la mia esperienza presso la ditta BigThink SRL oltre ad una formazione pratica ho potuto, in alcuni momenti sotto la guida del capo azienda e del correlatore, studiare alcuni concetti teorici utili ad comprendere meglio le tecnologie utilizzate nel processo di sviluppo delle applicazioni in azienda. In questo capitolo si riportano dei concetti dell'informatica secondo me rilevanti(e alcune volte fondamentali) per lo sviluppo di applicazioni.
 
-Una prima fase è quella di strutturare l'architettura dell'applicazione e decidere come vengono assegnati i compiti. Una delle politiche che è stata intrapresa in azienda è stata quella della \emph{Separation of Concernes}(SoC), che in italiano si traduce in \emph{Separazione dei Compiti}. Si tratta di un principio di design per dividere un problema in sezioni distinte, e ad ogni sezione assegnare un particolare compito o risoluzione del problema. Questa scelta progettuale introduce il concetto di \emph{modulo} di una applicazione, ovvero l'applicazione poi dipenderà dai moduli che andremo a creare e ad unire tra di loro. I moduli ragionevolmente saranno indipendenti uno dall'altro in modo tale da garantirne l'integrità e il loro re-utilizzo.\cite{wiki:soc}\\
+Una prima fase dello sviluppo è quella di strutturare l'architettura dell'applicazione e decidere come vengono assegnati i compiti. Una delle politiche che è stata intrapresa in azienda è stata quella della \emph{Separation of Concernes}(SoC), che in italiano si traduce in \emph{Separazione dei Compiti}. Si tratta di un principio di design per dividere un problema in sezioni distinte, e ad ogni sezione assegnare un particolare compito o risoluzione del problema. Questa scelta progettuale introduce il concetto di \emph{modulo} di una applicazione, atto a svolgere un certo compito dell'applicazione. I moduli ragionevolmente saranno indipendenti uno dall'altro in modo tale da garantirne l'integrità e il loro re-utilizzo.\cite{wiki:soc}\\
 
 Il concetto appena visto astrae molto da una applicazione vera e propria, sta a chi la progetta decidere con che granularità  e se è veramente necessario applicarlo. Dato che parliamo di tecnologie web, un chiaro esempio si separazione dei compiti è quello della struttura di una pagina web, divisa in HTML per la struttura, CSS per lo stile, e Javascript per la logica e comportamento.\\
 
@@ -10,41 +10,49 @@ In questo capitolo andremo a vedere in che modo i compiti si possono separare al
  
 \section{Design Patterns}
 
-Quando si progetta una applicazione risulta molto utile utilizzare schemi architetturali e metodologici che rendono da un lato l'applicazione efficiente dall'altro una scrittura del codice molto chiara e modulare facile da correggere nel caso di eventuali errori. I design pattern vengono in aiuto a questa esigenza del programmatore.
+Quando si progetta una applicazione risulta molto utile utilizzare schemi architetturali e metodologici che rendono da un lato l'applicazione efficiente dall'altro una scrittura del codice molto chiara e modulare, facile da correggere nel caso di eventuali errori. I design pattern vengono in aiuto a questa esigenza del programmatore.
 
 \emph{In informatica, nell'ambito dell'ingegneria del software, un design pattern (traducibile in lingua italiana come schema progettuale, schema di progettazione, schema architetturale), è un concetto che può essere definito "una soluzione progettuale generale ad un problema ricorrente". Si tratta di una descrizione o modello logico da applicare per la risoluzione di un problema che può presentarsi in diverse situazioni durante le fasi di progettazione e sviluppo del software, ancor prima della definizione dell'algoritmo risolutivo della parte computazionale.}
 \hspace*{\fill}\cite{wiki:design_pattern} 
 
 Il problema ricorrente che si ha nello sviluppo di applicazioni e quello della decisione di dove debbano stare determinati compiti / operazioni / sezioni all'interno dell'applicazione. Ad esempio la separazione della parte dell'interfaccia da quella dedicata alla manipolazione dei dati da quella dedicata alla memorizzazione. Dividere i vari compiti di una applicazione può risultare molto produttivo, in quanto si possono sviluppare in parallelo diverse parti dell'applicazione senza influire sulle altre e volendo con la possibilità di utilizzare tecnologie differenti.
 
-Durante il periodo di tirocinio presso l'azienda \emph{BigThink SRL} per la creazione di Web Applications sono stati utilizzati pattern come : Client-Server, SoC, Frontend e Backend, MVC gli altri design pattern che verranno introdotti sono necessari per comprendere meglio alcune tecnologie che verranno utilizzate.
+Durante il periodo di tirocinio presso l'azienda \emph{BigThink SRL} per la creazione di Web Applications sono stati utilizzati pattern come : Client-Server, SoC, Frontend e Backend, MVC; gli altri design pattern che verranno introdotti sono necessari per comprendere meglio alcune tecnologie che verranno utilizzate.
  
 \subsection{Frontend e Backend}
-Queste due parole sono spesso usate in informatica in molti ambiti, nel contesto specifico dell'applicazione \texttt{frontend}(in italiano parte davanti) denota quella parte dell'applicazione responsabile di gestire l'interfaccia utente e i dati provenienti da essa, mentre \texttt{backend}(in italiano parte dietro) indica la sezione dell'applicazione dedita alla gestione dei dati provenienti dalla parte frontend. L'interazione che hanno le due parti è un chiaro esempio di interfaccia.
-\textbf{Frontend:} questa è la parte caratteristica dell'applicazione, in quanto ne definisce il comportamento e l'aspetto, determinando la logica con cui si evolverà al rapporto con l'utente. A differenza della parte \emph{backend} questa non definisce nessuna manipolazione dei dati ma solo la loro rappresentazione(vista) determinando transizioni e/o animazioni.
-Nella parte \emph{frontend} è inclusa anche la fase di definizione estetica dell'interfaccia, ma spesso questa spetta a una figura professionale distinta atta "vestire" l'applicazione.
-\textbf{Backend:} questa parte è completamente diversa dalla prima, in quanto definisce la manipolazione dei dati all'interno dell'applicazione ma non da nessuna informazione caratteristica di essa. In particolare fornisce dei servizi ai quali la parte \emph{frontend} può accedere e recuperare/fornire dei dati, come ad esempio l'autenticazione di un utente a un servizio. Tutta la gestione dei dati che viene fatta da questa parte, viene oscurata alla parte \emph{frontend} per garantire un servizio di sicurezza molto elementare, in modo tale che se l'utente inserisce dei dati errati che vengono passati dalla parte \emph{frontend} a quella \emph{backend}, in modo errato, nessuna operazione verrà eseguita e l'integrità dei dati preservata.\\
+Queste due parole sono spesso usate in informatica in molti ambiti, nel contesto specifico dell'applicazione \texttt{frontend}(in italiano parte davanti) denota quella parte dell'applicazione responsabile di gestire l'interfaccia utente e i dati provenienti da essa, mentre \texttt{backend}(in italiano parte dietro) indica la sezione dell'applicazione dedita alla gestione dei dati dell'applicazione. L'interazione che hanno le due parti è un chiaro esempio di interfaccia.\\
 
-Si tratta di una separazione concettuale e non fisica delle parti, accade spesso che si facciano analogie con il pattern client-server(spiegato successivamente).
+\textbf{Frontend:} questa è la parte caratteristica dell'applicazione, in quanto ne definisce il comportamento e l'aspetto, determinando la logica con cui si evolverà al rapporto con l'utente. A differenza della parte \emph{backend} questa non definisce ne manipolazione, ne la rappresentazione dei dati ma la vista che ha l'utente su di essi. Nella parte \emph{frontend} è inclusa anche la fase di definizione estetica dell'interfaccia, ma spesso questa spetta a una figura professionale distinta atta "vestire" l'applicazione.\\
 
-A livello professionale molti sviluppatori si identificano appunto come \emph{frontend} e/o \emph{backend} developer ovvero specializzati nello sviluppo di una parte specifica dell'applicazione. Il vantaggio di usare un approccio di questo tipo sta nel fatto che la parte \emph{frontend} è l'unica specifica per una data applicazione. Se la parte \emph{backend} viene progettata bene, e possibile utilizzare i servizi che fornisce anche in futuro da altre applicazioni, pur seguendo il protocollo che richiede. Inoltre a livello professionale si può procedere parallelamente nello sviluppo delle parti in modo tale da ottimizzare i tempi, pur seguendo uno schema stabilito a priori.\\
+\textbf{Backend:} questa parte è completamente diversa dalla prima, in quanto definisce la manipolazione dei dati all'interno dell'applicazione. In particolare fornisce dei servizi / risorse ai quali la parte \emph{frontend} può accedere e effettuare delle operazioni, come ad esempio l'autenticazione di un utente a un servizio. Tutta la gestione dei dati che viene fatta da questa parte, viene oscurata alla parte \emph{frontend} per garantire un servizio di sicurezza molto elementare, in modo tale che se l'utente inserisce dei dati errati che vengono passati dalla parte \emph{frontend} a quella \emph{backend}, nessuna operazione verrà eseguita e l'integrità dei dati verrà preservata.\\
+
+Si tratta di una separazione concettuale e non fisica delle parti, accade spesso che si facciano analogie con il pattern client-server(spiegato successivamente); le due parti possono anche risiedere sullo stesso dispositivo / calcolatore.
+
+A livello professionale molti sviluppatori si identificano appunto come \emph{frontend} e/o \emph{backend} developer ovvero specializzati nello sviluppo di una parte specifica dell'applicazione. Se la parte \emph{backend} viene progettata secondo dei corretti schemi, e possibile riutilizzare le risorse anche in futuro, purché si rispetti l'interfaccia. Inoltre a livello professionale si può procedere parallelamente nello sviluppo delle parti in modo tale da ottimizzare i tempi, pur seguendo uno schema stabilito a priori.\\
 
 \subsection{Pattern Client-Server}
 \label{subsec:Client-Server}
+
+In uno schema di applicazione su larga scala può risultare utile separare le parti logiche dell'applicazione su entità diverse che poi saranno messe in comunicazione. Ad esempio la computazione di un certo processo di calcolo potrebbe risultare molto onerosa a livello di prestazioni e che un dispositivo mobile possa non essere in grado supportarla. A questo punto risulta conveniente adottare una architettura client-server dove è il server che si occupa di eseguire le operazioni di calcolo mentre il client di rappresentare l'output. 
+
 \textbf{Definizione:} Il modello client-server è un modo per strutturare applicazioni distribuite che distingue due parti di un processo di comunicazione, la prima che fornisce una risorsa e/o un servizio chiamata server, la seconda che analogamente li può richiedere, chiamata client. La comunicazione in generale avviene attraverso la rete, ed è il client a iniziarla. Il compito del server è quello di predisporre le risorse che ha ai vari client che li chiedono, rimanendo appunto "in ascolto", il client invece non condivide le risorse con altri, può solo interagire con il server\cite{wiki:cliserv}.\\
 
-Come si può già intuire le parti che verranno prese in questo modello saranno rispettivamente quella del \emph{frontend} e quella del \emph{backend}. Specificatamente nell'ambito delle applicazioni i client saranno le varie istanze della parte \emph{frontend} dell'applicazione sui vari dispositivi, mentre il server, fornitore di servizi, conterrà la parte di \emph{backend}.
-
-\subsection{Mustache}
-
-In ambito web può essere utile un sistema di template che aiuti a separare la logica dalla presentazione dei dati(metodologia molto in voga tra le tecnologie web).
-
-\emph{Mustache è un web template system con una implementazione disponibile in molti linguaggi(sarà utili quella in Javascript). Mustache è descritto come un sistema senza logica, in quanto manca qualsiasi dichiarazione di controllo del flusso esplicita, ovvero istruzioni condizionali e di iterazione. Il tutto può essere implementato tramite un sistema di tag, liste procedurali e lambda}
-\hspace*{\fill}\cite{wiki:mustache}
+La divisione client e server associata con le parti frontend e backend di una applicazione viene spesso utilizzata nello sviluppo di applicazioni mobile distribuite, ad esempio in servizi georeferenziati. Ma non e detto che in generale sia sempre la soluzione ottima da adottare. 
 
 \subsection{MVC Pattern}
 \label{sec:MVC}
+
+L'evoluzione della complessità del codice delle applicazioni, ha fatto si che i programmatori adottassero strategie di scrittura del codice in modo che rimanesse mantenibile e riusabile. L'uso del pattern MVC ha trovato largo uso in molti framework Javascript in modo tale che il codice scritto dal programmatore ereditasse i suoi benefici. Questa logica inoltre nello sviluppo complessivo dell'applicazione ha fatto si che il programmatore potesse disporre di uno scheletro dell'applicazione generico, in modo tale da accelerare il processo di sviluppo e di disporre di eventuali parti già sviluppate.
+
 \emph{Il Model-View-Controller pattern (MVC) in informatica, è un pattern architetturale molto diffuso nello sviluppo di sistemi software, in particolare nell'ambito della programmazione orientata agli oggetti, in grado di separare la logica di presentazione dei dati dalla logica di business.}
+
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[scale=0.75]{Figures/mvc.png}  
+    \rule{35em}{0.5pt}
+  \caption[MVC Pattern]{Schema del pattern MVC}
+  \label{fig:MVC Schema}
+\end{figure}
 
 Il pattern è basato sulla separazione dei compiti fra i componenti software che interpretano tre ruoli principali:
 \begin{description}
@@ -55,12 +63,27 @@ Il pattern è basato sulla separazione dei compiti fra i componenti software che
 Questo schema, fra l'altro, implica anche la tradizionale separazione fra la logica applicativa (in questo contesto spesso chiamata "logica di business"), a carico del controller e del model, e l'interfaccia utente a carico del view.
 \hspace*{\fill}\cite{wiki:mvc}
 
-\subsection{MVVC Pattern}
+Il framework AngularJS spiegato nella sezione \ref{sec:AngularJS} è sviluppato secondo questo pattern. Il concetto verrà inoltre richiamato nella spiegazione di altri processi di sviluppo. 
+
+\subsection{MVVM Pattern}
+
+Nello sviluppo di applicazioni mobile si avrà a che fare con il concetto di vista e di modello che rispettivamente denotano l'interfaccia utente e i dati che vengono mostrati sulla vista(si vedrà perché intesi come modelli). Nell'ottica di tenere la logica dell'applicazione separata dalla rappresentazione dei dati il pattern MVVM detta le linee guida per poter scrivere codice che tenga conto di questi aspetti.
+
 \emph{Il Model-View-ViewModel è un pattern architetturale basato sul pattern MVC e MVP che tenta di separare più chiaramente lo sviluppo di interfacce utente (UI) da quello della logica di business e il comportamento in un'applicazione . A tal fine, molte implementazioni di questo modello fanno uso di associazioni dati dichiarativa(data bindings) per consentire una separazione di lavoro su Vista da altri livelli.}
+\hspace*{\fill}\cite{book:mvvm}
+
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[scale=0.75]{Figures/mvvm-1.jpeg}  
+    \rule{35em}{0.5pt}
+  \caption[MVVM Pattern]{Schema del pattern MVVM}
+  \label{fig:MVVM Schema}
+\end{figure}
+
+Il fulcro del funzionamento di questo pattern è la creazione di un componente, il ViewModel appunto, che rappresenta tutte le informazioni e i comportamenti della vista corrispondente. La vista si limita infatti, a visualizzare graficamente quanto esposto dal ViewModel, a riflettere in esso i suoi cambi di stato oppure ad attivarne dei comportamenti.
 
 Questo facilita l'interfaccia utente e lo sviluppo che si verificano quasi contemporaneamente all'interno dello stesso codice. Gli sviluppatori dell'interfaccia utente scrivono associazioni verso il ViewModel nel documento di markup (HTML) mentre il Model e il ViewModel sono mantenuti da altri sviluppatori che lavorano sulla logica dell'applicazione(business logic).
 
-\hspace*{\fill}\cite{book:mvvm}
 \section{API}
 
 \emph{In informatica le API(Application Programming Interface) sono un insieme di operazioni, protocolli, strumenti per lo sviluppo del software. Una API rappresenta una specifica componente del software in termini di operazione, input, output e tipi soggiacenti. Una API definisce funzionalità totalmente indipendenti dalla loro rispettiva implementazione, il che consente di poter variare rispettivamente l'implementazione e la definizione senza che una influisca sull'altra. Una buona API rende più facile lo sviluppo del software fornendo vari "mattoni" con cui poter sviluppare il software, il ruolo del programmatore è quello di unire i vari blocchi richiesti.}
@@ -72,9 +95,9 @@ L'utilizzo di API è stato fatto durante il mio tirocinio aziendale per lo scamb
 
 \subsection{API Rest}
 
-REST(\textbf{R}epresentational \textbf{S}tate \textbf{T}ransfer) è un termine coniato da Roy Fieldin(co-autore del protocollo HTTP 1.1) nella sua tesi di dottorato per descrivere lo stile dell'architettura dei sistemi di rete. REST non è un protocollo e nemmeno uno standard, ma uno \emph{stile} architetturale per applicazioni / servizi web, quando uno di essi rispetta i criteri di REST gli si da l'attributo \emph{RESTful}.
+REST(\textbf{R}epresentational \textbf{S}tate \textbf{T}ransfer) è un termine coniato da Roy Fieldin(co-autore del protocollo HTTP 1.1) nella sua tesi di dottorato per descrivere lo stile dell'architettura dei sistemi di rete. REST non è un protocollo e nemmeno uno standard, ma uno \emph{stile} architetturale per applicazioni / servizi web; quando uno di essi rispetta i criteri di REST gli si da l'attributo \emph{RESTful}.
 
-REST impone determinati vincoli alla sua architettura, pur lasciando libera la sua implementazione:
+REST impone determinati vincoli alla sua architettura, pur lasciando libera la loro implementazione:
 
 \begin{description}
 
@@ -113,7 +136,7 @@ Per essere più chiari si consideri lo stato dell'applicazione come i dati nella
 
 \item[Cacheadable]
 
-Nel World WIde Web i client possono mantenere una cache delle richieste fatte ai server. In una architettura REST le richieste devono specificare, esplicitamente o implicitamente, la possibilità di essere mantenute in cache oppure no, per prevenire ai client di ri-usare stati o dati inappropiati per richieste future. Una buona gestione della cache può parzialmente o completamente eliminare alcune interazioni tra client e server, così da migliorare prestazioni e scalabilità.
+Nel World Wide Web i client possono mantenere una cache delle richieste fatte ai server. In una architettura REST le richieste devono specificare, esplicitamente o implicitamente, la possibilità di essere mantenute in cache oppure no, per prevenire ai client di ri-usare stati o dati inappropiati per richieste future. Una buona gestione della cache può parzialmente o completamente eliminare alcune interazioni tra client e server, così da migliorare prestazioni e scalabilità.
 
 
 \item[Client-Server]  
@@ -134,12 +157,16 @@ Un parametro opzionale di una architettura REST è la possibilità dei server di
 
 Un protocollo di comunicazione utilizzato nelle reti che si presta ad essere molto compatibile con una architettura di tipo REST e sicuramente HTTP. Spesso il protocollo e l'architettura vengono mischiati all'interno della spiegazione di che cosa è REST, si tiene a precisare che l'architettura REST può essere applicata anche in un sistema che non fa uso di HTTP in quanto si tratta di una architettura che specifica il modo in cui client e server devono comunicare ma lascia libera l'implementazione del sistema.
 
-Nel 99\% delle applicazioni RESTful viene usato il protocollo HTTP in quanto è già possibile associare i verbi dell'architettura REST con le richieste del protocollo: 
+Il 99\% delle applicazioni RESTful viene usato il protocollo HTTP in quanto è già possibile associare i verbi dell'architettura REST con le richieste del protocollo: 
 \begin{itemize}
-\item CREATE => POST, crea una nuova risorsa
-\item READ => GET, ottiene una risorsa specifica
-\item UPDATE => PUT, modifica una risorsa specifica
-\item DELETE => DELETE, elimina una risorsa specifica
+\item CREATE $\Rightarrow$ POST, crea una nuova risorsa
+
+\item READ   $\Rightarrow$ GET, ottiene una risorsa specifica
+
+\item UPDATE $\Rightarrow$ PUT, modifica una risorsa specifica
+
+\item DELETE $\Rightarrow$ DELETE, elimina una risorsa specifica
+
 \end{itemize}
 Inoltre tramite il \emph{payload} di HTTP è possibile scambiare tra client e server lo stato delle risorse e la relativa rappresentazione dati.
 
