@@ -190,9 +190,11 @@ Per quanto riguarda la rappresentazione dei dati nello scambio di risorse, i for
 
 L'architettura di REST assieme al protocollo HTTP sono molto utilizzati nell'ambito di sviluppo di applicativi lato backend per la fonitura di servizi. Ovvero l'accesso alle risorse dell'applicativo in questione si ha tramite API sviluppate secondo l'architettura REST.
 
-
-
 \subsubsection{CORS}
+
+Si è parlato precedentemente della comunicazione tra client e server risiedenti su macchine differenti. Accade spesso che queste due entità siano situate su domini internet diversi e che la richiesta debba transitare da uno all'altro. Questo tipo di richiesta chiamata \textit{cross-domain request} per essere effettuata deve seguire gli standard W3C con le opportune configurazioni.
+
+Lo standard W3C CORS determina come deve essere effettuata una richiesta attraverso due domini differenti. All'interno dell'header della richiesta(ipotizzando l'uso di HTTP) deve essere presente una determinata voce \textit{Allow-Orign Allow- } per far si che venga interpretata a destinazione.
 
 %Scaletta REST
 %
