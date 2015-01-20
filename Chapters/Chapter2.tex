@@ -105,25 +105,25 @@ REST impone determinati vincoli alla sua architettura, pur lasciando libera la l
 
 REST impone una interfaccia uniforme tra client e server. Questo semplifica e decompone l'architettura, il che fa si che ogni parte possa evolvere indipendentemente. Per creare una interfaccia uniforme si sono 4 principi da seguire:
 
-\begin{description}
-
-\item[Resource Based] 
+\item[- Resource Based] 
 
 ogni risorsa deve essere identificata univocamente all'interno del server. La sua identificazione deve essere concettualmente separata dalla rappresentazione che viene ritornata al client, la quale può dipendere dalla richiesta fatta.
 
-\item[Manipolazione delle Risorse] 
+\item[- Manipolazione delle Risorse] 
 
 il client tramite il riferimento della risorsa può effettuare 4 operazioni base creazione, lettura, aggiornamento, cancellazione (\emph{CRUD}: \textbf{C}reate \textbf{R}ead \textbf{U}pdate \textbf{D}elete)
 
-\item[Self-descriptive Messages] 
+\item[- Self-descriptive Messages] 
 
 Ogni messaggio tra client e server contiene tutte le informazioni sufficienti per la sua codifica e interpretazione. Le risposte dal server devono indicare anche i parametri di caching.
-\item[Hypermedia as the Engine of Application State (HATEOAS)] 
-Clients deliver state via body contents, query-string parameters, request headers and the requested URI (the resource name). Services deliver state to clients via body content, response codes, and response headers. This is technically referred-to as hypermedia (or hyperlinks within hypertext).
-Aside from the description above, HATEOS also means that, where necessary, links are contained in the returned body (or headers) to supply the URI for retrieval of the object itself or related objects. We'll talk about this in more detail later.
-The uniform interface that any REST services must provide is fundamental to its design.
 
-\end{description}
+\item[- Hypermedia as the Engine of Application State (HATEOAS)] 
+
+Uno dei principi REST suggerisce l'uso di collegamenti tra risorse come modalità di transizione da uno stato all'altro. Questo principio è noto anche con l'acronimo HATEOAS, Hypermedia As The Engine Of Application State, e focalizza l'attenzione sull'utilizzo dei collegamenti ipertestuali, anzi ipermediali, come meccanismo di base per far passare un'applicazione da uno stato ad un altro.
+Se il risultato di una interazione con il server è un contenitore di risorse, allora all’interno della risorsa abbiamo gli URI delle risorse contenute, altrimenti nella maggior parte dei casi non si hanno altri collegamenti. Non possiamo dire che un Web Service di questo tipo non sia RESTful, ma nella maggior parte dei casi non sfrutta a pieno le potenzialità dei principi REST.
+Il principio HATEOAS, infatti, intende incoraggiare non solo l’uso di collegamenti per rappresentare risorse composte, ma anche per definire qualsiasi altra relazione tra le risorse e per controllare le transizioni ammissibili tra uno stato e l’altro dell’applicazione.
+Sfruttando pienamente il principio HATEOAS è possibile creare servizi Web con scarso accoppiamento tra client e server. Infatti, se il server riorganizza le relazioni tra le risorse, il client è in grado di trovare tutto ciò che serve nelle rappresentazioni ricevute. Potenzialmente tutto quello che servirebbe ad un client è solo l’URI della risorsa iniziale. Come avanzare tra uno stato e l’altro dell’applicazione verrà indicato man mano che si seguono i collegamenti incorporati nelle successive rappresentazioni di risorse.
+\hspace*{\fill}\cite{web:hateoas}
 
 \item[Stateless]
 
@@ -137,7 +137,6 @@ Per essere più chiari si consideri lo stato dell'applicazione come i dati nella
 \item[Cacheadable]
 
 Nel World Wide Web i client possono mantenere una cache delle richieste fatte ai server. In una architettura REST le richieste devono specificare, esplicitamente o implicitamente, la possibilità di essere mantenute in cache oppure no, per prevenire ai client di ri-usare stati o dati inappropiati per richieste future. Una buona gestione della cache può parzialmente o completamente eliminare alcune interazioni tra client e server, così da migliorare prestazioni e scalabilità.
-
 
 \item[Client-Server]  
 
@@ -175,10 +174,7 @@ Prima che le applicazioni cominciassero ad essere sviluppate secondo una archite
 \begin{lstlisting}[caption={Esempio di URL che non rispetta il vincolo di REST}, label={lst:wrongRESTURL}]
 	GET index.php?service=getUser&id=55
 \end{lstlisting}
-Nell'esempio \ref{lst:wrongRESTURL} notiamo che URL non denota una specifica risorsa nel sever ma specifica il metodo e i parametri che il server dovrà utilizzare per comporre il risultato e rispondere alla richiesta. Questo metodo non è errato ma non va bene per identificare delle risorse.
-
--- Perché questo non va bene ? --\\
-
+Nell'esempio \ref{lst:wrongRESTURL} notiamo che l'URL non denota una specifica risorsa nel sever ma il metodo e i parametri che il server dovrà utilizzare per comporre il risultato e rispondere alla richiesta. Questo metodo non è errato ma non va bene per identificare delle risorse.
 In una architettura REST le risorse vengono identificate secondo precisi URL univoci all'interno dell'applicazione, come nell'esempio \ref{lst:correctRESTURL}.
 Inoltre è buona pratica creare identificatori di risorse gerarchici, in modo da rendere l'URL della risorsa chiaro e semplice da comprendere.
 
@@ -189,12 +185,46 @@ Inoltre è buona pratica creare identificatori di risorse gerarchici, in modo da
 Per quanto riguarda la rappresentazione dei dati nello scambio di risorse, i formati più utilizzati sono JSON(\textbf{J}ava\textbf{S}cript \textbf{O}bject \textbf{N}otation) e XML(e\textbf{X}tensible \textbf{M}arkup \textbf{L}anguage) i quali permettono una struttura dettagliata e gerarchica dei dati. Nelle applicazioni web viene utilizzato maggiormente JSON in quanto la sua manipolazione risulta più diretta nel linguaggio Javascript.
 
 L'architettura di REST assieme al protocollo HTTP sono molto utilizzati nell'ambito di sviluppo di applicativi lato backend per la fonitura di servizi. Ovvero l'accesso alle risorse dell'applicativo in questione si ha tramite API sviluppate secondo l'architettura REST.
-
+\hspace*{\fill}\cite{thesis:rest,web:todd_rest}
 \subsubsection{CORS}
 
-Si è parlato precedentemente della comunicazione tra client e server risiedenti su macchine differenti. Accade spesso che queste due entità siano situate su domini internet diversi e che la richiesta debba transitare da uno all'altro. Questo tipo di richiesta chiamata \textit{cross-domain request} per essere effettuata deve seguire gli standard W3C con le opportune configurazioni.
+Si è parlato precedentemente della comunicazione tra client e server risiedenti su macchine differenti. Accade spesso che queste due entità siano situate su domini internet diversi e che la richiesta debba transitare da uno all'altro. CORS(\textbf{C}ross \textbf{O}rigin \textbf{R}esource \textbf{S}haring) è uno standard W3C che regolamenta le richieste di risorse tra domini differenti. È stato adottato per garantire un livello di sicurezza per l'accesso alle risorse. Per poterlo utilizzare bisogna agire sulla configurazione del server e sugli header dei messaggi HTTP.
+Ad esempio il dominio \emph{www.marcopredari.it} vuole richiedere una risorsa presso \emph{www.google.it}. Innanzitutto il dominio chiamante deve aggiungere all'header il campo \textbf{Origin} indicando il prorpio dominio. Come risposta riceverà un messaggio il cui header avrà all'interno il campo \textit{Allow-Control-Allow-Origin} contenete i domini abilitati a richiedere quella risorsa; nel caso del simbolo * significa che accetta qualsiasi dominio la richieda. Se il dominio che fatto la richiesta non fosse autorizzato riceverà un messaggio di errore. \cite{web:cors}
 
-Lo standard W3C CORS determina come deve essere effettuata una richiesta attraverso due domini differenti. All'interno dell'header della richiesta(ipotizzando l'uso di HTTP) deve essere presente una determinata voce \textit{Allow-Orign Allow- } per far si che venga interpretata a destinazione.
+\begin{lstlisting}[caption={esempio di richiesta HTTP utilizzando CORS}, label={lst:CORSrequest}]
+	Accept:application/json, text/plain, */*
+	Accept-Encoding:gzip, deflate, sdch
+	Accept-Language:it-IT,it;q=0.8,en-US;q=0.6,en;q=0.4
+	Cache-Control:no-cache
+	Connection:keep-alive
+	Host:predoweb-cms.herokuapp.com
+	Origin:http://127.0.0.1
+	Pragma:no-cache
+	Referer:http://127.0.0.1/webcv/blog.marcopredari.it/
+	User-Agent: Mozilla/5.0 (X11; Linux x86_64) 
+			    AppleWebKit/537.36 (KHTML, like Gecko) 
+			    Chrome/39.0.2171.99 Safari/537.36
+\end{lstlisting}
+\begin{lstlisting}[caption={esempio di risposta dal server che utilizza CORS}, label={lst:CORSanswer}]
+	Access-Control-Allow-Origin:http://127.0.0.1
+	Cache-Control:no-cache
+	Connection:keep-alive
+	Content-Type:application/json
+	Date:Tue, 20 Jan 2015 16:52:13 GMT
+	Server:Apache/2.4.10 (Unix)
+	Set-Cookie:laravel_session= .....
+			   expires=Tue, 20-Jan-2015 18:52:13 GMT; 
+			   Max-Age=7200; 
+			   path=/; 
+			   httponly
+	Transfer-Encoding:chunked
+	Vary:Origin
+	Via:1.1 vegur
+	X-Frame-Options:SAMEORIGIN
+	X-Powered-By:PHP/5.6.4
+\end{lstlisting}
+
+CORS possiede inoltre altre configurazioni riguardo alla sicurezza delle richieste, nei web server come Apache è possibile configurare un file in cui si possono aggiungere tutte le restrizioni o concessioni del caso.
 
 %Scaletta REST
 %
