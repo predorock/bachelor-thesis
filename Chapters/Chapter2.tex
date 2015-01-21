@@ -118,7 +118,7 @@ il client tramite il riferimento della risorsa può effettuare 4 operazioni base
 Ogni messaggio tra client e server contiene tutte le informazioni sufficienti per la sua codifica e interpretazione. Le risposte dal server devono indicare anche i parametri di caching.
 
 \item[- Hypermedia as the Engine of Application State (HATEOAS)] 
-
+\label{itm:hateoas}
 Uno dei principi REST suggerisce l'uso di collegamenti tra risorse come modalità di transizione da uno stato all'altro. Questo principio è noto anche con l'acronimo HATEOAS, Hypermedia As The Engine Of Application State, e focalizza l'attenzione sull'utilizzo dei collegamenti ipertestuali, anzi ipermediali, come meccanismo di base per far passare un'applicazione da uno stato ad un altro.
 Se il risultato di una interazione con il server è un contenitore di risorse, allora all’interno della risorsa abbiamo gli URI delle risorse contenute, altrimenti nella maggior parte dei casi non si hanno altri collegamenti. Non possiamo dire che un Web Service di questo tipo non sia RESTful, ma nella maggior parte dei casi non sfrutta a pieno le potenzialità dei principi REST.
 Il principio HATEOAS, infatti, intende incoraggiare non solo l’uso di collegamenti per rappresentare risorse composte, ma anche per definire qualsiasi altra relazione tra le risorse e per controllare le transizioni ammissibili tra uno stato e l’altro dell’applicazione.
@@ -184,8 +184,24 @@ Inoltre è buona pratica creare identificatori di risorse gerarchici, in modo da
 
 Per quanto riguarda la rappresentazione dei dati nello scambio di risorse, i formati più utilizzati sono JSON(\textbf{J}ava\textbf{S}cript \textbf{O}bject \textbf{N}otation) e XML(e\textbf{X}tensible \textbf{M}arkup \textbf{L}anguage) i quali permettono una struttura dettagliata e gerarchica dei dati. Nelle applicazioni web viene utilizzato maggiormente JSON in quanto la sua manipolazione risulta più diretta nel linguaggio Javascript.
 
-L'architettura di REST assieme al protocollo HTTP sono molto utilizzati nell'ambito di sviluppo di applicativi lato backend per la fonitura di servizi. Ovvero l'accesso alle risorse dell'applicativo in questione si ha tramite API sviluppate secondo l'architettura REST.
-\hspace*{\fill}\cite{thesis:rest,web:todd_rest}
+La domanda che ora sorge spontanea è: come si creano delle \textbf{buone} API REST? Roy Fielding in suo articolo condanna l'uso dell'attributo RESTful su applicazioni che in realtà lo sono solo in parte, in quanto per far si che lo siano \textbf{tutti} i vincoli dell'architettura REST devono essere rispettati.
+Uno di questi che viene spesso trascurato e HATEOAS(\ref{itm:hateoas}) e l'inventore di REST reclama i principi di come dovrebbero essere sviluppate correttamente delle API REST in questo articolo \citep{web:restapi}
+
+%\begin{itemize}
+%
+%\item Una API REST non deve dipendere dal protocollo di comunicazione. E in generale ogni protocollo che utilizza degli URI deve permettere di usare un qualsiasi schema di quest'ultimo per l'identificazione dellea risorsa. Se questo punto viene meno l'identificazione delle risorse non è separata  dalla loro interazione.
+%
+%\item Una API REST non deve contenere cambiamenti inerenti al protocollo, è consentito soltanto modificare i bit che il quest'ultimo mette a disposizione. Se non si rispetta questo vincolo l'interfaccia alla risora diventa specifica e non generica.
+%
+%\item Una API REST dovrebbe descrivere accuratamente i tipi ipermediali utilizzati per rappresentare la risorsa(HATEOAS) e lo stato dell'applicazione.
+%
+%\item Una API REST non deve fissare il nome di una risorsa e la sua gerarchia. I server devono avere la libertà di poter cambiare la loro namespace. Avere dei nomi fissi rende l'architettura equivalente ad una applicazione RPC.
+%
+%\item Una API REST non deve avere risorse di un tipo significativo per il client. Gli unici tipi significativi per il client sono la rappresentazione corrente dei tipi multimediali e in nomi delle relazioni standardizzati.
+%
+%\item Una API REST 
+%\end{itemize}
+
 \subsubsection{CORS}
 
 Si è parlato precedentemente della comunicazione tra client e server risiedenti su macchine differenti. Accade spesso che queste due entità siano situate su domini internet diversi e che la richiesta debba transitare da uno all'altro. CORS(\textbf{C}ross \textbf{O}rigin \textbf{R}esource \textbf{S}haring) è uno standard W3C che regolamenta le richieste di risorse tra domini differenti. È stato adottato per garantire un livello di sicurezza per l'accesso alle risorse. Per poterlo utilizzare bisogna agire sulla configurazione del server e sugli header dei messaggi HTTP.

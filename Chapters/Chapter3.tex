@@ -282,8 +282,42 @@ Il consistente numero di tecnologie che si possono utilizzare per lo sviluppo ib
 Avendo a disposizione tutto il mondo delle tecnologie web, può risultare utile e molto produttivo inserire librerie all'interno del nostro progetto. Per le applicazioni web in generale e anche in quelle ibride si può disporre di un package manager che facilmente includere nuove librerie all'interno del progetto.\\
 
 \textbf{Bower} è un package manager tipicamente usato per librerie Javascript. Generalmente è possibile reperire ogni libreria disponibile su Github. Tramite il file \emph{bower.json} possiamo specificare le dipendenze del progetto e dinamicamente aggiornare la lista delle librerie installate. Inoltre se stiamo lavorando con una struttura di cartelle specifica, come ne mio caso, possiamo specificare la posizione di dove verranno scaricate le librerie tramite il file \emph{.bowerrc}. 
--- Codice Bower.json --
--- Codice .bowerrc --
+
+\begin{lstlisting}[language=html,caption={Una tipica configurazione del file .bowerrc},
+				   label={lst:bowerrc}]
+	{
+		"directory" : "js/vendor"
+	}
+\end{lstlisting}
+
+\begin{lstlisting}[language=html,caption={Una tipica configurazione del file bower.json},
+				   label={lst:bowerjson}]
+{
+  "name": "blog.marcopredari.it",
+  "version": "0.0.0",
+  "authors": [
+    "predorock <predorock@gmail.com>"
+  ],
+  "description": "A simple blog with angularJS",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "blog.marcopredari.it",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-sanitize": "~1.3.10",
+    "angular": "~1.3.10"
+  }
+}
+
+\end{lstlisting}
+
 \subsection{Task Runner}
 
 \begin{wrapfigure}{r}{0.40\textwidth}
@@ -292,7 +326,10 @@ Avendo a disposizione tutto il mondo delle tecnologie web, può risultare utile 
     \includegraphics[scale=0.4]{Figures/grunt-logo.png}
 	\includegraphics[scale=0.3]{Figures/gulp-logo.png}  
   \end{center}
-  \vspace{-10pt}
+  \vspace{-10pt}{
+	"directory" : "js/vendor"
+}
+
   \caption{Loghi di Grunt e Gulp}
   \label{fig:task runner}
   \vspace{0pt}
@@ -303,51 +340,7 @@ Il ruolo dei task-runner è quello di eseguire determinate operazioni per la mes
 
 \textbf{Grunt} e \textbf{Gulp} sono due esempi di \emph{task-runner} in linguaggio Javascript(NodeJs). Una caratteristica che li distingue e la loro modularità, in quanto in base alle esigenze dell'applicazione si possono scaricare i moduli dedicati in base ai processi richiesti per la messa in produzione. Successivamente si deve scrivere un file(\textit{grunt.js} o \textit{gulp.js}) dove si indicano tutte le istruzioni per la messa in produzione. Ho voluto nominarli entrambi nella mia tesi in quanto il primo l'ho usato durante la mia esperienza di tirocinio, il secondo invece è usato per lo sviluppo del framework Ionic.
 
-\subsection{IDE}
-Ho scelto di usare una \emph{Integrated Develop Enviroment}(IDE) per lo sviluppo della mia applicazione in modo tale da tenere sotto controllo tutti i file del mio progetto e per poterli organizzare in una struttura di tipo modulare. Abbiamo constatato che prima di un deploy dell'applicazione ci sono una serie di operazioni che dobbiamo eseguire affinché il nostro progetto sia completo. Per fare questo ci serviamo di strumenti chiamati \emph{Tesk-Runner}.
 
-- Gestione dei progetti -\\
-- Organizzazione -\\
-- Test -\\
-- Deploy -\\
-Questi concetti spiegati in modo generale per poi dire nelle varie sezione come sono stati effettivamente applicati.
-
-Tra i diversi IDE disponibili ho scelto di usare \emph{NetBeans} in quanto può predisporre di un ambiente adatto allo sviluppo di applicazioni multi-piattaforma. In particolare è possibile partire da un modello di progetto basato su \emph{Cordova} oppure semplicemente in \emph{HTML5} ed inoltre è molto semplice configurare le SDK dedicate per il deploy sui vari sistemi operativi.
-
-\subsubsection{Creazione}
-Tramite NetBeans inizializziamo un nuovo progetto basato si Cordova.
--- Immagine nuovo progetto --\\
--- Immagine scelta del template --
-In NetBeans non abbiamo il templateAbbiamo constatato che prima di un deploy dell'applicazione ci sono una serie di operazioni che dobbiamo eseguire affinché il nostro progetto sia completo. Per fare questo ci serviamo di strumenti chiamati \emph{Tesk-Runner}. fornito da Ionic, ma possiamo inizializzare tramite terminale il progetto e poi importarlo nell'IDE. Facendo questa operazione dobbiamo avere l'accortezza di aggiornare le impostazioni del progetto all'interno di NetBeans.
--- Immagine progetto --
-Qui abbiamo i risultato del nostro progetto dal quale partire per lo sviluppo.
-
-\subsubsection{Inclusione di Librerie esterne}
-Nei progetti per applicazioni multi piattaforma che utilizzano tecnologie web può risultare utile includere delle librerie esterne(spesso in linguaggio Javascript), che con questo tipo di tecnologia, questa operazione risulta molto rapida e intuitiva. \\
-Semplicemente come si agisce nei siti web, si inserisce uno script all'interno della pagina \emph{index.html} che va a includere il file della libreria desiderate.
-
-\begin{lstlisting}[language=html]
-	<script src = "lib/mylibrary/dist/mylibrary.min.js"></script>
-\end{lstlisting}
-
-Con NetBeans possiamo utilizzare in fase di configurazione e anche successivamente uno strumento che automaticamente include librerie da lui elencate, il quale è molto utile ma ovviamente non dispone di tutta la varietà presente in rete. uno strumento molto potente, usato dalla stragrande maggioranza degli sviluppatori web è \texttt{Bower}.
-
-\subsubsection{Deploy}
-L'operazione di \emph{Deploy} in italiano "schierare", nel nostro caso prende il significato di produrre una versione della nostra applicazione, che può essere finale oppure no. Nello sviluppo di applicazioni ibride multi piattaforma abbiamo a disposizione 3 opzioni per fare questa operazione.
-
-\begin{description}
-\item[Delploy sul Browser] Ovvero andiamo a vedere quella parte di applicazione che non necessita di essere sul dispositivo per poter funzionare. Sostanzialmente visualizziamo solo il livello delle tecnologie web, e lo possiamo correggere e/o visionare come se fosse un normale sito web. In questa modalità però non disponiamo ad esempio dell'interazione con le funzionalità native del dispositivo, si tratta di un modo rapido per avere una vista su quella che sarà l'interfaccia dell'applicazione.
-
-\item[Simulazione] Ogni IDE consente un meccanismo di simulazione di un dispositivo sulla propria macchina. In questa modalità possiamo vedere realmente come sarà la nostra applicazione su un dispositivo, ma in realtà l'hardware di riferimento sarà quello della nostra macchina(il simulatore si occupa di mettere in comunicazione tutte le componenti). E' una modalità che si avvicina molto alla rappresentazione reale della nostra applicazione ma il processo di simulazione per un computer di fascia media comporta una attesa anche di minuti per visionare il risultato, e dato che dovremo ripetere questa operazione diverse volte perché può darsi che si debba correggere il codice(cosa molto frequente), diventa molto dispendioso attendere tutte le volte così tanto tempo.
-
-\item[Installazione su Dispositivo] Quasi tutti i sistemi operativi ad eccezione di iOS, concedono di installare applicazioni direttamente da PC. Nel caso di Android che ho preso in esame, è molto semplice fare un \emph{Deploy} su dispositivo. Tramite \emph{NetBeans} bisogna configurare le SDK e scegliere il proprio dispositivo connesso tramite usb. Nel caso di iOS \emph{Apple} non concede l'installazione di applicazioni da origini sconosciute, a meno che non siano registrate sul Apple Store, pagando una tassa annuale di 99\$.
-
-\end{description}
-
-Quando il nostro progetto prende forma i file all'interno di esso cominciano a diventare consistenti e organizzarli diventa sempre più complesso. E buona norma di programmazione separare il proprio progetto in più file, ma al momento della consegna bisogna anche ricomporli e assemblarli nella maniera corretta. Inoltre se usiamo \emph{Ionic} e abbiamo modificato i fogli di stile dobbiamo ricordarci di ri-compilare i file \emph{SASS}.\\
-
-\subsubsection{Live Debug}
-Una volta che l'applicazione è in esecuzione in una delle modalità descritte precedentemente ci si preoccupa di controllare che il codice che si ha scritto funzioni correttamente. Per eseguire un buon \emph{Debug} di questo tipo di applicazione è sufficiente disporre di uno strumento molto semplice \emph{Google Chrome}, infatti tramite questo web browser a diffenza di altri possiamo osservare il comportamento della nostra applicazione sui vari dispositivi(anche in fase di simulazione) come se stessimo facendo una normale ispezione di una pagine web. Ovviamente se l'applicazione è in \emph{Deploy sul Browser} il problema non si pone, qualsiasi browser può andare(anche se personalmente consiglio Google Chrome o Mozilla Firefox).
 
 \section{SDK}
 Un \texttt{Software Developement Kit} in generale è un insieme di strumenti per lo sviluppo e la documentazione del software\cite{wiki:sdk}. Questi strumenti vengono rilasciati dalla casa produttrice di una certa piattaforma come librerie di riferimento per lo sviluppo di software specifico di essa. La loro distribuzione avviene in uno specifico linguaggio a seconda della piattaforma ed è sempre affiancata da una documentazione molto accurata. 

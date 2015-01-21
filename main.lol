@@ -7,3 +7,5 @@
 \contentsline {lstlisting}{\numberline {3.3}Un esempio di creazione di un modulo e la sua inclusione all'interno di un altro}{30}{lstlisting.86}
 \contentsline {lstlisting}{\numberline {3.4}Un esempio delle direttive standard di AngularJS}{32}{lstlisting.103}
 \contentsline {lstlisting}{\numberline {3.5}Un esempio di direttiva personalizzata}{32}{lstlisting.116}
+\contentsline {lstlisting}{\numberline {3.6}Una tipica configurazione del file .bowerrc}{36}{lstlisting.138}
+\contentsline {lstlisting}{\numberline {3.7}Una tipica configurazione del file bower.json}{36}{lstlisting.142}
