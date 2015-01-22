@@ -40,7 +40,7 @@ In uno schema di applicazione su larga scala può risultare utile separare le pa
 La divisione client e server associata con le parti frontend e backend di una applicazione viene spesso utilizzata nello sviluppo di applicazioni mobile distribuite, ad esempio in servizi georeferenziati. Ma non e detto che in generale sia sempre la soluzione ottima da adottare. 
 
 \subsection{MVC Pattern}
-\label{sec:MVC}
+\label{subsec:mvc}
 
 L'evoluzione della complessità del codice delle applicazioni, ha fatto si che i programmatori adottassero strategie di scrittura del codice in modo che rimanesse mantenibile e riusabile. L'uso del pattern MVC ha trovato largo uso in molti framework Javascript in modo tale che il codice scritto dal programmatore ereditasse i suoi benefici. Questa logica inoltre nello sviluppo complessivo dell'applicazione ha fatto si che il programmatore potesse disporre di uno scheletro dell'applicazione generico, in modo tale da accelerare il processo di sviluppo e di disporre di eventuali parti già sviluppate.
 
@@ -136,7 +136,7 @@ Per essere più chiari si consideri lo stato dell'applicazione come i dati nella
 
 \item[Cacheadable]
 
-Nel World Wide Web i client possono mantenere una cache delle richieste fatte ai server. In una architettura REST le richieste devono specificare, esplicitamente o implicitamente, la possibilità di essere mantenute in cache oppure no, per prevenire ai client di ri-usare stati o dati inappropiati per richieste future. Una buona gestione della cache può parzialmente o completamente eliminare alcune interazioni tra client e server, così da migliorare prestazioni e scalabilità.
+Nel World Wide Web i client poSystemssono mantenere una cache delle richieste fatte ai server. In una architettura REST le richieste devono specificare, esplicitamente o implicitamente, la possibilità di essere mantenute in cache oppure no, per prevenire ai client di ri-usare stati o dati inappropiati per richieste future. Una buona gestione della cache può parzialmente o completamente eliminare alcune interazioni tra client e server, così da migliorare prestazioni e scalabilità.
 
 \item[Client-Server]  
 
@@ -152,7 +152,7 @@ Un parametro opzionale di una architettura REST è la possibilità dei server di
 
 \end{description}
 
-\subsubsection{Implementazioni Esistenti}
+\subsection{Implementazioni Esistenti}
 
 Un protocollo di comunicazione utilizzato nelle reti che si presta ad essere molto compatibile con una architettura di tipo REST e sicuramente HTTP. Spesso il protocollo e l'architettura vengono mischiati all'interno della spiegazione di che cosa è REST, si tiene a precisare che l'architettura REST può essere applicata anche in un sistema che non fa uso di HTTP in quanto si tratta di una architettura che specifica il modo in cui client e server devono comunicare ma lascia libera l'implementazione del sistema.
 
@@ -202,7 +202,7 @@ Uno di questi che viene spesso trascurato e HATEOAS(\ref{itm:hateoas}) e l'inven
 %\item Una API REST 
 %\end{itemize}
 
-\subsubsection{CORS}
+\subsection{CORS}
 
 Si è parlato precedentemente della comunicazione tra client e server risiedenti su macchine differenti. Accade spesso che queste due entità siano situate su domini internet diversi e che la richiesta debba transitare da uno all'altro. CORS(\textbf{C}ross \textbf{O}rigin \textbf{R}esource \textbf{S}haring) è uno standard W3C che regolamenta le richieste di risorse tra domini differenti. È stato adottato per garantire un livello di sicurezza per l'accesso alle risorse. Per poterlo utilizzare bisogna agire sulla configurazione del server e sugli header dei messaggi HTTP.
 Ad esempio il dominio \emph{www.marcopredari.it} vuole richiedere una risorsa presso \emph{www.google.it}. Innanzitutto il dominio chiamante deve aggiungere all'header il campo \textbf{Origin} indicando il prorpio dominio. Come risposta riceverà un messaggio il cui header avrà all'interno il campo \textit{Allow-Control-Allow-Origin} contenete i domini abilitati a richiedere quella risorsa; nel caso del simbolo * significa che accetta qualsiasi dominio la richieda. Se il dominio che fatto la richiesta non fosse autorizzato riceverà un messaggio di errore. \cite{web:cors}
@@ -242,30 +242,55 @@ Ad esempio il dominio \emph{www.marcopredari.it} vuole richiedere una risorsa pr
 
 CORS possiede inoltre altre configurazioni riguardo alla sicurezza delle richieste, nei web server come Apache è possibile configurare un file in cui si possono aggiungere tutte le restrizioni o concessioni del caso.
 
-%Scaletta REST
-%
-%- origini / storia: Com'è nato REST?
-%- cosa cerca di risolvere REST
-%- Come lo risolve: parte teorica
-%	- Le risorse
-%	- Operazioni sulle risorse: I verbi
-%	- Concetto di applicazione RESTFul
-%    - HTTP e REST
-%- Implementazioni esistenti
-%	- Differenza con il passato
-%    GET api/users/10
-%    POST pippo/pluto/10/topolino
-%    			= 
-%    POST index.php?route=pippo/pluto/10/topolino
-%    
-%    GET index.php?service=get_user&id=10
-%	- Servizi Backend (più o meno tutti i linguaggi esistenti)
-%    	- gateway: Single entry point -> pagina che fa da gateway alle richieste e fa una sorta di traduzione
-%    	- URL Rewriting  : mettere a disposizione delle risorse o dei servizi tramite URL
-%    - Frontend 
-%    	- Chiamate HTTP XHR (GET/POST/PUT/DELETE)
-%        - JSON parsing / XML Parsing / other
-% - CORS
-%  	- Definizione -> a cosa serve ?
-%    - Esempi di implementazioni (Aggiunta dell'header)
+\section{Template System}
+
+Un \textit{Template System} o \textit{Template Engine} è uno strumento che permette al programmatore di separare nel programma, il contenuto(dato vero e proprio, modello) dalla sua rappresentazione(vista). Una analogia con un concetto già visto in questa tesi è con il pattern MVC, il contenuto e la rappresentazione sono analogamente il modello e la vista spiegati nella sezione \ref{subsec:mvc}.
+In questo caso un template è una particolare rappresentazione decisa a priori, senza alcuna dipendenza dai dati che si andranno a mostrare. Il ruolo del \emph{Template Processor} è quello di unire i dati provenienti dal modello con il template. Ogni template può avere più rappresentazioni al suo interno(ovvero più punti d'entrata per il modello), quindi per ogni collezione di dati presente nel modello verranno prodotti più documenti con lo stesso template ma con dati diversi.
+
+Il linguaggio usato per la definizione di template è generalmente moolto minimale, racchiude solo le principali caratteristiche dei più comuni linguaggi di programmazione di alto livello, come: variabili e funzioni(lambda), sostituzione di testo, inclusione di file, valutazioni condizionali e iterazioni.
+Un template system molto conosciuto perché disponibile in molti linguaggi e \textit{Mustache}.
+
+\textbf{Mustache} è definito come \emph{Logic-Less template system}, generalmente questi sistemi utilizzano un sistema di tag in modo tale da sostituirlo con il dato dal modello. Alcuni tag possono variare di significato in base alla loro sintassi e al Template System scelto. Ad esempio mustache utilizza la sintassi: \{\{tag\}\} per identificare una corrispondenza con il modello.
+
+Un modo molto utilizzato per rappresentare i dati all'interno del modello e tramite l'uso di JSON. In questo modo si possono scrivere modelli molto dettagliati che al loro interno rispettano la gerarchia dei dati e si ha una piena libertà riguardo le corrispondenze con i tipi, come nell'esempio \ref{lst:jsonmustache}
+
+\begin{lstlisting}[caption = "Un esempio di modello in json e la sua corrispondeza con il template system mustache e il risultato che si ottiene", label = "lst:jsonmustache"]
+
+Model:
+
+{
+	"name" : {
+		"fist" : "Marco",
+	 	"last" : "Predari"
+	},
+	"age" : "22",
+	"hobbies" : [
+		{"hobby" : "Guitar"},
+		{"hobby" : "Scout"},
+		{"hobby" : "Hacking"}
+	]
+}
+
+Template:
+
+My name is {{name.first}} {{name.last}} and i am {{age}}.
+My hobbies are:
+{{#hobbies}}
+<b>{{hobby}}</b>
+{{/hobbies}}
+
+Result:
+
+My name is Marco Predari and i am 22.
+My hobbies are:
+	<b>Guitar</b>
+	<b>Scout</b>
+	<b>Hacking</b>
+\end{lstlisting}
+
+Questo sistema viene molto utilizzato in ambito web, usare delle pagine web come template è molto comune tra i vari sistemi in quanto l'HTML è un linguaggio già predisposto all'approccio dei template. Si parlerà nella sezione \ref{sec:angularjs} di AngularJS, dall'alto può essere visto come un template system, la grande differenza sta nel \emph{two-way data binding} che verrà spiegato sempre nello stesso capitolo.
+ 
+
+
+
 
