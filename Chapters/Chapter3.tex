@@ -4,7 +4,7 @@
 L'approccio ibrido con tecnologie web è stato scelto durante lo svolgimento del tirocinio presso la ditta BigThink SRL, in quanto si adattava meglio ad una serie di tecnologie già utilizzate dall'azienda.
 Durante la permanenza in azienda ho svolto il lavoro di Frontend Developer di Web Applications, in particolare mi occupavo dello sviluppo della logica di business di una applicazione e della sua interfaccia.
 Una delle politiche dell'azienda era quella di separare la gestione dei dati e la loro memorizzazione lato Backend in modo tale che la parte Frontend sviluppata con il framework Javascript AngularJS si interfacciasse con i dati servendosi solo di API REST.
-Data il numero consistente di Web Application sviluppate e il mercato di applicazioni Mobile sempre in crescita, sono stato incaricato dall'azienda di ricercare dei metodi e delle tecnologie che consentissero di portare il lavoro già fatto per le Web Application su dispositivo mobili, in modo tale che l'azienda avesse nuovi servizi da offrire.\\
+Data il numero consistente di Web Application sviluppate e il mercato di applicazioni Mobile sempre in crescita, sono stato incaricato dall'azienda di ricercare dei metodi e delle tecnologie che consentissero di portare il lavoro già fatto per le Web Application su dispositivo mobile, in modo tale che l'azienda avesse nuovi servizi da offrire.\\
 Tutte le applicazioni sviluppate fino ad allora erano già Responsive Web Application, in azienda si volevano aggiungere funzionalità caratteristiche dei dispositivi mobili tramite l'utilizzo di tecnologie web.\\
 
 Un primo punto di riferimento come tecnologia Web è stato AgnularJS, framework già utilizzato dall'azienda, se fosse stato scelto un altro framework si sarebbe dovuto riscrivere tutto il codice delle Web Application già sviluppate fino a quel punto. A questo punto  si trattava di scegliere le corrette tecnologie per includere al meglio il lavoro già svolto, in particolare un Wrapper che avrebbe consentito un buon sviluppo dell'applicazione partendo da tecnologie web, senza influire su eventuali spese aziendali. 
@@ -264,11 +264,11 @@ Cordova quindi offre una serie di potenti API in linguaggio Javascript per poter
   \vspace{0pt}
 \end{wrapfigure}
 
-Il perché in questa tesi si parli di \emph{Cordova} e \emph{AngularJS} è dato dall'esistenza di \texttt{ngCordova}. Questa libreria nasce da una idea di Paolo Bernasconi e Max Lynch che hanno avuto l'idea(geniale) di unire la l'efficenza e la potenza di \emph{AngularJS} con la versatilità di \emph{Cordova}. Ne è nato un framework per lo sviluppo di applicazioni ibride direttamente collegato alle funzionalità del dispositivo gestibile tramite il codice efficiente di \emph{AngularJS}.\\
+Il perché in questa tesi si parli di \emph{Cordova} e \emph{AngularJS} è dato dall'esistenza di \texttt{ngCordova}. Questa libreria nasce da una idea di Paolo Bernasconi e Max Lynch che hanno avuto l'idea di unire la l'efficenza e la potenza di \emph{AngularJS} con la versatilità di \emph{Cordova}. Ne è nato un framework per lo sviluppo di applicazioni ibride direttamente collegato alle funzionalità del dispositivo gestibile tramite il codice efficiente di \emph{AngularJS}.\\
 
 \section{Strumenti di sviluppo}
 
-Il consistente numero di tecnologie che si possono utilizzare per lo sviluppo ibrido viene spesso accompagnato da strumenti che consentono di creare un ambiente progettuale in cui si ha a disposizione tutto il necessario per poter iniziare a sviluppare. La scelta di determinati strumenti piuttosto che altri e riservata allo sviluppatore finale, personalmente mostrerò come ho deciso di organizzare un progetto di esempio.
+Il consistente numero di tecnologie che si possono utilizzare per lo sviluppo ibrido viene spesso accompagnato da strumenti che consentono di creare un ambiente progettuale in cui si ha a disposizione tutto il necessario per poter iniziare a sviluppare. La scelta di determinati strumenti piuttosto che altri è riservata allo sviluppatore finale, personalmente mostrerò come ho deciso di organizzare un progetto di esempio.
 
 \subsection{Package Manager}
 
@@ -337,4 +337,16 @@ Il ruolo dei task-runner è quello di eseguire determinate operazioni per la mes
 
 \section{SDK}
 Un \texttt{Software Developement Kit} in generale è un insieme di strumenti per lo sviluppo e la documentazione del software\cite{wiki:sdk}. Questi strumenti vengono rilasciati dalla casa produttrice di una certa piattaforma come librerie di riferimento per lo sviluppo di software specifico di essa. La loro distribuzione avviene in uno specifico linguaggio a seconda della piattaforma ed è sempre affiancata da una documentazione molto accurata. 
-Per lo sviluppo di applicazioni ibride avremo bisogno di ciascuna \emph{SDK} per ogni sistema operativo sul quale vorremo la nostra applicazione; ad esempio se volessimo la nostra applicazione per \emph{iOS} e \emph{Android} dovremmo scaricare entrambe le \emph{SDK}(scritte rispettivamente in C++/Swift e Java) indicando dove si trovano all'interno del notro computer. \emph{NetBeans} dispone di una interfaccia molto semplice da usare per impostare i percorsi delle \emph{SDK} ma non di tutte le piattaforme; se volgiamo impostare un'altra piattaforma non indicata nell'IDE dobbiamo seguire le istruzioni fornite da \emph{Cordova}.
+Per lo sviluppo di applicazioni ibride avremo bisogno di ciascuna \emph{SDK} per ogni sistema operativo sul quale vorremo la nostra applicazione; ad esempio se volessimo la nostra applicazione per \emph{iOS} e \emph{Android} dovremmo scaricare entrambe le \emph{SDK}(scritte rispettivamente in C++/Swift e Java) indicando dove si trovano all'interno del notro computer.
+
+\section{Creazione di una applicazione}
+
+Dopo aver presentato tutte le tecnologie e gli strumenti per lo sviluppo di applicazioni ibride si mostrerà un processo di sviluppo molto minimale con l'obiettivo di mostrare dove e come possono essere utili gli strumenti visti in  precedenza.
+
+\subsection{Ambiente di sviluppo}
+
+L'ambiente di sviluppo di una applicazione ibrida dipende direttamente dal framework che si andrà a utilizzare per la distribuzione su più piattaforme, in questo caso Cordova. Alcuni IDE predispongono già un tipo di progetto basato su cordova e tecnologie web, come ad esempio NetBeans e IntelliJ IDEA. Altrimenti Cordova e Ionic predispongono già un client da linea di comando per inizializzare nuovi progetti.
+
+Tutte queste soluzioni per la creazione di nuovi progetti includono un template di partenza con lo scopo di dare una struttura minimale ai file del progetto. Nel mio caso ho scelto di usare l'IDE NetBeans in quanto risulta più chiaro e semplice il processo di sviluppo.
+
+
