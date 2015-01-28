@@ -2,7 +2,7 @@
 \lhead{\emph{Capitolo 2}}
 Durante la mia esperienza presso la ditta BigThink SRL oltre ad una formazione pratica ho potuto, in alcuni momenti sotto la guida del capo azienda e del correlatore, studiare alcuni concetti teorici utili ad comprendere meglio le tecnologie utilizzate nel processo di sviluppo delle applicazioni in azienda. In questo capitolo si riportano dei concetti dell'informatica secondo me rilevanti (e alcune volte fondamentali) per lo sviluppo di applicazioni.
 
-Una prima fase dello sviluppo è quella di strutturare l'architettura dell'applicazione e decidere come vengono assegnati i compiti. Una delle politiche che è stata intrapresa in azienda è stata quella della \emph{Separation of Concernes} (SoC), che in italiano si traduce in \emph{Separazione dei Compiti}. Si tratta di un principio di design per dividere un problema in sezioni distinte, e ad ogni sezione assegnare un particolare compito o risoluzione del problema. Questa scelta progettuale introduce il concetto di \emph{modulo} di una applicazione, atto a svolgere un certo compito dell'applicazione. I moduli ragionevolmente saranno indipendenti uno dall'altro in modo tale da garantirne l'integrità e il loro re-utilizzo.\cite{wiki:soc}\\
+Una prima fase dello sviluppo è stata quella di strutturare l'architettura dell'applicazione e decidere come vengono assegnati i compiti. Una delle politiche che è stata intrapresa in azienda è stata quella della \emph{Separation of Concernes} (SoC), che in italiano si traduce in \emph{Separazione dei Compiti}. Si tratta di un principio di design per dividere un problema in sezioni distinte, e ad ogni sezione assegnare un particolare compito o risoluzione del problema. Questa scelta progettuale introduce il concetto di \emph{modulo} di una applicazione, atto a svolgere un certo compito dell'applicazione. I moduli ragionevolmente saranno indipendenti uno dall'altro in modo tale da garantirne l'integrità e il loro re-utilizzo.\cite{wiki:soc}\\
 
 Il concetto appena visto astrae molto da una applicazione vera e propria, sta a chi la progetta decidere con che granularità  e se è veramente necessario applicarlo. Dato che parliamo di tecnologie web, un chiaro esempio si separazione dei compiti è quello della struttura di una pagina web, divisa in HTML per la struttura, CSS per lo stile, e Javascript per la logica e comportamento.\\
 
@@ -20,7 +20,7 @@ Il problema ricorrente che si ha nello sviluppo di applicazioni e quello della d
 Durante il periodo di tirocinio presso l'azienda \emph{BigThink SRL} per la creazione di Web Applications sono stati utilizzati pattern come : Client-Server, SoC, Frontend e Backend, MVC; gli altri design pattern che verranno introdotti sono necessari per comprendere meglio alcune tecnologie che verranno utilizzate.
  
 \subsection{Frontend e Backend}
-Queste due parole sono spesso usate in informatica in molti ambiti, nel contesto specifico dell'applicazione \texttt{frontend}(in italiano parte davanti) denota quella parte dell'applicazione responsabile di gestire l'interfaccia utente e i dati provenienti da essa, mentre \texttt{backend}(in italiano parte dietro) indica la sezione dell'applicazione dedita alla gestione dei dati dell'applicazione. L'interazione che hanno le due parti è un chiaro esempio di interfaccia.\\
+Queste due parole sono spesso usate in informatica in molti ambiti, nel contesto specifico dell'applicazione \texttt{frontend}(in italiano parte davanti) denota quella parte dell'applicazione responsabile di gestire l'interfaccia utente e i dati provenienti da essa, mentre \texttt{backend}(in italiano parte dietro) indica la sezione dell'applicazione dedita alla gestione dei dati. L'interazione che hanno le due parti è un chiaro esempio di interfaccia.\\
 
 \textbf{Frontend:} questa è la parte caratteristica dell'applicazione, in quanto ne definisce il comportamento e l'aspetto, determinando la logica con cui si evolverà al rapporto con l'utente. A differenza della parte \emph{backend} questa non definisce ne manipolazione, ne la rappresentazione dei dati ma la vista che ha l'utente su di essi. Nella parte \emph{frontend} è inclusa anche la fase di definizione estetica dell'interfaccia, ma spesso questa spetta a una figura professionale distinta atta "vestire" l'applicazione.\\
 
@@ -95,7 +95,7 @@ L'utilizzo di API è stato fatto durante il mio tirocinio aziendale per lo scamb
 
 \subsection{API Rest}
 
-REST(\textbf{R}epresentational \textbf{S}tate \textbf{T}ransfer) è un termine coniato da Roy Fieldin(co-autore del protocollo HTTP 1.1) nella sua tesi di dottorato per descrivere lo stile dell'architettura dei sistemi di rete. REST non è un protocollo e nemmeno uno standard, ma uno \emph{stile} architetturale per applicazioni / servizi web; quando uno di essi rispetta i criteri di REST gli si da l'attributo \emph{RESTful}.
+REST(\textbf{R}epresentational \textbf{S}tate \textbf{T}ransfer) è un termine coniato da Roy Fielding(co-autore del protocollo HTTP 1.1) nella sua tesi di dottorato per descrivere lo stile dell'architettura dei sistemi di rete. REST non è un protocollo e nemmeno uno standard, ma uno \emph{stile} architetturale per applicazioni / servizi web; quando uno di essi rispetta i criteri di REST gli si da l'attributo \emph{RESTful}.
 
 REST impone determinati vincoli alla sua architettura, pur lasciando libera la loro implementazione:
 
@@ -144,13 +144,15 @@ La struttura dell'applicazione deve essere di tipo client-server, mostrata nella
 
 \item[Layered system]
 
-Avere un sistema a livelli può migliorare la scalabilità, la distribuzione del carico di lavoro e cache condivise, in quanto un client non potrà mai sapere se e connesso a un intermediario o direttamente al server. I server intermediari possono garantire tutti i miglioramenti prima nominati con la possibilità di adottare anche una politica di sicurezza.
+Per garantire una facile scalabilità del sistema e la riduzione della sua complessità, una architettura REST impone di adottare una struttura gerarchica a livelli. Ogni livello è completamente indipendente dagli altri, ovvero è soltanto a conoscenza di quello con cui deve comunicare. Ogni livello può integrare parti del servizio, o servizi differenti del sistema è questo, sopratutto nell'ambito delle reti internet, aumenta considerevolmente la latenza dell'output verso il client che ha richiesto il servizio. Si può deviare dal problema aggiungendo al sistema dei cosiddetti livelli intermediari che eseguono operazioni di caching delle risorse e di distribuzione del carico all'interno del sistema.
+In riferimento al concetto di interfaccia uniforme, i livelli intermediari si occupano appunto del mantenere quest'ultima costante mentre il sistema alle loro spalle può cambiare, senza che nessuno se ne accorga.
 
 \item[Code on demand(OPTIONAL)]
 
 Un parametro opzionale di una architettura REST è la possibilità dei server di estendere le capacità dei client trasferendo una determinata logica che può essere eseguita a destinazione.
 
 \end{description}
+
 
 \subsection{Implementazioni Esistenti}
 
