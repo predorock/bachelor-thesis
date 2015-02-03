@@ -32,7 +32,7 @@
 \contentsline {subsection}{\numberline {3.1.2}AngularJS}{30}{subsection.112}
 \contentsline {subsection}{\numberline {3.1.3}Ionic}{35}{subsection.159}
 \contentsline {section}{\numberline {3.2}Il Wrapper Framework}{36}{section.161}
-\contentsline {subsection}{\numberline {3.2.1}Cordova/Phonegap}{37}{subsection.162}
+\contentsline {subsection}{\numberline {3.2.1}Cordova/Phonegap}{36}{subsection.162}
 \contentsline {subsubsection}{\numberline {3.2.1.1}Storia}{37}{subsubsection.164}
 \contentsline {subsubsection}{\numberline {3.2.1.2}Differenze}{37}{subsubsection.165}
 \contentsline {subsubsection}{\numberline {3.2.1.3}Cordova Core}{37}{subsubsection.167}
@@ -42,7 +42,7 @@
 \contentsline {subsection}{\numberline {3.3.2}Task Runner}{40}{subsection.203}
 \contentsline {section}{\numberline {3.4}SDK}{41}{section.205}
 \contentsline {section}{\numberline {3.5}Creazione di una applicazione}{41}{section.206}
-\contentsline {subsection}{\numberline {3.5.1}Ambiente di sviluppo}{41}{subsection.207}
+\contentsline {subsection}{\numberline {3.5.1}Ambiente di sviluppo}{42}{subsection.207}
 \contentsline {chapter}{\numberline {4}Conclusioni}{43}{chapter.208}
 \contentsline {section}{\numberline {4.1}Considerazioni sullo sviluppo ibrido}{43}{section.209}
 \contentsline {section}{\numberline {4.2}Ciclo di vita di una app}{43}{section.210}
