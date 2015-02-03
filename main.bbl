@@ -1,0 +1,102 @@
+\begin{thebibliography}{10}
+
+\bibitem{stats:audiweb}
+Audiweb.
+\newblock Audiweb pubblica i dati della mobile e total digital audience del
+  mese di luglio 2014, 2014.
+\newblock [Online; da data 10-ottobre-2014].
+
+\bibitem{wiki:framework}
+Wikipedia.
+\newblock Framework --- wikipedia{,} l'enciclopedia libera, 2014.
+\newblock [Online; in data 21-novembre-2014].
+
+\bibitem{web:vision_mobile}
+Vision Mobile.
+\newblock Cross platform develope tools, 2012.
+\newblock Bridging the worlds of mobile apps and the web.
+
+\bibitem{book:laplante2007every}
+P.A. Laplante.
+\newblock {\em What Every Engineer Should Know about Software Engineering}.
+\newblock What Every Engineer Should Know. CRC Press, 2007.
+
+\bibitem{book:mitchell1990managing}
+R.J. Mitchell and Institution of~Electrical~Engineers.
+\newblock {\em Managing Complexity in Software Engineering}.
+\newblock IEE computing series. P. Peregrinus, 1990.
+
+\bibitem{wiki:soc}
+Wikipedia.
+\newblock Separation of concerns --- wikipedia{,} the free encyclopedia, 2014.
+\newblock [Online; accessed 30-November-2014].
+
+\bibitem{wiki:design_pattern}
+Wikipedia.
+\newblock Design pattern --- wikipedia{,} l'enciclopedia libera, 2014.
+\newblock [Online; in data 6-gennaio-2015].
+
+\bibitem{wiki:cliserv}
+Wikipedia.
+\newblock Client–server model --- wikipedia{,} the free encyclopedia, 2014.
+\newblock [Online; accessed 30-November-2014].
+
+\bibitem{wiki:mvc}
+Wikipedia.
+\newblock Model-view-controller --- wikipedia{,} l'enciclopedia libera, 2014.
+\newblock [Online; in data 6-gennaio-2015].
+
+\bibitem{book:mvvm}
+Addy Osmani.
+\newblock {\em Learning JavaScript Design Patterns}, volume 1.6.1.
+\newblock O'Reilly Media, 2014.
+
+\bibitem{wiki:api}
+Wikipedia.
+\newblock Application programming interface --- wikipedia{,} the free
+  encyclopedia, 2015.
+\newblock [Online; accessed 7-January-2015].
+
+\bibitem{web:hateoas}
+Andrea Chiarelli.
+\newblock Transizioni di stato, hypermedia e il principio hateoas | restful web
+  services - la guida |programmazione html.it.
+\newblock
+  http://www.html.it/pag/19606/transizioni-di-stato-hypermedia-e-il-principio-hateoas/.
+
+\bibitem{web:restapi}
+Roy~Thomas Fielding.
+\newblock Rest apis must be hypertext-driven, 2008.
+
+\bibitem{web:cors}
+Monsur Hossain.
+\newblock enable cross-origin resource sharing.
+\newblock http://enable-cors.org/.
+
+\bibitem{wiki:preprocessor}
+Wikipedia.
+\newblock Preprocessore --- wikipedia{,} l'enciclopedia libera, 2014.
+\newblock [Online; in data 9-gennaio-2015].
+
+\bibitem{wiki:SSOT}
+Wikipedia.
+\newblock Single source of truth --- wikipedia{,} the free encyclopedia, 2014.
+\newblock [Online; accessed 10-January-2015].
+
+\bibitem{angularjs:directives}
+Angularjs: Developer guide: Directives.
+\newblock https://docs.angularjs.org/guide/directive.
+\newblock AngularJS Directives.
+
+\bibitem{wiki:blink}
+Wikipedia.
+\newblock Blink (layout engine) --- wikipedia{,} the free encyclopedia, 2014.
+\newblock [Online; accessed 24-November-2014].
+
+\bibitem{wiki:sdk}
+Wikipedia.
+\newblock Software development kit --- wikipedia{,} the free encyclopedia,
+  2014.
+\newblock [Online; accessed 26-November-2014].
+
+\end{thebibliography}

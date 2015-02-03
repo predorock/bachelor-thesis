@@ -1,0 +1,59 @@
+\contentsline {chapter}{Abstract}{ii}{dummy.1}
+\vspace {1em}
+\contentsline {chapter}{Ringraziamenti}{iv}{dummy.5}
+\vspace {1em}
+\contentsline {chapter}{Elenco delle Figure}{vii}{dummy.7}
+\contentsline {chapter}{Elenco delle Tabelle}{viii}{dummy.9}
+\contentsline {chapter}{Elenco degli Esempi}{ix}{chapter*.10}
+\contentsline {chapter}{\numberline {1}Stato dell'arte}{1}{chapter.12}
+\contentsline {section}{\numberline {1.1}Sviluppo Nativo}{1}{section.13}
+\contentsline {section}{\numberline {1.2}Mobile Web Applications}{2}{section.15}
+\contentsline {section}{\numberline {1.3}Confronto tra i due approcci}{4}{section.16}
+\contentsline {section}{\numberline {1.4}Applicazioni Ibride}{6}{section.17}
+\contentsline {section}{\numberline {1.5}Lo sviluppo di Applicazioni e i framework}{7}{section.21}
+\contentsline {section}{\numberline {1.6}Conclusioni}{11}{section.25}
+\contentsline {subsection}{\numberline {1.6.1}Qual'\IeC {\`e} l'approccio migliore}{12}{subsection.26}
+\contentsline {subsection}{\numberline {1.6.2}L'importanza della scelta del framework}{12}{subsection.27}
+\contentsline {subsection}{\numberline {1.6.3}E' possibile uno sviluppo multi piattaforma senza l'utilizzo di framework?}{13}{subsection.28}
+\contentsline {chapter}{\numberline {2}Metodi e Modelli per lo sviluppo di applicazioni Mobile}{15}{chapter.29}
+\contentsline {section}{\numberline {2.1}Design Patterns}{16}{section.30}
+\contentsline {subsection}{\numberline {2.1.1}Frontend e Backend}{16}{subsection.31}
+\contentsline {subsection}{\numberline {2.1.2}Pattern Client-Server}{17}{subsection.32}
+\contentsline {subsection}{\numberline {2.1.3}MVC Pattern}{18}{subsection.33}
+\contentsline {subsection}{\numberline {2.1.4}MVVM Pattern}{19}{subsection.35}
+\contentsline {section}{\numberline {2.2}API}{20}{section.37}
+\contentsline {subsection}{\numberline {2.2.1}API Rest}{21}{subsection.38}
+\contentsline {subsection}{\numberline {2.2.2}Implementazioni Esistenti}{23}{subsection.39}
+\contentsline {subsection}{\numberline {2.2.3}CORS}{24}{subsection.44}
+\contentsline {section}{\numberline {2.3}Template System}{26}{section.75}
+\contentsline {chapter}{\numberline {3}Case Study: L'approccio ibrido con tecnologie web}{28}{chapter.108}
+\contentsline {section}{\numberline {3.1}Le Tecnologie Web utilizzate}{29}{section.109}
+\contentsline {subsection}{\numberline {3.1.1}CSS Preprocessor}{29}{subsection.110}
+\contentsline {subsection}{\numberline {3.1.2}AngularJS}{30}{subsection.112}
+\contentsline {subsection}{\numberline {3.1.3}Ionic}{35}{subsection.159}
+\contentsline {section}{\numberline {3.2}Il Wrapper Framework}{36}{section.161}
+\contentsline {subsection}{\numberline {3.2.1}Cordova/Phonegap}{37}{subsection.162}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Storia}{37}{subsubsection.164}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Differenze}{37}{subsubsection.165}
+\contentsline {subsubsection}{\numberline {3.2.1.3}Cordova Core}{37}{subsubsection.167}
+\contentsline {subsection}{\numberline {3.2.2}ngCordova}{38}{subsection.169}
+\contentsline {section}{\numberline {3.3}Strumenti di sviluppo}{39}{section.172}
+\contentsline {subsection}{\numberline {3.3.1}Package Manager}{39}{subsection.173}
+\contentsline {subsection}{\numberline {3.3.2}Task Runner}{40}{subsection.203}
+\contentsline {section}{\numberline {3.4}SDK}{41}{section.205}
+\contentsline {section}{\numberline {3.5}Creazione di una applicazione}{41}{section.206}
+\contentsline {subsection}{\numberline {3.5.1}Ambiente di sviluppo}{41}{subsection.207}
+\contentsline {chapter}{\numberline {4}Conclusioni}{43}{chapter.208}
+\contentsline {section}{\numberline {4.1}Considerazioni sullo sviluppo ibrido}{43}{section.209}
+\contentsline {section}{\numberline {4.2}Ciclo di vita di una app}{43}{section.210}
+\contentsline {section}{\numberline {4.3}Verso il futuro}{43}{section.211}
+\vspace {2em}
+\contentsline {chapter}{\numberline {A}Appendice Argomenti}{44}{appendix.212}
+\contentsline {section}{\numberline {A.1}HTML5}{44}{section.213}
+\contentsline {section}{\numberline {A.2}CSS}{44}{section.214}
+\contentsline {section}{\numberline {A.3}Javascript}{44}{section.215}
+\contentsline {section}{\numberline {A.4}Dependency Injection}{44}{section.216}
+\contentsline {section}{\numberline {A.5}Inversion Of Control}{44}{section.217}
+\contentsline {section}{\numberline {A.6}Future / Promises}{44}{section.218}
+\vspace {2em}
+\contentsline {chapter}{Bibliografia}{45}{dummy.219}
