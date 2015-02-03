@@ -185,8 +185,6 @@ Oltre alle caratteristiche principali con le direttive si hanno a disposizione m
 
 \end{description} 
 
-
-
 \subsection{Ionic}
 
 \begin{wrapfigure}{r}{0.40\textwidth}
@@ -200,15 +198,14 @@ Oltre alle caratteristiche principali con le direttive si hanno a disposizione m
   \vspace{5pt}
 \end{wrapfigure}
 
-IONIC fa parte della famiglia degli UI Framework per creazione di interfacce utente per dispositivi mobili e applicazioni ibride e si serve delle tecnologie web AngularJS, Sass e HTML5.
-Il lavoro da svolgere per chi vuole utilizzare questo tipo di framework e quello di scegliere i vari componenti messi a disposizione e di comporli per creare l'applicazione finale. Generalmente si parte da un template messo a disposizione dal framework e si compone l'applicazione. La modularità dei componenti di IONIC è data dal sistema di direttive di AngularJS, tutti i componenti sono sviluppati in direttive separate e come si può notare tutti i rispettivi tag HTML iniziano con il prefisso \textit{ion} o \textit{ionic}. 
-La caratterizzazione di un framework di questo tipo dipende dal suo stile e design e sta allo sviluppatore(o  grafico) decidere quale in questo caso il più bello per l'applicazione. IONIC inoltre mette a disposizioni diverse caratteristiche che possono influenzare la sua scelta:
+IONIC è un UI Framework basato sulle tecnologie web HTML5, Sass, AngularJS per la creazione di interfacce utente per dispositivi mobili. Si basa sul sistema di direttive di AnagularJS è fornisce un nuovo set di tag HTML componibili tra di loro. 
+Gli UI Framework e IONIC principalmente dispongono di 3 categorie di elementi che li caratterizzano e che servono per l'appunto alla composizione dell'interfaccia utente:
 \begin{description}
 \item[CSS Components]
 Sono dei componenti statici creati tramite HTML e CSS come bottoni, barre di navigazione, liste, tabelle che possono essere assemblati tra di loro come i componenti di una pagina web. I CSS di IONIC mettono a disposizione classi che possono cambiarne forma, dimensione e colore che a loro volta possono essere combinate.
 Per personalizzazioni più avanzate e possibile seguire una guida messa a disposizione dal framework che spiega come modificare i file di Sass e che caratteristiche si va a cambiare(come ad esempio i colori standard).
 \item[Javascript Components]
-Al fine di offrire una esperienza di una applicazione mobile all'utente, IONIC offre delle estensioni in ANgularJS che ricalcano quelle che sono le operazioni e le interfacce più comuni sui i dispositivi mobili. Ispirato ai sistemi iOS e Android questo framework mette a disposizione componenti come gestori di eventi, paginazione dei contenuti, popup di sistema, touch gestures, menu laterali, scorrimento di pagine il tutto nello stile di una applicazione mobile vera e prorpia.
+Al fine di offrire una esperienza di una applicazione mobile all'utente, IONIC offre delle estensioni in AngularJS che ricalcano quelle che sono le operazioni e le interfacce più comuni sui i dispositivi mobili. Ispirato ai sistemi iOS e Android questo framework mette a disposizione componenti come gestori di eventi, paginazione dei contenuti, popup di sistema, touch gestures, menu laterali, scorrimento di pagine il tutto nello stile di una applicazione mobile vera e prorpia.
 \item[Ionicons]
 IONIC prevede un set di icone standard che possono essere utilizzate all'interno dei componenti e personalizzate a proprio piacimento.
 
@@ -249,7 +246,17 @@ La vera differenza tra \texttt{Cordova} e \texttt{Phonegap}, viene descritta da 
 Personalmente ho scelto di utilizzare \emph{Cordova} per essere libero da qualsiasi vincolo proprietario.
 
 \subsubsection{Cordova Core}
-Cordova quindi offre una serie di potenti API in linguaggio Javascript per poter accedere alle funzionalità native del dispositivo. In difesa dello sviluppo nativo alcuni programmatori accusano \emph{Cordova} di non possedere tutte le possibilità di accesso a basso livello che invece si avrebbero. \emph{Corodova} è una realtà open-source e in quanto tale si è evoluta nel tempo offrendo sempre più funzionalità che hanno chiuso i divario che si credeva esservi tra questi due tipi di approcci.
+Cordova quindi offre una serie di potenti API in linguaggio Javascript per poter accedere alle funzionalità native del dispositivo. In difesa dello sviluppo nativo alcuni programmatori accusano \emph{Cordova} di non possedere tutte le possibilità di accesso a basso livello che invece si avrebbero. \emph{Cordova} è una realtà open-source e in quanto tale si è evoluta nel tempo offrendo sempre più funzionalità che hanno chiuso i divario che si credeva esservi tra questi due tipi di approcci.
+
+\begin{figure}[!h]
+  \centering
+    \includegraphics[scale=0.65]{Figures/cordova_schema.png} 
+    \rule{35em}{0.5pt}
+  \caption[Struttura a Livelli di Cordova]{Come avviene le stratificazione tra l'applicazione e il framework Cordova}
+  \label{fig:cordova-layers}
+\end{figure}
+
+Nella figura \ref{fig:cordova-layers} si può osservare dove si posiziona il framewrok all'interno di una tipica struttura stratificata di applicazione, e di come i livelli siano completamente indipendenti l'uno dall'altro. Questo fa si che per l'approccio cross-platform attraverso le applicazioni ibride, la scelta delle tecnologie web sia completamente irrilevante ai fini della creazione dell'app.
 
 \subsection{ngCordova}
 \label{sec:ngCordova}
@@ -265,6 +272,16 @@ Cordova quindi offre una serie di potenti API in linguaggio Javascript per poter
 \end{wrapfigure}
 
 Il perché in questa tesi si parli di \emph{Cordova} e \emph{AngularJS} è dato dall'esistenza di \texttt{ngCordova}. Questa libreria nasce da una idea di Paolo Bernasconi e Max Lynch che hanno avuto l'idea di unire la l'efficenza e la potenza di \emph{AngularJS} con la versatilità di \emph{Cordova}. Ne è nato un framework per lo sviluppo di applicazioni ibride direttamente collegato alle funzionalità del dispositivo gestibile tramite il codice efficiente di \emph{AngularJS}.\\
+
+\begin{figure}[!h]
+  \centering
+    \includegraphics[scale=0.66]{Figures/ngcordova-plugins.png} 
+    \rule{35em}{0.5pt}
+  \caption[ngCordova Plugin]{Le principali categorie dei plugin di ng-corodva}
+  \label{fig:ngcordova-plugins}
+\end{figure}
+
+Nell'architettura impostata da Cordova nella figura \ref{fig:cordova-layers} ng-cordova si posiziona al posto delle Javascript comunicando direttamente con la logica dell'applicazione.
 
 \section{Strumenti di sviluppo}
 
@@ -329,7 +346,6 @@ La divisione logica in moduli di una applicazione porta i programmatori a separa
 Il ruolo dei task-runner è quello di eseguire determinate operazioni per la messa in produzione dell'applicazione, come la concatenazione dei file, controllo della sintassi, test sui moduli e lo spostamento del progetto nella directory finale.
 
 \textbf{Grunt} e \textbf{Gulp} sono due esempi di \emph{task-runner} in linguaggio Javascript(NodeJs). Una caratteristica che li distingue e la loro modularità, in quanto in base alle esigenze dell'applicazione si possono scaricare i moduli dedicati in base ai processi richiesti per la messa in produzione. Successivamente si deve scrivere un file(\textit{grunt.js} o \textit{gulp.js}) dove si indicano tutte le istruzioni per la messa in produzione. Ho voluto nominarli entrambi nella mia tesi in quanto il primo l'ho usato durante la mia esperienza di tirocinio, il secondo invece è usato per lo sviluppo del framework Ionic.
-
 
 
 \section{SDK}

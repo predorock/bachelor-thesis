@@ -8,5 +8,5 @@
 \contentsline {lstlisting}{\numberline {3.3}Un esempio di creazione di un modulo e la sua inclusione all'interno di un altro}{33}{lstlisting.120}
 \contentsline {lstlisting}{\numberline {3.4}Un esempio delle direttive standard di AngularJS}{34}{lstlisting.137}
 \contentsline {lstlisting}{\numberline {3.5}Un esempio di direttiva personalizzata}{35}{lstlisting.150}
-\contentsline {lstlisting}{\numberline {3.6}Una tipica configurazione del file .bowerrc}{39}{lstlisting.172}
-\contentsline {lstlisting}{\numberline {3.7}Una tipica configurazione del file bower.json}{39}{lstlisting.176}
+\contentsline {lstlisting}{\numberline {3.6}Una tipica configurazione del file .bowerrc}{40}{lstlisting.174}
+\contentsline {lstlisting}{\numberline {3.7}Una tipica configurazione del file bower.json}{40}{lstlisting.178}
