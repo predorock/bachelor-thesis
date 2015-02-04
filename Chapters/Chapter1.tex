@@ -1,7 +1,7 @@
 \lhead{\emph{Capitolo 1}}
 \chapter{Stato dell'arte} 
 L'obiettivo di questo capitolo introduttivo e quello di mostrare quali sono gli approcci esistenti per lo sviluppo di applicazioni su dispositivi mobili ed analizzarne i vantaggi e gli svantaggi.
-In particolare per lo sviluppo di applicazioni multi piattaforma si introdurranno una serie di tecnologie che tutt'oggi possono essere utilizzate per la creazione di applicazioni ibride.
+In particolare per lo sviluppo di applicazioni multi piattaforma si adotterà il modello di sviluppo ibrido, e di conseguenza verranno mostrate le varie tecnologie che ho ritenuto necessarie per la sua l'implementazione.
 
 \section{Sviluppo Nativo}
 Dopo un'attenta analisi dei requisiti, una delle strade percorribili quando si intende sviluppare un'applicazione mobile è quella di orientarsi verso lo sviluppo nativo, ovvero utilizzare il linguaggio di programmazione specifico per una determinata piattaforma.
@@ -27,7 +27,7 @@ Lo sviluppo nativo implica competenze specifiche e capacità di sviluppo sui pi�
 Dato l'obiettivo prefissatosi nell'introduzione di avere la stessa applicazione disponibile su più piattaforme, con questo tipo di approccio la soluzione si risolve semplicemente sviluppando la stessa applicazione più volte per ogni piattaforma che si è scelto. 
 Molto banalmente se un ipotetico cliente chiedesse di avere la sua applicazione disponibile su Windows Phone, Android e iOS lo sviluppatore dovrà creare rispettivamente 3 applicazioni distinte in .Net, Java e ObjectiveC ovviamente senza la possibilità di riutilizzare il codice tra un linguaggio e l'altro.
 
-Come si può notare, se si  vuole usare questo tipo di approccio con l'idea di avere una applicazione su più piattaforme lo svantaggio più grande è sicuramente quello dei tempi e dei costi di sviluppo, ipoteticamente si potrebbe disporre di più programmatori con competenze specifiche nei vari linguaggi, ma questo sicuramente ridurrebbe la competitività del prezzo dell'applicazione al cliente. Inoltre per i programmatori anche sviluppare in diversi linguaggi la stessa applicazione comporta a usare modelli di progettazione differenti e quindi una re-ingegnerizzazione dell'applicazione per ogni piattaforma.
+Come si può notare, se si  vuole usare questo tipo di approccio con l'idea di avere una applicazione su più piattaforme lo svantaggio più grande è sicuramente quello dei tempi e dei costi di sviluppo, ipoteticamente si potrebbe disporre di più programmatori con competenze specifiche nei vari linguaggi, ma questo sicuramente ridurrebbe la competitività del prezzo dell'applicazione al cliente. Inoltre per i programmatori sviluppare in diversi linguaggi la stessa applicazione comporta a usare modelli di progettazione differenti e quindi una re-ingegnerizzazione dell'applicazione per ogni piattaforma.
 Alcuni dei vantaggi di questo approccio sono:
 
 \begin{itemize}
@@ -54,7 +54,7 @@ Come i siti web anche le applicazioni web necessitano di una connessione ad Inte
 
 \section{Confronto tra i due approcci}
 
-Nelle descrizioni precedenti si è visto che tra i due approcci utilizzati il rapporto che caratterizza il confronto del tipo di sviluppo è tra Prestazioni e User Experience ottimale nello sviluppo nativo / bassi costi di produzione e velocità di sviluppo tramite Web Application. Quando si sviluppano applicazioni Mobile in generale bisogna tenere conto di diversi fattori di valutazione che riguardano principalmente l'utente finale ma con un occhio ache agli sviluppatori, ecco quindi come si comportano gli approcci precedentemente visti su una serie di fattori che ho ritenuto più rilevanti di altri:
+Nelle descrizioni precedenti si è visto che tra i due approcci utilizzati il rapporto che caratterizza il confronto del tipo di sviluppo è tra Prestazioni e User Experience ottimale, nello sviluppo nativo / bassi costi di produzione e velocità di sviluppo, tramite Web Application. Quando si sviluppano applicazioni Mobile in generale bisogna tenere conto di diversi fattori di valutazione che riguardano principalmente l'utente finale ma con un occhio ache agli sviluppatori, ecco quindi come si comportano gli approcci precedentemente visti su una serie di fattori che ho ritenuto più rilevanti di altri:
 
 \begin{description}
 
@@ -97,7 +97,7 @@ Ma il vero segreto delle applicazioni ibride è l'implementazione di un livello 
 Questa operazione non è possibile tramite un'implementazione come Web Application, perché per evidenti motivi di sicurezza, il Browser Web dei dispositivi mobili non ha libero accesso alle funzionalità del dispositivo(altrimenti qualunque sito internet potrebbe compromettere l'integrità dello stesso). Grazie a questo l'approccio ibrido si avvicina molto a quello nativo. Per fare questo le applicazioni ibride si servono di potenti framework che si occupano di fornire un canale di comunicazione tra le due entità, quella web e quella nativa, consentendo all'interfaccia scritta in HTML e Javascript di poter utilizzare le funzionalità del dispositivo. In particolare \emph{Cordova} è uno dei framewrok più usati per questo tipo di sviluppo, il quale fornisce dal lato dell'interfaccia web delle API in Javascript per comunicare con il dispositivo.
 
 Sul mercato esistono framework che usano procedimenti differenti da quello appena spiegato per ottenere lo stesso risultato multi piattaforma, la maggior parte tende però a sviluppare l'interfaccia utente con codice
-HTML, in quanto essendo un linguaggio tendenzialmente semplice consente di avere una descrizione dei dati accurata e dinamica molto rapidamente, la quale può essere riutilizzata se lo sviluppatore decidesse di avere una eventuale Web Application oltre a quella ibrida. Un punto molto forte dello sviluppo ibrido è appunto che è possibile riutilizzare il codice web, pur avendo una applicazione quasi nativa(ibrida).  
+HTML, in quanto essendo un linguaggio tendenzialmente semplice consente di avere una descrizione dei dati accurata e dinamica, la quale può essere riutilizzata se lo sviluppatore decidesse di avere una eventuale Web Application oltre a quella ibrida. Un punto molto forte dello sviluppo ibrido è appunto che è possibile riutilizzare il codice web, pur avendo una applicazione quasi nativa(ibrida).  
 
 Prima del confronto tra gli approcci visti, verrà spiegato come i framework possono essere utili nello sviluppo di applicazioni mobili, e come possono risultare utili in particolare nell'approccio ibrido.
 
@@ -156,7 +156,7 @@ Queste soluzioni traducono il codice sorgente in un bytecode intermedio, o in un
 \end{description}
 
 
-\section{Conclusioni}
+\section{Considerazioni}
 
 Nel confronto tra lo sviluppo nativo e quello tramite Web Application si è visto che i principali fattori a pesare su un obiettivo di applicazione multi piattaforma è la possibilità di accedere alle funzionalità del dispositivo e di avere prestazioni molto efficienti contro una portabilità immediata senza il bisogno di riscrivere il codice per ogni piattaforma di destinazione. 
 Introducendo le applicazioni ibride si è potuto combinare entrambi i fattori positivi dei due approcci differenti, infatti in questo tipo di approccio si può accedere alle funzionalità del dispositivo tramite delle API che un framework di supporto fornisce, ma riguardo alle prestazioni, non si è ancora arrivati ad una tecnologia che consenta di paragonare l'efficienza dello sviluppo nativo con quello di tipo ibrido. Con l'evoluzione delle tecnologie utilizzate dai framework e il continuo susseguirsi versioni di piattaforme sempre più adattabili a diversi tipi di tecnologie, il distacco tra i due approcci continua sempre a diminuire.

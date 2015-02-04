@@ -243,9 +243,10 @@ Un template system molto conosciuto perché disponibile in molti linguaggi e \te
 
 \textbf{Mustache} è definito come \emph{Logic-Less template system}, generalmente questi sistemi utilizzano un sistema di tag in modo tale da sostituirlo con il dato dal modello. Alcuni tag possono variare di significato in base alla loro sintassi e al Template System scelto. Ad esempio mustache utilizza la sintassi: \{\{tag\}\} per identificare una corrispondenza con il modello.
 
-Un modo molto utilizzato per rappresentare i dati all'interno del modello e tramite l'uso di JSON. In questo modo si possono scrivere modelli molto dettagliati che al loro interno rispettano la gerarchia dei dati e si ha una piena libertà riguardo le corrispondenze con i tipi, come nell'esempio \ref{lst:jsonmustache}
+Un modo molto utilizzato per rappresentare i dati all'interno del modello e tramite l'uso di JSON. In questo modo si possono scrivere modelli molto dettagliati che al loro interno rispettano la gerarchia dei dati e si ha una piena libertà riguardo le corrispondenze con i tipi, come nell'esempio \ref{lst:json_mustache}
 
-\begin{lstlisting}[caption = "Un esempio di modello in json e la sua corrispondeza con il template system mustache e il risultato che si ottiene", label = "lst:jsonmustache"]
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[label = {lst:json_mustache}, caption = {Un esempio di modello in json: la sua corrispondeza con il template system mustache e il risultato che si ottiene}]
 
 Model:
 
@@ -278,7 +279,7 @@ My hobbies are:
 	<b>Scout</b>
 	<b>Hacking</b>
 \end{lstlisting}
-
+\end{minipage}
 Questo sistema viene molto utilizzato in ambito web, usare delle pagine web come template è molto comune tra i vari sistemi in quanto l'HTML è un linguaggio già predisposto all'approccio dei template. Si parlerà nella sezione \ref{sec:angularjs} di AngularJS, dall'alto può essere visto come un template system, la grande differenza sta nel \emph{two-way data binding} che verrà spiegato sempre nello stesso capitolo.
  
 
