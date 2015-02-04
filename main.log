@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.10.26)  4 FEB 2015 18:14
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.10.26)  5 FEB 2015 00:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -739,7 +739,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box36
 \enitdp@description=\count142
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 44.
+Package hyperref Info: Option `colorlinks' set `true' on input line 52.
  (./main.aux
 
 ! Package natbib Error: Bibliography not compatible with author-year citations.
@@ -751,7 +751,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.202 ...and\NAT@force@numbers{}\NAT@force@numbers
+l.204 ...and\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -759,22 +759,22 @@ or select author-year BibTeX style, e.g. plainnat
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -803,7 +803,7 @@ Package caption Info: End \AtBeginDocument code.
 )
 \c@lstlisting=\count149
 \AtBeginShipoutBox=\box38
-Package hyperref Info: Link coloring ON on input line 46.
+Package hyperref Info: Link coloring ON on input line 54.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -812,20 +812,20 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count150
 )
-LaTeX Info: Redefining \ref on input line 46.
-LaTeX Info: Redefining \pageref on input line 46.
-LaTeX Info: Redefining \nameref on input line 46.
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \nameref on input line 54.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 90.
+LaTeX Font Info:    Try loading font information for U+msa on input line 101.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 90.
+LaTeX Font Info:    Try loading font information for U+msb on input line 101.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -839,18 +839,6 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ------------------------------------------------------------------------------
  Abstract Page
 ------------------------------------------------------------------------------
-
-Overfull \hbox (12.10162pt too wide) in paragraph at lines 158--159
- []\OT1/cmr/bx/n/10.95 App na-tive \OT1/cmr/m/n/10.95 Svilup-pare un'app uti-li
-z-zando l'interfaccia e il lin-guag-gio di pro-gram-mazione
- []
-
-
-Overfull \hbox (2.46715pt too wide) in paragraph at lines 160--161
- []\OT1/cmr/bx/n/10.95 App Web \OT1/cmr/m/n/10.95 Si tratta di svilup-pare un s
-ito web che ab-bia le sem-bianze di una ap-pli-cazione
- []
-
 [2
 
 ] [3]
@@ -874,13 +862,7 @@ ito web che ab-bia le sem-bianze di una ap-pli-cazione
 ------------------------------------------------------------------------------
  Elenco delle Figure
 ------------------------------------------------------------------------------
-(./main.lof
-Overfull \hbox (4.1634pt too wide) in paragraph at lines 4--4
- [][] [][][]\OT1/cmr/m/n/10.95 Lista dei prin-ci-pali frame-work "con-teni-tori
-" con i quali ^^Re pos-si-bile uti-liz-zare 
- []
-
-)
+(./main.lof)
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
@@ -914,208 +896,63 @@ Chapter 1.
 ------------------------------------------------------------------------------
  1 Stato dell'arte
 ------------------------------------------------------------------------------
-
-Overfull \hbox (2.91621pt too wide) in paragraph at lines 9--10
-\OT1/cmr/m/n/10.95 sis-temi op-er-a-tivi: iOS, An-droid, Win-dows Phone, la tab
-ella seguente [][]1.1[][] in-dica i lin-guaggi
- []
-
-
-Overfull \hbox (6.99086pt too wide) in paragraph at lines 27--29
-\OT1/cmr/m/n/10.95 Win-dows Phone, An-droid e iOS lo svilup-pa-tore dovr^^Ra cr
-eare rispet-ti-va-mente 3 ap-pli-cazioni
- []
-
 [1
 
 
 
 ]
-Overfull \hbox (11.06789pt too wide) in paragraph at lines 30--32
-\OT1/cmr/m/n/10.95 com-pe-tenze speci-fiche nei vari lin-guaggi, ma questo si-c
-u-ra-mente ridur-rebbe la com-pet-i-tivit^^Ra
- []
-
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 34.
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
-
-Overfull \hbox (13.41pt too wide) in paragraph at lines 34--35
-[]\OT1/cmr/m/n/10.95 Massima per-for-mance in ter-mini di potenza di cal-colo e
- di sfrut-ta-mento del pro-ces-sore. 
+ [2] [3] [4]
+Underfull \hbox (badness 1460) in paragraph at lines 69--70
+   [] \OT1/cmr/bx/n/10.95 Per-son-al-iz-zazione[] \OT1/cmr/m/n/10.95 Se gli ute
+nti di des-ti-nazione uti-lizzer-anno l'applicazione in modo
  []
 
-[2]
-Overfull \hbox (1.2129pt too wide) in paragraph at lines 47--48
-\OT1/cmr/m/n/10.95 es-sendo gli smart-phone, tablet di di-men-sioni ri-dotte ri
-spetto allo schermo di un com-puter,
- []
-
-
-Overfull \hbox (4.73445pt too wide) in paragraph at lines 47--48
-\OT1/cmr/m/n/10.95 quello che fa una \OT1/cmr/m/it/10.95 Re-spon-sive Web Ap-pl
-i-ca-tion \OT1/cmr/m/n/10.95 ^^Re adattare i pro-pri con-tenuti alla di-men-sio
-ne
- []
-
-
-Overfull \hbox (1.33447pt too wide) in paragraph at lines 53--54
-\OT1/cmr/m/n/10.95 sem-pre pre-sente per per fun-zionare, e di con-seguenza se 
-il dis-pos-i-tivo che si sta uti-liz-zando
- []
-
-
-Overfull \hbox (1.12158pt too wide) in paragraph at lines 53--54
-\OT1/cmr/m/n/10.95 potreb-bero mem-o-riz-zare al-cuni dati in cache ma cor-rere
-b-bero il ris-chio di venire can-cel-lati
- []
-
-[3]
-Overfull \hbox (7.93489pt too wide) in paragraph at lines 57--58
-\OT1/cmr/m/n/10.95 oc-chio ache agli svilup-pa-tori, ecco quindi come si com-po
-r-tano gli ap-procci prece-den-te-mente
- []
-
-
-Overfull \hbox (5.9275pt too wide) in paragraph at lines 62--63
-\OT1/cmr/m/n/10.95 tipi di dis-pos-i-tivi mo-bili, men-tre ap-pli-cazioni na-ti
-ve richiedono una ver-sione sep-a-rata
- []
-
-[4] [5]
-Overfull \hbox (5.9579pt too wide) in paragraph at lines 78--79
-\OT1/cmr/m/n/10.95 Questo tipo di sviluppo in-tro-duce una se-rie di tec-nolo-g
-ie che lo svilup-pa-tore pu^^Ro facil-mente
- []
-
-
-Overfull \hbox (5.53207pt too wide) in paragraph at lines 82--83
-\OT1/cmr/m/n/10.95 Ibrido per definizione, vuol dire qual-cosa for-mato dall'un
-ione di parti di natura etero-ge-nea.
- []
-
-<Figures/exampleCordova.png, id=429, 474.27188pt x 269.50688pt>
+[5] <Figures/exampleCordova.png, id=427, 474.27188pt x 269.50688pt>
 File: Figures/exampleCordova.png Graphic file (type png)
 
 <use Figures/exampleCordova.png>
 Package pdftex.def Info: Figures/exampleCordova.png used on input line 91.
 (pdftex.def)             Requested size: 355.70303pt x 202.12965pt.
- [6]
-Overfull \hbox (8.76826pt too wide) in paragraph at lines 106--108
-\OT1/cmr/m/it/10.95 In in-for-mat-ica, e spec-i-fi-cata-mente nello sviluppo so
-ft-ware, un \OT1/cmr/bx/it/10.95 frame-work \OT1/cmr/m/it/10.95 ^^Re un'archite
-ttura
- []
-
-[7 <./Figures/exampleCordova.png (PNG copy)>]
-Overfull \hbox (14.71785pt too wide) in paragraph at lines 112--114
-\OT1/cmr/m/n/10.95 tipolo-gia, delle quali se ne dis-tin-guono 5: JavaScript fr
-ame-work, app fac-to-ries, web-to-native
- []
-
-
-Overfull \hbox (2.81355pt too wide) in paragraph at lines 112--114
-\OT1/cmr/m/n/10.95 wrap-per, run-time e source code trans-la-tor. A questo punt
-o en-trano in gioco le com-pe-tenze
- []
-
-
-Overfull \hbox (19.28032pt too wide) in paragraph at lines 112--114
-\OT1/cmr/m/n/10.95 del pro-gram-ma-tore, il quale a sec-onda delle sue ca-pacit
-^^Ra sceglier^^Ra l'approccio pi^^Ru con-ve-niente,
- []
-
-
-Overfull \hbox (18.34561pt too wide) in paragraph at lines 117--118
-[]\OT1/cmr/m/n/10.95 in al-cuni casi sono sem-plice-mente delle li-brerie e non
- pro-pri-a-mente
- []
-
-<Figures/javascript-ui-framework.png, id=446, 519.44063pt x 393.72093pt>
+ [6 <./Figures/exampleCordova.png (PNG copy)>]
+[7] <Figures/javascript-ui-framework.png, id=445, 519.44063pt x 393.72093pt>
 File: Figures/javascript-ui-framework.png Graphic file (type png)
 
 <use Figures/javascript-ui-framework.png>
 Package pdftex.def Info: Figures/javascript-ui-framework.png used on input line
  121.
 (pdftex.def)             Requested size: 311.66678pt x 236.23438pt.
- [8]
-<Figures/html-hybrid-tools.png, id=454, 518.6878pt x 420.82219pt>
+ [8 <./Figures/javascript-ui-framework.png>] <Figures/html-hybrid-tools.png, id
+=452, 518.6878pt x 420.82219pt>
 File: Figures/html-hybrid-tools.png Graphic file (type png)
 
 <use Figures/html-hybrid-tools.png>
 Package pdftex.def Info: Figures/html-hybrid-tools.png used on input line 136.
 (pdftex.def)             Requested size: 311.21509pt x 252.49525pt.
-
-Overfull \hbox (19.70622pt too wide) in paragraph at lines 142--145
-\OT1/cmr/m/n/10.95 codice sul dis-pos-i-tivo ser-ven-dosi di tec-niche dif-fer-
-enti: vir-tu-al-iz-zazione, in-ter-pre-tazione,
- []
-
-[9 <./Figures/javascript-ui-framework.png>]
-<Figures/x-to-native-converters.png, id=460, 401.24907pt x 469.755pt>
+ [9 <./Figures/html-hybrid-tools.png>]
+<Figures/x-to-native-converters.png, id=458, 401.24907pt x 469.755pt>
 File: Figures/x-to-native-converters.png Graphic file (type png)
 
 <use Figures/x-to-native-converters.png>
 Package pdftex.def Info: Figures/x-to-native-converters.png used on input line 
 148.
 (pdftex.def)             Requested size: 300.93605pt x 352.31538pt.
-
-Overfull \hbox (2.17607pt too wide) in paragraph at lines 155--156
-\OT1/cmr/m/n/10.95 o di-ret-ta-mente al lin-guag-gio macchina di basso liv-ello
- (lin-guag-gio as-sem-bly). Source
+ [10 <./Figures/x-to-native-converters.png>] [11] [12]
+Underfull \hbox (badness 1248) in paragraph at lines 191--191
+[]\OT1/cmr/bx/n/12 E' pos-si-bile uno sviluppo multi pi-attaforma senza l'utili
+zzo di
  []
 
-[10 <./Figures/html-hybrid-tools.png>] [11 <./Figures/x-to-native-converters.pn
-g>]
-Overfull \hbox (1.24329pt too wide) in paragraph at lines 175--178
-\OT1/cmr/m/n/10.95 deve gi-rare, il bud-get a dis-po-sizione, il ter-mine ul-ti
-mo per com-mer-cial-iz-zare l'applicazione
- []
-
-
-Overfull \hbox (49.51456pt too wide) in paragraph at lines 181--182
-\OT1/cmr/m/n/10.95 an-che nelle at-tivit^^Ra di for-mazione per le risorse in-t
-erne che dovranno oc-cu-parsi dell'implementazione
- []
-
-[12]
-Overfull \hbox (1.27373pt too wide) in paragraph at lines 185--186
-\OT1/cmr/m/n/10.95 es-em-pio, ^^Re un tipo di frame-work par-ti-co-lar-mente ap
--prez-zato nello sviluppo di ap-pli-cazioni
- []
-
-
-Overfull \hbox (3.76787pt too wide) in paragraph at lines 193--195
-\OT1/cmr/m/n/10.95 dell'applicazione ad avere quest'ultima gi^^Ra disponi-bile 
-per pi^^Ru di un canale di dis-tribuzione
- []
-
-
-Overfull \hbox (1.54749pt too wide) in paragraph at lines 193--195
-\OT1/cmr/m/n/10.95 l'approccio ri-mane quello na-tivo per ogni pi-attaforma, op
--pure il pro-gram-ma-tore / azienda
- []
-
-
-Overfull \hbox (5.13657pt too wide) in paragraph at lines 193--195
-\OT1/cmr/m/n/10.95 del pro-gram-ma-tore, il quale sceglier^^Ra le tec-nolo-gie 
-pi^^Ru adatte alle sue conoscenze pre-gresse. 
- []
-
-) (./Chapters/Chapter2.tex [13] [14]
+) (./Chapters/Chapter2.tex [13]
 Chapter 2.
 ------------------------------------------------------------------------------
  2 Metodi e Modelli per lo sviluppo di applicazioni Mobile
 ------------------------------------------------------------------------------
-
-Overfull \hbox (15.87376pt too wide) in paragraph at lines 3--4
-\OT1/cmr/m/n/10.95 in-for-matici sec-ondo me ril-e-vanti (e al-cune volte fon-d
-a-men-tali) per lo sviluppo di ap-pli-cazioni. 
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
@@ -1126,57 +963,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-[15
+[14
 
 ]
-Overfull \hbox (1.32248pt too wide) in paragraph at lines 15--17
-\OT1/cmr/m/it/10.95 lin-gua ital-iana come schema pro-get-tuale, schema di pro-
-get-tazione, schema ar-chitet-turale),
- []
-
-
-Overfull \hbox (4.64995pt too wide) in paragraph at lines 18--19
-\OT1/cmr/m/n/10.95 dove deb-bano stare de-ter-mi-nati com-piti / op-er-azioni /
- sezioni all'interno dell'applicazione.
- []
-
-
-Overfull \hbox (7.05284pt too wide) in paragraph at lines 18--19
-\OT1/cmr/m/n/10.95 Ad es-em-pio la sep-a-razione della parte dell'interfaccia d
-a quella ded-i-cata alla ma-nipo-lazione
- []
-
-
-Overfull \hbox (6.98192pt too wide) in paragraph at lines 18--19
-\OT1/cmr/m/n/10.95 dei dati da quella ded-i-cata alla mem-o-riz-zazione. Di-vid
-ere i vari com-piti di una ap-pli-cazione
- []
-
-
-Overfull \hbox (3.91942pt too wide) in paragraph at lines 23--24
-\OT1/cmr/m/n/10.95 dell'applicazione \OT1/cmtt/m/n/10.95 frontend\OT1/cmr/m/n/1
-0.95 (in ital-iano parte da-vanti) de-nota quella parte dell'applicazione
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-[16]
+
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
- []
-
-
-Overfull \hbox (14.76622pt too wide) in paragraph at lines 31--32
-\OT1/cmr/m/it/10.95 back-end \OT1/cmr/m/n/10.95 de-vel-oper ovvero spe-cial-iz-
-zati nello sviluppo di una parte speci-fica dell'applicazione.
  []
 
 
@@ -1184,187 +985,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
-[17]
+
 Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-
-Overfull \hbox (5.68411pt too wide) in paragraph at lines 45--46
-\OT1/cmr/m/n/10.95 L'evoluzione della com-p-lessit^^Ra del codice delle ap-pli-
-cazioni, ha fatto si che i pro-gram-ma-tori
- []
-
-
-Overfull \hbox (1.6691pt too wide) in paragraph at lines 45--46
-\OT1/cmr/m/n/10.95 adot-tassero strate-gie di scrit-tura del codice in modo che
- ri-manesse man-teni-bile e rius-abile.
- []
-
-
-Overfull \hbox (29.22171pt too wide) in paragraph at lines 47--48
-\OT1/cmr/m/it/10.95 molto dif-fuso nello sviluppo di sis-temi soft-ware, in par
--ti-co-lare nell'ambito della pro-gram-mazione
- []
-
-<Figures/mvc.png, id=505, 220.825pt x 241.90375pt>
+[16] <Figures/mvc.png, id=499, 220.825pt x 241.90375pt>
 File: Figures/mvc.png Graphic file (type png)
  <use Figures/mvc.png>
 Package pdftex.def Info: Figures/mvc.png used on input line 51.
 (pdftex.def)             Requested size: 165.61833pt x 181.42735pt.
 
-Overfull \hbox (4.22406pt too wide) in paragraph at lines 57--59
-[]\OT1/cmr/m/n/10.95 Il pat-tern ^^Re basato sulla sep-a-razione dei com-piti f
-ra i com-po-nenti soft-ware che in-ter-pre-tano
- []
+[17 <./Figures/mvc.png>]
+
+LaTeX Warning: Reference `sec:AngularJS' on page 18 undefined on input line 66.
 
 
-Overfull \hbox (9.09802pt too wide) in paragraph at lines 61--62
-[]\OT1/cmr/m/n/10.95 riceve i co-mandi dell'utente (in genere at-traverso il vi
-ew) e li at-tua mod-i-f-i-cando
- []
-
-
-Overfull \hbox (10.09454pt too wide) in paragraph at lines 63--65
-\OT1/cmr/m/n/10.95 Questo schema, fra l'altro, im-plica an-che la tradizionale 
-sep-a-razione fra la log-ica ap-plica-tiva
- []
-
-[18]
-
-LaTeX Warning: Reference `sec:AngularJS' on page 19 undefined on input line 66.
-
-
-
-Overfull \hbox (9.00378pt too wide) in paragraph at lines 72--74
-\OT1/cmr/m/it/10.95 log-ica di busi-ness e il com-por-ta-mento in un'applicazio
-ne . A tal fine, molte im-ple-men-tazioni
- []
-
-
-Overfull \hbox (1.85422pt too wide) in paragraph at lines 72--74
-\OT1/cmr/m/it/10.95 di questo mod-ello fanno uso di as-so-ci-azioni dati dichia
-r-a-tiva(data bind-ings) per con-sen-tire
- []
-
-<Figures/mvvm-1.jpeg, id=514, 363.3575pt x 139.52126pt>
+<Figures/mvvm-1.jpeg, id=509, 363.3575pt x 139.52126pt>
 File: Figures/mvvm-1.jpeg Graphic file (type jpg)
 
 <use Figures/mvvm-1.jpeg>
 Package pdftex.def Info: Figures/mvvm-1.jpeg used on input line 77.
 (pdftex.def)             Requested size: 272.51744pt x 104.64067pt.
-
-Overfull \hbox (8.75618pt too wide) in paragraph at lines 83--84
-[]\OT1/cmr/m/n/10.95 Il ful-cro del fun-zion-a-mento di questo pat-tern ^^Re la
- creazione di un com-po-nente, il View-Model
+ [18 <./Figures/mvvm-1.jpeg>]
+Underfull \hbox (badness 1270) in paragraph at lines 100--101
+[]\OT1/cmr/m/n/10.95 REST im-pone de-ter-mi-nati vin-coli alla sua ar-chitet-tu
+ra, pur las-ciando lib-era la loro
  []
 
 
-Overfull \hbox (12.9233pt too wide) in paragraph at lines 83--84
-\OT1/cmr/m/n/10.95 ap-punto, che rap-p-re-senta tutte le in-for-mazioni e i com
--por-ta-menti della vista cor-rispon-dente.
+Underfull \hbox (badness 2913) in paragraph at lines 106--108
+\OT1/cmr/m/n/10.95 sem-pli-fica e de-com-pone l'architettura, il che fa si che 
+ogni parte possa evol-vere
  []
 
-
-Overfull \hbox (8.9995pt too wide) in paragraph at lines 85--86
-[]\OT1/cmr/m/n/10.95 Questo fa-cilita l'interfaccia utente e lo sviluppo che si
- ver-i-f-i-cano quasi con-tem-po-ranea-mente
+[19] [20]
+Underfull \hbox (badness 1377) in paragraph at lines 141--142
+\OT1/cmr/m/n/10.95 richi-este fatte ai server. In una ar-chitet-tura REST le ri
+chi-este de-vono speci-fi-care,
  []
 
-
-Overfull \hbox (3.40791pt too wide) in paragraph at lines 85--86
-\OT1/cmr/m/n/10.95 all'interno dello stesso codice. Gli svilup-pa-tori dell'int
-erfaccia utente scrivono as-so-ci-azioni
- []
-
-[19 <./Figures/mvc.png>]
-Overfull \hbox (3.11952pt too wide) in paragraph at lines 89--91
-\OT1/cmr/m/it/10.95 In in-for-mat-ica le API(Application Pro-gram-ming In-ter-f
-ace) sono un in-sieme di op-er-azioni,
- []
-
-
-Overfull \hbox (2.27626pt too wide) in paragraph at lines 98--99
-\OT1/cmr/m/n/10.95 del pro-to-collo HTTP 1.1) nella sua tesi di dot-torato per 
-de-scri-vere lo stile dell'architettura
- []
-
-[20 <./Figures/mvvm-1.jpeg>]
-Overfull \hbox (8.52022pt too wide) in paragraph at lines 114--115
-\OT1/cmr/m/n/10.95 ef-fet-tuare 4 op-er-azioni base creazione, let-tura, ag-gio
-r-na-mento, can-cel-lazione (\OT1/cmr/m/it/10.95 CRUD\OT1/cmr/m/n/10.95 :
- []
-
-
-Overfull \hbox (12.86127pt too wide) in paragraph at lines 122--127
-\OT1/cmr/m/n/10.95 prin-cipi REST sug-gerisce l'uso di col-lega-menti tra risor
-se come modalit^^Ra di tran-sizione
- []
-
-
-Overfull \hbox (7.6917pt too wide) in paragraph at lines 122--127
-\OT1/cmr/m/n/10.95 Hy-per-me-dia As The En-gine Of Ap-pli-ca-tion State, e fo-c
-al-izza l'attenzione sull'utilizzo
- []
-
-[21]
-Overfull \hbox (0.5741pt too wide) in paragraph at lines 141--142
-\OT1/cmr/m/n/10.95 Una buona ges-tione della cache pu^^Ro parzial-mente o com-p
-le-ta-mente elim-inare al-cune
- []
-
-[22]
-Overfull \hbox (15.23499pt too wide) in paragraph at lines 154--155
-\OT1/cmr/m/n/10.95 ^^Re la pos-si-bilit^^Ra dei server di es-ten-dere le ca-pac
-it^^Ra dei client trasfer-endo una de-ter-mi-nata
- []
-
-
-Overfull \hbox (11.1591pt too wide) in paragraph at lines 162--163
-\OT1/cmr/m/n/10.95 Un pro-to-collo di co-mu-ni-cazione uti-liz-zato nelle reti 
-che si presta ad es-sere molto com-pat-i-bile
- []
-
-
-Overfull \hbox (11.61414pt too wide) in paragraph at lines 162--163
-\OT1/cmr/m/n/10.95 con una ar-chitet-tura di tipo REST e si-cu-ra-mente HTTP. S
-pesso il pro-to-collo e l'architettura
- []
-
-[23]
-Overfull \hbox (7.14377pt too wide) in paragraph at lines 190--191
-\OT1/cmr/m/n/10.95 uti-liz-zati sono JSON(\OT1/cmr/bx/n/10.95 J\OT1/cmr/m/n/10.
-95 ava\OT1/cmr/bx/n/10.95 S\OT1/cmr/m/n/10.95 cript \OT1/cmr/bx/n/10.95 O\OT1/c
-mr/m/n/10.95 bject \OT1/cmr/bx/n/10.95 N\OT1/cmr/m/n/10.95 otation) e XML(e\OT1
-/cmr/bx/n/10.95 X\OT1/cmr/m/n/10.95 tensible \OT1/cmr/bx/n/10.95 M\OT1/cmr/m/n/
-10.95 arkup \OT1/cmr/bx/n/10.95 L\OT1/cmr/m/n/10.95 anguage)
- []
-
-
-Overfull \hbox (16.62273pt too wide) in paragraph at lines 192--194
-\OT1/cmr/m/n/10.95 REST de-vono es-sere rispet-tati. Uno di questi che viene sp
-esso trascu-rato e HA-TEOAS([][]2.2.1[][])
- []
-
-
-Overfull \hbox (11.82706pt too wide) in paragraph at lines 192--194
-\OT1/cmr/m/n/10.95 e l'inventore di REST reclama i prin-cipi di come dovreb-ber
-o es-sere svilup-pate cor-ret-ta-mente
- []
-
-
-Overfull \hbox (2.03401pt too wide) in paragraph at lines 198--200
-\OT1/cmr/m/n/10.95 Si ^^Re par-lato prece-den-te-mente della co-mu-ni-cazione t
-ra client e server risiedenti su mac-chine
- []
-
-[24]
-Overfull \hbox (69.28548pt too wide) in paragraph at lines 238--240
+[21] [22] [23]
+Underfull \hbox (badness 2790) in paragraph at lines 241--243
 \OT1/cmr/m/n/10.95 di sep-a-rare nel pro-gramma, il con-tenuto(dato vero e pro-
-prio, mod-ello) dalla sua rap-p-re-sen-tazione(vista).
+prio, mod-ello) dalla sua
  []
 
-[25] [26]) (./Chapters/Chapter3.tex [27]
+[24] [25]) (./Chapters/Chapter3.tex [26]
 Chapter 3.
 ------------------------------------------------------------------------------
  3 Case Study: L'approccio ibrido con tecnologie web
@@ -1374,112 +1041,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--9
 
  []
 
+[27
 
-Overfull \hbox (10.7637pt too wide) in paragraph at lines 10--11
-\OT1/cmr/m/n/10.95 svolto, in par-ti-co-lare un Wrap-per che avrebbe con-sen-ti
-to un buon sviluppo dell'applicazione
- []
-
-[28
-
-] <Figures/sass-logo.png, id=639, 513.92pt x 385.44pt>
+] <Figures/sass-logo.png, id=633, 513.92pt x 385.44pt>
 File: Figures/sass-logo.png Graphic file (type png)
 
 <use Figures/sass-logo.png>
-Package pdftex.def Info: Figures/sass-logo.png used on input line 28.
+Package pdftex.def Info: Figures/sass-logo.png used on input line 26.
 (pdftex.def)             Requested size: 128.47968pt x 96.35976pt.
 
-<Figures/less-logo.png, id=640, 199.74625pt x 81.30376pt>
+<Figures/less-logo.png, id=634, 199.74625pt x 81.30376pt>
 File: Figures/less-logo.png Graphic file (type png)
 
 <use Figures/less-logo.png>
-Package pdftex.def Info: Figures/less-logo.png used on input line 29.
+Package pdftex.def Info: Figures/less-logo.png used on input line 27.
 (pdftex.def)             Requested size: 149.80931pt x 60.97765pt.
- [29 <./Figures/sass-logo.png> <./Figures/less-logo.png>] <Figures/angular-logo
-.png, id=649, 284.06125pt x 300.12125pt>
+ [28 <./Figures/sass-logo.png> <./Figures/less-logo.png>] <Figures/angular-logo
+.png, id=643, 284.06125pt x 300.12125pt>
 File: Figures/angular-logo.png Graphic file (type png)
 
 <use Figures/angular-logo.png>
-Package pdftex.def Info: Figures/angular-logo.png used on input line 46.
+Package pdftex.def Info: Figures/angular-logo.png used on input line 45.
 (pdftex.def)             Requested size: 113.62247pt x 120.04637pt.
-
-Overfull \hbox (7.2256pt too wide) in paragraph at lines 55--57
-[] []\OT1/cmr/bx/n/10.95 Definizione \OT1/cmr/m/n/10.95 An-gu-larJS ^^Re un fra
-me-work Javascript
- []
-
-
-Underfull \hbox (badness 1275) in paragraph at lines 55--57
-\OT1/cmr/m/n/10.95 in un for-mato pi^^Ru espres-sivo e leg-gi-bile. []E
- []
-
-[30 <./Figures/angular-logo.png>]
-<Figures/one-way-data-binding.png, id=659, 401.5pt x 255.95625pt>
-File: Figures/one-way-data-binding.png Graphic file (type png)
-
-<use Figures/one-way-data-binding.png>
-Package pdftex.def Info: Figures/one-way-data-binding.png used on input line 69
-.
-(pdftex.def)             Requested size: 200.7495pt x 127.9778pt.
-
-<Figures/two-way-data-binding.png, id=660, 401.5pt x 291.0875pt>
-File: Figures/two-way-data-binding.png Graphic file (type png)
-
-<use Figures/two-way-data-binding.png>
-Package pdftex.def Info: Figures/two-way-data-binding.png used on input line 70
-.
-(pdftex.def)             Requested size: 200.7495pt x 145.54338pt.
-LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
-
-Overfull \hbox (14.43405pt too wide) in paragraph at lines 78--79
-\OT1/cmr/m/n/10.95 mod-ello di pro-gram-mazione per lo svilup-pa-tore. Si pu^^R
-o pen-sare di vista sem-plice-mente
- []
-
-
-Overfull \hbox (27.37122pt too wide) in paragraph at lines 80--81
-\OT1/cmr/m/n/10.95 dell'applicazione molto sem-plici, in quanto ^^Re facile tes
-tare il con-troller in-dipen-den-te-mente
- []
-
-
-Overfull \hbox (12.67677pt too wide) in paragraph at lines 82--83
-\OT1/cmr/m/n/10.95 una parte del DOM tramite la di-ret-tiva \OT1/cmr/m/it/10.95
- ng-controller \OT1/cmr/m/n/10.95 come nell'esempio [][]3.1[][] An-gu-larJS
- []
-
-[31 <./Figures/one-way-data-binding.png> <./Figures/two-way-data-binding.png>]
-Overfull \hbox (37.37743pt too wide) in paragraph at lines 101--103
-[]\OT1/cmr/m/n/10.95 per una trat-tazione gen-erale dell'argomento ri-man-di-am
-o all'appendice
- []
-
-
-Overfull \hbox (8.80573pt too wide) in paragraph at lines 101--103
-\OT1/cmr/m/n/10.95 In-jec-tion. Il prin-ci-pale scopo per cui An-gu-larJS ^^Re 
-stato dotato di questa carat-ter-is-tica
- []
-
-
-Overfull \hbox (10.38489pt too wide) in paragraph at lines 101--103
-\OT1/cmr/m/n/10.95 dell'applicazione. Nell'esempio [][]3.2[][] il metodo \OT1/c
-mr/m/it/10.95 an-gu-lar.module() \OT1/cmr/m/n/10.95 prende due ar-go-menti:
- []
-
-[32]
-<Figures/angularjs-service-singleton-diagram.png, id=679, 334.24875pt x 303.132
-5pt>
-File: Figures/angularjs-service-singleton-diagram.png Graphic file (type png)
- <use Figures/angularjs-service-singleton-diagram.png>
-Package pdftex.def Info: Figures/angularjs-service-singleton-diagram.png used o
-n input line 140.
-(pdftex.def)             Requested size: 250.68594pt x 227.34882pt.
- [33]
-Overfull \hbox (1.81999pt too wide) in paragraph at lines 151--152
-[]\OT1/cmr/m/n/10.95 In questo modo An-gu-larJS si garan-tisce una forte mod-u-
-lar-iz-zazione dei com-po-nenti,
- []
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
@@ -1487,142 +1070,147 @@ File: lstlang1.sty 2013/08/26 1.5b listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 )
-Overfull \hbox (4.72652pt too wide) in paragraph at lines 153--155
-\OT1/cmr/m/n/10.95 tag spe-ciali pre-visti dal frame-work che definis-cono il n
-ome dell'applicazione(\OT1/cmr/m/it/10.95 ng-app\OT1/cmr/m/n/10.95 ),
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 63.
+ [29 <./Figures/angular-logo.png>]
+<Figures/how-to-build-custom-directives.png, id=664, 557.83406pt x 319.1925pt>
+File: Figures/how-to-build-custom-directives.png Graphic file (type png)
+
+<use Figures/how-to-build-custom-directives.png>
+Package pdftex.def Info: Figures/how-to-build-custom-directives.png used on inp
+ut line 79.
+(pdftex.def)             Requested size: 362.58783pt x 207.47266pt.
+ [30 <./Figures/how-to-build-custom-directives.png>]
+<Figures/one-way-data-binding.png, id=674, 401.5pt x 255.95625pt>
+File: Figures/one-way-data-binding.png Graphic file (type png)
+
+<use Figures/one-way-data-binding.png>
+Package pdftex.def Info: Figures/one-way-data-binding.png used on input line 92
+.
+(pdftex.def)             Requested size: 200.7495pt x 127.9778pt.
+
+<Figures/two-way-data-binding.png, id=675, 401.5pt x 291.0875pt>
+File: Figures/two-way-data-binding.png Graphic file (type png)
+
+<use Figures/two-way-data-binding.png>
+Package pdftex.def Info: Figures/two-way-data-binding.png used on input line 93
+.
+(pdftex.def)             Requested size: 200.7495pt x 145.54338pt.
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 99.
+ [31 <./Figures/one-way-data-binding.png> <./Figures/two-way-data-binding.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+   [] \OT1/cmr/bx/n/10.95 De-pen-dency In-jec-tion[] \OT1/cmr/m/n/10.95 per una
+ trat-tazione gen-erale dell'argomento ri-man-di-amo
  []
 
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 156.
-[34 <./Figures/angularjs-service-singleton-diagram.png>]
-Overfull \hbox (10.97667pt too wide) in paragraph at lines 183--185
-[]\OT1/cmr/m/n/10.95 Una nota di sin-tassi par-ti-co-lare per le di-ret-tive ri
-guarda il loro nome, come os-servi-amo
+[32]
+<Figures/angularjs-service-singleton-diagram.png, id=694, 334.24875pt x 303.132
+5pt>
+File: Figures/angularjs-service-singleton-diagram.png Graphic file (type png)
+ <use Figures/angularjs-service-singleton-diagram.png>
+Package pdftex.def Info: Figures/angularjs-service-singleton-diagram.png used o
+n input line 169.
+(pdftex.def)             Requested size: 250.68594pt x 227.34882pt.
+ [33 <./Figures/angularjs-service-singleton-diagram.png>]
+Underfull \hbox (badness 1852) in paragraph at lines 177--179
+   [] \OT1/cmr/bx/n/10.95 Provider/-Fac-to-ry/Ser-vice[] \OT1/cmr/m/n/10.95 una
+ trat-tazione sep-a-rata di queste tre carat-ter-is-tiche di
  []
 
-<Figures/ionic-logo.png, id=721, 370.61539pt x 411.38307pt>
+<Figures/ionic-logo.png, id=715, 370.61539pt x 411.38307pt>
 File: Figures/ionic-logo.png Graphic file (type png)
 
 <use Figures/ionic-logo.png>
-Package pdftex.def Info: Figures/ionic-logo.png used on input line 193.
+Package pdftex.def Info: Figures/ionic-logo.png used on input line 190.
 (pdftex.def)             Requested size: 129.71732pt x 143.98622pt.
- [35 <./Figures/ionic-logo.png>]
-Overfull \hbox (3.16705pt too wide) in paragraph at lines 210--211
-[]\OT1/cmr/m/n/10.95 IONIC prevede un set di icone stan-dard che pos-sono es-se
-re uti-liz-zate all'interno
- []
-
-
-Overfull \hbox (6.12709pt too wide) in paragraph at lines 221--222
-[]\OT1/cmr/m/n/10.95 Si in-te-gra al meglio con An-gu-larJS gra-zie ad una li-b
-re-ria chia-mata \OT1/cmr/m/it/10.95 ng-cordova\OT1/cmr/m/n/10.95 ([][]3.2.2[][
-]). 
- []
-
-<Figures/cordova-logo.png, id=738, 321.2pt x 333.245pt>
+ [34 <./Figures/ionic-logo.png>]
+<Figures/cordova-logo.png, id=724, 321.2pt x 333.245pt>
 File: Figures/cordova-logo.png Graphic file (type png)
 
 <use Figures/cordova-logo.png>
-Package pdftex.def Info: Figures/cordova-logo.png used on input line 229.
+Package pdftex.def Info: Figures/cordova-logo.png used on input line 228.
 (pdftex.def)             Requested size: 112.42168pt x 116.63748pt.
- [36]
-Overfull \hbox (16.55121pt too wide) in paragraph at lines 241--243
-\OT1/cmr/m/n/10.95 Phonegap ^^Re stato cre-ato nel 2009 da una startup chia-mat
-a \OT1/cmr/m/it/10.95 Ni-tobi \OT1/cmr/m/n/10.95 come pro-getto open-source.
+
+Underfull \hbox (badness 1127) in paragraph at lines 237--238
+\OT1/cmr/m/n/10.95 avr^^Ra fatto si-cu-ra-mente con-fu-sione tra queste due
  []
 
-
-Overfull \hbox (1.8516pt too wide) in paragraph at lines 241--243
-\OT1/cmr/m/n/10.95 tramite il mec-ca-n-ismo di wrap-ping che ^^Re stato dis-cus
-so nel capi-tolo prece-dente a propos-ito
- []
-
-
-Overfull \hbox (11.33154pt too wide) in paragraph at lines 249--250
-\OT1/cmr/m/n/10.95 alle fun-zion-alit^^Ra na-tive del dis-pos-i-tivo. In difesa
- dello sviluppo na-tivo al-cuni pro-gram-ma-tori
- []
-
-<Figures/cordova_schema.png, id=745, 611.28375pt x 481.8pt>
+[35 <./Figures/cordova-logo.png>]
+<Figures/cordova_schema.png, id=732, 611.28375pt x 481.8pt>
 File: Figures/cordova_schema.png Graphic file (type png)
 
 <use Figures/cordova_schema.png>
-Package pdftex.def Info: Figures/cordova_schema.png used on input line 253.
+Package pdftex.def Info: Figures/cordova_schema.png used on input line 252.
 (pdftex.def)             Requested size: 397.32973pt x 313.16628pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[37 <./Figures/cordova-logo.png>]
-<Figures/ngcordova-logo.png, id=754, 421.575pt x 421.575pt>
+<Figures/ngcordova-logo.png, id=734, 421.575pt x 421.575pt>
 File: Figures/ngcordova-logo.png Graphic file (type png)
 
 <use Figures/ngcordova-logo.png>
-Package pdftex.def Info: Figures/ngcordova-logo.png used on input line 266.
+Package pdftex.def Info: Figures/ngcordova-logo.png used on input line 265.
 (pdftex.def)             Requested size: 147.55345pt x 147.55345pt.
-
-Underfull \hbox (badness 2478) in paragraph at lines 274--275
-\OT1/cmr/m/n/10.95 Questa li-bre-ria nasce da una idea di Paolo
+ [36]
+Underfull \hbox (badness 2080) in paragraph at lines 273--274
+\OT1/cmr/m/n/10.95 nasce da una idea di Paolo Bernasconi e Max
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
+Underfull \hbox (badness 1490) in paragraph at lines 273--274
+\OT1/cmr/m/n/10.95 e la potenza di \OT1/cmr/m/it/10.95 An-gu-larJS \OT1/cmr/m/n
+/10.95 con la ver-sa-tilit^^Ra di
+ []
+
+
+Underfull \hbox (badness 2556) in paragraph at lines 273--274
+\OT1/cmr/m/n/10.95 di ap-pli-cazioni ib-ride di-ret-ta-mente col-le-gato alle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
 
  []
 
-<Figures/ngcordova-plugins.png, id=755, 542.025pt x 530.73282pt>
+<Figures/ngcordova-plugins.png, id=741, 542.025pt x 530.73282pt>
 File: Figures/ngcordova-plugins.png Graphic file (type png)
 
 <use Figures/ngcordova-plugins.png>
-Package pdftex.def Info: Figures/ngcordova-plugins.png used on input line 278.
+Package pdftex.def Info: Figures/ngcordova-plugins.png used on input line 277.
 (pdftex.def)             Requested size: 357.7376pt x 350.28474pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[38 <./Figures/cordova_schema.png (PNG copy)> <./Figures/ngcordova-logo.png>]
-Overfull \hbox (6.68793pt too wide) in paragraph at lines 288--289
-\OT1/cmr/m/n/10.95 de-ter-mi-nati stru-menti pi-ut-tosto che al-tri ^^Re ris-er
--vata allo svilup-pa-tore fi-nale, per-sonal-mente
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
+[37 <./Figures/cordova_schema.png (PNG copy)> <./Figures/ngcordova-logo.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
 
  []
 
-[39 <./Figures/ngcordova-plugins.png>]
-<Figures/grunt-logo.png, id=767, 214.8025pt x 287.0725pt>
+[38 <./Figures/ngcordova-plugins.png>]
+<Figures/grunt-logo.png, id=752, 214.8025pt x 287.0725pt>
 File: Figures/grunt-logo.png Graphic file (type png)
 
 <use Figures/grunt-logo.png>
 Package pdftex.def Info: Figures/grunt-logo.png used on input line 336.
 (pdftex.def)             Requested size: 85.91946pt x 114.82695pt.
 
-<Figures/gulp-logo.png, id=768, 228.855pt x 511.9125pt>
+<Figures/gulp-logo.png, id=753, 228.855pt x 511.9125pt>
 File: Figures/gulp-logo.png Graphic file (type png)
 
 <use Figures/gulp-logo.png>
 Package pdftex.def Info: Figures/gulp-logo.png used on input line 337.
 (pdftex.def)             Requested size: 68.65701pt x 153.57494pt.
-
-Underfull \hbox (badness 1028) in paragraph at lines 345--347
-\OT1/cmr/m/n/10.95 l'applicazione in fase di sviluppo. Per poter
+ [39 <./Figures/grunt-logo.png> <./Figures/gulp-logo.png>]
+Underfull \hbox (badness 1325) in paragraph at lines 348--349
+\OT1/cmr/m/n/10.95 carat-ter-is-tica che li dis-tingue e la loro mod-u-larit^^R
+a, in quanto in base alle es-i-genze
  []
 
-
-Underfull \hbox (badness 3148) in paragraph at lines 345--347
-\OT1/cmr/m/n/10.95 as-sem-blare tutte le parti del pro-getto e se
- []
-
-[40 <./Figures/grunt-logo.png> <./Figures/gulp-logo.png>]
-Overfull \hbox (20.8906pt too wide) in paragraph at lines 352--354
-\OT1/cmr/m/n/10.95 ap-pli-cazione per \OT1/cmr/m/it/10.95 iOS \OT1/cmr/m/n/10.9
-5 e \OT1/cmr/m/it/10.95 An-droid \OT1/cmr/m/n/10.95 dovremmo scari-care en-tram
-be le \OT1/cmr/m/it/10.95 SDK\OT1/cmr/m/n/10.95 (scritte rispet-ti-va-mente
- []
-
-[41]) (./Chapters/Chapter4.tex [42]
+[40]) (./Chapters/Chapter4.tex [41]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 Conclusioni
@@ -1632,14 +1220,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-) (./Appendices/AppendixA.tex [43
+) (./Appendices/AppendixA.tex [42
 
 ]
 Appendix A.
 ------------------------------------------------------------------------------
  A Appendice Argomenti
 ------------------------------------------------------------------------------
-) [44
+) [43
 
 ]
 ------------------------------------------------------------------------------
@@ -1652,46 +1240,43 @@ il prin-ci-pio
  []
 
 
-Underfull \hbox (badness 6510) in paragraph at lines 61--66
+Underfull \hbox (badness 10000) in paragraph at lines 61--66
 \OT1/cmr/m/n/10.95 ha-teoas | rest-ful web ser-vices - la guida |pro-gram-mazio
 ne html.it.
  []
 
+[44
 
-Overfull \hbox (21.10536pt too wide) in paragraph at lines 61--66
-\OT1/cmr/m/n/10.95 http://www.html.it/pag/19606/transizioni-di-stato-hypermedia
--e-il-principio-hateoas/. 
+
+]
+Underfull \hbox (badness 1721) in paragraph at lines 81--84
+[]\OT1/cmr/m/n/10.95 Wikipedia.  Solid --- wikipedia, l'enciclopedia lib-era, 2
+014.  [On-line; in data
  []
 
-[45
-
-
-])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 319.
- [46]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 319.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 330.
+ [45]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 330.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 319.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 319.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 330.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 330.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7F825762CC1ADDA47A0EBDF816C16244;9793.
+(rerunfilecheck)             Checksum: 22CF06D4F0732D435C64CA72B7C40BF4;9793.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 319.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 330.
  ) 
 Here is how much of TeX's memory you used:
- 15095 strings out of 495034
- 216443 string characters out of 6181676
- 316858 words of memory out of 5000000
- 17746 multiletter control sequences out of 15000+600000
- 17109 words of font info for 63 fonts, out of 8000000 for 9000
+ 15119 strings out of 495034
+ 216910 string characters out of 6181676
+ 321083 words of memory out of 5000000
+ 17780 multiletter control sequences out of 15000+600000
+ 17108 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 49i,12n,51p,1315b,1478s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,12n,51p,1315b,1546s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
@@ -1705,11 +1290,11 @@ s/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on main.pdf (56 pages, 1063059 bytes).
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on main.pdf (55 pages, 1184500 bytes).
 PDF statistics:
- 945 PDF objects out of 1000 (max. 8388607)
- 832 compressed objects within 9 object streams
- 293 named destinations out of 1000 (max. 500000)
- 536 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 928 PDF objects out of 1000 (max. 8388607)
+ 815 compressed objects within 9 object streams
+ 282 named destinations out of 1000 (max. 500000)
+ 541 words of extra memory for PDF output out of 10000 (max. 10000000)
 

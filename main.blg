@@ -3,44 +3,49 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: Bibliography.bib
-You've used 19 entries,
+I was expecting a `,' or a `}'---line 180 of file Bibliography.bib
+ :    note = "
+ :            [Online; in data 9-gennaio-2015]"
+I'm skipping whatever remains of this entry
+You've used 20 entries,
             1791 wiz_defined-function locations,
-            519 strings with 5631 characters,
-and the built_in function-call counts, 2514 in all, are:
-= -- 204
-> -- 77
+            521 strings with 5686 characters,
+and the built_in function-call counts, 2632 in all, are:
+= -- 212
+> -- 81
 < -- 1
-+ -- 38
-- -- 19
-* -- 31
-:= -- 384
-add.period$ -- 58
-call.type$ -- 19
-change.case$ -- 16
++ -- 40
+- -- 20
+* -- 32
+:= -- 401
+add.period$ -- 60
+call.type$ -- 20
+change.case$ -- 17
 chr.to.int$ -- 0
-cite$ -- 19
-duplicate$ -- 110
-empty$ -- 346
-format.name$ -- 19
-if$ -- 597
+cite$ -- 20
+duplicate$ -- 115
+empty$ -- 364
+format.name$ -- 20
+if$ -- 625
 int.to.chr$ -- 0
-int.to.str$ -- 19
+int.to.str$ -- 20
 missing$ -- 6
-newline$ -- 97
-num.names$ -- 18
-pop$ -- 125
+newline$ -- 101
+num.names$ -- 19
+pop$ -- 132
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 60
+skip$ -- 64
 stack$ -- 0
 substring$ -- 0
-swap$ -- 20
+swap$ -- 21
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 18
-width$ -- 21
-write$ -- 190
+while$ -- 19
+width$ -- 22
+write$ -- 198
+(There was 1 error message)

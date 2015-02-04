@@ -76,17 +76,21 @@ Monsur Hossain.
 \bibitem{wiki:preprocessor}
 Wikipedia.
 \newblock Preprocessore --- wikipedia{,} l'enciclopedia libera, 2014.
-\newblock [Online; in data 9-gennaio-2015].
 
-\bibitem{wiki:SSOT}
+\bibitem{wiki:solid}
 Wikipedia.
-\newblock Single source of truth --- wikipedia{,} the free encyclopedia, 2014.
-\newblock [Online; accessed 10-January-2015].
+\newblock Solid --- wikipedia{,} l'enciclopedia libera, 2014.
+\newblock [Online; in data 4-febbraio-2015].
 
 \bibitem{angularjs:directives}
 Angularjs: Developer guide: Directives.
 \newblock https://docs.angularjs.org/guide/directive.
 \newblock AngularJS Directives.
+
+\bibitem{wiki:SSOT}
+Wikipedia.
+\newblock Single source of truth --- wikipedia{,} the free encyclopedia, 2014.
+\newblock [Online; accessed 10-January-2015].
 
 \bibitem{wiki:blink}
 Wikipedia.

@@ -1,0 +1,12 @@
+.service("CustomService",function(){
+	this.customMethod = function(value){
+		return value + " from customMethod in CustomService";
+	}
+});
+
+angular.module("testApp",[
+	'CustomModule'
+]).controller("HomeController", function(CustomService){
+	CustomService.customMethod("Marco");
+});
+

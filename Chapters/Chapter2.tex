@@ -104,7 +104,7 @@ REST impone determinati vincoli alla sua architettura, pur lasciando libera la l
 \item[Uniform Interface] 
 
 REST impone una interfaccia uniforme tra client e server. Questo semplifica e decompone l'architettura, il che fa si che ogni parte possa evolvere indipendentemente. Per creare una interfaccia uniforme si sono 4 principi da seguire:
-\begin{description}[style=unboxed,leftmargin=0cm]
+\begin{description}
 \item[Resource Based] 
 
 ogni risorsa deve essere identificata univocamente all'interno del server. La sua identificazione deve essere concettualmente separata dalla rappresentazione che viene ritornata al client, la quale può dipendere dalla richiesta fatta.
@@ -176,16 +176,18 @@ Inoltre tramite il \emph{payload} di HTTP è possibile scambiare tra client e se
 
 Il protocollo HTTP identifica le risorse tramite un \textbf{URL}(\textbf{U}niversal \textbf{R}esource \textbf{L}ocator) e garantisce all'architettura REST un modo per accedere univocamente alle risorse.
 Prima che le applicazioni cominciassero ad essere sviluppate secondo una architettura REST, non c'erano vincoli su come una richiesta a una determinata risorsa doveva essere effettuata il che rendeva l'identificazione delle risorse poco chiara.
-\begin{lstlisting}[caption={Esempio di URL che non rispetta il vincolo di REST}, label={lst:wrongRESTURL}]
+
+\begin{code}[caption={Esempio di URL che non rispetta il vincolo di REST}, label={lst:wrongRESTURL}]
 	GET index.php?service=getUser&id=55
-\end{lstlisting}
+\end{code}
+
 Nell'esempio \ref{lst:wrongRESTURL} notiamo che l'URL non denota una specifica risorsa nel sever ma il metodo e i parametri che il server dovrà utilizzare per comporre il risultato e rispondere alla richiesta. Questo metodo non è errato ma non va bene per identificare delle risorse.
 In una architettura REST le risorse vengono identificate secondo precisi URL univoci all'interno dell'applicazione, come nell'esempio \ref{lst:correctRESTURL}.
 Inoltre è buona pratica creare identificatori di risorse gerarchici, in modo da rendere l'URL della risorsa chiaro e semplice da comprendere.
 
-\begin{lstlisting}[caption={Identificazione di una risorsa all'interno di una architettura REST}, label={lst:correctRESTURL}]
+\begin{code}[caption={Identificazione di una risorsa all'interno di una architettura REST}, label={lst:correctRESTURL}]
 	GET /api/user/55
-\end{lstlisting}
+\end{code}
 
 Per quanto riguarda la rappresentazione dei dati nello scambio di risorse, i formati più utilizzati sono JSON(\textbf{J}ava\textbf{S}cript \textbf{O}bject \textbf{N}otation) e XML(e\textbf{X}tensible \textbf{M}arkup \textbf{L}anguage) i quali permettono una struttura dettagliata e gerarchica dei dati. Nelle applicazioni web viene utilizzato maggiormente JSON in quanto la sua manipolazione risulta più diretta nel linguaggio Javascript.
 
@@ -198,7 +200,7 @@ Uno di questi che viene spesso trascurato e HATEOAS(\ref{itm:hateoas}) e l'inven
 Si è parlato precedentemente della comunicazione tra client e server risiedenti su macchine differenti. Accade spesso che queste due entità siano situate su domini internet diversi e che la richiesta debba transitare da uno all'altro. CORS(\textbf{C}ross \textbf{O}rigin \textbf{R}esource \textbf{S}haring) è uno standard W3C che regolamenta le richieste di risorse tra domini differenti. È stato adottato per garantire un livello di sicurezza per l'accesso alle risorse. Per poterlo utilizzare bisogna agire sulla configurazione del server e sugli header dei messaggi HTTP.
 Ad esempio il dominio \emph{www.marcopredari.it} vuole richiedere una risorsa presso \emph{www.google.it}. Innanzitutto il dominio chiamante deve aggiungere all'header il campo \textbf{Origin} indicando il prorpio dominio. Come risposta riceverà un messaggio il cui header avrà all'interno il campo \textit{Allow-Control-Allow-Origin} contenete i domini abilitati a richiedere quella risorsa; nel caso del simbolo * significa che accetta qualsiasi dominio la richieda. Se il dominio che fatto la richiesta non fosse autorizzato riceverà un messaggio di errore. \cite{web:cors}
 
-\begin{lstlisting}[caption={esempio di richiesta HTTP utilizzando CORS}, label={lst:CORSrequest}]
+\begin{code}[caption={esempio di richiesta HTTP utilizzando CORS}, label={lst:CORSrequest}]
 	Accept:application/json, text/plain, */*
 	Accept-Encoding:gzip, deflate, sdch
 	Accept-Language:it-IT,it;q=0.8,en-US;q=0.6,en;q=0.4
@@ -211,8 +213,9 @@ Ad esempio il dominio \emph{www.marcopredari.it} vuole richiedere una risorsa pr
 	User-Agent: Mozilla/5.0 (X11; Linux x86_64) 
 			    AppleWebKit/537.36 (KHTML, like Gecko) 
 			    Chrome/39.0.2171.99 Safari/537.36
-\end{lstlisting}
-\begin{lstlisting}[caption={esempio di risposta dal server che utilizza CORS}, label={lst:CORSanswer}]
+\end{code}
+
+\begin{code}[caption={esempio di risposta dal server che utilizza CORS}, label={lst:CORSanswer}]
 	Access-Control-Allow-Origin:http://127.0.0.1
 	Cache-Control:no-cache
 	Connection:keep-alive
@@ -229,7 +232,7 @@ Ad esempio il dominio \emph{www.marcopredari.it} vuole richiedere una risorsa pr
 	Via:1.1 vegur
 	X-Frame-Options:SAMEORIGIN
 	X-Powered-By:PHP/5.6.4
-\end{lstlisting}
+\end{code}
 
 CORS possiede inoltre altre configurazioni riguardo alla sicurezza delle richieste, nei web server come Apache è possibile configurare un file in cui si possono aggiungere tutte le restrizioni o concessioni del caso.
 
@@ -245,8 +248,7 @@ Un template system molto conosciuto perché disponibile in molti linguaggi e \te
 
 Un modo molto utilizzato per rappresentare i dati all'interno del modello e tramite l'uso di JSON. In questo modo si possono scrivere modelli molto dettagliati che al loro interno rispettano la gerarchia dei dati e si ha una piena libertà riguardo le corrispondenze con i tipi, come nell'esempio \ref{lst:json_mustache}
 
-\begin{minipage}{\linewidth}
-\begin{lstlisting}[label = {lst:json_mustache}, caption = {Un esempio di modello in json: la sua corrispondeza con il template system mustache e il risultato che si ottiene}]
+\begin{code}[label = {lst:json_mustache}, caption = {Un esempio di modello in json: la sua corrispondeza con il template system mustache e il risultato che si ottiene}]
 
 Model:
 
@@ -278,8 +280,8 @@ My hobbies are:
 	<b>Guitar</b>
 	<b>Scout</b>
 	<b>Hacking</b>
-\end{lstlisting}
-\end{minipage}
+\end{code}
+
 Questo sistema viene molto utilizzato in ambito web, usare delle pagine web come template è molto comune tra i vari sistemi in quanto l'HTML è un linguaggio già predisposto all'approccio dei template. Si parlerà nella sezione \ref{sec:angularjs} di AngularJS, dall'alto può essere visto come un template system, la grande differenza sta nel \emph{two-way data binding} che verrà spiegato sempre nello stesso capitolo.
  
 

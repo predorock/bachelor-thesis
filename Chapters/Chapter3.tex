@@ -1,24 +1,22 @@
 \lhead{\emph{Capitolo 3}}
 \chapter{Case Study: L'approccio ibrido con tecnologie web}
 
-L'approccio ibrido con tecnologie web è stato scelto durante lo svolgimento del tirocinio presso la ditta BigThink SRL, in quanto si adattava meglio ad una serie di tecnologie già utilizzate dall'azienda.
+L'approccio ibrido con tecnologie web è stato scelto durante lo svolgimento del tirocinio presso la ditta BigThink SRL, in quanto si adattava meglio ad una serie di tecnologie già utilizzate dall'azienda per lo sviluppo di applicazioni multi piattaforma.
 Durante la mia permanenza ho svolto il lavoro di Frontend Developer di Web Applications, in particolare mi occupavo dello sviluppo della logica di business di una applicazione e della sua interfaccia.
 Una delle politiche dell'azienda era quella di separare la gestione dei dati e la loro memorizzazione lato Backend in modo tale che la parte Frontend sviluppata con il framework Javascript AngularJS si interfacciasse con i dati servendosi solo di API REST.
 Dato il numero consistente di Web Application sviluppate e il mercato di applicazioni Mobile sempre in crescita, sono stato incaricato dall'azienda di ricercare dei metodi e delle tecnologie che consentissero di portare il lavoro già fatto per le Web Application su dispositivo mobile, in modo tale che l'azienda potesse offrire nuovi servizi.\\
-Tutte le applicazioni sviluppate fino ad allora erano già Responsive Web Application, in azienda si volevano aggiungere funzionalità caratteristiche dei dispositivi mobili tramite l'utilizzo di tecnologie web.\\
+Tutte le applicazioni sviluppate fino ad allora erano già Responsive Web Application, e ci si è posti l'obiettivo di aggiungere funzionalità caratteristiche dei dispositivi mobili, tramite l'utilizzo di tecnologie web.\\
 
-Un primo punto di riferimento come tecnologia Web è stato AgnularJS, framework già utilizzato dall'azienda, se fosse stato scelto un altro framework si sarebbe dovuto riscrivere tutto il codice delle Web Application già sviluppate fino ad allora. A questo punto  si trattava di scegliere le corrette tecnologie per includere al meglio il lavoro già svolto, in particolare un Wrapper che avrebbe consentito un buon sviluppo dell'applicazione partendo da tecnologie web, senza influire su eventuali spese aziendali. 
+Un primo punto di riferimento come tecnologia Web è stato AgnularJS, framework già utilizzato dall'azienda, se fosse stato scelto un altro framework si sarebbe dovuto riscrivere tutto il codice delle Web Application già sviluppate fino ad allora. A questo punto  si trattava di scegliere le corrette tecnologie per includere al meglio il lavoro già svolto, in particolare un wrapper che avrebbe consentito un buon sviluppo dell'applicazione partendo da tecnologie web, senza influire su eventuali spese aziendali. 
 
 Per quanto riguarda gli strumenti di sviluppo utilizzati la scelta rimane allo sviluppatore, nel mio caso ho preferito elencarne alcuni secondo me importanti utilizzati all'interno dell'azienda e scoperti durante l'attività di ricerca.
 
 \section{Le Tecnologie Web utilizzate}
-Il riferimento per la scelta di tecnologie web è stato il framework AngularJS, il quale è utilizzato a sua volta all'interno di altri framework, come ad esempio Ionic che fornisce degli strumenti per la creazione di interfacce utente. Come Wrapper ho scelto Cordova, in quanto oltre ad essere un progetto open-source fornisce delle API per le funzionalità del dispositivo in linguaggio Javascript. Inoltre esiste un'ultima libreria che richiama le funzionalità di Cordova utilizzando il framwork AngularJS, il che viene molto comodo per il set di tecnologie scelto.
-
-Il framework Ionic per la creazione dell'interfaccia utente è composto oltre da AngularJS da altre tecnologie come un \emph{CSS Preprocessor} che verrà spiegato prima di introdurre nel dettaglio le tencnologie introdotte precedentemente.
+Il riferimento per la scelta di tecnologie web è stato il framework \emph{AngularJS}, il quale è utilizzato a sua volta all'interno di altri framework, come ad esempio \emph{Ionic} che fornisce degli strumenti per la creazione di interfacce utente. Come wrapper ho scelto \emph{Cordova}, in quanto oltre ad essere un progetto open-source fornisce delle API per le funzionalità del dispositivo in linguaggio Javascript. Infine ho sperimentato una libreria chiamata \emph{ng-cordova}, la quale fornisce API per comunicare con il dispositivo ma con il codice già predisposto per AngularJS. 
 
 \subsection{CSS Preprocessor}
 
-Nei Web Framework che forniscono strumenti per la definizione di interfacce utente un componente che si trova molto spesso e il \emph{CSS Preporcessor} ovvero un preprocessore di fogli di stile.
+Nei web framework che forniscono strumenti per la definizione di interfacce utente un componente che si trova molto spesso e il \emph{CSS Preporcessor} ovvero un preprocessore di fogli di stile.
 
 \emph{In informatica, un preprocessore o precompilatore è un programma (o una porzione di programma) che effettua sostituzioni testuali sul codice sorgente di un programma, ovvero la precompilazione. I più comuni tipi di sostituzioni sono l'espansione di macro, l'inclusione di altri file, e la compilazione condizionale (vedi conditional compilation in inglese). Tipicamente, il preprocessore viene lanciato nel processo di compilazione di un software, e il file risultante verrà preso in input da un compilatore.}
 \hspace*{\fill}\cite{wiki:preprocessor} 
@@ -33,13 +31,14 @@ Nei Web Framework che forniscono strumenti per la definizione di interfacce uten
 \end{figure}
 
 
-Essendo CSS un linguaggio fortemente dichiarativo basato sui markup HTML, fa si che i fogli di stile per interfacce utente diventino molto lunghi e verbosi data la complessità. E di conseguenza la personalizzazione da parte dello sviluppatore che andrà a utilizzare il framework diventa molto difficile.
+Essendo CSS un linguaggio fortemente dichiarativo basato sui markup HTML, fa si che i fogli di stile per interfacce utente diventino molto lunghi e verbosi data la complessità delle interfacce utente. E di conseguenza risulta complesso applicare la propria personalizzazione.
 I CSS preprocessor mettono a disposizione un set di operazioni chiamate MACRO che durante la compilazione verranno sostituite con il linguaggio CSS prorpio. Queste MACRO consentono ad esempio di fare utilizzo di variabili, funzioni, tag parametrici, ereditarietà dei tag, pattern matching, namespaces.
 
 Queste sono solo alcune delle opzioni messe a disposizione dei CSS preprocessors dipende dalle sviluppatore scegliere quello secondo lui più adatto in quanto sul mercato ne esistono diversi, i più famosi e utilizzati sono \textbf{SASS}(\textbf{S}intatically \textbf{A}wesome \textbf{S}tyle\textbf{S}heet) e \textbf{LESS}(write \textbf{LESS} do more) \ref{fig:CSS Preprocessors}.
 
 \subsection{AngularJS}
 \label{sec:angularjs}
+
 \begin{wrapfigure}{r}{0.40\textwidth}
   \vspace{-65pt}
   \begin{center}
@@ -52,14 +51,38 @@ Queste sono solo alcune delle opzioni messe a disposizione dei CSS preprocessors
 \end{wrapfigure}
 
 \paragraph*{Definizione}
-AngularJS è un framework Javascript che segue il pattern MVC(\ref{subsec:mvc}) ideato da \emph{Minsko Hevery}(Google) che estende il linguaggio HTML in un formato più espressivo e leggibile. È caratterizzato da un approccio dichiarativo alla programmazione ed è stato pensato per separare la logica di business di una applicazione dalla sua presentazione dei dati, infatti sono presenti tag HTML espliciti come \emph{ng-view} e \emph{ng-model} che consentono di sincronizzare i dati del modello con la vista indipendentemente dalla loro logica. AngularJS è stato pensato esplicitamente per lo sviluppo di web application è presenta una forte modularità dei suoi componenti, in modo da renderli indipendenti e testabili, rispetta infatti i principi \emph{SOLID} della programmazione orientata agli oggetti.
+AngularJS è un framework Javascript che segue il pattern MVC(\ref{subsec:mvc}) ideato da \emph{Minsko Hevery}(Google) che estende il linguaggio HTML in un formato più espressivo e leggibile. È caratterizzato da un approccio dichiarativo alla programmazione ed è stato pensato per separare la logica di business di una applicazione dalla sua presentazione dei dati, infatti sono presenti tag HTML espliciti come \emph{ng-view} e \emph{ng-model} che consentono di sincronizzare i dati del modello con la vista indipendentemente dalla loro logica. AngularJS è stato pensato esplicitamente per lo sviluppo di web application è presenta una forte modularità dei suoi componenti, in modo da renderli indipendenti e testabili, rispetta infatti i principi \emph{SOLID} \citep{wiki:solid} della programmazione orientata agli oggetti.
 Ecco le caratteristiche principali di questo framework:
 
 \begin{description}
 
-\item[View] la presentazione dei dati in AngularJS viene fatta tramite un sistema di viste con l'utilizzo di pagine HTML. Ad ogni vista possono essere associati più modelli di dati da presentare ed inoltre tramite un meccanismo di \emph{routing} e possibile determinare una struttura, anche gerarchica di più viste. Un componente 
+\item[Directives] AngularJS si basa su un sistema di direttive, ovvero dei nuovi tag HTML che estendono il linguaggio di markup. Come viene mostrato nell'esempio \ref{lst:directives-example} ci sono delle direttive già predisposte dal framework per inserire i componenti principali a disposizione.
 
+\begin{code}[language=html,caption={Un esempio delle direttive standard di AngularJS},
+				   label={lst:directives-example}]
+ <html ng-app="myApp">
+     <div ng-controller = "InfoController">
+       <input name = "inputFirstName" ng-model = "user.firstName">
+       <input name = "inputSecondName" ng-model = "user.secondName">
+       <div class = "showInfo">
+	     Hello my name is {{user.firstName}} {{user.secondName}}			
+       </div>
+     </div>
+ </html>
+\end{code}
 
+AngularJS inoltre offre la possibilità di definire direttive personalizzate \ref{fig:custom-directive}. La differenza sostanziale rispetto ai semplici tag HTML è che ad ogni direttiva è associato un particolare comportamento dell'applicazione. Mentre nei tag HTML si specifica come un certo elemento debba apparire nella pagina, ad esempio se contiene una porzione di testo oppure un'immagine, con le direttive di AngularJS associamo un comportamento al tag ed eventualmente un template su cui basarsi.
+Principalmente all'interno di una applicazione AngularJS le direttive vengono utilizzate per esprimere interfacce utente complesse, gestire eventi scatenati dall'interazione con l'utente, re-utilizzo dei componenti più comuni e la ridefinizione dei tag già in uso. La buona pratica del framework vuole che solo all'interno delle direttive si possa manipolare il DOM.
+
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[scale=0.65]{Figures/how-to-build-custom-directives.png} 
+    \rule{35em}{0.5pt}
+  \caption[Custom Directive]{Creazione di una direttiva personalizzata}
+  \label{fig:custom-directive}
+\end{figure}
+
+Una nota di sintassi particolare per le direttive riguarda il loro nome, come osserviamo il nome delle direttive nell'esempio \ref{fig:custom-directive} è separato dal trattino alto(\emph{dash}) mentre nella definizione tramite codice AngularJS è scritta in \emph{camelCase}. Questa è un convenzione che il framework adotta per evitare errori di sintassi all'interno del codice da parte del parser. Le direttive hanno a disposizione molte opzioni per essere personalizzate, per un trattazione più approfondita e completa si rimanda la lettura del manuale \cite{angularjs:directives}.
 
 \item[Data Binding] Il Data Binding in AngularJS è la sincronizzazione automatica dei dati tra modello e vista. In modo in cui AngularJS implementa il data bindign consente di trattare il modello come SSOT(\cite{wiki:SSOT}). La vista è la proiezione del modello in ogni momento, quando il modello cambia la vista riflette il cambiamento e viceversa. 
 La maggior parte dei sistemi di templating sincronizzano i dati in una sola direzione: si fondono componenti del template e modello insieme in una vista. Quando si verifica la fusione, le modifiche al modello o sezioni correlate della vista vengono NON si riflettono automaticamente nella vista. Peggio ancora, le eventuali modifiche che l'utente fa nella vista non si riflettono nel modello. Ciò significa che lo sviluppatore deve scrivere del codice apposito che sincronizza costantemente la vista con il modello e il modello con la vista.
@@ -75,17 +98,19 @@ La maggior parte dei sistemi di templating sincronizzano i dati in una sola dire
 
 In particolare come si vede nell'esempio \ref{lst:directives-example} il binding dalla vista al modello è effettuato tramite la direttiva \emph{ng-model = "nome-del-modello"}, mentre dal modello alla vista si utilizza la sintassi \emph{ \{\{nome-del-modello\}\} }.
 
-Il systema dei templates di AngularJS funziona in modo differente. In primo luogo il modello (che è l'HTML non compilato insieme a  markup o direttive supplementari) viene compilato sul browser. Il passo di compilazione produce una live view(vista). Eventuali modifiche alla vista si riflettono immediatamente nel modello, e le eventuali modifiche nel modello vengono propagate alla vista. Il modello è il SSOT per lo stato dell'applicazione, semplificando notevolmente il modello di programmazione per lo sviluppatore. Si può pensare di vista semplicemente come una proiezione istantanea del modello.
+Il sistema dei template di AngularJS funziona in modo differente. In primo luogo il modello (che è l'HTML non compilato insieme a  markup o direttive supplementari) viene compilato sul browser. Il passo di compilazione produce una live view(vista). Eventuali modifiche alla vista si riflettono immediatamente nel modello, e le eventuali modifiche nel modello vengono propagate alla vista. Il modello è il SSOT per lo stato dell'applicazione, semplificando notevolmente il modello di programmazione per lo sviluppatore. Si può pensare di vista semplicemente come una proiezione istantanea del modello.
 
 Poiché la vista è solo una proiezione del modello, il controller è completamente separato dal punto di vista e completamente allo scuro di essa. Questo rende i test dell'applicazione molto semplici, in quanto è facile testare il controller indipendentemente dalla vista e dalla relativa dipendenza dal DOM / browser web.
 
 \item[Controller] i controller in AngularJS hanno il compito di gestire la logica di una determinata sezione dell'applicazione. Quando un controller viene dichiarato su una parte del DOM tramite la direttiva \emph{ng-controller} come nell'esempio \ref{lst:newController} AngularJS crea un nuovo oggetto Javascript associandogli un nuovo scope che potrà essere inserito all'interno del controller tramite la dependency injection. 
 
-\begin{lstlisting}[caption={Associazione tra un elemento del DOM e un controller}, label={lst:newController}]
+\begin{code}[caption={Associazione tra un elemento del DOM e un controller}, label={lst:newController}]
 	<div id="header" ng-controller = "HeaderController"></div>
-\end{lstlisting}
+\end{code}
+
 In generale ci sono alcune regole da seguire per la creazione dei controller, le quali non sono obbligatorie ma sono considerate come si dice in gergo \emph{Best Practices}:
 I controller devono essere usati per:
+
 \begin{itemize}
 \item Configurare lo stato iniziale dello scope.
 \item Aggiungere comportamento allo scope(funzioni, modelli, oggetti)
@@ -98,13 +123,17 @@ Mentre i controller non devono essere usati per:
 \item Gestire il ciclo di vita degli altri componenti(creazione di nuove istanze)
 \end{itemize}
 
+\item[View] la presentazione dei dati in AngularJS viene fatta tramite un sistema di viste con l'utilizzo di pagine HTML. Ad ogni vista possono essere associati più modelli di dati da presentare ed inoltre tramite un meccanismo di \emph{routing} e possibile determinare una struttura, anche gerarchica di più viste. 
+
 \item[Dependency Injection] per una trattazione generale dell'argomento rimandiamo all'appendice \ref{app:DepInj}. AngularJS ha già al suo interno un meccanismo che gestisce la Dependency Injection. Il principale scopo per cui AngularJS è stato dotato di questa caratteristica è per avere la possibilità di suddividere in moduli separati l'applicazione dove ognuno di essi può essere iniettato all'interno degli altri e vice versa. Un esempio moto semplice di Dependency Injection in AngularJS è all'atto della creazione dell'applicazione. Nell'esempio \ref{lst:appCreation} il metodo \textit{angular.module()} prende due argomenti: il primo è il nome del modulo che si vuole creare, mentre il secondo è un array con tutti i moduli di cui è composto la nostra applicazione. Viene creato quindi un riferimento ai moduli inclusi e non un istanza diretta.  
-\begin{lstlisting}[caption = {Creazione di una applicazione in AngularJS con le relative dipendenze}, 
+
+\begin{code}[caption = {Creazione di una applicazione in AngularJS con le relative dipendenze}, 
 				   label = {lst:appCreation}]
 	var testApp = angular.module("testApp",['ngRoute','customModule']);
-\end{lstlisting}
+\end{code}
 
 Oltre ai moduli AngularJS da la possibilità di usare la propietà della Dependency Injection sui tipi base forniti dal linguaggio, ovvero:
+
 \begin{itemize}
 \item Value
 \item Factory
@@ -112,9 +141,10 @@ Oltre ai moduli AngularJS da la possibilità di usare la propietà della Depende
 \item Provider
 \item Constant
 \end{itemize}
+
 Un esempio di Dependency Injection di questi tipi avviene molto frequentemente nelle applicazioni all'interno dei controller (\ref{lst:controllerExample})
 
-\begin{lstlisting}[caption = {Un esempio di creazione di un modulo e la sua inclusione all'interno di un altro}, 
+\begin{code}[caption = {Un esempio di creazione di un modulo e la sua inclusione all'interno di un altro}, 
 				   label = {lst:controllerExample}]
 
 angular.module("CustomModule",[])
@@ -130,8 +160,7 @@ angular.module("testApp",[
 	CustomService.customMethod("Marco");
 });
 
-
-\end{lstlisting}
+\end{code}
 
 \item[Service] si è visto come il meccanismo di Dependency Injection possa rendere disponibile all'interno dell'applicazione tutti i componenti forniti da un specifico modulo. Fatta eccezione per i \emph{service} ogni volta che si richiama un componente tramite Dependency Injection dal riferimento viene creata una nuova istanza della classe. I service invece sfruttano quello che è chiamato in Javascript il \emph{Singleton Object}, ovvero, l'istanza di un oggetto di tipo service avviene soltanto una volta, e il riferimento all'interno dell'applicazione è univoco verso lo stesso oggetto(figura \ref{fig:AngularJS-Singleton}). Inoltre soltanto quando il service dipende dall'applicazione viene creata l'istanza dell'oggetto(\emph{Lazy Initialization}).
 
@@ -150,40 +179,8 @@ Tra questi tre componenti esiste una specie di gerarchia : i \textit{service} so
 
 In questo modo AngularJS si garantisce una forte modularizzazione dei componenti, e la ricerca dei corretti riferimenti da parte della Dependency Injection. Inoltre tramite il provider è possibile configurare, se previsto, i servizi dell'applicazione scrivendo un opportuno codice parametrico.
 
-\item[Directives] una delle caratteristiche più rilevanti di AnagularJS è sicuramente quella di poter creare dei tag HTML personalizzati, oltre a quelli già previsti dal framework. Questi tag speciali sono chiamati directives o direttive. AngularJS si serve delle direttive per poter strutturare l'applicazione sulla vista HTML, ovvero ci sono dei tag speciali previsti dal framework che definiscono il nome dell'applicazione(\textit{ng-app}), i controller da utilizzare(\textit{ng-controller}), i modelli di riferimento(\textit{ng-model}) e il contenitore dove processare le viste(\textit{ng-view}) come nell'esempio \ref{lst:directives-example}:
-\begin{lstlisting}[language=html,caption={Un esempio delle direttive standard di AngularJS},
-				   label={lst:directives-example}]
- <html ng-app = "myApp">
-   <head></head>
-   <body>
-     <div ng-controller = "InfoController">
-       <input name = "inputFirstName" ng-model = "user.firstName">
-       <input name = "inputSecondName" ng-model = "user.secondName">
-       <div class = "showInfo">
-	     Hello my name is {{user.firstName}} {{user.secondName}}			
-       </div>
-     </div>
-   </body>
- </html>
-\end{lstlisting}
-
-Inoltre possiamo definire direttive personalizzate alle quali possiamo associare un relativo comportamento(\ref{lst:custom-directive}). Una cosa che è concessa nelle direttive e non nelle altre strutture di AngularJS è la manipolazione del DOM, solo al loro interno è possibile scrivere codice che interagisca direttamente con gli elementi della vista.
-\begin{lstlisting}[language=html,caption={Un esempio di direttiva personalizzata},
-				   label={lst:custom-directive}]
- angular.module("myApp")
- .directive("myPersonalTag",function(){
-	return{
-		link: function(scope, element, attrs){
-			//directive main istructions		
-		}	
-	} 
- });
-\end{lstlisting}
-
-Una nota di sintassi particolare per le direttive riguarda il loro nome, come osserviamo il nome delle direttive nell'esempio \ref{lst:directives-example} è separato dal trattino alto(\emph{dash}) mentre nella definizione tramite codice AngularJS è scritta in \emph{camelCase}. Questa è un convenzione che il framework adotta per evitare errori di sintassi all'interno del codice da parte del parser.
-Oltre alle caratteristiche principali con le direttive si hanno a disposizione molte più opzioni. Si rimanda l'approfondimento qui : \cite{angularjs:directives} per un trattazione più approfondita.
-
 \end{description} 
+
 
 \subsection{Ionic}
 
@@ -195,21 +192,23 @@ Oltre alle caratteristiche principali con le direttive si hanno a disposizione m
   \vspace{-10pt}
   \caption{Ionic Framework Logo}
   \label{fig:IONIC}
-  \vspace{5pt}
+  \vspace{-10pt}
 \end{wrapfigure}
 
 IONIC è un UI Framework basato sulle tecnologie web HTML5, Sass, AngularJS per la creazione di interfacce utente per dispositivi mobili. Si basa sul sistema di direttive di AnagularJS è fornisce un nuovo set di tag HTML componibili tra di loro. 
 Gli UI Framework e IONIC principalmente dispongono di 3 categorie di elementi che li caratterizzano e che servono per l'appunto alla composizione dell'interfaccia utente:
+
 \begin{description}
-\item[CSS Components]
-Sono dei componenti statici creati tramite HTML e CSS come bottoni, barre di navigazione, liste, tabelle che possono essere assemblati tra di loro come i componenti di una pagina web. I CSS di IONIC mettono a disposizione classi che possono cambiarne forma, dimensione e colore che a loro volta possono essere combinate.
+
+\item[CSS Components] Sono dei componenti statici creati tramite HTML e CSS come bottoni, barre di navigazione, liste, tabelle che possono essere assemblati tra di loro come i componenti di una pagina web. I CSS di IONIC mettono a disposizione classi che possono cambiarne forma, dimensione e colore che a loro volta possono essere combinate.
 Per personalizzazioni più avanzate e possibile seguire una guida messa a disposizione dal framework che spiega come modificare i file di Sass e che caratteristiche si va a cambiare(come ad esempio i colori standard).
-\item[Javascript Components]
-Al fine di offrire una esperienza di una applicazione mobile all'utente, IONIC offre delle estensioni in AngularJS che ricalcano quelle che sono le operazioni e le interfacce più comuni sui i dispositivi mobili. Ispirato ai sistemi iOS e Android questo framework mette a disposizione componenti come gestori di eventi, paginazione dei contenuti, popup di sistema, touch gestures, menu laterali, scorrimento di pagine il tutto nello stile di una applicazione mobile vera e prorpia.
-\item[Ionicons]
-IONIC prevede un set di icone standard che possono essere utilizzate all'interno dei componenti e personalizzate a proprio piacimento.
+
+\item[Javascript Components] Al fine di offrire una esperienza di una applicazione mobile all'utente, IONIC offre delle estensioni in AngularJS che ricalcano quelle che sono le operazioni e le interfacce più comuni sui i dispositivi mobili. Ispirato ai sistemi iOS e Android questo framework mette a disposizione componenti come gestori di eventi, paginazione dei contenuti, popup di sistema, touch gestures, menu laterali, scorrimento di pagine il tutto nello stile di una applicazione mobile vera e prorpia.
+
+\item[Ionicons] IONIC prevede un set di icone standard che possono essere utilizzate all'interno dei componenti e personalizzate a proprio piacimento.
 
 \end{description} 
+
 \section{Il Wrapper Framework}
 Come spiegato nella sezione \ref{sec:appAndFramework} per lo sviluppo di applicazioni ibirde si necessita di un framework che possa in qualche modo tradurre il linguaggio originale in quello della specifica piattaforma.
 Nel caso qui studiato si ha bisogno di un framework che possa ospitare tecnologie web e che abbia un interfaccia verso le funzionalità del dispositivo. Si ribadisce che non tutti i framework possono essere usati su tutte le piattaforme, bisogna scegliere con accortezza di quale servirsi.
@@ -293,14 +292,14 @@ Avendo a disposizione tutto il mondo delle tecnologie web, può risultare utile 
 
 \textbf{Bower} è un package manager tipicamente usato per librerie Javascript. Generalmente è possibile reperire ogni libreria disponibile su Github. Tramite il file \emph{bower.json} possiamo specificare le dipendenze del progetto e dinamicamente aggiornare la lista delle librerie installate. Inoltre se stiamo lavorando con una struttura di cartelle specifica, come ne mio caso, possiamo specificare la posizione di dove verranno scaricate le librerie tramite il file \emph{.bowerrc}. 
 
-\begin{lstlisting}[language=html,caption={Una tipica configurazione del file .bowerrc},
+\begin{code}[language=html,caption={Una tipica configurazione del file .bowerrc},
 				   label={lst:bowerrc}]
 	{
 		"directory" : "js/vendor"
 	}
-\end{lstlisting}
+\end{code}
 
-\begin{lstlisting}[language=html,caption={Una tipica configurazione del file bower.json},
+\begin{code}[language=html,caption={Una tipica configurazione del file bower.json},
 				   label={lst:bowerjson}]
 {
   "name": "blog.marcopredari.it",
@@ -323,10 +322,11 @@ Avendo a disposizione tutto il mondo delle tecnologie web, può risultare utile 
   "dependencies": {
     "angular-sanitize": "~1.3.10",
     "angular": "~1.3.10"
-  }
+  }\begin{minipage}[\linewidth]
 }
 
-\end{lstlisting}
+\end{code}
+
 
 \subsection{Task Runner}
 

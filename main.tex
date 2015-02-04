@@ -24,7 +24,6 @@
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
-
 \documentclass[11pt, oneside]{Thesis} % The default font size and one-sided printing (no margin offsets)
 
 \usepackage[utf8]{inputenc}
@@ -36,8 +35,17 @@
 \usepackage{hyperref}
 \usepackage{wrapfig}
 \usepackage{enumitem}
+\usepackage{url}
+
+\setlist[description]{style=unboxed,leftmargin=0cm}
+
+\lstnewenvironment{code}[1][]%
+  {\noindent\minipage{\linewidth}\medskip   
+   \lstset{basicstyle=\ttfamily\footnotesize,frame=single,#1, numbers=left, firstnumber=1,numberfirstline=true}}
+  {\endminipage}
 
 
+\sloppy
 % Use the natbib reference package - read up on this to edit the reference style; 
 % if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove %'numbers' 
 
@@ -66,7 +74,10 @@
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\begin{titlepage}
+\begin{titlepage}numbers=left,
+  stepnumber=5,    
+  firstnumber=1,
+  numberfirstline=true
 \begin{center}
 
 \textsc{\LARGE \univname}\\ % University name
@@ -100,7 +111,7 @@
  
 %\large \textit{A thesis submitted in fulfilment of the requirements\\ for the degree of \degreename}\\[0.3cm] % University requirement text
 %\textit{in the}\\[0.4cm]
- 
+ \
 {\large \today}\\[4cm] % Date
 %\includegraphics{Logo} % University/department logo - uncomment to place it
  
