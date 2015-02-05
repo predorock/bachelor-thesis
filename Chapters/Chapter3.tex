@@ -194,7 +194,6 @@ In questo modo AngularJS si garantisce una forte modularizzazione dei componenti
   \label{fig:IONIC}
   \vspace{-10pt}
 \end{wrapfigure}
-
 IONIC è un UI Framework basato sulle tecnologie web HTML5, Sass, AngularJS per la creazione di interfacce utente per dispositivi mobili. Si basa sul sistema di direttive di AnagularJS è fornisce un nuovo set di tag HTML componibili tra di loro. 
 Gli UI Framework e IONIC principalmente dispongono di 3 categorie di elementi che li caratterizzano e che servono per l'appunto alla composizione dell'interfaccia utente:
 
@@ -389,7 +388,22 @@ $
 
 Come si può vedere nell'esempio \ref{lst:promise_ex} la funzione \emph{.then()} viene applicata ad una promise che gestisce i dati provenienti dalla fotocamera di un dispositivo. Successivamente vengono specificate le due funzioni nel caso di successo o nel caso di errore della chiamata all'API.
 
-\subsection{Device Ready}
-Come si può già notare nell'esempio \ref{fig:AngularJS-Singleton} prima che qualsiasi operazione venga eseguita si attende l'evento \emph{deviceReady}. Analogamente come \emph{document.ready()} in Javascript per le pagine web, questo evento serve a capire quando il dispositivo ha caricato tutti i dati relativi all'avvio dell'applicazione. Se si eseguissero delle operazioni prima di questo evento si correrebbe il rischio di riscontare errori o comportamenti inaspettati da parte dell'applicazione.
+\subsection{Stato dell'applicazione}
+In una applicazione ibrida basata su Cordova esistono degli stati nei quali l'applicazione si può trovare. Come mostra la figura \ref{fig:cordova_app_states} durante la transizione degli stati vengono scatenati degli eventi che possono essere gestiti tramite codice Javascript.
 
-\subsection{Test}
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[scale=0.6]{Figures/cordova_application_states.png}  
+    \rule{35em}{0.5pt}
+  \caption[Stati di una applicazione]{Schema della transizione degli stati e degli eventi scatenati}
+  \label{fig:cordova_app_states}
+\end{figure}
+
+L'evento più importante tra tutti è \emph{deviceReady} il quale indica che Cordova è stato caricato completamente e soltanto dopo questo evento possono essere richiamate le API per interagire con le funzioni del dispositivo. Gli eventi \emph{pause} e \emph{resume} indicano rispettivamente quando una applicazione viene messa in background e quando invece viene ripresa la sua esecuzione. Durante questi due eventi si può ottimizzare la gestione della memoria da parte dell'applicazione per non appesantire di calcoli il dispositivo. Ulteriori eventi che possono essere scatenati dalla pressione di pulsanti oppure da informazioni riguardo lo stato della batteria o quello della rete sono disponibili sulla documentazione \ref{cordova:events}.
+
+\subsection{Routing}
+Un buona pratica in una applicazione ibrida, quando si utilizzano tecnologie web, è definire la struttura di navigazione tra le viste dell'applicazione. Tramite il \emph{\$routeProvider} messo a disposizione si possono configurare i cambiamenti di stato tra una vista e l'altra, assegnando per ciascuna di esse il template e il controller da caricare. Esiste anche un meccanismo più avanzato utilizzato da IONIC specifico per le applicazioni mobile chiamato \emph{\$stateprovider} detto anche \emph{angular-ui-router}. Le differenze principali dal routing originale di AngularJS sono che uno \textit{stato} corrisponde ad un determinato posto all'interno dell'applicazione nei termini della User Interface e della navigazione. Uno \textit{stato} descrive, tramite il controller, il template e le proprietà della view, l'aspetto della UI e il suo comportamento in quel posto. Può esistere una struttura gerarchica degli stati per cui alcuni possono trovarsi all'interno di altri. \citep{angularjs:ui-router} 
+
+\subsection{OAUTH}
+OAUTH è un protocollo sviluppato alla fine del 2012 per lo scambio di dati sensibili attraverso servizi di terze parti \citep{rfc:oauth}. In ambito web è conosciuto per il suo ampio uso nell'autenticazione attraverso provider differenti, ovvero grazie a questo protocollo e possibile autenticarsi ad un servizio / applicazione attraverso un altro di questi dove si è già registrati. Un esempio lampante è l'autenticazione tramite il proprio account di facebook, molto spesso le applicazioni per ovviare la pigrizia di alcuni utenti a registrarsi al loro servizio, mettono a disposizione un bottone tramite il quale l'utente acconsente che un provider, in questo caso facebook, possa fornire all'applicazione i dati necessari all'autenticazione o registrazione.
+OAUTH garantisce uno scambio di dati protetto con la massima semplicità. È presente un plugin in ng-cordova per l'autenticazione verso i provider più comuni.

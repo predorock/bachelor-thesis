@@ -3,11 +3,11 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: Bibliography.bib
-I was expecting a `,' or a `}'---line 180 of file Bibliography.bib
+I was expecting a `,' or a `}'---line 186 of file Bibliography.bib
  :    note = "
  :            [Online; in data 9-gennaio-2015]"
 I'm skipping whatever remains of this entry
-"{" immediately follows a field part---line 211 of file Bibliography.bib
+"{" immediately follows a field part---line 217 of file Bibliography.bib
  :  url = \url
  :            {//developer.mozilla.org/it/docs/Web/JavaScript/Reference/Global_Objects/Promise}
 I'm skipping whatever remains of this entry
