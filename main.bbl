@@ -103,4 +103,13 @@ Wikipedia.
   2014.
 \newblock [Online; accessed 26-November-2014].
 
+\bibitem{mdn:promise}
+Promise - javascript | mdn, may 2015.
+\newblock The Promise interface represents a proxy for a value not necessarily
+  known when the promise is created. It allows you to associate handlers to an
+  asynchronous action's eventual success or failure. This lets asynchronous
+  methods return values like synchronous methods: instead of the final value,
+  the asynchronous method returns a promise of having a value at some point in
+  the future.
+
 \end{thebibliography}

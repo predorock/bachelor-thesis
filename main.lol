@@ -9,3 +9,4 @@
 \contentsline {lstlisting}{\numberline {3.4}Un esempio di creazione di un modulo e la sua inclusione all'interno di un altro}{33}{lstlisting.131}
 \contentsline {lstlisting}{\numberline {3.5}Una tipica configurazione del file .bowerrc}{39}{lstlisting.162}
 \contentsline {lstlisting}{\numberline {3.6}Una tipica configurazione del file bower.json}{39}{lstlisting.166}
+\contentsline {lstlisting}{\numberline {3.7}Un esempio di uso delle promises in ng-cordva}{41}{lstlisting.196}

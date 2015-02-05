@@ -123,7 +123,7 @@ Mentre i controller non devono essere usati per:
 \item Gestire il ciclo di vita degli altri componenti(creazione di nuove istanze)
 \end{itemize}
 
-\item[View] la presentazione dei dati in AngularJS viene fatta tramite un sistema di viste con l'utilizzo di pagine HTML. Ad ogni vista possono essere associati più modelli di dati da presentare ed inoltre tramite un meccanismo di \emph{routing} e possibile determinare una struttura, anche gerarchica di più viste. 
+\item[View] In base ai contenuti e al template scelto per visualizzarli AngularJS genera una vista, che non è altro che la proiezione dei dati in un certo momento dell'applicazione. Inoltre grazie ad un meccanismo di routing, è possibile impostare un workflow dell'applicazione specificando le varie viste possibili, anche in maniera gerarchica. 
 
 \item[Dependency Injection] per una trattazione generale dell'argomento rimandiamo all'appendice \ref{app:DepInj}. AngularJS ha già al suo interno un meccanismo che gestisce la Dependency Injection. Il principale scopo per cui AngularJS è stato dotato di questa caratteristica è per avere la possibilità di suddividere in moduli separati l'applicazione dove ognuno di essi può essere iniettato all'interno degli altri e vice versa. Un esempio moto semplice di Dependency Injection in AngularJS è all'atto della creazione dell'applicazione. Nell'esempio \ref{lst:appCreation} il metodo \textit{angular.module()} prende due argomenti: il primo è il nome del modulo che si vuole creare, mentre il secondo è un array con tutti i moduli di cui è composto la nostra applicazione. Viene creato quindi un riferimento ai moduli inclusi e non un istanza diretta.  
 
@@ -210,8 +210,8 @@ Per personalizzazioni più avanzate e possibile seguire una guida messa a dispos
 \end{description} 
 
 \section{Il Wrapper Framework}
-Come spiegato nella sezione \ref{sec:appAndFramework} per lo sviluppo di applicazioni ibirde si necessita di un framework che possa in qualche modo tradurre il linguaggio originale in quello della specifica piattaforma.
-Nel caso qui studiato si ha bisogno di un framework che possa ospitare tecnologie web e che abbia un interfaccia verso le funzionalità del dispositivo. Si ribadisce che non tutti i framework possono essere usati su tutte le piattaforme, bisogna scegliere con accortezza di quale servirsi.
+Come spiegato nella sezione \ref{sec:appAndFramework} per lo sviluppo di applicazioni multi piattaforma si necessita di un framework che possa in qualche modo tradurre il linguaggio originale in quello della specifica piattaforma.
+Nel caso di una applicazione ibrida, si ha bisogno di un framework che possa ospitare tecnologie web e che abbia un interfaccia verso le funzionalità del dispositivo. Si ribadisce che non tutti i framework possono essere usati su tutte le piattaforme, bisogna scegliere con accortezza di quale servirsi.
 Data la mia formazione come sviluppatore web presso l'azienda BigThink SRL ho scelto di utilizzare il framework \emph{Cordova} per i seguenti motivi:
 \begin{itemize}
 \item E' un framework che si adatta a sviluppatori web che vogliono portare le proprie applicazioni su dispositivi mobili, in quanto fornisce le varie API per le funzionalità del dispositivo in linguaggio Javascript.
@@ -240,13 +240,6 @@ Per chi magari è nuovo nel settore delle applicazioni multi-piattaforma, o per 
 Phonegap è stato creato nel 2009 da una startup chiamata \emph{Nitobi} come progetto open-source. Si proponeva di fornire un metodo per l'accesso alle funzionalità native del dispositivo tramite il meccanismo di wrapping che è stato discusso nel capitolo precedente a proposito dei framework. L'obiettivo di questa piattaforma era appunto quello di poter creare delle applicazioni che potessero essere usate nei dispositivi mobili, tramite l'utilizzo di tecnologie web come HTML5, CSS e Javascript, ma con ancora la possibilità di accedere alle funzionalità native del dispositivo.\\
 Nel 2011 \emph{Adobe} ha acquisito la startup Nitobi assieme ai diritti di Phonegap, e il codice open-source della piattaforma è stato donato all'\emph{Apache Software Foundation} con il nome di \texttt{Cordova}
 
-\subsubsection{Differenze}
-La vera differenza tra \texttt{Cordova} e \texttt{Phonegap}, viene descritta da \emph{Adobe} analogamente come la differenza tra \texttt{Blink}\footnote{Blink è la web browser engine di Google Chrome\cite{wiki:blink}} e \emph{Google Chrome}. Ovvero \emph{Cordova} e il cuore della piattaforma mentre \emph{Phonegap} aggiunge a \emph{Cordova} delle funzionalità proprietarie di \emph{Adobe}.\\
-Personalmente ho scelto di utilizzare \emph{Cordova} per essere libero da qualsiasi vincolo proprietario.
-
-\subsubsection{Cordova Core}
-Cordova quindi offre una serie di potenti API in linguaggio Javascript per poter accedere alle funzionalità native del dispositivo. In difesa dello sviluppo nativo alcuni programmatori accusano \emph{Cordova} di non possedere tutte le possibilità di accesso a basso livello che invece si avrebbero. \emph{Cordova} è una realtà open-source e in quanto tale si è evoluta nel tempo offrendo sempre più funzionalità che hanno chiuso i divario che si credeva esservi tra questi due tipi di approcci.
-
 \begin{figure}[!h]
   \centering
     \includegraphics[scale=0.65]{Figures/cordova_schema.png} 
@@ -254,6 +247,13 @@ Cordova quindi offre una serie di potenti API in linguaggio Javascript per poter
   \caption[Struttura a Livelli di Cordova]{Come avviene le stratificazione tra l'applicazione e il framework Cordova}
   \label{fig:cordova-layers}
 \end{figure}
+
+\subsubsection{Differenze}
+La vera differenza tra \texttt{Cordova} e \texttt{Phonegap}, viene descritta da \emph{Adobe} analogamente come la differenza tra \texttt{Blink}\footnote{Blink è la web browser engine di Google Chrome\cite{wiki:blink}} e \emph{Google Chrome}. Ovvero \emph{Cordova} e il cuore della piattaforma mentre \emph{Phonegap} aggiunge a \emph{Cordova} delle funzionalità proprietarie di \emph{Adobe}.\\
+Personalmente ho scelto di utilizzare \emph{Cordova} per essere libero da qualsiasi vincolo proprietario.
+
+\subsubsection{Cordova Core}
+Cordova quindi offre una serie di potenti API in linguaggio Javascript per poter accedere alle funzionalità native del dispositivo. In difesa dello sviluppo nativo alcuni programmatori accusano \emph{Cordova} di non possedere tutte le possibilità di accesso a basso livello che invece si avrebbero. \emph{Cordova} è una realtà open-source e in quanto tale si è evoluta nel tempo offrendo sempre più funzionalità che hanno chiuso i divario che si credeva esservi tra questi due tipi di approcci.
 
 Nella figura \ref{fig:cordova-layers} si può osservare dove si posiziona il framewrok all'interno di una tipica struttura stratificata di applicazione, e di come i livelli siano completamente indipendenti l'uno dall'altro. Questo fa si che per l'approccio cross-platform attraverso le applicazioni ibride, la scelta delle tecnologie web sia completamente irrilevante ai fini della creazione dell'app.
 
@@ -280,7 +280,7 @@ Il perché in questa tesi si parli di \emph{Cordova} e \emph{AngularJS} è dato 
   \label{fig:ngcordova-plugins}
 \end{figure}
 
-Nell'architettura impostata da Cordova nella figura \ref{fig:cordova-layers} ng-cordova si posiziona al posto delle Javascript comunicando direttamente con la logica dell'applicazione.
+Nell'architettura mostrata nella figura \ref{fig:cordova-layers} ng-cordova si posiziona al di sopra delle API di Cordova, ridefinendo i plugin nella sintassi di AngularJS. 
 
 \section{Strumenti di sviluppo}
 
@@ -352,14 +352,44 @@ Il ruolo dei task-runner è quello di eseguire determinate operazioni per la mes
 Un \texttt{Software Developement Kit} in generale è un insieme di strumenti per lo sviluppo e la documentazione del software\cite{wiki:sdk}. Questi strumenti vengono rilasciati dalla casa produttrice di una certa piattaforma come librerie di riferimento per lo sviluppo di software specifico di essa. La loro distribuzione avviene in uno specifico linguaggio a seconda della piattaforma ed è sempre affiancata da una documentazione molto accurata. 
 Per lo sviluppo di applicazioni ibride avremo bisogno di ciascuna \emph{SDK} per ogni sistema operativo sul quale vorremo la nostra applicazione; ad esempio se volessimo la nostra applicazione per \emph{iOS} e \emph{Android} dovremmo scaricare entrambe le \emph{SDK}(scritte rispettivamente in C++/Swift e Java) indicando dove si trovano all'interno del notro computer.
 
-\section{Creazione di una applicazione}
+\section{Pattern Javascript e best practices}
+Per lo sviluppo di applicazioni ibride come si è notato il linguaggio che gestisce la logica dell'applicazione è senza dubbio Javascript. In risposta ai problemi che ho riscontrato durante la fase di sperimentazione ho raccolto una serie di pattern / best-practices secondo me utili allo sviluppo ibrido.
+ 
+\subsection{Utilizzo delle Promises}
+Una promise rappresenta un'interfaccia di delegazione verso un valore non ancora conosciuto. Essa consente di associare due tipi di comportamento ad una azione asincrona, nel caso di successo oppure di fallimento. \citep{mdn:promise}
+Questo pattern e molto usato nel caso di chiamate ad API REST, molto spesso le risorse si trovano su un altro dominio che impiega un certo tempo a fornire il risultato. Mentre nello sviluppo ibrido vengono utilizzate per la chiamata alle API dei vari plugin associati ad una funzionalità del dispositivo.
 
-Dopo aver presentato tutte le tecnologie e gli strumenti per lo sviluppo di applicazioni ibride si mostrerà un processo di sviluppo molto minimale con l'obiettivo di mostrare dove e come possono essere utili gli strumenti visti in  precedenza.
+\begin{code}[label={lst:promises_ex}, caption={Un esempio di uso delle promises in ng-cordva}]
+ module.controller("PictureCtrl",function($scope, $cordovaCamera){
+   document.addEventListener("deviceReady",function(){
+     var options = {
+       quality: 50,
+       destinationType: Camera.DestinationType.DATA_URL,
+       sourceType: Camera.PictureSourceType.Camera
+       allowEdit: true,
+       encodingType: Camera.EncodingType.JPEG,
+       targetWidth: 100,
+       targetHeight: 100,
+       popoverOptions: CameraPopoverOptions,
+       saveToPhotoAlbum: false
+     };
+   $cordovaCamera.getPicture(options).then(
+      function(imageData){
+       var image = document.getElementById('myImage');
+       image.src = "data:image/jpeg:base64" + imageData;
+      },
+      function(err){
+       alert("Something has gone wrong because :" + err);
+      }
+     ;
+    }, false);
+   });
+$
+\end{code}
 
-\subsection{Ambiente di sviluppo}
+Come si può vedere nell'esempio \ref{lst:promise_ex} la funzione \emph{.then()} viene applicata ad una promise che gestisce i dati provenienti dalla fotocamera di un dispositivo. Successivamente vengono specificate le due funzioni nel caso di successo o nel caso di errore della chiamata all'API.
 
-L'ambiente di sviluppo di una applicazione ibrida dipende direttamente dal framework che si andrà a utilizzare per la distribuzione su più piattaforme, in questo caso Cordova. Alcuni IDE predispongono già un tipo di progetto basato su cordova e tecnologie web, come ad esempio NetBeans e IntelliJ IDEA. Altrimenti Cordova e Ionic predispongono già un client da linea di comando per inizializzare nuovi progetti.
+\subsection{Device Ready}
+Come si può già notare nell'esempio \ref{fig:AngularJS-Singleton} prima che qualsiasi operazione venga eseguita si attende l'evento \emph{deviceReady}. Analogamente come \emph{document.ready()} in Javascript per le pagine web, questo evento serve a capire quando il dispositivo ha caricato tutti i dati relativi all'avvio dell'applicazione. Se si eseguissero delle operazioni prima di questo evento si correrebbe il rischio di riscontare errori o comportamenti inaspettati da parte dell'applicazione.
 
-Tutte queste soluzioni per la creazione di nuovi progetti includono un template di partenza con lo scopo di dare una struttura minimale ai file del progetto. Nel mio caso ho scelto di usare l'IDE NetBeans in quanto risulta più chiaro e semplice il processo di sviluppo.
-
-
+\subsection{Test}
