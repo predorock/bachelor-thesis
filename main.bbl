@@ -112,4 +112,14 @@ Promise - javascript | mdn, may 2015.
   the asynchronous method returns a promise of having a value at some point in
   the future.
 
+\bibitem{angularjs:ui-router}
+angular-ui angular ui.
+\newblock Home · angular-ui/ui-router wiki.
+\newblock https://github.com/angular-ui/ui-router/wiki, may 2015.
+
+\bibitem{rfc:oauth}
+Dick Hardt.
+\newblock The oauth 2.0 authorization framework, 10 2012.
+\newblock RFC 6749 and RFC 6750.
+
 \end{thebibliography}

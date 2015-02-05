@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.10.26)  5 FEB 2015 18:43
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.10.26)  6 FEB 2015 00:20
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
@@ -739,7 +739,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box36
 \enitdp@description=\count142
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 52.
+Package hyperref Info: Option `colorlinks' set `true' on input line 53.
  (./main.aux
 
 ! Package natbib Error: Bibliography not compatible with author-year citations.
@@ -751,7 +751,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.219 ...and\NAT@force@numbers{}\NAT@force@numbers
+l.229 ...and\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -759,22 +759,22 @@ or select author-year BibTeX style, e.g. plainnat
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -803,7 +803,7 @@ Package caption Info: End \AtBeginDocument code.
 )
 \c@lstlisting=\count149
 \AtBeginShipoutBox=\box38
-Package hyperref Info: Link coloring ON on input line 54.
+Package hyperref Info: Link coloring ON on input line 55.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -812,20 +812,28 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count150
 )
-LaTeX Info: Redefining \ref on input line 54.
-LaTeX Info: Redefining \pageref on input line 54.
-LaTeX Info: Redefining \nameref on input line 54.
+LaTeX Info: Redefining \ref on input line 55.
+LaTeX Info: Redefining \pageref on input line 55.
+LaTeX Info: Redefining \nameref on input line 55.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 98.
+
+<Figures/tesiSCIENZE_TECNOLOGIE.jpg, id=269, 1660.2025pt x 652.4375pt>
+File: Figures/tesiSCIENZE_TECNOLOGIE.jpg Graphic file (type jpg)
+
+<use Figures/tesiSCIENZE_TECNOLOGIE.jpg>
+Package pdftex.def Info: Figures/tesiSCIENZE_TECNOLOGIE.jpg used on input line 
+83.
+(pdftex.def)             Requested size: 415.0496pt x 163.10896pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 105.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 98.
+LaTeX Font Info:    Try loading font information for U+msb on input line 105.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -833,7 +841,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}] [1
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map} <./Figures/t
+esiSCIENZE_TECNOLOGIE.jpg>] [1
 
 ]
 ------------------------------------------------------------------------------
@@ -913,14 +922,14 @@ Underfull \hbox (badness 2538) in paragraph at lines 69--70
 nti di des-ti-nazione uti-lizzer-anno l'applicazione in modo
  []
 
-[5] <Figures/exampleCordova.png, id=476, 474.27188pt x 269.50688pt>
+[5] <Figures/exampleCordova.png, id=491, 474.27188pt x 269.50688pt>
 File: Figures/exampleCordova.png Graphic file (type png)
 
 <use Figures/exampleCordova.png>
 Package pdftex.def Info: Figures/exampleCordova.png used on input line 91.
 (pdftex.def)             Requested size: 355.70303pt x 202.12965pt.
  [6 <./Figures/exampleCordova.png (PNG copy)>]
-[7] <Figures/javascript-ui-framework.png, id=495, 519.44063pt x 393.72093pt>
+[7] <Figures/javascript-ui-framework.png, id=509, 519.44063pt x 393.72093pt>
 File: Figures/javascript-ui-framework.png Graphic file (type png)
 
 <use Figures/javascript-ui-framework.png>
@@ -928,14 +937,14 @@ Package pdftex.def Info: Figures/javascript-ui-framework.png used on input line
  121.
 (pdftex.def)             Requested size: 311.66678pt x 236.23438pt.
  [8 <./Figures/javascript-ui-framework.png>] <Figures/html-hybrid-tools.png, id
-=502, 518.6878pt x 420.82219pt>
+=516, 518.6878pt x 420.82219pt>
 File: Figures/html-hybrid-tools.png Graphic file (type png)
 
 <use Figures/html-hybrid-tools.png>
 Package pdftex.def Info: Figures/html-hybrid-tools.png used on input line 136.
 (pdftex.def)             Requested size: 311.21509pt x 252.49525pt.
 
-<Figures/x-to-native-converters.png, id=503, 401.24907pt x 469.755pt>
+<Figures/x-to-native-converters.png, id=517, 401.24907pt x 469.755pt>
 File: Figures/x-to-native-converters.png Graphic file (type png)
 
 <use Figures/x-to-native-converters.png>
@@ -1002,7 +1011,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-[16] <Figures/mvc.png, id=548, 220.825pt x 241.90375pt>
+[16] <Figures/mvc.png, id=562, 220.825pt x 241.90375pt>
 File: Figures/mvc.png Graphic file (type png)
  <use Figures/mvc.png>
 Package pdftex.def Info: Figures/mvc.png used on input line 51.
@@ -1013,7 +1022,7 @@ Package pdftex.def Info: Figures/mvc.png used on input line 51.
 LaTeX Warning: Reference `sec:AngularJS' on page 18 undefined on input line 66.
 
 
-<Figures/mvvm-1.jpeg, id=558, 363.3575pt x 139.52126pt>
+<Figures/mvvm-1.jpeg, id=572, 363.3575pt x 139.52126pt>
 File: Figures/mvvm-1.jpeg Graphic file (type jpg)
 
 <use Figures/mvvm-1.jpeg>
@@ -1049,21 +1058,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--9
 
 [27
 
-] <Figures/sass-logo.png, id=682, 513.92pt x 385.44pt>
+] <Figures/sass-logo.png, id=696, 513.92pt x 385.44pt>
 File: Figures/sass-logo.png Graphic file (type png)
 
 <use Figures/sass-logo.png>
 Package pdftex.def Info: Figures/sass-logo.png used on input line 26.
 (pdftex.def)             Requested size: 128.47968pt x 96.35976pt.
 
-<Figures/less-logo.png, id=683, 199.74625pt x 81.30376pt>
+<Figures/less-logo.png, id=697, 199.74625pt x 81.30376pt>
 File: Figures/less-logo.png Graphic file (type png)
 
 <use Figures/less-logo.png>
 Package pdftex.def Info: Figures/less-logo.png used on input line 27.
 (pdftex.def)             Requested size: 149.80931pt x 60.97765pt.
  [28 <./Figures/sass-logo.png> <./Figures/less-logo.png>] <Figures/angular-logo
-.png, id=692, 284.06125pt x 300.12125pt>
+.png, id=706, 284.06125pt x 300.12125pt>
 File: Figures/angular-logo.png Graphic file (type png)
 
 <use Figures/angular-logo.png>
@@ -1079,7 +1088,7 @@ File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 63.
  [29 <./Figures/angular-logo.png>]
-<Figures/how-to-build-custom-directives.png, id=714, 557.83406pt x 319.1925pt>
+<Figures/how-to-build-custom-directives.png, id=728, 557.83406pt x 319.1925pt>
 File: Figures/how-to-build-custom-directives.png Graphic file (type png)
 
 <use Figures/how-to-build-custom-directives.png>
@@ -1087,7 +1096,7 @@ Package pdftex.def Info: Figures/how-to-build-custom-directives.png used on inp
 ut line 79.
 (pdftex.def)             Requested size: 362.58783pt x 207.47266pt.
  [30 <./Figures/how-to-build-custom-directives.png>]
-<Figures/one-way-data-binding.png, id=724, 401.5pt x 255.95625pt>
+<Figures/one-way-data-binding.png, id=738, 401.5pt x 255.95625pt>
 File: Figures/one-way-data-binding.png Graphic file (type png)
 
 <use Figures/one-way-data-binding.png>
@@ -1095,7 +1104,7 @@ Package pdftex.def Info: Figures/one-way-data-binding.png used on input line 92
 .
 (pdftex.def)             Requested size: 200.7495pt x 127.9778pt.
 
-<Figures/two-way-data-binding.png, id=725, 401.5pt x 291.0875pt>
+<Figures/two-way-data-binding.png, id=739, 401.5pt x 291.0875pt>
 File: Figures/two-way-data-binding.png Graphic file (type png)
 
 <use Figures/two-way-data-binding.png>
@@ -1106,7 +1115,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 99.
  [31 <./Figures/one-way-data-binding.png> <./Figures/two-way-data-binding.png>]
  [32]
-<Figures/angularjs-service-singleton-diagram.png, id=744, 334.24875pt x 303.132
+<Figures/angularjs-service-singleton-diagram.png, id=758, 334.24875pt x 303.132
 5pt>
 File: Figures/angularjs-service-singleton-diagram.png Graphic file (type png)
  <use Figures/angularjs-service-singleton-diagram.png>
@@ -1119,14 +1128,14 @@ Underfull \hbox (badness 3312) in paragraph at lines 177--179
  trat-tazione sep-a-rata di queste tre carat-ter-is-tiche di
  []
 
-<Figures/ionic-logo.png, id=764, 370.61539pt x 411.38307pt>
+<Figures/ionic-logo.png, id=778, 370.61539pt x 411.38307pt>
 File: Figures/ionic-logo.png Graphic file (type png)
 
 <use Figures/ionic-logo.png>
 Package pdftex.def Info: Figures/ionic-logo.png used on input line 190.
 (pdftex.def)             Requested size: 129.71732pt x 143.98622pt.
  [34 <./Figures/ionic-logo.png>]
-<Figures/cordova-logo.png, id=773, 321.2pt x 333.245pt>
+<Figures/cordova-logo.png, id=787, 321.2pt x 333.245pt>
 File: Figures/cordova-logo.png Graphic file (type png)
 
 <use Figures/cordova-logo.png>
@@ -1138,14 +1147,14 @@ Underfull \hbox (badness 1831) in paragraph at lines 236--237
  []
 
 [35 <./Figures/cordova-logo.png>]
-<Figures/cordova_schema.png, id=779, 611.28375pt x 481.8pt>
+<Figures/cordova_schema.png, id=793, 611.28375pt x 481.8pt>
 File: Figures/cordova_schema.png Graphic file (type png)
 
 <use Figures/cordova_schema.png>
 Package pdftex.def Info: Figures/cordova_schema.png used on input line 244.
 (pdftex.def)             Requested size: 397.32973pt x 313.16628pt.
  [36 <./Figures/cordova_schema.png (PNG copy)>] <Figures/ngcordova-logo.png, id
-=789, 421.575pt x 421.575pt>
+=803, 421.575pt x 421.575pt>
 File: Figures/ngcordova-logo.png Graphic file (type png)
 
 <use Figures/ngcordova-logo.png>
@@ -1167,7 +1176,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
  []
 
-<Figures/ngcordova-plugins.png, id=790, 542.025pt x 530.73282pt>
+<Figures/ngcordova-plugins.png, id=804, 542.025pt x 530.73282pt>
 File: Figures/ngcordova-plugins.png Graphic file (type png)
 
 <use Figures/ngcordova-plugins.png>
@@ -1183,14 +1192,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 290--291
  []
 
 [38 <./Figures/ngcordova-plugins.png>]
-<Figures/grunt-logo.png, id=801, 214.8025pt x 287.0725pt>
+<Figures/grunt-logo.png, id=815, 214.8025pt x 287.0725pt>
 File: Figures/grunt-logo.png Graphic file (type png)
 
 <use Figures/grunt-logo.png>
 Package pdftex.def Info: Figures/grunt-logo.png used on input line 335.
 (pdftex.def)             Requested size: 85.91946pt x 114.82695pt.
 
-<Figures/gulp-logo.png, id=802, 228.855pt x 511.9125pt>
+<Figures/gulp-logo.png, id=816, 228.855pt x 511.9125pt>
 File: Figures/gulp-logo.png Graphic file (type png)
 
 <use Figures/gulp-logo.png>
@@ -1207,7 +1216,7 @@ a, in quanto in base alle es-i-genze
 LaTeX Warning: Reference `lst:promise_ex' on page 41 undefined on input line 38
 9.
 
-<Figures/cordova_application_states.png, id=846, 249.93375pt x 579.16376pt>
+<Figures/cordova_application_states.png, id=860, 249.93375pt x 579.16376pt>
 File: Figures/cordova_application_states.png Graphic file (type png)
 
 <use Figures/cordova_application_states.png>
@@ -1219,39 +1228,48 @@ ine 396.
 LaTeX Warning: Reference `cordova:events' on page 41 undefined on input line 40
 2.
 
-[41]
-
-Package natbib Warning: Citation `angularjs:ui-router' on page 42 undefined on 
-input line 405.
-
-[42 <./Figures/cordova_application_states.png>]
-
-Package natbib Warning: Citation `rfc:oauth' on page 43 undefined on input line
- 408.
-
-) (./Chapters/Chapter4.tex [43]
+[41] [42 <./Figures/cordova_application_states.png>]) (./Chapters/Chapter4.tex
+[43]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 Conclusioni
 ------------------------------------------------------------------------------
+<Figures/classic_app_flow.png, id=903, 266.9975pt x 641.39626pt>
+File: Figures/classic_app_flow.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
+<use Figures/classic_app_flow.png>
+Package pdftex.def Info: Figures/classic_app_flow.png used on input line 11.
+(pdftex.def)             Requested size: 133.49841pt x 320.69734pt.
+ [44
+
+]
+<Figures/match_flow.png, id=910, 923.45pt x 723.503pt>
+File: Figures/match_flow.png Graphic file (type png)
+
+<use Figures/match_flow.png>
+Package pdftex.def Info: Figures/match_flow.png used on input line 27.
+(pdftex.def)             Requested size: 461.72386pt x 361.75061pt.
+
+Overfull \hbox (8.11578pt too wide) in paragraph at lines 27--28
+ [] 
+ []
+
+[45 <./Figures/classic_app_flow.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--19
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
 
  []
 
-[44
-
-]) (./Appendices/AppendixA.tex [45]
+[46 <./Figures/match_flow.png>]) (./Appendices/AppendixA.tex [47]
 Appendix A.
 ------------------------------------------------------------------------------
  A Appendice Argomenti
 ------------------------------------------------------------------------------
-) [46
+) [48
 
 ]
 ------------------------------------------------------------------------------
@@ -1269,7 +1287,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--66
 ne html.it.
  []
 
-[47
+[49
 
 
 ]
@@ -1278,83 +1296,53 @@ Underfull \hbox (badness 1043) in paragraph at lines 86--89
 angularjs.org/guide/directive.
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--119
+[]\OT1/cmr/m/n/10.95 angular-ui an-gu-lar ui.  Home \OMS/cmsy/m/n/10.95 ^^A \OT
+1/cmr/m/n/10.95 angular-ui/ui-router wiki.
+ []
+
 )
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 334.
-[48]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 334.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 341.
+ [50]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 341.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 334.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 334.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 341.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 341.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: CD45F0181AE1B138250715D6B3CD1B9D;12333.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 77D01431533531A1517C9AAF32FA9AFC;11914
-(rerunfilecheck)             After:  D330CBD8CB4537A186AB04DE5B7266B3;12047.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 334.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 341.
  ) 
 Here is how much of TeX's memory you used:
- 15234 strings out of 495034
- 218620 string characters out of 6181676
- 321273 words of memory out of 5000000
- 17845 multiletter control sequences out of 15000+600000
- 17108 words of font info for 63 fonts, out of 8000000 for 9000
+ 15263 strings out of 495034
+ 219330 string characters out of 6181676
+ 321475 words of memory out of 5000000
+ 17869 multiletter control sequences out of 15000+600000
+ 17753 words of font info for 66 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,12n,51p,1315b,1546s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{dummy.243} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.237} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix.236} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.233} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.229} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.227} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.226} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.225} has been referenced but does not exist
-, replaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on main.pdf (58 pages, 1210921 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on main.pdf (60 pages, 1464442 bytes).
 PDF statistics:
- 1039 PDF objects out of 1200 (max. 8388607)
- 921 compressed objects within 10 object streams
+ 1063 PDF objects out of 1200 (max. 8388607)
+ 938 compressed objects within 10 object streams
  331 named destinations out of 1000 (max. 500000)
- 618 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 649 words of extra memory for PDF output out of 10000 (max. 10000000)
 
