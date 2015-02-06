@@ -48,23 +48,23 @@
 \contentsline {subsection}{\numberline {3.5.4}OAUTH}{43}{subsection.226}
 \contentsline {chapter}{\numberline {4}Conclusioni}{44}{chapter.227}
 \contentsline {section}{\numberline {4.1}I cambiamenti sul processo di sviluppo}{44}{section.228}
-\contentsline {section}{\numberline {4.2}Considerazioni sullo sviluppo ibrido}{46}{section.231}
-\contentsline {subsection}{\numberline {4.2.1}Quando conviene lo sviluppo ibrido}{46}{subsection.232}
+\contentsline {section}{\numberline {4.2}Considerazioni sullo sviluppo ibrido}{47}{section.231}
+\contentsline {subsection}{\numberline {4.2.1}Quando conviene lo sviluppo ibrido}{47}{subsection.232}
 \contentsline {subsection}{\numberline {4.2.2}Le tecnologie web, molto di pi\IeC {\`u} dei semplici framework}{47}{subsection.233}
 \contentsline {section}{\numberline {4.3}Risultati sulle tecnologie utilizzate}{47}{section.234}
 \contentsline {section}{\numberline {4.4}Ciclo di vita di una app}{47}{section.235}
 \contentsline {section}{\numberline {4.5}L'aspetto commerciale e le possibili soluzioni}{47}{section.236}
-\contentsline {section}{\numberline {4.6}Nuove tecnologie web emergenti}{47}{section.237}
-\contentsline {subsection}{\numberline {4.6.1}FirefoxOS}{47}{subsection.238}
-\contentsline {subsection}{\numberline {4.6.2}WebOS}{47}{subsection.239}
-\contentsline {subsection}{\numberline {4.6.3}Node Webkit}{47}{subsection.240}
+\contentsline {section}{\numberline {4.6}Nuove tecnologie web emergenti}{48}{section.237}
+\contentsline {subsection}{\numberline {4.6.1}FirefoxOS}{48}{subsection.238}
+\contentsline {subsection}{\numberline {4.6.2}WebOS}{48}{subsection.239}
+\contentsline {subsection}{\numberline {4.6.3}Node Webkit}{48}{subsection.240}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendice Argomenti}{48}{appendix.241}
-\contentsline {section}{\numberline {A.1}HTML5}{48}{section.242}
-\contentsline {section}{\numberline {A.2}CSS}{48}{section.243}
-\contentsline {section}{\numberline {A.3}Javascript}{48}{section.244}
-\contentsline {section}{\numberline {A.4}Dependency Injection}{48}{section.245}
-\contentsline {section}{\numberline {A.5}Inversion Of Control}{48}{section.246}
-\contentsline {section}{\numberline {A.6}Future / Promises}{48}{section.247}
+\contentsline {chapter}{\numberline {A}Appendice Argomenti}{49}{appendix.241}
+\contentsline {section}{\numberline {A.1}HTML5}{49}{section.242}
+\contentsline {section}{\numberline {A.2}CSS}{49}{section.243}
+\contentsline {section}{\numberline {A.3}Javascript}{49}{section.244}
+\contentsline {section}{\numberline {A.4}Dependency Injection}{49}{section.245}
+\contentsline {section}{\numberline {A.5}Inversion Of Control}{49}{section.246}
+\contentsline {section}{\numberline {A.6}Future / Promises}{49}{section.247}
 \vspace {2em}
-\contentsline {chapter}{Bibliografia}{49}{dummy.248}
+\contentsline {chapter}{Bibliografia}{50}{dummy.248}
