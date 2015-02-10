@@ -1,7 +1,6 @@
-\lhead{\emph{Capitolo 3}}
 \chapter{Case Study: L'approccio ibrido con tecnologie web}
-
-L'approccio ibrido con tecnologie web è stato scelto durante lo svolgimento del tirocinio presso la ditta BigThink SRL, in quanto si adattava meglio ad una serie di tecnologie già utilizzate dall'azienda per lo sviluppo di applicazioni multi piattaforma.
+\lhead{\emph{Capitolo 3}}
+L'approccio ibrido con tecnologie web è stato scelto durante lo svolgimento del tirocinio presso la ditta BigThink SRL, in quanto si adattava meglio ad una serie di tecnologie già utilizzate dall'azienda per lo sviluppo di applicazioni multipiattaforma.
 Durante la mia permanenza ho svolto il lavoro di Frontend Developer di Web Applications, in particolare mi occupavo dello sviluppo della logica di business di una applicazione e della sua interfaccia.
 Una delle politiche dell'azienda era quella di separare la gestione dei dati e la loro memorizzazione lato Backend in modo tale che la parte Frontend sviluppata con il framework Javascript AngularJS si interfacciasse con i dati servendosi solo di API REST.
 Dato il numero consistente di Web Application sviluppate e il mercato di applicazioni Mobile sempre in crescita, sono stato incaricato dall'azienda di ricercare dei metodi e delle tecnologie che consentissero di portare il lavoro già fatto per le Web Application su dispositivo mobile, in modo tale che l'azienda potesse offrire nuovi servizi.\\
@@ -209,7 +208,7 @@ Per personalizzazioni più avanzate e possibile seguire una guida messa a dispos
 \end{description} 
 
 \section{Il Wrapper Framework}
-Come spiegato nella sezione \ref{sec:appAndFramework} per lo sviluppo di applicazioni multi piattaforma si necessita di un framework che possa in qualche modo tradurre il linguaggio originale in quello della specifica piattaforma.
+Come spiegato nella sezione \ref{sec:appAndFramework} per lo sviluppo di applicazioni multipiattaforma si necessita di un framework che possa in qualche modo tradurre il linguaggio originale in quello della specifica piattaforma.
 Nel caso di una applicazione ibrida, si ha bisogno di un framework che possa ospitare tecnologie web e che abbia un interfaccia verso le funzionalità del dispositivo. Si ribadisce che non tutti i framework possono essere usati su tutte le piattaforme, bisogna scegliere con accortezza di quale servirsi.
 Data la mia formazione come sviluppatore web presso l'azienda BigThink SRL ho scelto di utilizzare il framework \emph{Cordova} per i seguenti motivi:
 \begin{itemize}
@@ -239,7 +238,7 @@ Per chi magari è nuovo nel settore delle applicazioni multi-piattaforma, o per 
 Phonegap è stato creato nel 2009 da una startup chiamata \emph{Nitobi} come progetto open-source. Si proponeva di fornire un metodo per l'accesso alle funzionalità native del dispositivo tramite il meccanismo di wrapping che è stato discusso nel capitolo precedente a proposito dei framework. L'obiettivo di questa piattaforma era appunto quello di poter creare delle applicazioni che potessero essere usate nei dispositivi mobili, tramite l'utilizzo di tecnologie web come HTML5, CSS e Javascript, ma con ancora la possibilità di accedere alle funzionalità native del dispositivo.\\
 Nel 2011 \emph{Adobe} ha acquisito la startup Nitobi assieme ai diritti di Phonegap, e il codice open-source della piattaforma è stato donato all'\emph{Apache Software Foundation} con il nome di \texttt{Cordova}
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
   \centering
     \includegraphics[scale=0.65]{Figures/cordova_schema.png} 
     \rule{35em}{0.5pt}
@@ -271,7 +270,7 @@ Nella figura \ref{fig:cordova-layers} si può osservare dove si posiziona il fra
 
 Il perché in questa tesi si parli di \emph{Cordova} e \emph{AngularJS} è dato dall'esistenza di \texttt{ngCordova}. Questa libreria nasce da una idea di Paolo Bernasconi e Max Lynch che hanno avuto l'idea di unire la l'efficenza e la potenza di \emph{AngularJS} con la versatilità di \emph{Cordova}. Ne è nato un framework per lo sviluppo di applicazioni ibride direttamente collegato alle funzionalità del dispositivo gestibile tramite il codice efficiente di \emph{AngularJS}.\\
 
-\begin{figure}[!h]
+\begin{figure}[ht]
   \centering
     \includegraphics[scale=0.66]{Figures/ngcordova-plugins.png} 
     \rule{35em}{0.5pt}
@@ -358,7 +357,7 @@ Per lo sviluppo di applicazioni ibride come si è notato il linguaggio che gesti
 Una promise rappresenta un'interfaccia di delegazione verso un valore non ancora conosciuto. Essa consente di associare due tipi di comportamento ad una azione asincrona, nel caso di successo oppure di fallimento. \citep{mdn:promise}
 Questo pattern e molto usato nel caso di chiamate ad API REST, molto spesso le risorse si trovano su un altro dominio che impiega un certo tempo a fornire il risultato. Mentre nello sviluppo ibrido vengono utilizzate per la chiamata alle API dei vari plugin associati ad una funzionalità del dispositivo.
 
-\begin{code}[label={lst:promises_ex}, caption={Un esempio di uso delle promises in ng-cordva}]
+\begin{code}[label={lst:promise_ex}, caption={Un esempio di uso delle promises in ng-cordva}]
  module.controller("PictureCtrl",function($scope, $cordovaCamera){
    document.addEventListener("deviceReady",function(){
      var options = {
@@ -399,7 +398,7 @@ In una applicazione ibrida basata su Cordova esistono degli stati nei quali l'ap
   \label{fig:cordova_app_states}
 \end{figure}
 
-L'evento più importante tra tutti è \emph{deviceReady} il quale indica che Cordova è stato caricato completamente e soltanto dopo questo evento possono essere richiamate le API per interagire con le funzioni del dispositivo. Gli eventi \emph{pause} e \emph{resume} indicano rispettivamente quando una applicazione viene messa in background e quando invece viene ripresa la sua esecuzione. Durante questi due eventi si può ottimizzare la gestione della memoria da parte dell'applicazione per non appesantire di calcoli il dispositivo. Ulteriori eventi che possono essere scatenati dalla pressione di pulsanti oppure da informazioni riguardo lo stato della batteria o quello della rete sono disponibili sulla documentazione \ref{cordova:events}.
+L'evento più importante tra tutti è \emph{deviceReady} il quale indica che Cordova è stato caricato completamente e soltanto dopo questo evento possono essere richiamate le API per interagire con le funzioni del dispositivo. Gli eventi \emph{pause} e \emph{resume} indicano rispettivamente quando una applicazione viene messa in background e quando invece viene ripresa la sua esecuzione. Durante questi due eventi si può ottimizzare la gestione della memoria da parte dell'applicazione per non appesantire di calcoli il dispositivo. Ulteriori eventi che possono essere scatenati dalla pressione di pulsanti oppure da informazioni riguardo lo stato della batteria o quello della rete sono disponibili sulla documentazione \citep{web:phonegap_events}.
 
 \subsection{Routing}
 Un buona pratica in una applicazione ibrida, quando si utilizzano tecnologie web, è definire la struttura di navigazione tra le viste dell'applicazione. Tramite il \emph{\$routeProvider} messo a disposizione si possono configurare i cambiamenti di stato tra una vista e l'altra, assegnando per ciascuna di esse il template e il controller da caricare. Esiste anche un meccanismo più avanzato utilizzato da IONIC specifico per le applicazioni mobile chiamato \emph{\$stateprovider} detto anche \emph{angular-ui-router}. Le differenze principali dal routing originale di AngularJS sono che uno \textit{stato} corrisponde ad un determinato posto all'interno dell'applicazione nei termini della User Interface e della navigazione. Uno \textit{stato} descrive, tramite il controller, il template e le proprietà della view, l'aspetto della UI e il suo comportamento in quel posto. Può esistere una struttura gerarchica degli stati per cui alcuni possono trovarsi all'interno di altri. \citep{angularjs:ui-router} 

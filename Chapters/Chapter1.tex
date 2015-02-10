@@ -1,7 +1,7 @@
 \lhead{\emph{Capitolo 1}}
 \chapter{Stato dell'arte} 
 L'obiettivo di questo capitolo introduttivo e quello di mostrare quali sono gli approcci esistenti per lo sviluppo di applicazioni su dispositivi mobili ed analizzarne i vantaggi e gli svantaggi.
-In particolare per lo sviluppo di applicazioni multi piattaforma si adotterà il modello di sviluppo ibrido, e di conseguenza verranno mostrate le varie tecnologie che ho ritenuto necessarie per la sua l'implementazione.
+In particolare per lo sviluppo di applicazioni multipiattaforma si adotterà il modello di sviluppo ibrido, e di conseguenza verranno mostrate le varie tecnologie che ho ritenuto necessarie per la sua l'implementazione.
 
 \section{Sviluppo Nativo}
 Dopo un'attenta analisi dei requisiti, una delle strade percorribili quando si intende sviluppare un'applicazione mobile è quella di orientarsi verso lo sviluppo nativo, ovvero utilizzare il linguaggio di programmazione specifico per una determinata piattaforma.
@@ -19,7 +19,7 @@ Lo sviluppo nativo implica competenze specifiche e capacità di sviluppo sui pi�
         	BlackBerry                 & C++ / Qt                 \\ \hline
         	FirefoxOS                  & Javascript + CSS + HTML5 \\ \hline
     	\end{tabular}
-    	\caption{Lista dei vari linguaggi di programmazione utilizzati nei sistemi operativi per dispositivi 		
+    	\caption{Elenco dei vari linguaggi di programmazione utilizzati nei sistemi operativi per dispositivi 		
     			 mobili}
 		\label{tbl: TabellaOS}
 \end{table}
@@ -46,14 +46,14 @@ Con l'evolversi delle tecnologie web si ha abbandonato sempre di più il concett
 
 Un importante passo che ha favorito l’evolversi dei Siti Web in Applicazione Web, e ad essere fruito tramite dispositivi mobili, è stato il concetto di \emph{Responsive Web Application}. Si potrebbe tradurre in italiano la parola \emph{Responsive} come \emph{Adattato/a}, che sostanzialmente si tratta in una ri-organizzazione dei contenuti della pagina. Il fattore che influisce su questo comportamento è la dimensione dello schermo del dispositivo, essendo gli smartphone, tablet di dimensioni ridotte rispetto allo schermo di un computer, quello che fa una \emph{Responsive Web Application} è adattare i propri contenuti alla dimensione dello schermo del dispositivo, il tutto in modo completamente automatico, senza il bisogno dell'utente di ingrandire con le dita i contenuti. Si potrebbe pensare a primo impatto che si tratti soltanto di una riduzione delle dimensioni della pagina web, in realtà entra in gioco un meccanismo che cambia le proporzioni e la disposizione dei contenuti rendendo ben visibile e nitido il testo e le immagini.
    
-Da quanto appena detto, possiamo constatare che l'obiettivo di avere una Applicazione multi piattaforma che ci siamo prefissati all'inizio della tesi è molto comodo sotto questo tipo di approccio. Al contrario dello sviluppo nativo, non dobbiamo preoccuparci di dover programmare la stessa applicazione per diversi sistemi operativi in quanto il codice che scriviamo viene interpretato dal browser web il quale non dipende dalla piattaforma dalla quale stiamo utilizzando l'applicazione.
+Da quanto appena detto, possiamo constatare che l'obiettivo di avere una Applicazione multipiattaforma che ci siamo prefissati all'inizio della tesi è molto comodo sotto questo tipo di approccio. Al contrario dello sviluppo nativo, non dobbiamo preoccuparci di dover programmare la stessa applicazione per diversi sistemi operativi in quanto il codice che scriviamo viene interpretato dal browser web il quale non dipende dalla piattaforma dalla quale stiamo utilizzando l'applicazione.
 
 Le conoscenze che sono richieste al programmatore per poter affrontare un approccio di questo genere sono sicuramente quelle dei linguaggi HTML, CSS e Javascript, pacchetto di competenze che ritroviamo in tutti i programmatori che generalmente si occupano dello sviluppo di siti web. Ne deduciamo che rispetto all'approccio nativo abbiamo un costo sicuramente molto inferiore in termini di conoscenze e di tempi di sviluppo per un risultato ottimale rispetto agli obiettivi prefissati, ma ci sono dei fattori negativi in questo tipo di approccio decisamente non trascurabili.
 
 Come i siti web anche le applicazioni web necessitano di una connessione ad Internet sempre presente per per funzionare, e di conseguenza se il dispositivo che si sta utilizzando è offline queste applicazioni non possono essere raggiunte / utilizzate, parametro che è sicuramente rilevante nella scelta di applicazioni da parte dell'utente. Quello che un fruitore si aspetta di trovare in una applicazione è che sia sempre reperibile anche se la connessione ad Internet in quel momento non è presente. Inoltre dal browser le	 Web Application non possono accedere direttamente alle funzionalità del dispositivo e usufruire ad esempio della fotocamera, il gps o la gestione delle risorse del dispositivo. Altra nota negativa delle applicazioni web riguarda il salvataggio dei dati che risulta molto difficile non potendo accedere alla memoria del dispositivo, tramite browser si potrebbero memorizzare alcuni dati in cache ma correrebbero il rischio di venire cancellati ad insaputa dell'utente, l'unica soluzione è accedere ai dati una volta connessi ad internet tramite un processo di accounting fornito dall'applicazione, il problema è che ogni utente dovrebbe avere diversi account per ogni applicazione che utilizza, cosa non sempre molto gradita dall'utente.
 
 \section{Confronto tra i due approcci}
-
+\label{sec:native_vs_web}
 Nelle descrizioni precedenti si è visto che tra i due approcci utilizzati il rapporto che caratterizza il confronto del tipo di sviluppo è tra Prestazioni e User Experience ottimale, nello sviluppo nativo / bassi costi di produzione e velocità di sviluppo, tramite Web Application. Quando si sviluppano applicazioni Mobile in generale bisogna tenere conto di diversi fattori di valutazione che riguardano principalmente l'utente finale ma con un occhio ache agli sviluppatori, ecco quindi come si comportano gli approcci precedentemente visti su una serie di fattori che ho ritenuto più rilevanti di altri:
 
 \begin{description}
@@ -94,9 +94,9 @@ Ma il vero segreto delle applicazioni ibride è l'implementazione di un livello 
   \label{fig:Javascript API Example}
 \end{figure}
 
-Questa operazione non è possibile tramite un'implementazione come Web Application, perché per evidenti motivi di sicurezza, il Browser Web dei dispositivi mobili non ha libero accesso alle funzionalità del dispositivo(altrimenti qualunque sito internet potrebbe compromettere l'integrità dello stesso). Grazie a questo l'approccio ibrido si avvicina molto a quello nativo. Per fare questo le applicazioni ibride si servono di potenti framework che si occupano di fornire un canale di comunicazione tra le due entità, quella web e quella nativa, consentendo all'interfaccia scritta in HTML e Javascript di poter utilizzare le funzionalità del dispositivo. In particolare \emph{Cordova} è uno dei framewrok più usati per questo tipo di sviluppo, il quale fornisce dal lato dell'interfaccia web delle API in Javascript per comunicare con il dispositivo.
+Questa operazione non è possibile tramite un'implementazione come Web Application, perché per evidenti motivi di sicurezza, il Browser Web dei dispositivi mobili non ha libero accesso alle funzionalità del dispositivo(altrimenti qualunque sito internet potrebbe compromettere l'integrità dello stesso). Per consentire ciò, le applicazioni ibride si servono di potenti framework che si occupano di fornire un canale di comunicazione tra le due entità, quella web e quella nativa, consentendo all'interfaccia scritta in HTML e Javascript di poter utilizzare le funzionalità del dispositivo. In particolare \emph{Cordova} è uno dei framewrok più usati per questo tipo di sviluppo, il quale fornisce dal lato dell'interfaccia web delle API in Javascript per comunicare con il dispositivo.
 
-Sul mercato esistono framework che usano procedimenti differenti da quello appena spiegato per ottenere lo stesso risultato multi piattaforma, la maggior parte tende però a sviluppare l'interfaccia utente con codice
+Sul mercato esistono framework che usano procedimenti differenti da quello appena spiegato per ottenere lo stesso risultato multipiattaforma, la maggior parte tende però a sviluppare l'interfaccia utente con codice
 HTML, in quanto essendo un linguaggio tendenzialmente semplice consente di avere una descrizione dei dati accurata e dinamica, la quale può essere riutilizzata se lo sviluppatore decidesse di avere una eventuale Web Application oltre a quella ibrida. Un punto molto forte dello sviluppo ibrido è appunto che è possibile riutilizzare il codice web, pur avendo una applicazione quasi nativa(ibrida).  
 
 Prima del confronto tra gli approcci visti, verrà spiegato come i framework possono essere utili nello sviluppo di applicazioni mobili, e come possono risultare utili in particolare nell'approccio ibrido.
@@ -158,15 +158,15 @@ Queste soluzioni traducono il codice sorgente in un bytecode intermedio, o in un
 
 \section{Considerazioni}
 
-Nel confronto tra lo sviluppo nativo e quello tramite Web Application si è visto che i principali fattori a pesare su un obiettivo di applicazione multi piattaforma è la possibilità di accedere alle funzionalità del dispositivo e di avere prestazioni molto efficienti contro una portabilità immediata senza il bisogno di riscrivere il codice per ogni piattaforma di destinazione. 
+Nel confronto tra lo sviluppo nativo e quello tramite Web Application si è visto che i principali fattori a pesare su un obiettivo di applicazione multipiattaforma è la possibilità di accedere alle funzionalità del dispositivo e di avere prestazioni molto efficienti contro una portabilità immediata senza il bisogno di riscrivere il codice per ogni piattaforma di destinazione. 
 Introducendo le applicazioni ibride si è potuto combinare entrambi i fattori positivi dei due approcci differenti, infatti in questo tipo di approccio si può accedere alle funzionalità del dispositivo tramite delle API che un framework di supporto fornisce, ma riguardo alle prestazioni, non si è ancora arrivati ad una tecnologia che consenta di paragonare l'efficienza dello sviluppo nativo con quello di tipo ibrido. Con l'evoluzione delle tecnologie utilizzate dai framework e il continuo susseguirsi versioni di piattaforme sempre più adattabili a diversi tipi di tecnologie, il distacco tra i due approcci continua sempre a diminuire.
 
 \subsection{Qual'è l'approccio migliore}
 
 Non esiste un approccio migliore di un altro in quanto hanno tutti pregi e difetti sotto certi punti di vista, in base allo scopo e ai requisiti dell'applicazione che si vuole creare bisogna valutare quale approccio sia il migliore da utilizzare per poter competere al meglio sul mercato.
-Un esempio potrebbe essere una applicazione gioco, la quale richiede una forte potenza di calcolo a livello grafico e che con uno sviluppo di tipo ibrido o web è molto difficile da ottenere. In questi casi quando le prestazioni sono al centro della richiesta dell'applicazione, uno sviluppo di tipo nativo, anche se più dispendioso in quanto si resta sotto l'idea di avere una applicazione multi piattaforma, è una delle scelte migliori che si possono fare.
+Un esempio potrebbe essere una applicazione gioco, la quale richiede una forte potenza di calcolo a livello grafico e che con uno sviluppo di tipo ibrido o web è molto difficile da ottenere. In questi casi quando le prestazioni sono al centro della richiesta dell'applicazione, uno sviluppo di tipo nativo, anche se più dispendioso in quanto si resta sotto l'idea di avere una applicazione multipiattaforma, è una delle scelte migliori che si possono fare.
 Una alternativa potrebbe ese.
-sere quella di utilizzare un framework apposito allo sviluppo di giochi, che consenta di avere un gioco multi piattaforma, si ricorda però che alcuni tipi di framework molto avanzati spesso non sono open source e richiedono un investimento da parte del programmatore / azienda per il suo utilizzo.
+sere quella di utilizzare un framework apposito allo sviluppo di giochi, che consenta di avere un gioco multipiattaforma, si ricorda però che alcuni tipi di framework molto avanzati spesso non sono open source e richiedono un investimento da parte del programmatore / azienda per il suo utilizzo.
 Nel caso l'applicazione richieda una potenza di calcolo nella media la scelta dell'approccio e delle tecnologie da utilizzare ricade sulle caratteristiche specifiche che l'applicazione richiede.
 
 
@@ -176,7 +176,7 @@ Oggi sul mercato esistono diversi tipi di framework, ognuno con caratteristiche 
 Per questo motivo la scelta del framework giusto deve essere oggetto di una attenta valutazione da parte delle aziende o dei programmatori. Questa valutazione deve prendere in considerazione numerosi parametri quali, ad esempio, le funzionalità che il cliente intende integrare nell'applicazione, i dispositivi sui quali questa applicazione deve girare, il budget a disposizione, il termine ultimo per commercializzare l'applicazione sul mercato ed infine la strategia di lungo termine legata alla quantità di progetti che devono essere sviluppati.
 Tutti i framework, come sopra accennato, non supportano tutti i sistemi operativi. Per questo motivo l'esperienza del programmatore è fondamentale per ottimizzare gli strumenti di sviluppo e le funzionalità dell'applicazione.
 
-Il vantaggio principale nell'utilizzo di un framework consiste nella possibilità di effettuare una consegna rapida e multi piattaforma di un'applicazione: il codice, infatti, si scrive velocemente con un meta linguaggio ed attraverso librerie esistenti precompilate, ed esso viene automaticamente adattato per i diversi sistemi operativi in fase di compilazione.
+Il vantaggio principale nell'utilizzo di un framework consiste nella possibilità di effettuare una consegna rapida e multipiattaforma di un'applicazione: il codice, infatti, si scrive velocemente con un meta linguaggio ed attraverso librerie esistenti precompilate, ed esso viene automaticamente adattato per i diversi sistemi operativi in fase di compilazione.
 
 Una criticità di questo tipo di framework consiste nel fatto che, all'inizio, l'azienda deve sostenere costi piuttosto elevati per l'acquisto della licenza. Occorre inoltre investire anche nelle attività di formazione per le risorse interne che dovranno occuparsi dell'implementazione e dell'uso del framework. Un limite ulteriore dei framework consiste nell'eccesso di rigidità in fase progettuale: il loro utilizzo, infatti, limita in parte la possibilità di sfruttare le caratteristiche native del dispositivo, delle linee guida dell'interfaccia e del sistema operativo che utilizzerà l'applicazione, e spesso, quindi, si corre il rischio di non riuscire a sviluppare interfacce utente pienamente ergonomiche e intuitive.
 
@@ -188,10 +188,10 @@ Nel caso di framework nativi i costi iniziali sono più bassi rispetto ai preced
 
 Un tipo di framework scelto nel contesto giusto, che tenga concretamente conto degli obiettivi di marketing dell'azienda e le strategie di investimento in sviluppo di prodotti, consente di ottimizzare i tempi di sviluppo, presentare velocemente sul mercato la propria applicazione ed ottimizzare il processo di delivery abbattendo costi e sfruttando le potenzialità specifiche del framework selezionato.
 
-\subsection{E' possibile uno sviluppo multi piattaforma senza l'utilizzo di framework?}
+\subsection{E' possibile uno sviluppo multipiattaforma senza l'utilizzo di framework?}
 
-Si è inteso lo sviluppo multi piattaforma come partendo da un unico codice sorgente dell'applicazione ad avere quest'ultima già disponibile per più di un canale di distribuzione sul mercato(ovvero i sistemi operativi dei dispositivi, la web application). Ebbene questo procedimento senza un framework di supporto risulta molto difficoltoso in quanto l'approccio rimane quello nativo per ogni piattaforma, oppure il programmatore / azienda ha a disposizione un sistema proprietario progettato appositamente per fare questa operazione, opzione che non è mai presa in considerazione in quanto molto dispendiosa.
-Per uno sviluppo multi piattaforma è richiesta la conoscenza del funzionamento di almeno un framework, che dipende sostanzialmente dalle conoscenze e dalla formazione del programmatore, il quale sceglierà le tecnologie più adatte alle sue conoscenze pregresse.
+Si è inteso lo sviluppo multipiattaforma come partendo da un unico codice sorgente dell'applicazione ad avere quest'ultima già disponibile per più di un canale di distribuzione sul mercato(ovvero i sistemi operativi dei dispositivi, la web application). Ebbene questo procedimento senza un framework di supporto risulta molto difficoltoso in quanto l'approccio rimane quello nativo per ogni piattaforma, oppure il programmatore / azienda ha a disposizione un sistema proprietario progettato appositamente per fare questa operazione, opzione che non è mai presa in considerazione in quanto molto dispendiosa.
+Per uno sviluppo multipiattaforma è richiesta la conoscenza del funzionamento di almeno un framework, che dipende sostanzialmente dalle conoscenze e dalla formazione del programmatore, il quale sceglierà le tecnologie più adatte alle sue conoscenze pregresse.
   
 
 
