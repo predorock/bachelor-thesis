@@ -4,7 +4,7 @@ In questo capitolo verranno verificate le premesse e gli obiettivi dati all'iniz
 Verranno spiegati i cambiamenti che ci sono stati sul processo di sviluppo, avendo prefissato l'obiettivo di avere una applicazione mutlipiattaforma e quali ottimizzazioni sono state adottate. 
 
 \section{Ibrido vs Nativo}
-L'obiettivo di questa tesi è stato fin da subito di trovare delle metodologie rapide per sviluppare applicazioni multipiattaforma. L'approccio che è stato analizzato comprendeva l'utilizzo di tecnologie web per applicazioni ibride.
+L'obiettivo di questa tesi è stato fin da subito quello di trovare delle metodologie rapide per sviluppare applicazioni multipiattaforma. L'approccio che è stato analizzato comprendeva l'utilizzo di tecnologie web per applicazioni ibride.
 Effettivamente tramite l'impiego degli opportuni framework per la distribuzione di più piattaforme, è stato possibile partendo da un unico codice sorgente in HTML / CSS / Javascript ottenere il risultato desiderato.
 Come spiegato nella sezione \ref{sec:native_vs_web} ci sono pro e contro sull'utilizzo di tecnologie web per lo sviluppo di applicazioni mobile. Tramite l'approccio ibrido è stato possibile combinare i vantaggi di questi due approcci, ma fino ad un certo punto. Nella tabella \ref{tbl:html5_vs_native} si possono osservare vantaggi e svantaggi derivati dai due approcci.
 
@@ -24,10 +24,10 @@ Come spiegato nella sezione \ref{sec:native_vs_web} ci sono pro e contro sull'ut
   Le tecnologie web hanno una curva di apprendimento più bassa. Gli sviluppatori che vogliono usare tecnologie web per creare applicazioni mobile, impiegano meno tempo ad imparare il linguaggi (HTML / CSS / JS) rispetto ad uno nativo.
 &
   \cellcolor{blue!10}
-  Essendo Javascript un linguaggio interpretato all'interno della WebView di Webkit, sarà comunque meno performante di un linguaggio nativo compilato, pur essendo Webkit una WebEngine molto efficiente. 
-\\
+  Essendo Javascript un linguaggio interpretato all'interno della WebView di Webkit, sarà comunque meno performante di un linguaggio nativo compilato, nonostante un alta efficienza del motore. 
+\\utilizzAppendiceare
   \cellcolor{blue!10}
-  Permette di avere da un unico sorgente, un'applicazione per ciascuna piattaforma, senza dover riscrivere il codice.
+  Permette di avere da un unico sorgente un'applicazione per ciascuna piattaforma, senza dover riscrivere il codice.
 &
   \cellcolor{blue!25}
   Pur essendo un linguaggio facile, non si hanno strumenti altrettanto potenti 
@@ -37,7 +37,7 @@ Come spiegato nella sezione \ref{sec:native_vs_web} ci sono pro e contro sull'ut
   Grazie ai punti precedenti, può permettere un risparmio di tempi e costi, specialmente per la creazione di applicazioni multipiattaforma.
 &
   \cellcolor{blue!10}
-  L'accesso alle funzionalità native del dispositivo è vincolato dal wrapper che fornisce le API in Javascript. Dipende quindi dalla tecnologia che si va ad utilizzAppendiceare.
+  L'accesso alle funzionalità native del dispositivo è vincolato dal wrapper che fornisce le API in Javascript. Dipende quindi dalla tecnologia che si va ad utilizzare.
 \\\hline		
         \multicolumn{2}{|c|}{\cellcolor{black!10}\textbf{Native}} \\ \hline
   \cellcolor{green!35}
@@ -70,7 +70,7 @@ Come spiegato nella sezione \ref{sec:native_vs_web} ci sono pro e contro sull'ut
 	\label{tbl:html5_vs_native}
 \end{table}
 
-Per quanto riguarda la creazione di una interfaccia utente e l'impostazione della user experience, si accusa spesso l'approccio ibrido di non poter garantire un risultato soddisfacente paragonandolo allo sviluppo ibrido. In questo caso mi permetto di dissentire personalmente da questa opinione, in quanto dalla mia esperienza di utilizzo dei framework web per la creazione della UI (come ad esempio IONIC o Foundation), l'interfaccia risulta fluida e accattivante anche se eseguita all'interno di una WebView. Le principali accuse che vengono fatte ad una interfaccia web sono di essre eseguita a scatti, di non garantire una UX ottimale. Se si fa utilizzo di animazioni CSS3 (il quale processo di rendering è accelerato dall'hardware), invece della manipolazione del DOM tramite javascript, la differenza con una applicazione nativa è pressoché nulla.
+Per quanto riguarda la creazione di una interfaccia utente e l'impostazione della user experience, si accusa spesso l'approccio ibrido di non poter garantire un risultato soddisfacente paragonato allo sviluppo nativo. Le principali accuse che vengono fatte ad una interfaccia web tramite approccio ibrido, riguardano la fluidità delle transizioni e animazioni, e di non garantire una UX ottimale. In questo caso mi permetto di dissentire da questa opinione, in quanto dalla mia esperienza di utilizzo dei framework web per la creazione della UI (come ad esempio IONIC o Foundation), l'interfaccia risulta fluida e accattivante anche se eseguita all'interno di una WebView. Se si fa utilizzo di animazioni CSS3 (il quale processo di rendering è accelerato dall'hardware), invece della manipolazione del DOM tramite javascript, la differenza con una applicazione nativa è pressoché nulla.
 
 \section{I cambiamenti sul processo di sviluppo}
 Durante la ricerca di soluzioni per lo sviluppo rapido di applicazioni multipiattaforma tramite l'approccio ibrido, il processo di sviluppo dell'applicazione ha subito una consistente semplificazione. Questo è dovuto al fatto che, avendo un solo progetto da gestire, dal quale poi si otterranno le applicazioni per diverse piattaforme, le varie operazioni di design, test o risoluzione di bachi risultano più rapide e semplici. Nella figura \ref{fig:classic_app_flow} viene schematizzato come avviene il processo di creazione di una applicazione in generale. In particolare la semplificazione del progetto è dovuta a:
@@ -84,8 +84,8 @@ Durante la ricerca di soluzioni per lo sviluppo rapido di applicazioni multipiat
 \end{figure}
 
 \begin{description}
-	\item[Design] Il design dell'applicazione rimane univoco e non ci si deve preoccupare di differenziarlo per le diverse piattaforme.
-	\item[Test] Avendo un unico codice sorgente, i test funzionali sull'applicazione sono unici, rimangono differenziati solo i test sull'integrazione nei sistemi.
+	\item[Design] Il design dell'applicazione rimane univoco e non ci si deve preoccupare di replicarlo per le diverse piattaforme.
+	\item[Test] Avendo un unico codice sorgente, i test funzionali sull'applicazione sono unici, rimangono differenziati solo i test sull'integrazione nei singoli sistemi.
 	\item[Team di sviluppo ristretto] Con un solo progetto da gestire il team di sviluppo è meno affollato, facilitandone la sua gestione.
 	\item[Distribuzione] Tutte le applicazioni sono pronte nello stesso momento. In questo modo si ha subito un feedback globale da parte degli utenti, cosa che può eventualmente aiutare a correggere l'applicazione più rapidamente.
 \end{description}
@@ -94,12 +94,11 @@ Durante la ricerca di soluzioni per lo sviluppo rapido di applicazioni multipiat
 
 Nello sviluppo di una applicazione in generale, tutte le figure professionali coinvolte fanno riferimento ad uno schema generale, che illustra le fasi di lavoro per arrivare al prodotto finale. Da quanto appreso durante l'esperienza di tirocinio in azienda, questo schema deve essere il più generico possibile, e comprensibile da chiunque lavori con esso. Nella figura \ref{fig:classic_app_flow} si possono osservare le fasi principali dello sviluppo di una applicazione.
 
-Prendendo spunto da questo schema generale ho creato una espansione della fase di sviluppo e di test per lo sviluppo di applicazioni multipiattaforma ibride. Si tratta di un sottoschema che evidenzia quali fasi hanno caratterizzato un primo approccio a questo tipo di sviluppo (\ref{fig:flow_match}).
+Prendendo spunto da questo schema generale ho creato una espansione della fase di sviluppo e di test per la realizzazione di applicazioni multipiattaforma ibride. Si tratta di un sottoschema che evidenzia quali fasi hanno caratterizzato un primo approccio a questo tipo di sviluppo (\ref{fig:flow_match}).
 
-Una prima fase è stata quella di scegliere quali tecnologie web utilizzare per lo sviluppo ibrido, e quali per per testare il codice che doveva essere prodotto. Nel mio caso il framework AnagularJS si prestava già ad uno sviluppo di questo tipo e non ho impiegato molto tempo nel capire come utilizzarlo per lo sviluppo mobile. In altri casi, data la vasta scelta di framework javascript per lo sviluppo mobile, può richiedere parecchio tempo(dipende dalle competenze e dallo stile del programmatore).
+Una prima fase è stata quella di scegliere quali tecnologie web utilizzare per lo sviluppo ibrido, e quali per testare il codice che doveva essere prodotto. Nel mio caso il framework AngularJS si prestava già ad uno sviluppo di questo tipo e non ho impiegato molto tempo nel capire come utilizzarlo per lo sviluppo mobile. In altri casi, data la vasta scelta di framework javascript per lo sviluppo mobile, può richiedere parecchio tempo(dipende dalle competenze e dallo stile del programmatore).
 
-Certamente iterare questo processo per ciascuna applicazione che si andrà a sviluppare è molto dispendioso in termini di tempo e risorse. Una buona soluzione e costruirsi un set di tecnologie che si andranno a utilizzare per lo sviluppo di ciascuna applicazione futura, quello che in azienda si è chiamato \emph{skeleton}. Ovviamente lo scheletro di una applicazione tipo deve essere fatto in modo da espandersi nel caso giungessero richieste di nuove caratteristiche non ancora incluse. Nella figura \ref{fig:flow_match} si può osservare l'evoluzione del primo schema verso una soluzione pronta e rapida all'utilizzo, grazie all'introduzione dello \emph{skeleton}.
-HTML5 vs Nativo
+Certamente iterare questo processo per ciascuna applicazione che si andrà a sviluppare è molto dispendioso in termini di tempo e risorse. Una buona soluzione e costruirsi un set di tecnologie che si andranno a utilizzare per lo sviluppo di ciascuna applicazione futura, quello che in azienda è stato chiamato \emph{skeleton}. Ovviamente lo scheletro di una applicazione tipo deve essere fatto in modo da espandersi nel caso giungessero richieste di nuove caratteristiche non ancora incluse. Nella figura \ref{fig:flow_match} si può osservare l'evoluzione del primo schema verso una soluzione pronta e rapida all'utilizzo, grazie all'introduzione dello \emph{skeleton}.
 
 \begin{figure}
 	\begin{center}
@@ -112,14 +111,16 @@ HTML5 vs Nativo
 Adottare questa pre-configurazione di tutte le tecnologie, mi ha portato a definire delle caratteristiche che lo scheletro di una applicazione deve avere, indipendentemente dalle tecnologie e i linguaggi utilizzati:
 
 \begin{description}
-\item[Dipendenze] Lo scheletro di una applicazione deve specificare tutte le dipendenze con software o pacchetti esterni.
+\item[Dipendenze] Lo scheletro di una applicazione deve specificare tutte le dipendenze con software o pacchetti esterni. Per semplificare la loro gestione è possibile utilizzare dei package manager come Bower (\ref{sec:package_manager}) o Composer
 
 \item[Modulare] Se un certo numero di applicazioni richiedono una nuova funzionalità che non è ancora inclusa nello scheletro, ci deve essere la possibilità di poterla aggiungere per tutte le applicazioni future. Al contrario non tutti i nuovi moduli devono per forza essere inclusi nelle implementazioni successive.
 
 \item[Strutturato] Deve avere innanzitutto una struttura ben accurata a livello di directory, in modo tale che i file possano essere separati nella maniera che lo sviluppatore ritiene più opportuna. Ad esempio in AngularJS e possibile separare il codice in diversi moduli. Ci sono diverse linee di pensiero che sostengono che la separazione del codice debba avvenire in maniera semantica per il ruolo che quel modulo ricopre (ad esempio un modulo potrebbe essere la gestione dell'autenticazione con le varie direttive e controller). Altri sostengono che i moduli debbano essere divisi in base al tipo delle struttura utilizzata (sempre nel caso di AngularJS nei vari moduli vengono raggruppati per controller, direttive, service \ldots).
-Un metodo molto utilizzato per poi ri-assemblare tutte le parti del codice è tramite l'utilizzo di un task-runner (\ref{sec:task_runner}).
 
 \item[Documentato] Documentare come funziona il proprio scheletro di applicazione e tutte le sue caratteristiche, da modo ai collaboratori futuri di apprendere nel minor tempo possibile il suo funzionamento. Esistono delle tecnologie che, date le giuste annotazioni nel codice, creano già una documentazione chiara e dettagliata.
+
+\item[Automazione] E utile avere all'interno dello scheletro di una applicazione un meccanismo di automazione, tramite dei comandi (ad esempio usando shell-scripting), per operazioni come: set-up dell'ambiente di sviluppo, aggiornamento dei pacchetti, operazioni del task runner e risoluzione delle dipendenze.
+
 \end{description} 
 
 \section{Nuove tecnologie web emergenti}
@@ -137,7 +138,9 @@ In conclusione alla mia tesi voglio mostrare quali sono alcune delle tecnologie 
 	\vspace{0pt}
 \end{wrapfigure}
 
-FirefoxOS è un nuovo sistema operativo per dispositivi mobili sviluppato da \emph{Mozilla}. Voglio mostrare questa nuova tecnologia con particolare riferimento a come sono gestite le API del dispositivo. Firefox OS ha eliminato lo strato di API native fra il sistema operativo e gli strati applicativi. Questa soluzione integrata riduce il carico della piattaforma e semplifica la gestione della sicurezza senza sacrificare le prestazioni e una ricca esperienza utente (fig.\ref{fig:fxos_architecture}).
+FirefoxOS è un nuovo sistema operativo per dispositivi mobili sviluppato da \emph{Mozilla}. Firefox OS ha eliminato lo strato di API native fra il sistema operativo e gli strati applicativi. Questa soluzione integrata riduce il carico della piattaforma e semplifica la gestione della sicurezza senza sacrificare le prestazioni e una ricca esperienza utente (fig.\ref{fig:fxos_architecture}). Voglio mostrare questa nuova tecnologia con particolare riferimento a come sono gestite le API del dispositivo. In particolare si può paragonare il funzionamento di questo sistema operativo al meccanismo di wrapping, utilizzato da alcuni framework per la distribuzione su più piattaforme della stessa applicazione ibrida.
+In questo caso è tutto implementato nativamente, e non si ha bisogno di un wrapper per poter comunicare con le funzionalità del dispositivo, in quanto si ha il controllo totale del tramite delle API Javascript.
+L'architettura di FirefoxOS mostrata nella figura \ref{fig:fxos_architecture} funziona in questo modo:  
 
 \begin{figure}[h]
 	\begin{center}
@@ -156,4 +159,4 @@ FirefoxOS è un nuovo sistema operativo per dispositivi mobili sviluppato da \em
 \emph{fonte: Mozilla Developer Network}\cite{mdn:fxos}
 
 
-\subsection{WebRTC}
+\subsection{NodeWebkit}

@@ -285,7 +285,7 @@ Nell'architettura mostrata nella figura \ref{fig:cordova-layers} ng-cordova si p
 Il consistente numero di tecnologie che si possono utilizzare per lo sviluppo ibrido viene spesso accompagnato da strumenti che consentono di creare un ambiente progettuale in cui si ha a disposizione tutto il necessario per poter iniziare a sviluppare. La scelta di determinati strumenti piuttosto che altri è riservata allo sviluppatore finale, personalmente mostrerò come ho deciso di organizzare un progetto di esempio.
 
 \subsection{Package Manager}
-
+\label{sec:package_manager}
 Avendo a disposizione tutto il mondo delle tecnologie web, può risultare utile e molto produttivo inserire librerie all'interno del nostro progetto. Per le applicazioni web in generale e anche in quelle ibride si può disporre di un package manager che facilmente includere nuove librerie all'interno del progetto.\\
 
 \textbf{Bower} è un package manager tipicamente usato per librerie Javascript. Generalmente è possibile reperire ogni libreria disponibile su Github. Tramite il file \emph{bower.json} possiamo specificare le dipendenze del progetto e dinamicamente aggiornare la lista delle librerie installate. Inoltre se stiamo lavorando con una struttura di cartelle specifica, come ne mio caso, possiamo specificare la posizione di dove verranno scaricate le librerie tramite il file \emph{.bowerrc}. 
