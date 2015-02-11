@@ -123,11 +123,37 @@ Un metodo molto utilizzato per poi ri-assemblare tutte le parti del codice è tr
 \end{description} 
 
 \section{Nuove tecnologie web emergenti}
-
+In conclusione alla mia tesi voglio mostrare quali sono alcune delle tecnologie emergenti in ambito web per lo sviluppo di applicazioni mobile e non solo. Si tratta solo di una breve presentazione, se si vuole approfondire i vari riferimenti sono disponibili dei link nella bibliografia.
 \subsection{FirefoxOS}
 
-\subsection{WebOS}
+\begin{wrapfigure}{r}{0.40\textwidth}
+	\vspace{-55pt}
+	\begin{center}
+		\includegraphics[scale=0.075]{Figures/fxos-logo.png}
+	\end{center}
+	\vspace{0pt}
+	\caption{\\FirefoxOS logo}
+	\label{fig:fxos_logo}
+	\vspace{0pt}
+\end{wrapfigure}
 
-\subsection{Node Webkit}
+FirefoxOS è un nuovo sistema operativo per dispositivi mobili sviluppato da \emph{Mozilla}. Voglio mostrare questa nuova tecnologia con particolare riferimento a come sono gestite le API del dispositivo. Firefox OS ha eliminato lo strato di API native fra il sistema operativo e gli strati applicativi. Questa soluzione integrata riduce il carico della piattaforma e semplifica la gestione della sicurezza senza sacrificare le prestazioni e una ricca esperienza utente (fig.\ref{fig:fxos_architecture}).
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[scale=0.30]{Figures/fxos-general-architecture-match.png}
+		\caption[Architettura di FirefoxOS]{L'architettura di FirefoxOS messa a confronto con quella delle piattaforme proprietarie}
+		\label{fig:fxos_architecture}
+	\end{center}
+\end{figure}
+
+\begin{description}
+	\item[Gaia] è l'insieme delle web app principali e dell'interfaccia utente di Firefox OS. È' scritto in HTML5, CSS e JavaScript. Espone un insieme di API per consentire al codice della UI di interagire con l'hardware del telefono e con le funzionalità di Gecko.
+	\item[Gecko] è il motore web e lo strato di presentazione di Firefox OS. Rappresenta l'interfaccia fra i contenuti web e il dispositivo. Gecko fornisce il motore di parsing e rendering HTML5, un insieme di Web API sicure per accedere alle funzionalità hardware, un framework per la gestione della sicurezza, un sistema per la gestione degli aggiornamenti e altri servizi core.
+	\item[Gonk] è il componente al livello del kernel nello stack di Firefox OS, è l'interfaccia fra Gecko e l'hardware del dispositivo. Gonk gestisce l'hardware sottostante e espone le funzionalità dell'hardware alle Web API implementate in Gecko. Gonk può essere visto come la “black box” che esegue il lavoro complesso e dettagliato dietro le scene, controllando il dispositivo mobile gestendo le richieste al livello hardware.
+	Il dispositivo mobile è il telefono su cui viene eseguito Firefox OS. L'OEM è responsabile per la fornitura del dispositivo mobile.
+\end{description}
+\emph{fonte: Mozilla Developer Network}\cite{mdn:fxos}
+
 
 \subsection{WebRTC}
