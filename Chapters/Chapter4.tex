@@ -73,14 +73,7 @@ Come spiegato nella sezione \ref{sec:native_vs_web} ci sono pro e contro sull'ut
 Per quanto riguarda la creazione di una interfaccia utente e l'impostazione della user experience, si accusa spesso l'approccio ibrido di non poter garantire un risultato soddisfacente paragonandolo allo sviluppo ibrido. In questo caso mi permetto di dissentire personalmente da questa opinione, in quanto dalla mia esperienza di utilizzo dei framework web per la creazione della UI (come ad esempio IONIC o Foundation), l'interfaccia risulta fluida e accattivante anche se eseguita all'interno di una WebView. Le principali accuse che vengono fatte ad una interfaccia web sono di essre eseguita a scatti, di non garantire una UX ottimale. Se si fa utilizzo di animazioni CSS3 (il quale processo di rendering è accelerato dall'hardware), invece della manipolazione del DOM tramite javascript, la differenza con una applicazione nativa è pressoché nulla.
 
 \section{I cambiamenti sul processo di sviluppo}
-I cambiamenti sul processo di sviluppo\\
-
- - Il progetto è soltanto uno\\
- * Test funzionali unici, da testare solo l'integrazione con i sistemi\\
- * Meno persone dedite al progetto, quindi processo più facile da gestire\\
- * Tutte le applicazioni sono pronte nello stesso momento\\
-\section{Ulteriori otimizzazioni dell'approcio ibrido}
-Nello sviluppo di una applicazione in generale, tutte le figure professionali coinvolte fanno riferimento ad uno schema generale, che illustra le fasi di lavoro per arrivare al prodotto finale. Da quanto appreso durante l'esperienza di tirocinio in azienda, questo schema deve essere il più generico possibile, e comprensibile da chiunque lavori con esso. Nella figura \ref{fig:classic_app_flow} si possono osservare le fasi principali dello sviluppo di una applicazione.
+Durante la ricerca di soluzioni per lo sviluppo rapido di applicazioni multipiattaforma tramite l'approccio ibrido, il processo di sviluppo dell'applicazione ha subito una consistente semplificazione. Questo è dovuto al fatto che, avendo un solo progetto da gestire, dal quale poi si otterranno le applicazioni per diverse piattaforme, le varie operazioni di design, test o risoluzione di bachi risultano più rapide e semplici. Nella figura \ref{fig:classic_app_flow} viene schematizzato come avviene il processo di creazione di una applicazione in generale. In particolare la semplificazione del progetto è dovuta a:
 
 \begin{figure}
 	\begin{center}
@@ -90,9 +83,20 @@ Nello sviluppo di una applicazione in generale, tutte le figure professionali co
 	\end{center}
 \end{figure}
 
-Prendendo spunto da questo schema generale ho creato una espansione della fase di sviluppo e di test per lo sviluppo di applicazioni multipiattaforma ibride. Si tratta di un sottoschema che evidenzia quali fasi hanno caratterizzato un primo approccio a questo tipo di sviluppo.
-Una prima fase è stata quella di scegliere quali tecnologie web utilizzare per lo sviluppo ibrido, e quali per per testare il codice che doveva essere prodotto. Nel mio caso il framework AnagularJS si prestava già ad uno sviluppo di questo tipo e non ho impiegato molto tempo nel capire come utilizzarlo per lo sviluppo mobile. In altri casi, data la vasta scelta di framework javascript per lo sviluppo mobile, la scelta può richiedere parecchio tempo(dipende dalle competenze e dallo stile del programmatore).
-Dopo aver costruito il mio ambiente di sviluppo ho proceduto come nello schema \ref{fig:classic_app_flow} sviluppando e testando l'applicazione.
+\begin{description}
+	\item[Design] Il design dell'applicazione rimane univoco e non ci si deve preoccupare di differenziarlo per le diverse piattaforme.
+	\item[Test] Avendo un unico codice sorgente, i test funzionali sull'applicazione sono unici, rimangono differenziati solo i test sull'integrazione nei sistemi.
+	\item[Team di sviluppo ristretto] Con un solo progetto da gestire il team di sviluppo è meno affollato, facilitandone la sua gestione.
+	\item[Distribuzione] Tutte le applicazioni sono pronte nello stesso momento. In questo modo si ha subito un feedback globale da parte degli utenti, cosa che può eventualmente aiutare a correggere l'applicazione più rapidamente.
+\end{description}
+
+\section{Ulteriori otimizzazioni dell'approcio ibrido}
+
+Nello sviluppo di una applicazione in generale, tutte le figure professionali coinvolte fanno riferimento ad uno schema generale, che illustra le fasi di lavoro per arrivare al prodotto finale. Da quanto appreso durante l'esperienza di tirocinio in azienda, questo schema deve essere il più generico possibile, e comprensibile da chiunque lavori con esso. Nella figura \ref{fig:classic_app_flow} si possono osservare le fasi principali dello sviluppo di una applicazione.
+
+Prendendo spunto da questo schema generale ho creato una espansione della fase di sviluppo e di test per lo sviluppo di applicazioni multipiattaforma ibride. Si tratta di un sottoschema che evidenzia quali fasi hanno caratterizzato un primo approccio a questo tipo di sviluppo (\ref{fig:flow_match}).
+
+Una prima fase è stata quella di scegliere quali tecnologie web utilizzare per lo sviluppo ibrido, e quali per per testare il codice che doveva essere prodotto. Nel mio caso il framework AnagularJS si prestava già ad uno sviluppo di questo tipo e non ho impiegato molto tempo nel capire come utilizzarlo per lo sviluppo mobile. In altri casi, data la vasta scelta di framework javascript per lo sviluppo mobile, può richiedere parecchio tempo(dipende dalle competenze e dallo stile del programmatore).
 
 Certamente iterare questo processo per ciascuna applicazione che si andrà a sviluppare è molto dispendioso in termini di tempo e risorse. Una buona soluzione e costruirsi un set di tecnologie che si andranno a utilizzare per lo sviluppo di ciascuna applicazione futura, quello che in azienda si è chiamato \emph{skeleton}. Ovviamente lo scheletro di una applicazione tipo deve essere fatto in modo da espandersi nel caso giungessero richieste di nuove caratteristiche non ancora incluse. Nella figura \ref{fig:flow_match} si può osservare l'evoluzione del primo schema verso una soluzione pronta e rapida all'utilizzo, grazie all'introduzione dello \emph{skeleton}.
 HTML5 vs Nativo
